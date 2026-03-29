@@ -22,7 +22,7 @@
   <url><loc>https://trackmytrain.pk/about</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://trackmytrain.pk/contact</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://trackmytrain.pk/request-feature</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://trackmytrain.pk/privacy</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://trackmytrain.pk/privacy</loc><lastmod>2026-03-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://trackmytrain.pk/sitemap</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://trackmytrain.pk/buy-tickets</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
@@ -34,9 +34,9 @@
   <url><loc>https://trackmytrain.pk/blog/family-train-travel-tips-pakistan</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://trackmytrain.pk/blog/first-time-train-traveler-guide-pakistan</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://trackmytrain.pk/blog/eid-train-travel-tips-2026</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://trackmytrain.pk/blog/best-express-trains-pakistan-2026</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://trackmytrain.pk/blog/how-to-track-train-live-pakistan</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/blog/pakistan-railways-coach-classes-guide</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://trackmytrain.pk/blog/best-express-trains-pakistan-2026</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://trackmytrain.pk/blog/how-to-track-train-live-pakistan</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://trackmytrain.pk/blog/pakistan-railways-coach-classes-guide</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
 
   <!-- Station Detail Pages -->
   <url><loc>https://trackmytrain.pk/stations/karachi-cantt</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -189,7 +189,7 @@
   <url><loc>https://trackmytrain.pk/ur/about</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.45</priority></url>
   <url><loc>https://trackmytrain.pk/ur/contact</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.45</priority></url>
   <url><loc>https://trackmytrain.pk/ur/blog</loc><lastmod>2026-03-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/privacy</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.25</priority></url>
+  <url><loc>https://trackmytrain.pk/ur/privacy</loc><lastmod>2026-03-29</lastmod><changefreq>yearly</changefreq><priority>0.25</priority></url>
   <url><loc>https://trackmytrain.pk/ur/sitemap</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://trackmytrain.pk/ur/request-feature</loc><lastmod>2026-03-29</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 
