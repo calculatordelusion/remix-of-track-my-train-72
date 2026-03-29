@@ -85,7 +85,7 @@ export default function TicketPricingPage() {
           "@context": "https://schema.org",
           "@type": "Table",
           "name": "Pakistan Railways Ticket Price Comparison Table 2026",
-          "description": "Side-by-side fare comparison across Economy, Business, AC Standard, and AC Business classes for 14 major Pakistan Railways routes.",
+          "description": "Side-by-side fare comparison across Economy, AC Standard, AC Business, and AC Sleeper classes for 12 major Pakistan Railways routes. Updated March 2026.",
           "about": {
             "@type": "Thing",
             "name": "Pakistan Railways Fares",
