@@ -125,6 +125,7 @@ export default function BlogPostPage() {
         title={post.title}
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
+        alternateUrdu={`/ur/blog/${post.slug}`}
         keywords={post.keywords}
         ogType="article"
         breadcrumbs={[

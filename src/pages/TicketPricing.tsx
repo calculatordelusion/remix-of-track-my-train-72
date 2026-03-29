@@ -57,6 +57,7 @@ export default function TicketPricingPage() {
         title="Pakistan Railways Ticket Prices — Fare Chart 2026"
         description="Updated Pakistan Railways fare chart March 2026. Compare Economy, AC Standard, AC Business, and Sleeper prices. Karachi–Lahore from Rs 3,750. 12 major routes."
         canonical="/ticket-pricing"
+        alternateUrdu="/ur/ticket-pricing"
         keywords="pakistan railway ticket price, train fare chart, train ticket price, economy class fare, business class fare, AC sleeper price, parlor class fare, karachi lahore ticket price, train fare list, railway fare chart 2026, cheapest train ticket, AC standard fare"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Ticket Pricing", url: "/ticket-pricing" }]}
         faqSchema={ticketFaqs}
