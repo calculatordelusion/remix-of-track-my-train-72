@@ -8,20 +8,18 @@ import RelatedLinks from "@/components/RelatedLinks";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const pricingData = [
-  { route: "Karachi → Lahore", economy: "1,800", business: "3,500", ac: "6,500", acBusiness: "9,000", duration: "18-22h" },
-  { route: "Karachi → Rawalpindi", economy: "2,200", business: "4,200", ac: "7,500", acBusiness: "10,500", duration: "22-26h" },
-  { route: "Karachi → Peshawar", economy: "2,400", business: "4,500", ac: "8,000", acBusiness: "11,500", duration: "24-28h" },
-  { route: "Lahore → Rawalpindi", economy: "700", business: "1,400", ac: "2,500", acBusiness: "3,500", duration: "4-5h" },
-  { route: "Lahore → Multan", economy: "500", business: "1,000", ac: "1,800", acBusiness: "2,500", duration: "5-6h" },
-  { route: "Karachi → Quetta", economy: "1,600", business: "3,000", ac: "5,500", acBusiness: "8,000", duration: "12-14h" },
-  { route: "Lahore → Peshawar", economy: "900", business: "1,800", ac: "3,200", acBusiness: "4,500", duration: "7-8h" },
-  { route: "Multan → Karachi", economy: "1,500", business: "2,800", ac: "5,200", acBusiness: "7,500", duration: "14-16h" },
-  { route: "Karachi → Hyderabad", economy: "400", business: "800", ac: "1,200", acBusiness: "1,800", duration: "2-3h" },
-  { route: "Lahore → Faisalabad", economy: "350", business: "900", ac: "1,800", acBusiness: "2,200", duration: "3-4h" },
-  { route: "Multan → Rawalpindi", economy: "800", business: "2,000", ac: "4,000", acBusiness: "5,000", duration: "8-10h" },
-  { route: "Rawalpindi → Peshawar", economy: "400", business: "1,000", ac: "2,200", acBusiness: "2,800", duration: "3-4h" },
-  { route: "Sukkur → Lahore", economy: "1,000", business: "2,500", ac: "4,500", acBusiness: "5,500", duration: "12-14h" },
-  { route: "Quetta → Rawalpindi", economy: "1,800", business: "4,000", ac: "7,000", acBusiness: "8,500", duration: "20-24h" },
+  { route: "Karachi → Lahore", economy: "3,750", acStandard: "7,600", acBusiness: "10,950", acSleeper: "14,050", duration: "18-22h", note: "Shalimar/Awam class fares. Premium trains (Green Line, Tezgam) cost more." },
+  { route: "Karachi → Rawalpindi", economy: "4,200", acStandard: "10,450", acBusiness: "11,450", acSleeper: "16,550", duration: "22-26h", note: "Hazara/Pakistan Express fares. Green Line: Economy Rs 6,350." },
+  { route: "Karachi → Peshawar", economy: "4,900", acStandard: "11,550", acBusiness: "13,300", acSleeper: "—", duration: "24-28h", note: "Awam Express / Khyber Mail fares." },
+  { route: "Karachi → Multan", economy: "2,750", acStandard: "5,900", acBusiness: "8,400", acSleeper: "11,200", duration: "14-17h", note: "Awam/Hazara Express fares. Tezgam: Economy Rs 3,750." },
+  { route: "Karachi → Hyderabad", economy: "750", acStandard: "1,500", acBusiness: "—", acSleeper: "—", duration: "2-3h", note: "Most express trains. Mehran Express Economy Rs 370. Green Line Rs 1,800." },
+  { route: "Rawalpindi → Lahore", economy: "1,100", acStandard: "1,950", acBusiness: "2,150", acSleeper: "2,400", duration: "4-5h", note: "Rawal/Subak Raftar fares. Green Line: Economy Rs 2,350, AC Biz Rs 4,700." },
+  { route: "Rawalpindi → Peshawar", economy: "750", acStandard: "1,500", acBusiness: "2,000", acSleeper: "—", duration: "3-4h", note: "Khyber Mail / Awam Express fares." },
+  { route: "Rawalpindi → Multan", economy: "2,200", acStandard: "3,900", acBusiness: "5,400", acSleeper: "8,150", duration: "8-10h", note: "Pakistan Express fares. Tezgam: Economy Rs 2,750." },
+  { route: "Karachi → Faisalabad", economy: "3,400", acStandard: "7,350", acBusiness: "10,050", acSleeper: "10,780", duration: "16-20h", note: "Rehman Baba/Millat Express fares." },
+  { route: "Karachi → Quetta", economy: "2,050", acStandard: "4,200", acBusiness: "—", acSleeper: "—", duration: "12-14h", note: "Bolan Mail / Jaffar Express fares (via Sibi)." },
+  { route: "Lahore → Peshawar", economy: "1,950", acStandard: "3,500", acBusiness: "4,800", acSleeper: "—", duration: "7-9h", note: "Via Rawalpindi. Khyber Mail / Awam Express fares." },
+  { route: "Lahore → Multan", economy: "1,100", acStandard: "2,100", acBusiness: "3,300", acSleeper: "5,800", duration: "5-6h", note: "Awam/Hazara Express fares. Jaffar Express similar." },
 ];
 
 const coachClasses = [
