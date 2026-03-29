@@ -54,9 +54,9 @@ export default function UrduTicketPricingTable() {
               <tr className="bg-primary text-primary-foreground">
                 <th className="text-right p-4 font-bold">روٹ</th>
                 <th className="text-right p-4 font-bold">اکانومی</th>
-                <th className="text-right p-4 font-bold">بزنس</th>
                 <th className="text-right p-4 font-bold">AC اسٹینڈرڈ</th>
                 <th className="text-right p-4 font-bold">AC بزنس</th>
+                <th className="text-right p-4 font-bold">AC سلیپر</th>
                 <th className="text-right p-4 font-bold">دورانیہ</th>
               </tr>
             </thead>
@@ -65,9 +65,9 @@ export default function UrduTicketPricingTable() {
                 <tr key={row.route} className="border-b even:bg-muted/20 hover:bg-muted/30 transition-colors">
                   <td className="p-4 font-semibold whitespace-nowrap">{row.route}</td>
                   <td className="p-4 text-right text-primary font-semibold">₨{row.economy}</td>
-                  <td className="p-4 text-right">₨{row.business}</td>
-                  <td className="p-4 text-right">₨{row.ac}</td>
-                  <td className="p-4 text-right font-semibold">₨{row.acBusiness}</td>
+                  <td className="p-4 text-right">₨{row.acStandard}</td>
+                  <td className="p-4 text-right">{row.acBusiness === "—" ? "—" : `₨${row.acBusiness}`}</td>
+                  <td className="p-4 text-right font-semibold">{row.acSleeper === "—" ? "—" : `₨${row.acSleeper}`}</td>
                   <td className="p-4 text-right text-muted-foreground">{row.duration}</td>
                 </tr>
               ))}
