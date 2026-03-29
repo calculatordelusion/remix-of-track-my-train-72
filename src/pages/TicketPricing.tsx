@@ -8,38 +8,36 @@ import RelatedLinks from "@/components/RelatedLinks";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const pricingData = [
-  { route: "Karachi → Lahore", economy: "1,800", business: "3,500", ac: "6,500", acBusiness: "9,000", duration: "18-22h" },
-  { route: "Karachi → Rawalpindi", economy: "2,200", business: "4,200", ac: "7,500", acBusiness: "10,500", duration: "22-26h" },
-  { route: "Karachi → Peshawar", economy: "2,400", business: "4,500", ac: "8,000", acBusiness: "11,500", duration: "24-28h" },
-  { route: "Lahore → Rawalpindi", economy: "700", business: "1,400", ac: "2,500", acBusiness: "3,500", duration: "4-5h" },
-  { route: "Lahore → Multan", economy: "500", business: "1,000", ac: "1,800", acBusiness: "2,500", duration: "5-6h" },
-  { route: "Karachi → Quetta", economy: "1,600", business: "3,000", ac: "5,500", acBusiness: "8,000", duration: "12-14h" },
-  { route: "Lahore → Peshawar", economy: "900", business: "1,800", ac: "3,200", acBusiness: "4,500", duration: "7-8h" },
-  { route: "Multan → Karachi", economy: "1,500", business: "2,800", ac: "5,200", acBusiness: "7,500", duration: "14-16h" },
-  { route: "Karachi → Hyderabad", economy: "400", business: "800", ac: "1,200", acBusiness: "1,800", duration: "2-3h" },
-  { route: "Lahore → Faisalabad", economy: "350", business: "900", ac: "1,800", acBusiness: "2,200", duration: "3-4h" },
-  { route: "Multan → Rawalpindi", economy: "800", business: "2,000", ac: "4,000", acBusiness: "5,000", duration: "8-10h" },
-  { route: "Rawalpindi → Peshawar", economy: "400", business: "1,000", ac: "2,200", acBusiness: "2,800", duration: "3-4h" },
-  { route: "Sukkur → Lahore", economy: "1,000", business: "2,500", ac: "4,500", acBusiness: "5,500", duration: "12-14h" },
-  { route: "Quetta → Rawalpindi", economy: "1,800", business: "4,000", ac: "7,000", acBusiness: "8,500", duration: "20-24h" },
+  { route: "Karachi → Lahore", economy: "3,750", acStandard: "7,600", acBusiness: "10,950", acSleeper: "14,050", duration: "18-22h", note: "Shalimar/Awam class fares. Premium trains (Green Line, Tezgam) cost more." },
+  { route: "Karachi → Rawalpindi", economy: "4,200", acStandard: "10,450", acBusiness: "11,450", acSleeper: "16,550", duration: "22-26h", note: "Hazara/Pakistan Express fares. Green Line: Economy Rs 6,350." },
+  { route: "Karachi → Peshawar", economy: "4,900", acStandard: "11,550", acBusiness: "13,300", acSleeper: "—", duration: "24-28h", note: "Awam Express / Khyber Mail fares." },
+  { route: "Karachi → Multan", economy: "2,750", acStandard: "5,900", acBusiness: "8,400", acSleeper: "11,200", duration: "14-17h", note: "Awam/Hazara Express fares. Tezgam: Economy Rs 3,750." },
+  { route: "Karachi → Hyderabad", economy: "750", acStandard: "1,500", acBusiness: "—", acSleeper: "—", duration: "2-3h", note: "Most express trains. Mehran Express Economy Rs 370. Green Line Rs 1,800." },
+  { route: "Rawalpindi → Lahore", economy: "1,100", acStandard: "1,950", acBusiness: "2,150", acSleeper: "2,400", duration: "4-5h", note: "Rawal/Subak Raftar fares. Green Line: Economy Rs 2,350, AC Biz Rs 4,700." },
+  { route: "Rawalpindi → Peshawar", economy: "750", acStandard: "1,500", acBusiness: "2,000", acSleeper: "—", duration: "3-4h", note: "Khyber Mail / Awam Express fares." },
+  { route: "Rawalpindi → Multan", economy: "2,200", acStandard: "3,900", acBusiness: "5,400", acSleeper: "8,150", duration: "8-10h", note: "Pakistan Express fares. Tezgam: Economy Rs 2,750." },
+  { route: "Karachi → Faisalabad", economy: "3,400", acStandard: "7,350", acBusiness: "10,050", acSleeper: "10,780", duration: "16-20h", note: "Rehman Baba/Millat Express fares." },
+  { route: "Karachi → Quetta", economy: "2,050", acStandard: "4,200", acBusiness: "—", acSleeper: "—", duration: "12-14h", note: "Bolan Mail / Jaffar Express fares (via Sibi)." },
+  { route: "Lahore → Peshawar", economy: "1,950", acStandard: "3,500", acBusiness: "4,800", acSleeper: "—", duration: "7-9h", note: "Via Rawalpindi. Khyber Mail / Awam Express fares." },
+  { route: "Lahore → Multan", economy: "1,100", acStandard: "2,100", acBusiness: "3,300", acSleeper: "5,800", duration: "5-6h", note: "Awam/Hazara Express fares. Jaffar Express similar." },
 ];
 
 const coachClasses = [
-  { cls: "Economy Class", icon: "💺", gradient: "gradient-card-emerald", features: ["Cushioned seats", "Fan cooling", "Basic amenities"], desc: "Basic seating with fan-cooled coaches. Most affordable option for budget-conscious travelers. Available on all express and passenger trains.", fareRange: "Rs. 350 – 2,400" },
-  { cls: "Business Class", icon: "🪑", gradient: "gradient-card-amber", features: ["Reclining seats", "AC or fan options", "More legroom"], desc: "Comfortable padded seats with reclining capability and more legroom. Some trains offer meal service in business class.", fareRange: "Rs. 800 – 4,500" },
-  { cls: "AC Standard", icon: "❄️", gradient: "gradient-card-blue", features: ["Full AC", "Reclining seats", "Better comfort"], desc: "Air-conditioned coaches with comfortable seating, blankets, and pillows. Meals included on select express trains.", fareRange: "Rs. 1,200 – 8,000" },
-  { cls: "AC Business", icon: "⭐", gradient: "gradient-card-purple", features: ["Premium AC", "Meals included", "Priority boarding"], desc: "Premium air-conditioned class with wide luxury seats, complimentary meals, beverages, and priority boarding.", fareRange: "Rs. 1,800 – 11,500" },
-  { cls: "AC Sleeper", icon: "🛏️", gradient: "gradient-card-rose", features: ["Sleeper berths", "Full AC", "Bedding provided"], desc: "Air-conditioned sleeping berths ideal for overnight journeys. Bedding, blankets, and pillows provided for comfortable rest.", fareRange: "Rs. 2,500 – 9,000" },
-  { cls: "Parlor Car", icon: "👑", gradient: "gradient-card-teal", features: ["Individual pods", "Premium meals", "Entertainment"], desc: "The ultimate luxury class with individual seating pods, gourmet meals, entertainment options, and personal attendant service.", fareRange: "Rs. 5,000 – 12,000" },
+  { cls: "Economy Seat", icon: "💺", gradient: "gradient-card-emerald", features: ["Basic cushioned seats", "Fan cooling", "Available on all trains"], desc: "Standard seating in fan-cooled coaches. The most affordable way to travel on Pakistan Railways. Fares vary by train type — passenger trains are cheapest, premium express trains charge more.", fareRange: "Rs. 370 – 6,350" },
+  { cls: "Economy Berth", icon: "🛋️", gradient: "gradient-card-amber", features: ["Sleeping berth option", "Fan cooling", "Overnight comfort"], desc: "Economy berth provides a sleeping berth in fan-cooled coaches, ideal for overnight travel. Typically Rs 50-100 more than economy seat on the same train.", fareRange: "Rs. 420 – 6,450" },
+  { cls: "AC Standard", icon: "❄️", gradient: "gradient-card-blue", features: ["Full air conditioning", "Reclining seats", "Comfortable travel"], desc: "Air-conditioned coaches with comfortable reclining seats. Significantly cooler and more comfortable than economy, especially in summer. Available on most express trains.", fareRange: "Rs. 1,350 – 12,250" },
+  { cls: "AC Business", icon: "⭐", gradient: "gradient-card-purple", features: ["Premium AC coaches", "Wide seats", "Better amenities"], desc: "Premium air-conditioned class with wider seats, better legroom, and improved coach quality. Available on select trains like Shalimar, Awam, Karakoram, Khyber Mail, and Green Line.", fareRange: "Rs. 2,000 – 15,350" },
+  { cls: "AC Sleeper", icon: "🛏️", gradient: "gradient-card-rose", features: ["Sleeping berths with AC", "Bedding provided", "Long-distance comfort"], desc: "Air-conditioned sleeping berths ideal for overnight long-distance journeys. Bedding, blankets, and pillows provided. Available on Tezgam, Khyber Mail, Karachi Express, and Jaffar Express.", fareRange: "Rs. 8,150 – 17,500" },
+  { cls: "Parlor Car", icon: "👑", gradient: "gradient-card-teal", features: ["Luxury individual pods", "Premium service", "Best available class"], desc: "The highest class on select trains like Green Line, Shalimar Express, and Rawal Express. Individual luxury seating pods with premium service.", fareRange: "Rs. 2,400 – 13,800" },
 ];
 
 const ticketFaqs = [
   { q: "How can I book Pakistan Railway tickets online?", a: "You can book tickets through the official Pakistan Railways website (pak-railways.gov.pk) or via the Pakistan Railways mobile app. Create an account, search for your train, select your preferred class, choose your seats, and pay using credit/debit card, JazzCash, Easypaisa, or bank transfer. E-tickets are delivered instantly to your email and can be shown on your phone." },
-  { q: "What is the cheapest train class in Pakistan?", a: "Economy Class is the most affordable option, with fares starting from around PKR 350-500 for short distances like Karachi to Hyderabad or Lahore to Faisalabad. Prices vary based on route length and train type — Passenger trains are cheaper than Express trains on the same route." },
+  { q: "What is the cheapest train class in Pakistan?", a: "Economy Class (Seat) is the most affordable option, with fares starting from Rs. 370 for short distances like Karachi to Hyderabad on Mehran Express. Prices vary by route and train — passenger trains are cheaper than premium express trains on the same route." },
   { q: "What is the cancellation policy for train tickets?", a: "Tickets cancelled 24+ hours before departure get a full refund minus a small processing fee (around Rs. 50-100). Cancellations within 24 hours receive a 50% refund. No refund is available after the train has departed. Railway-cancelled trains always get a full refund at any booking counter with no deductions." },
   { q: "Are there any discounts available on train tickets?", a: "Yes! Pakistan Railways offers several discounts: Students get 25-50% off with valid student ID, senior citizens (60+) get 25% off, disabled persons get 50% off with a disability certificate, children aged 3-12 travel at half fare, and children under 3 travel free (without a separate seat). Season tickets for regular commuters also provide significant savings." },
   { q: "What is the difference between AC Standard and AC Business?", a: "AC Business offers wider seats with more recline, complimentary meals, bottled water, and priority boarding. AC Standard has air conditioning with standard reclining seats but fewer premium amenities. AC Business coaches are typically newer and better maintained, making them worth the upgrade on long-distance journeys." },
-  { q: "What are the different coach classes in Pakistan Railways?", a: "Pakistan Railways offers 6 travel classes: Economy (fan-cooled basic seating), Business (padded reclining seats), AC Standard (air-conditioned comfortable seating), AC Business (premium AC with meals), AC Sleeper (sleeping berths for overnight travel), and Parlor Car (luxury individual pods with entertainment). Not all classes are available on every train." },
+  { q: "What are the different coach classes in Pakistan Railways?", a: "Pakistan Railways offers these travel classes: Economy Seat (fan-cooled basic seating), Economy Berth (sleeping berth in fan-cooled coach), AC Standard (air-conditioned comfortable seating), AC Business (premium AC with wider seats), AC Sleeper (sleeping berths with AC for overnight travel), and Parlor Car (luxury individual pods on select trains). Not all classes are available on every train." },
   { q: "Can I change my train ticket to a different date?", a: "Date changes are possible at booking counters, subject to seat availability. Visit the station counter with your original ticket and CNIC at least 6 hours before your scheduled departure. A small change fee of Rs. 50-100 may apply. Online tickets can sometimes be changed through the e-ticketing portal." },
   { q: "What happens if I miss my train?", a: "If you miss your train, the ticket becomes invalid and no refund is given. However, if the train was significantly delayed (30+ minutes past scheduled departure), you can request a full refund at the station counter. Always use our Live Train Tracker to check your train's real-time status before leaving for the station." },
   { q: "Do I need to carry a printed ticket?", a: "For online bookings, you can show the e-ticket on your phone along with your CNIC. For counter bookings, you must carry the physical ticket. It's recommended to keep a screenshot of your e-ticket in case of network issues at the station. Ticket inspectors may also verify your identity during the journey." },
@@ -49,7 +47,7 @@ const ticketFaqs = [
   { q: "Is there a refund for unused return tickets?", a: "Yes, unused return journey tickets can be refunded at any booking counter. The same cancellation policy applies — full refund minus processing fee if cancelled 24+ hours before the return journey departure. Keep both legs of the ticket for refund processing." },
   { q: "Do ticket prices increase during Eid?", a: "Pakistan Railways does not officially increase base fares during Eid, but special Eid trains may have different pricing. The real challenge is availability — tickets sell out weeks in advance for popular routes during Eid ul-Fitr and Eid ul-Adha. Book as early as possible (15-30 days ahead)." },
   { q: "Can I upgrade my ticket class after boarding?", a: "In-train upgrades are sometimes possible if higher-class seats are available. Speak to the train conductor who may allow an upgrade upon payment of the fare difference. This is not guaranteed and depends on seat availability. For guaranteed upgrades, visit the booking counter before departure." },
-  { q: "What is the fare for Karachi to Lahore journey?", a: "Karachi to Lahore fares range from Rs. 1,800 (Economy) to Rs. 9,000 (AC Business) depending on train and class. Green Line AC Business costs around Rs. 8,000-9,000, while Tezgam Economy is approximately Rs. 1,800. See our complete fare chart above for all route prices." },
+  { q: "What is the fare for Karachi to Lahore journey?", a: "Karachi to Lahore economy fares start from Rs. 3,750 (Shalimar/Awam Express) up to Rs. 5,600 (Green Line). AC Standard ranges from Rs. 7,550 to Rs. 11,650. AC Business from Rs. 10,950 to Rs. 14,600. Green Line is the most expensive but fastest option. Fares were last revised on March 9, 2026." },
 ];
 
 export default function TicketPricingPage() {
@@ -57,7 +55,7 @@ export default function TicketPricingPage() {
     <main>
       <SEOHead
         title="Pakistan Railways Ticket Prices — Fare Chart 2026"
-        description="Updated Pakistan Railways fare chart 2026. Compare Economy, Business, AC, Sleeper, and Parlor class prices. Karachi–Lahore from Rs 1,800. All major routes."
+        description="Updated Pakistan Railways fare chart March 2026. Compare Economy, AC Standard, AC Business, and Sleeper prices. Karachi–Lahore from Rs 3,750. 12 major routes."
         canonical="/ticket-pricing"
         keywords="pakistan railway ticket price, train fare chart, train ticket price, economy class fare, business class fare, AC sleeper price, parlor class fare, karachi lahore ticket price, train fare list, railway fare chart 2026, cheapest train ticket, AC standard fare"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Ticket Pricing", url: "/ticket-pricing" }]}
@@ -79,7 +77,7 @@ export default function TicketPricingPage() {
               "item": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "PKR",
-                "description": `Economy Rs. ${r.economy} | Business Rs. ${r.business} | AC Standard Rs. ${r.ac} | AC Business Rs. ${r.acBusiness}`
+                "description": `Economy Rs. ${r.economy} | AC Standard Rs. ${r.acStandard} | AC Business Rs. ${r.acBusiness} | AC Sleeper Rs. ${r.acSleeper}`
               }
             }))
           }
@@ -87,7 +85,7 @@ export default function TicketPricingPage() {
           "@context": "https://schema.org",
           "@type": "Table",
           "name": "Pakistan Railways Ticket Price Comparison Table 2026",
-          "description": "Side-by-side fare comparison across Economy, Business, AC Standard, and AC Business classes for 14 major Pakistan Railways routes.",
+          "description": "Side-by-side fare comparison across Economy, AC Standard, AC Business, and AC Sleeper classes for 12 major Pakistan Railways routes. Updated March 2026.",
           "about": {
             "@type": "Thing",
             "name": "Pakistan Railways Fares",
@@ -123,7 +121,7 @@ export default function TicketPricingPage() {
           {[
             { value: `${pricingData.length}+`, label: "Routes Covered", icon: MapPin, gradient: "gradient-card-emerald" },
             { value: "6", label: "Coach Classes", icon: Star, gradient: "gradient-card-amber" },
-            { value: "Rs. 350", label: "Lowest Fare", icon: Tag, gradient: "gradient-card-blue" },
+            { value: "Rs. 370", label: "Lowest Fare", icon: Tag, gradient: "gradient-card-blue" },
             { value: "50%", label: "Max Discount", icon: Percent, gradient: "gradient-card-purple" },
           ].map((s, i) => (
             <Card key={i} className={`${s.gradient} border hover-lift group`}>
@@ -144,8 +142,8 @@ export default function TicketPricingPage() {
           <CardContent className="p-4 flex items-start gap-3">
             <Info className="w-5 h-5 text-accent shrink-0 mt-0.5" />
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Note:</strong> Prices shown are approximate and may vary based on train type and seasonal adjustments. 
-              For exact fares, please check at the time of booking on the official Pakistan Railways website. Children under 3 travel free; ages 3-12 get 50% discount.
+              <strong className="text-foreground">Note:</strong> Fares shown are based on the latest Pakistan Railways fare table, last revised on <strong>March 9, 2026</strong> (Economy +5%, AC +10% increase). 
+              Economy fares represent the lowest-tier express train; premium trains like Green Line, Tezgam, and Karakoram charge higher. Hover over a route to see details. Children under 3 travel free; ages 3-12 get 50% discount.
             </p>
           </CardContent>
         </Card>
@@ -163,20 +161,20 @@ export default function TicketPricingPage() {
                 <tr className="bg-primary text-primary-foreground">
                   <th className="text-left p-3 font-semibold">Route</th>
                   <th className="text-right p-3 font-semibold">Economy</th>
-                  <th className="text-right p-3 font-semibold">Business</th>
                   <th className="text-right p-3 font-semibold">AC Standard</th>
                   <th className="text-right p-3 font-semibold">AC Business</th>
+                  <th className="text-right p-3 font-semibold">AC Sleeper</th>
                   <th className="text-right p-3 font-semibold">Duration</th>
                 </tr>
               </thead>
               <tbody>
                 {pricingData.map((row, i) => (
-                  <tr key={i} className="border-b hover:bg-muted/30 transition-colors even:bg-muted/10">
+                  <tr key={i} className="border-b hover:bg-muted/30 transition-colors even:bg-muted/10" title={row.note}>
                     <td className="p-3 font-medium whitespace-nowrap">{row.route}</td>
                     <td className="p-3 text-right text-primary font-medium">Rs. {row.economy}</td>
-                    <td className="p-3 text-right">Rs. {row.business}</td>
-                    <td className="p-3 text-right">Rs. {row.ac}</td>
-                    <td className="p-3 text-right font-medium">Rs. {row.acBusiness}</td>
+                    <td className="p-3 text-right">Rs. {row.acStandard}</td>
+                    <td className="p-3 text-right">{row.acBusiness === "—" ? "—" : `Rs. ${row.acBusiness}`}</td>
+                    <td className="p-3 text-right font-medium">{row.acSleeper === "—" ? "—" : `Rs. ${row.acSleeper}`}</td>
                     <td className="p-3 text-right text-muted-foreground">{row.duration}</td>
                   </tr>
                 ))}
