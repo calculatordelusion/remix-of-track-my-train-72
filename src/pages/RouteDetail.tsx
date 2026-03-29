@@ -22,6 +22,7 @@ export default function RouteDetailPage() {
         title={title}
         description={description}
         canonical={`/routes/${route.slug}`}
+        alternateUrdu={`/ur/routes/${route.slug}`}
         keywords={`${route.from.toLowerCase()} to ${route.to.toLowerCase()} train, ${route.from.toLowerCase()} ${route.to.toLowerCase()} train ticket price, ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train schedule 2026, ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train live status, ${route.from.toLowerCase()} se ${route.to.toLowerCase()} train, is ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train late today`}
         breadcrumbs={[
           { name: "Home", url: "/" },

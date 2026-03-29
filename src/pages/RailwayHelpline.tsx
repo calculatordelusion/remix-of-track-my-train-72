@@ -82,6 +82,7 @@ export default function RailwayHelpline() {
         title="Pakistan Railways Helpline 117 — Contact Numbers"
         description="Pakistan Railways helpline 117 (24/7), Railway Police 1316, all 7 divisional offices, and 10+ major station contacts. Official directory 2026."
         canonical="/railway-helpline"
+        alternateUrdu="/ur/railway-helpline"
         keywords="pakistan railways helpline 117, railway helpline number, pakistan railways contact, railway police 1316, railway complaint number, railway inquiry number, railway station phone number, divisional superintendent, PR helpline, railway lost and found, railway emergency number, railway customer service"
         breadcrumbs={[
           { name: "Home", url: "/" },

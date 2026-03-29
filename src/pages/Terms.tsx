@@ -21,6 +21,7 @@ export default function TermsPage() {
         title="Terms of Service — Track My Train"
         description="Track My Train terms of service. Your rights and responsibilities when using Pakistan's free train tracking platform."
         canonical="/terms"
+        alternateUrdu="/ur/terms"
         keywords="track my train terms of service, train tracker terms, pakistan railways tracker usage agreement"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Terms of Service", url: "/terms" }]}
       />
