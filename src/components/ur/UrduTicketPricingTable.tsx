@@ -2,22 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CreditCard, Percent, Shield, Smartphone, Users, Wallet } from "lucide-react";
 
 const pricingData = [
-  { route: "کراچی ←→ لاہور", economy: "1,800", business: "3,500", ac: "6,500", acBusiness: "9,000", duration: "18-22 گھنٹے" },
-  { route: "کراچی ←→ راولپنڈی", economy: "2,200", business: "4,200", ac: "7,500", acBusiness: "10,500", duration: "22-26 گھنٹے" },
-  { route: "کراچی ←→ پشاور", economy: "2,400", business: "4,500", ac: "8,000", acBusiness: "11,500", duration: "24-28 گھنٹے" },
-  { route: "لاہور ←→ راولپنڈی", economy: "700", business: "1,400", ac: "2,500", acBusiness: "3,500", duration: "4-5 گھنٹے" },
-  { route: "لاہور ←→ ملتان", economy: "500", business: "1,000", ac: "1,800", acBusiness: "2,500", duration: "5-6 گھنٹے" },
-  { route: "کراچی ←→ کوئٹہ", economy: "1,600", business: "3,000", ac: "5,500", acBusiness: "8,000", duration: "12-14 گھنٹے" },
-  { route: "لاہور ←→ پشاور", economy: "900", business: "1,800", ac: "3,200", acBusiness: "4,500", duration: "7-8 گھنٹے" },
-  { route: "ملتان ←→ کراچی", economy: "1,500", business: "2,800", ac: "5,200", acBusiness: "7,500", duration: "14-16 گھنٹے" },
+  { route: "کراچی ←→ لاہور", economy: "3,750", acStandard: "7,600", acBusiness: "10,950", acSleeper: "14,050", duration: "18-22 گھنٹے" },
+  { route: "کراچی ←→ راولپنڈی", economy: "4,200", acStandard: "10,450", acBusiness: "11,450", acSleeper: "16,550", duration: "22-26 گھنٹے" },
+  { route: "کراچی ←→ پشاور", economy: "4,900", acStandard: "11,550", acBusiness: "13,300", acSleeper: "—", duration: "24-28 گھنٹے" },
+  { route: "کراچی ←→ ملتان", economy: "2,750", acStandard: "5,900", acBusiness: "8,400", acSleeper: "11,200", duration: "14-17 گھنٹے" },
+  { route: "کراچی ←→ حیدرآباد", economy: "750", acStandard: "1,500", acBusiness: "—", acSleeper: "—", duration: "2-3 گھنٹے" },
+  { route: "راولپنڈی ←→ لاہور", economy: "1,100", acStandard: "1,950", acBusiness: "2,150", acSleeper: "2,400", duration: "4-5 گھنٹے" },
+  { route: "راولپنڈی ←→ پشاور", economy: "750", acStandard: "1,500", acBusiness: "2,000", acSleeper: "—", duration: "3-4 گھنٹے" },
+  { route: "راولپنڈی ←→ ملتان", economy: "2,200", acStandard: "3,900", acBusiness: "5,400", acSleeper: "8,150", duration: "8-10 گھنٹے" },
+  { route: "لاہور ←→ ملتان", economy: "1,100", acStandard: "2,100", acBusiness: "3,300", acSleeper: "5,800", duration: "5-6 گھنٹے" },
+  { route: "لاہور ←→ پشاور", economy: "1,950", acStandard: "3,500", acBusiness: "4,800", acSleeper: "—", duration: "7-9 گھنٹے" },
 ];
 
 const coachClasses = [
-  { cls: "اکانومی کلاس", fareRange: "₨350 – ₨2,400", gradient: "gradient-card-emerald", desc: "کم بجٹ مسافروں کے لیے موزوں۔ مختصر یا درمیانی دورانیے کے سفر کے لیے اچھا بنیادی آپشن۔", features: ["کم کرایہ", "زیادہ دستیابی", "عام نشستیں"] },
-  { cls: "بزنس کلاس", fareRange: "₨800 – ₨4,500", gradient: "gradient-card-amber", desc: "اکانومی سے بہتر نشستیں اور نسبتاً زیادہ آرام۔ کام یا خاندانی سفر کے لیے متوازن انتخاب۔", features: ["زیادہ legroom", "بہتر نشست", "درمیانی قیمت"] },
-  { cls: "AC اسٹینڈرڈ", fareRange: "₨1,200 – ₨8,000", gradient: "gradient-card-blue", desc: "گرمیوں اور طویل سفر میں زیادہ آرام دہ ائیرکنڈیشنڈ آپشن جس میں بہتر سفر کا تجربہ ملتا ہے۔", features: ["مکمل AC", "طویل سفر کے لیے بہتر", "نسبتاً آرام دہ"] },
-  { cls: "AC بزنس", fareRange: "₨1,800 – ₨11,500", gradient: "gradient-card-purple", desc: "پریمیم مسافروں کے لیے زیادہ آرام، بہتر کوچ معیار، اور بعض ٹرینوں میں کھانے جیسی اضافی سہولتیں۔", features: ["پریمیم آرام", "ترجیحی تجربہ", "بہتر سہولیات"] },
-  { cls: "AC سلیپر / پارلر", fareRange: "₨2,500 – ₨12,000", gradient: "gradient-card-rose", desc: "رات بھر یا طویل سفر میں بہترین آرام کے لیے موزوں۔ کچھ سروسز میں یہ سب سے اعلیٰ درجے کا آپشن ہوتا ہے۔", features: ["رات کے سفر کے لیے بہتر", "زیادہ پرائیویسی", "ہائی ویلیو تجربہ"] },
+  { cls: "اکانومی سیٹ", fareRange: "₨370 – ₨6,350", gradient: "gradient-card-emerald", desc: "فین کولڈ کوچ میں بنیادی نشست۔ سب سے سستا آپشن۔ تمام ایکسپریس اور مسافر ٹرینوں پر دستیاب۔ قیمت ٹرین ٹائپ کے مطابق مختلف ہوتی ہے۔", features: ["کم کرایہ", "زیادہ دستیابی", "عام نشستیں"] },
+  { cls: "اکانومی برتھ", fareRange: "₨420 – ₨6,450", gradient: "gradient-card-amber", desc: "فین کولڈ کوچ میں سونے کی برتھ۔ رات کے سفر کے لیے اکانومی سیٹ سے بہتر۔ عام طور پر سیٹ سے ₨50-100 زیادہ۔", features: ["سونے کی برتھ", "رات کے سفر کے لیے بہتر", "معمولی اضافی قیمت"] },
+  { cls: "AC اسٹینڈرڈ", fareRange: "₨1,350 – ₨12,250", gradient: "gradient-card-blue", desc: "ائیرکنڈیشنڈ کوچ — گرمیوں اور طویل سفر میں زیادہ آرام دہ۔ زیادہ تر ایکسپریس ٹرینوں پر دستیاب۔", features: ["مکمل AC", "طویل سفر کے لیے بہتر", "نسبتاً آرام دہ"] },
+  { cls: "AC بزنس", fareRange: "₨2,000 – ₨15,350", gradient: "gradient-card-purple", desc: "پریمیم AC کلاس — چوڑی نشستیں، بہتر لیگ روم، اور بہتر کوچ معیار۔ شالیمار، عوام، قراقرم، خیبر میل، اور گرین لائن پر دستیاب۔", features: ["چوڑی نشستیں", "پریمیم آرام", "بہتر سہولیات"] },
+  { cls: "AC سلیپر / پارلر", fareRange: "₨2,400 – ₨17,500", gradient: "gradient-card-rose", desc: "AC سلیپنگ برتھ — رات بھر کے طویل سفر کے لیے بہترین۔ بستر اور کمبل فراہم۔ تیزگام، خیبر میل، اور جعفر ایکسپریس پر دستیاب۔", features: ["AC سلیپنگ برتھ", "بستر فراہم", "طویل سفر کے لیے بہتر"] },
 ];
 
 const discountCards = [
