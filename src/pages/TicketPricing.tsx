@@ -121,7 +121,7 @@ export default function TicketPricingPage() {
           {[
             { value: `${pricingData.length}+`, label: "Routes Covered", icon: MapPin, gradient: "gradient-card-emerald" },
             { value: "6", label: "Coach Classes", icon: Star, gradient: "gradient-card-amber" },
-            { value: "Rs. 350", label: "Lowest Fare", icon: Tag, gradient: "gradient-card-blue" },
+            { value: "Rs. 370", label: "Lowest Fare", icon: Tag, gradient: "gradient-card-blue" },
             { value: "50%", label: "Max Discount", icon: Percent, gradient: "gradient-card-purple" },
           ].map((s, i) => (
             <Card key={i} className={`${s.gradient} border hover-lift group`}>
