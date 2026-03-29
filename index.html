@@ -8,10 +8,7 @@
     <meta name="keywords" content="train tracking live, track my train, pakistan railway live tracking, train tracker pakistan, live train status pakistan, pakistan train running status, real time train tracking pakistan, pakistan railways live status today 2026" />
     <meta name="author" content="Track My Train" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://trackmytrain.pk/" />
-    <link rel="alternate" hreflang="en" href="https://trackmytrain.pk/" />
-    <link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur" />
-    <link rel="alternate" hreflang="x-default" href="https://trackmytrain.pk/" />
+    <!-- IMPORTANT: No hardcoded canonical here — react-helmet-async sets the correct canonical per page -->
     <meta name="googlebot" content="index, follow" />
     <meta name="bingbot" content="index, follow" />
 
@@ -25,24 +22,23 @@
     <!-- Preload critical font -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (fallback — react-helmet-async overrides per page) -->
     <meta property="og:title" content="Track My Train — Train Tracking Live Pakistan 2026" />
     <meta property="og:description" content="Pakistan's #1 live train tracker. Real-time GPS positions, delays, and ETAs for 164+ trains. Free, no signup." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://trackmytrain.pk/" />
     <meta property="og:site_name" content="Track My Train" />
     <meta property="og:locale" content="en_PK" />
-    <meta property="og:image" content="https://trackmytrain.pk/og-image.jpg" />
+    <meta property="og:image" content="https://trackmytrain.pk/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Track My Train - Live Pakistan Railway GPS Tracking Platform" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter Card (fallback — react-helmet-async overrides per page) -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@trackmytrain_pk" />
     <meta name="twitter:title" content="Track My Train — Train Tracking Live Pakistan 2026" />
     <meta name="twitter:description" content="Pakistan's #1 live train tracker. Real-time GPS positions, delays, and ETAs for 164+ trains. Free, no signup." />
-    <meta name="twitter:image" content="https://trackmytrain.pk/og-image.jpg" />
+    <meta name="twitter:image" content="https://trackmytrain.pk/og-image.png" />
 
     <!-- Geo & Mobile -->
     <meta name="geo.region" content="PK" />
@@ -292,12 +288,12 @@
         {"@type":"Question","name":"Does Track My Train work during festivals and holidays?","acceptedAnswer":{"@type":"Answer","text":"Yes. During Eid, national holidays, and summer rush when delays are more common, our live GPS data captures exactly what's happening — whether a train is stuck at a crossing, delayed at a junction, or running on schedule."}},
         {"@type":"Question","name":"How does Track My Train make money if it's free?","acceptedAnswer":{"@type":"Answer","text":"The platform sustains itself through contextual advertisements. We do not charge users, sell personal data, or gate any features behind a paywall. Every tool — live tracking, journey planner, schedule lookup, delay alerts — is free and always will be."}},
         {"@type":"Question","name":"What is the fastest train from Karachi to Lahore?","acceptedAnswer":{"@type":"Answer","text":"The Green Line Express is the fastest train on the Karachi–Lahore route, completing the journey in approximately 18 hours. It offers AC Business, AC Standard, and Economy class seating. Other popular options include the Tezgam (22 hours), Karakoram Express (22 hours), and Business Express (20 hours)."}},
-        {"@type":"Question","name":"How do I check Pakistan Railways ticket prices online?","acceptedAnswer":{"@type":"Answer","text":"Visit our Ticket Pricing page to see fares for all major routes. Economy class starts from Rs. 300 for short routes, while AC Business class on premium Express trains can cost Rs. 5,000–9,000 for long-distance journeys like Karachi to Peshawar."}},
+        {"@type":"Question","name":"How do I check Pakistan Railways ticket prices online?","acceptedAnswer":{"@type":"Answer","text":"Visit our Ticket Pricing page to see fares for all major routes. Economy class starts from Rs. 370 for short routes like Karachi to Hyderabad, while AC Business class on premium Express trains can cost Rs. 10,000–15,000 for long-distance journeys. Fares were last revised on March 9, 2026."}},
         {"@type":"Question","name":"Can I track the Green Line Express in real-time?","acceptedAnswer":{"@type":"Answer","text":"Yes! The Green Line Express (Train 101UP/102DN) between Islamabad and Karachi is fully tracked. Open the Live Tracker, search 'Green Line', and you'll see its exact GPS position, speed, delay status, and ETAs for all stations including Lahore, Multan, Sukkur, and Hyderabad."}},
         {"@type":"Question","name":"What stations have WiFi and VIP lounges in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Lahore Junction is the most well-equipped station with WiFi, VIP lounge, food court, ATM, parking, and medical aid. Other major stations like Rawalpindi, Karachi Cantt, and Multan Cantt offer food courts, ATMs, and parking. Explore all station amenities on our Stations Directory."}},
         {"@type":"Question","name":"How accurate is the Find My Train GPS feature?","acceptedAnswer":{"@type":"Answer","text":"Find My Train uses your phone's built-in GPS and cross-references it against all active train routes. In most cases it identifies the correct train within 30 seconds. It works best when the train is moving (not stationary at a platform where multiple trains may be present)."}},
         {"@type":"Question","name":"Does Track My Train show train delays during fog season?","acceptedAnswer":{"@type":"Answer","text":"Yes, fog season (December–February) is when our platform is most valuable. Pakistan Railways trains frequently experience 2–8 hour delays during heavy fog in Punjab and upper Sindh. Our live GPS tracking shows you the actual position and accumulated delay for every train."}},
-        {"@type":"Question","name":"What is the cheapest train from Karachi to Lahore?","acceptedAnswer":{"@type":"Answer","text":"The cheapest options are the Tezgam Express and Karakoram Express, both offering Economy class seats for approximately Rs. 1,500. The journey takes 20–22 hours. For slightly more comfort, AC Standard class costs Rs. 3,000–3,500."}},
+        {"@type":"Question","name":"What is the cheapest train from Karachi to Lahore?","acceptedAnswer":{"@type":"Answer","text":"The cheapest options are trains like Shalimar Express, Awam Express, and Allama Iqbal Express with Economy seat fares of approximately Rs. 3,750. The journey takes 20–22 hours. AC Standard class costs Rs. 7,550–9,150 depending on the train. Fares updated March 2026."}},
         {"@type":"Question","name":"How do I get a student discount on Pakistan Railways?","acceptedAnswer":{"@type":"Answer","text":"Students enrolled in recognized Pakistani institutions receive a 25% discount on all ticket classes. Present your valid student ID card at the booking counter along with your CNIC. The discount applies to all train types including Express and AC services."}},
         {"@type":"Question","name":"Can I carry luggage on Pakistan Railways trains?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each passenger is allowed up to 40 kg of free luggage on Express and Mail trains, and 30 kg on Passenger services. Excess luggage is charged at Rs. 2–5 per kg depending on the route."}},
         {"@type":"Question","name":"Is there food available on Pakistan Railways trains?","acceptedAnswer":{"@type":"Answer","text":"Yes. Premium trains like the Green Line Express and Business Express offer on-board catering with meals included in AC Business class tickets. On other trains, vendors board at major stations selling tea, snacks, biryani, and cold drinks."}},
