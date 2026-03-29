@@ -15,6 +15,10 @@ interface SEOHeadProps {
   lang?: "en" | "ur";
   alternateUrdu?: string;
   alternateEnglish?: string;
+  /** Article publish date (ISO) for blog posts */
+  publishedTime?: string;
+  /** Article modified date (ISO) */
+  modifiedTime?: string;
 }
 
 export default function SEOHead({
@@ -32,6 +36,8 @@ export default function SEOHead({
   lang = "en",
   alternateUrdu,
   alternateEnglish,
+  publishedTime,
+  modifiedTime,
 }: SEOHeadProps) {
   const fullCanonical = canonical.startsWith("http") ? canonical : `https://trackmytrain.pk${canonical}`;
 
@@ -46,6 +52,29 @@ export default function SEOHead({
   const fullEnUrl = enPath.startsWith("http") ? enPath : `https://trackmytrain.pk${enPath}`;
   const fullUrUrl = urPath.startsWith("http") ? urPath : `https://trackmytrain.pk${urPath}`;
 
+  // Speakable schema for voice search / Google Assistant
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": title,
+    "url": fullCanonical,
+    "description": description,
+    "inLanguage": lang === "ur" ? "ur-PK" : "en-PK",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Track My Train",
+      "url": "https://trackmytrain.pk"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".hero-description", ".faq-answer"]
+    },
+    "potentialAction": {
+      "@type": "ReadAction",
+      "target": fullCanonical
+    }
+  };
+
   return (
     <Helmet>
       <html lang={lang} dir={lang === "ur" ? "rtl" : "ltr"} />
@@ -54,25 +83,51 @@ export default function SEOHead({
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonical} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
+      {!noindex && <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />}
 
       {/* Hreflang tags for bilingual SEO */}
       <link rel="alternate" hrefLang="en" href={fullEnUrl} />
       <link rel="alternate" hrefLang="ur" href={fullUrUrl} />
       <link rel="alternate" hrefLang="x-default" href={fullEnUrl} />
 
+      {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Track My Train" />
       <meta property="og:locale" content={lang === "ur" ? "ur_PK" : "en_PK"} />
       <meta property="og:locale:alternate" content={lang === "ur" ? "en_PK" : "ur_PK"} />
 
+      {/* Article meta for blog posts */}
+      {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+      {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+      {ogType === "article" && <meta property="article:author" content="Track My Train" />}
+      {ogType === "article" && <meta property="article:section" content="Travel" />}
+
+      {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@trackmytrain_pk" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+
+      {/* Additional SEO signals */}
+      <meta name="theme-color" content="#1a6b4a" />
+      <meta name="author" content="Track My Train" />
+      <meta name="geo.region" content="PK" />
+      <meta name="geo.placename" content="Pakistan" />
+      <meta name="rating" content="general" />
+      <meta name="distribution" content="global" />
+      <meta name="revisit-after" content="3 days" />
+
+      {/* Speakable + WebPage schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(speakableSchema)}
+      </script>
 
       {breadcrumbs && breadcrumbs.length > 0 && (
         <script type="application/ld+json">
