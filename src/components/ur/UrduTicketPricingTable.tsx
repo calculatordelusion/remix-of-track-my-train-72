@@ -39,7 +39,7 @@ export default function UrduTicketPricingTable() {
     <div className="container mx-auto px-4 py-8 sm:py-12 space-y-10">
       <Card className="border bg-accent/5 border-accent/20">
         <CardContent className="p-5 text-sm leading-relaxed text-muted-foreground">
-          <span className="font-bold text-foreground">نوٹ:</span> یہ کرایے رہنمائی کے لیے ہیں اور بکنگ کے وقت ٹرین، کلاس، اور سیزن کے حساب سے معمولی فرق آ سکتا ہے۔ درست کرایہ ہمیشہ بکنگ کے وقت دوبارہ چیک کریں۔
+          <span className="font-bold text-foreground">نوٹ:</span> یہ کرایے پاکستان ریلوے کی تازہ ترین فیئر ٹیبل (مارچ 9, 2026 سے نافذ — اکانومی +5%، AC +10% اضافہ) کے مطابق ہیں۔ پریمیم ٹرینیں (گرین لائن، تیزگام) کے کرایے زیادہ ہوتے ہیں۔
         </CardContent>
       </Card>
 
