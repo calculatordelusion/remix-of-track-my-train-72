@@ -161,20 +161,20 @@ export default function TicketPricingPage() {
                 <tr className="bg-primary text-primary-foreground">
                   <th className="text-left p-3 font-semibold">Route</th>
                   <th className="text-right p-3 font-semibold">Economy</th>
-                  <th className="text-right p-3 font-semibold">Business</th>
                   <th className="text-right p-3 font-semibold">AC Standard</th>
                   <th className="text-right p-3 font-semibold">AC Business</th>
+                  <th className="text-right p-3 font-semibold">AC Sleeper</th>
                   <th className="text-right p-3 font-semibold">Duration</th>
                 </tr>
               </thead>
               <tbody>
                 {pricingData.map((row, i) => (
-                  <tr key={i} className="border-b hover:bg-muted/30 transition-colors even:bg-muted/10">
+                  <tr key={i} className="border-b hover:bg-muted/30 transition-colors even:bg-muted/10" title={row.note}>
                     <td className="p-3 font-medium whitespace-nowrap">{row.route}</td>
                     <td className="p-3 text-right text-primary font-medium">Rs. {row.economy}</td>
-                    <td className="p-3 text-right">Rs. {row.business}</td>
-                    <td className="p-3 text-right">Rs. {row.ac}</td>
-                    <td className="p-3 text-right font-medium">Rs. {row.acBusiness}</td>
+                    <td className="p-3 text-right">Rs. {row.acStandard}</td>
+                    <td className="p-3 text-right">{row.acBusiness === "—" ? "—" : `Rs. ${row.acBusiness}`}</td>
+                    <td className="p-3 text-right font-medium">{row.acSleeper === "—" ? "—" : `Rs. ${row.acSleeper}`}</td>
                     <td className="p-3 text-right text-muted-foreground">{row.duration}</td>
                   </tr>
                 ))}
