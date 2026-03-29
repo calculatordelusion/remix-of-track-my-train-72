@@ -142,8 +142,8 @@ export default function TicketPricingPage() {
           <CardContent className="p-4 flex items-start gap-3">
             <Info className="w-5 h-5 text-accent shrink-0 mt-0.5" />
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Note:</strong> Prices shown are approximate and may vary based on train type and seasonal adjustments. 
-              For exact fares, please check at the time of booking on the official Pakistan Railways website. Children under 3 travel free; ages 3-12 get 50% discount.
+              <strong className="text-foreground">Note:</strong> Fares shown are based on the latest Pakistan Railways fare table, last revised on <strong>March 9, 2026</strong> (Economy +5%, AC +10% increase). 
+              Economy fares represent the lowest-tier express train; premium trains like Green Line, Tezgam, and Karakoram charge higher. Hover over a route to see details. Children under 3 travel free; ages 3-12 get 50% discount.
             </p>
           </CardContent>
         </Card>
