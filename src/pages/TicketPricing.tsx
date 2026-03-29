@@ -77,7 +77,7 @@ export default function TicketPricingPage() {
               "item": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "PKR",
-                "description": `Economy Rs. ${r.economy} | Business Rs. ${r.business} | AC Standard Rs. ${r.ac} | AC Business Rs. ${r.acBusiness}`
+                "description": `Economy Rs. ${r.economy} | AC Standard Rs. ${r.acStandard} | AC Business Rs. ${r.acBusiness} | AC Sleeper Rs. ${r.acSleeper}`
               }
             }))
           }
