@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, Train, MapPin, Calendar, ChevronDown, Moon, Sun, Sparkles, Radio, Menu, X, Route, Navigation, Landmark, CreditCard, Zap, HelpCircle, Phone, Leaf, Ticket, BookOpen, Headphones, Globe } from "lucide-react";
+import { Home, Train, MapPin, Calendar, ChevronDown, Moon, Sun, Sparkles, Radio, Menu, X, Route, Navigation, Landmark, CreditCard, Zap, HelpCircle, Phone, Leaf, Ticket, BookOpen, Headphones } from "lucide-react";
 import { useTheme } from "@/lib/theme";
 import { Button } from "@/components/ui/button";
 
@@ -39,7 +39,6 @@ export default function Navbar() {
     { label: "Contact", path: "/contact", icon: Phone },
   ];
 
-  const isUrdu = location.pathname.startsWith("/ur");
   const isActive = (path: string) => location.pathname === path;
 
   return (
