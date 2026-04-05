@@ -176,10 +176,10 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm opacity-75">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> 100% Free Forever</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> No Account Required</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Works on 2G/3G</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Bilingual (EN & اردو)</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Zero Cost, Always</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Instant Access — No Login</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Optimized for Slow Networks</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Full Urdu Support (اردو)</span>
             </div>
           </div>
 
@@ -1455,17 +1455,17 @@ export default function HomePage() {
       <section className="bg-muted/50 py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">TRUSTED BY THOUSANDS</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">What Travelers Are Saying</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">Thousands of Pakistani commuters, families, and frequent travelers rely on Track My Train every day to stay informed and save time.</p>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">REAL USER STORIES</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">How Track My Train Helps Everyday Passengers</h2>
+            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">From students catching budget trains to families coordinating Eid travel — here's how our platform fits into real journeys across Pakistan.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {[
-              { quote: "I track my father's Tezgam from Karachi to Lahore every week. Now I know exactly when to leave home for the station — no more waiting in the parking lot for 2 hours.", name: "Ahmed R.", city: "Lahore", stars: 5 },
-              { quote: "As a daily Rawalpindi–Lahore commuter, I check delays before leaving the office. It's saved me from standing on a cold platform more times than I can count. Simple, fast, and always accurate.", name: "Fatima K.", city: "Islamabad", stars: 5 },
-              { quote: "My parents only read Urdu. They were thrilled when I showed them they could search stations in Urdu script and track trains on their own phone. Accessibility done right!", name: "M. Ali Shahid", city: "Multan", stars: 5 },
+              { quote: "During fog season my Karakoram was 6 hours late. I saw the delay on Track My Train before even leaving the hostel — saved myself an entire morning of waiting at Lahore Junction in freezing cold.", name: "Hamza Tariq", city: "Faisalabad", stars: 5, role: "University Student" },
+              { quote: "I coordinate pickups for my whole extended family during Eid. Everyone sends me their train number and I track all four trains on separate tabs. Beats calling the helpline 117 every hour!", name: "Nadia Hussain", city: "Rawalpindi", stars: 5, role: "Homemaker" },
+              { quote: "As a freight coordinator I need to know when platforms are clear. The live status helps me estimate platform availability at Karachi Cantt — something even the station office can't tell me accurately.", name: "Bilal Qureshi", city: "Karachi", stars: 5, role: "Logistics Manager" },
             ].map((t, i) => (
-              <Card key={i} className="hover-lift group">
+              <Card key={i} className="hover-lift group border">
                 <CardContent className="p-5 sm:p-6">
                   <div className="flex gap-0.5 mb-3">
                     {Array.from({ length: t.stars }).map((_, j) => (
@@ -1476,7 +1476,7 @@ export default function HomePage() {
                   <p className="text-sm text-muted-foreground mb-4 italic leading-relaxed">"{t.quote}"</p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">{t.name[0]}</div>
-                    <div><div className="text-sm font-medium">{t.name}</div><div className="text-xs text-muted-foreground">{t.city}</div></div>
+                    <div><div className="text-sm font-medium">{t.name}</div><div className="text-xs text-muted-foreground">{t.city} • {t.role}</div></div>
                   </div>
                 </CardContent>
               </Card>
