@@ -937,9 +937,9 @@ export default function HomePage() {
                 icon: CreditCard, gradient: "gradient-card-purple", iconBg: "bg-purple-500/15", iconColor: "text-purple-500",
                 title: "Fare & Discount Guide",
                 items: [
-                  "Economy: Rs. 300–1,500 (short to long distance)",
-                  "AC Standard: Rs. 1,000–5,000",
-                  "AC Business: Rs. 3,000–9,000 (premium trains)",
+                  "Economy: Rs. 370–3,750 (short to long distance)",
+                  "AC Standard: Rs. 2,200–6,500",
+                  "AC Business: Rs. 5,500–14,600 (premium trains)",
                   "Students: 25% off with valid college ID",
                   "Senior citizens (60+): 25% discount with CNIC",
                   "Children under 3: travel free (without seat)"
@@ -1019,12 +1019,12 @@ export default function HomePage() {
                     </thead>
                     <tbody>
                       {[
-                        { name: "Green Line Express", duration: "18h", economy: "Rs. 2,200", ac: "Rs. 5,500–8,000", classes: "AC Business, AC Standard, Economy", best: "Speed & comfort", highlight: true },
-                        { name: "Business Express", duration: "20h", economy: "Rs. 1,800", ac: "Rs. 4,500–7,000", classes: "AC Parlour, AC Sleeper, Economy", best: "Business travelers", highlight: false },
-                        { name: "Karakoram Express", duration: "22h", economy: "Rs. 1,500", ac: "Rs. 3,500–5,500", classes: "AC Sleeper, AC Standard, Economy", best: "Budget AC travel", highlight: false },
-                        { name: "Tezgam Express", duration: "22h", economy: "Rs. 1,500", ac: "Rs. 3,000–5,000", classes: "AC Standard, Economy", best: "Affordable reliability", highlight: false },
-                        { name: "Shalimar Express", duration: "21h", economy: "Rs. 1,500", ac: "Rs. 3,500–5,000", classes: "AC Sleeper, Economy", best: "Night travel", highlight: false },
-                        { name: "Allama Iqbal Express", duration: "24h", economy: "Rs. 1,400", ac: "Rs. 3,200–4,800", classes: "AC Standard, Economy", best: "Budget travelers", highlight: false },
+                        { name: "Green Line Express", duration: "18h", economy: "Rs. 3,750", ac: "Rs. 8,600–14,600", classes: "AC Business, AC Standard, Economy", best: "Speed & comfort", highlight: true },
+                        { name: "Business Express", duration: "20h", economy: "Rs. 3,750", ac: "Rs. 7,500–12,000", classes: "AC Parlour, AC Sleeper, Economy", best: "Business travelers", highlight: false },
+                        { name: "Karakoram Express", duration: "22h", economy: "Rs. 3,750", ac: "Rs. 5,500–9,500", classes: "AC Sleeper, AC Standard, Economy", best: "Budget AC travel", highlight: false },
+                        { name: "Tezgam Express", duration: "22h", economy: "Rs. 3,750", ac: "Rs. 5,500–8,600", classes: "AC Standard, Economy", best: "Affordable reliability", highlight: false },
+                        { name: "Shalimar Express", duration: "21h", economy: "Rs. 3,750", ac: "Rs. 5,500–9,000", classes: "AC Sleeper, Economy", best: "Night travel", highlight: false },
+                        { name: "Allama Iqbal Express", duration: "24h", economy: "Rs. 3,500", ac: "Rs. 5,200–8,200", classes: "AC Standard, Economy", best: "Budget travelers", highlight: false },
                       ].map((train, i) => (
                         <tr key={i} className={`border-b border-primary/10 last:border-0 ${train.highlight ? 'bg-primary/5' : 'hover:bg-primary/5'} transition-colors`}>
                           <td className="p-3 sm:p-4 font-semibold text-foreground whitespace-nowrap">
