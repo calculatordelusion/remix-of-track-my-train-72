@@ -222,18 +222,18 @@ export default function LiveTrainsPage() {
         {/* Why Use Our Live Tracking - Gradient Cards */}
         <section className="mt-16">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">KEY FEATURES</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">Why Use Our Live Tracking?</h2>
-            <p className="text-sm text-muted-foreground mt-1">The most accurate and reliable train tracking platform in Pakistan</p>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">WHAT SETS US APART</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">Built for Pakistani Rail Conditions</h2>
+            <p className="text-sm text-muted-foreground mt-1">Engineered to handle fog delays, branch-line dead zones, and festival-season congestion that generic trackers can't.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
             {[
-              { icon: "📡", title: "Real GPS Data", desc: "Direct GPS coordinates from train devices, not estimated positions. See exact locations on the map with 5-second refresh rate.", gradient: "gradient-card-emerald" },
-              { icon: "🎯", title: "Accurate ETAs", desc: "Smart calculations based on current speed, delays, and distance. Plan your station arrival perfectly with precision estimates.", gradient: "gradient-card-amber" },
-              { icon: "🔔", title: "Delay Alerts", desc: "Instant notification when trains are running late. Know delays before arriving at the station to save your time.", gradient: "gradient-card-rose" },
-              { icon: "⚡", title: "Live Speed", desc: "See current train speed in km/h. Know if it's moving, stopped, or accelerating in real-time across the network.", gradient: "gradient-card-blue" },
-              { icon: "📍", title: "Distance & Next Stop", desc: "View distance to next station and remaining journey. Perfect for planning pickups and drops at the station.", gradient: "gradient-card-purple" },
-              { icon: "🆓", title: "100% Free", desc: "No subscription, no ads, no hidden costs. Free train tracking for all Pakistani travelers — works on 2G/3G too.", gradient: "gradient-card-teal" },
+              { icon: "🛰️", title: "Satellite-Grade Coordinates", desc: "Direct lat/lng from on-board transponders — not crowd-sourced estimates. Positions snap to the nearest rail segment for centimeter-level route alignment.", gradient: "gradient-card-emerald" },
+              { icon: "🧮", title: "Predictive ETA Engine", desc: "Our algorithm factors in section speed limits, junction dwell times, and historical delay patterns to forecast arrivals — not just raw distance ÷ speed.", gradient: "gradient-card-amber" },
+              { icon: "🌫️", title: "Fog Season Intelligence", desc: "During Dec–Feb Punjab fog, we surface weather-adjusted delay forecasts so you can decide whether to leave home or wait another hour.", gradient: "gradient-card-rose" },
+              { icon: "⚡", title: "5-Second Live Refresh", desc: "Data refreshes automatically every 5 seconds via WebSocket push. No manual reload needed — watch the marker glide across the map in near real-time.", gradient: "gradient-card-blue" },
+              { icon: "📊", title: "Station-by-Station Progress", desc: "A visual progress bar shows how far along the route your train has traveled, with distance remaining and next-stop countdown.", gradient: "gradient-card-purple" },
+              { icon: "🔓", title: "No Barriers, No Paywalls", desc: "Every feature is free and open. No sign-up walls, no premium tiers, no data harvesting. Works even on 2G mobile data across rural Pakistan.", gradient: "gradient-card-teal" },
             ].map((item, i) => (
               <Card key={i} className={`${item.gradient} border hover-lift group`}>
                 <CardContent className="p-5 sm:p-6">
