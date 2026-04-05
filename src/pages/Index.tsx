@@ -578,21 +578,22 @@ export default function HomePage() {
       <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">HOW IT WORKS</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">Three Steps to Track Any Train</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Our system ingests live GPS telemetry from across the Pakistan Railways network and turns it into clear, actionable information you can use at the station or on the go.</p>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">UNDER THE HOOD</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">From Satellite Signal to Your Screen in 5 Seconds</h2>
+            <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Here's the technology pipeline that powers Track My Train — from raw GPS telemetry collected across Pakistan's 7,791 km rail network to the live dashboard on your phone.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-5">
             {[
-              { step: "1", gradient: "gradient-card-emerald", title: "Search or Browse", desc: "Type a train name, number, or route into the search bar — or browse the full live-trains list. Results appear instantly with live/offline badges so you can spot active services at a glance. You can also filter by Express, AC, or Passenger type." },
-              { step: "2", gradient: "gradient-card-amber", title: "View Live Position & Delays", desc: "Tap any train to open its dedicated tracking page. You'll see the GPS marker on an interactive map, current speed, delay in minutes, and a progress bar along the route. The page auto-refreshes every 5 seconds — no need to hit reload." },
-              { step: "3", gradient: "gradient-card-blue", title: "Check ETAs & Share", desc: "Scroll down to the station schedule to see updated ETAs for every upcoming stop. Share the page link with family so they can watch the same live feed. On mobile, you can also use 'Find My Train' to auto-detect the train you're riding." },
+              { step: "①", gradient: "gradient-card-emerald", title: "GPS Telemetry Ingestion", desc: "On-board GPS units transmit coordinates via cellular modem. Our backend ingests these raw lat/lng packets every few seconds from trains across four provinces." },
+              { step: "②", gradient: "gradient-card-amber", title: "Route Alignment & Snapping", desc: "Raw coordinates are snapped to the nearest rail segment using geospatial algorithms, correcting for GPS drift and tunnel dead zones." },
+              { step: "③", gradient: "gradient-card-blue", title: "Delay Computation Engine", desc: "We compare each train's actual progress against the official timetable graph, computing accumulated delay and projecting dynamic ETAs at every remaining stop." },
+              { step: "④", gradient: "gradient-card-purple", title: "Instant Delivery to You", desc: "Clean data is pushed to your browser via WebSocket. The map marker, speed gauge, and ETA table update live — no page reload, no lag." },
             ].map((item, i) => (
               <Card key={i} className={`${item.gradient} border hover-lift group text-center`}>
-                <CardContent className="p-6">
-                  <div className="w-16 h-16 rounded-2xl bg-primary text-primary-foreground mx-auto mb-4 flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">{item.step}</div>
-                  <h3 className="font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <CardContent className="p-5">
+                  <div className="text-3xl font-black text-primary mb-3">{item.step}</div>
+                  <h3 className="font-bold text-sm mb-2">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
