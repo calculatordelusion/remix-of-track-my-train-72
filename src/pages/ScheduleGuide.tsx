@@ -523,7 +523,6 @@ export default function ScheduleGuide() {
       {/* Cross-Language Link */}
       <div className="bg-card border-t py-4 text-center">
         <p className="text-sm text-muted-foreground">
-          اردو میں دیکھیں: <Link to="/ur/schedule" className="text-primary font-semibold hover:underline">← پاکستان ریلوے شیڈول اردو</Link>
           {" · "}
           <Link to="/schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
         </p>
