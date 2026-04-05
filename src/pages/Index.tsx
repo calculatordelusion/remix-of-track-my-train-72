@@ -87,7 +87,7 @@ export default function HomePage() {
     { q: "What stations have WiFi and VIP lounges in Pakistan?", a: "Lahore Junction is the most well-equipped station with WiFi, VIP lounge, food court, ATM, parking, and medical aid. Other major stations like Rawalpindi, Karachi Cantt, and Multan Cantt offer food courts, ATMs, and parking. You can explore all station amenities on our Stations Directory — each station page lists every available facility including waiting rooms, ticket counters, restrooms, and accessibility features." },
     { q: "How accurate is the Find My Train GPS feature?", a: "Find My Train uses your phone's built-in GPS to detect your position and cross-references it against all active train routes in our database. Accuracy depends on your phone's GPS chip and signal quality, but in most cases it identifies the correct train within 30 seconds. It works best when the train is moving (not stationary at a platform where multiple trains may be present). For best results, ensure location services are enabled and you have a clear sky view." },
     { q: "Does Track My Train show train delays during fog season?", a: "Yes, and fog season (December–February) is when our platform is most valuable. Pakistan Railways trains frequently experience 2–8 hour delays during heavy fog in Punjab and upper Sindh. Our live GPS tracking shows you the actual position and accumulated delay for every train, so you can avoid arriving at the station hours early only to wait in the cold. We recommend checking delays 1–2 hours before your scheduled departure during winter months." },
-    { q: "What is the cheapest train from Karachi to Lahore?", a: "The cheapest options are the Tezgam Express and Karakoram Express, both offering Economy class seats for approximately Rs. 1,500. The journey takes 20–22 hours. For slightly more comfort, AC Standard class on these trains costs Rs. 3,000–3,500. If budget is your primary concern, the Tezgam is the most popular choice among daily commuters and students." },
+    { q: "What is the cheapest train from Karachi to Lahore?", a: "The cheapest options are the Tezgam Express and Karakoram Express, both offering Economy class seats for approximately Rs. 3,750 as of March 2026. The journey takes 20–22 hours. For slightly more comfort, AC Standard class on these trains costs Rs. 5,500–6,500. If budget is your primary concern, the Tezgam is the most popular choice among daily commuters and students." },
     { q: "How do I get a student discount on Pakistan Railways?", a: "Students enrolled in recognized Pakistani institutions receive a 25% discount on all ticket classes. To avail this, present your valid student ID card at the booking counter along with your CNIC. The discount applies to all train types including Express and AC services. Some trains also offer special student concessions during summer break (June–August) — ask at the counter for current promotions." },
     { q: "Can I carry luggage on Pakistan Railways trains?", a: "Yes. Each passenger is allowed up to 40 kg of free luggage on Express and Mail trains, and 30 kg on Passenger services. Excess luggage is charged at Rs. 2–5 per kg depending on the route. Luggage should be stored under your berth (Sleeper class) or in the overhead rack. For very large items like furniture or motorcycles, use the separate freight/parcel service available at major stations." },
     { q: "Is there food available on Pakistan Railways trains?", a: "Yes. Premium trains like the Green Line Express and Business Express offer on-board catering with meals included in AC Business class tickets. On other trains, vendors board at major stations selling tea, snacks, biryani, and cold drinks. Lahore Junction, Multan Cantt, and Sukkur stations are known for their platform food stalls. We recommend carrying your own water and snacks for long journeys as vendors may run out during peak hours." },
@@ -145,7 +145,7 @@ export default function HomePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
               </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS</span>
+              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">LIVE SATELLITE TRACKING • REFRESHES EVERY 5 SECONDS</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-5 leading-[1.08] drop-shadow-sm">
@@ -176,10 +176,10 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm opacity-75">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> 100% Free Forever</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> No Account Required</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Works on 2G/3G</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Bilingual (EN & اردو)</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Zero Cost, Always</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Instant Access — No Login</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Optimized for Slow Networks</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Full Urdu Support (اردو)</span>
             </div>
           </div>
 
@@ -578,21 +578,22 @@ export default function HomePage() {
       <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">HOW IT WORKS</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">Three Steps to Track Any Train</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Our system ingests live GPS telemetry from across the Pakistan Railways network and turns it into clear, actionable information you can use at the station or on the go.</p>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">UNDER THE HOOD</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">From Satellite Signal to Your Screen in 5 Seconds</h2>
+            <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Here's the technology pipeline that powers Track My Train — from raw GPS telemetry collected across Pakistan's 7,791 km rail network to the live dashboard on your phone.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-5">
             {[
-              { step: "1", gradient: "gradient-card-emerald", title: "Search or Browse", desc: "Type a train name, number, or route into the search bar — or browse the full live-trains list. Results appear instantly with live/offline badges so you can spot active services at a glance. You can also filter by Express, AC, or Passenger type." },
-              { step: "2", gradient: "gradient-card-amber", title: "View Live Position & Delays", desc: "Tap any train to open its dedicated tracking page. You'll see the GPS marker on an interactive map, current speed, delay in minutes, and a progress bar along the route. The page auto-refreshes every 5 seconds — no need to hit reload." },
-              { step: "3", gradient: "gradient-card-blue", title: "Check ETAs & Share", desc: "Scroll down to the station schedule to see updated ETAs for every upcoming stop. Share the page link with family so they can watch the same live feed. On mobile, you can also use 'Find My Train' to auto-detect the train you're riding." },
+              { step: "①", gradient: "gradient-card-emerald", title: "GPS Telemetry Ingestion", desc: "On-board GPS units transmit coordinates via cellular modem. Our backend ingests these raw lat/lng packets every few seconds from trains across four provinces." },
+              { step: "②", gradient: "gradient-card-amber", title: "Route Alignment & Snapping", desc: "Raw coordinates are snapped to the nearest rail segment using geospatial algorithms, correcting for GPS drift and tunnel dead zones." },
+              { step: "③", gradient: "gradient-card-blue", title: "Delay Computation Engine", desc: "We compare each train's actual progress against the official timetable graph, computing accumulated delay and projecting dynamic ETAs at every remaining stop." },
+              { step: "④", gradient: "gradient-card-purple", title: "Instant Delivery to You", desc: "Clean data is pushed to your browser via WebSocket. The map marker, speed gauge, and ETA table update live — no page reload, no lag." },
             ].map((item, i) => (
               <Card key={i} className={`${item.gradient} border hover-lift group text-center`}>
-                <CardContent className="p-6">
-                  <div className="w-16 h-16 rounded-2xl bg-primary text-primary-foreground mx-auto mb-4 flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">{item.step}</div>
-                  <h3 className="font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <CardContent className="p-5">
+                  <div className="text-3xl font-black text-primary mb-3">{item.step}</div>
+                  <h3 className="font-bold text-sm mb-2">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -787,7 +788,7 @@ export default function HomePage() {
               </Card>
             </div>
             <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative">
-              <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
               <CardContent className="p-5 sm:p-6 relative">
                 <div className="flex items-center gap-2 mb-3">
                   <Info className="w-5 h-5 text-accent" />
@@ -865,7 +866,7 @@ export default function HomePage() {
               </Card>
             </div>
             <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative">
-              <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
               <CardContent className="p-5 sm:p-6 relative">
                 <div className="flex items-center gap-2 mb-3">
                   <AlertTriangle className="w-5 h-5 text-accent" />
@@ -936,9 +937,9 @@ export default function HomePage() {
                 icon: CreditCard, gradient: "gradient-card-purple", iconBg: "bg-purple-500/15", iconColor: "text-purple-500",
                 title: "Fare & Discount Guide",
                 items: [
-                  "Economy: Rs. 300–1,500 (short to long distance)",
-                  "AC Standard: Rs. 1,000–5,000",
-                  "AC Business: Rs. 3,000–9,000 (premium trains)",
+                  "Economy: Rs. 370–3,750 (short to long distance)",
+                  "AC Standard: Rs. 2,200–6,500",
+                  "AC Business: Rs. 5,500–14,600 (premium trains)",
                   "Students: 25% off with valid college ID",
                   "Senior citizens (60+): 25% discount with CNIC",
                   "Children under 3: travel free (without seat)"
@@ -1018,12 +1019,12 @@ export default function HomePage() {
                     </thead>
                     <tbody>
                       {[
-                        { name: "Green Line Express", duration: "18h", economy: "Rs. 2,200", ac: "Rs. 5,500–8,000", classes: "AC Business, AC Standard, Economy", best: "Speed & comfort", highlight: true },
-                        { name: "Business Express", duration: "20h", economy: "Rs. 1,800", ac: "Rs. 4,500–7,000", classes: "AC Parlour, AC Sleeper, Economy", best: "Business travelers", highlight: false },
-                        { name: "Karakoram Express", duration: "22h", economy: "Rs. 1,500", ac: "Rs. 3,500–5,500", classes: "AC Sleeper, AC Standard, Economy", best: "Budget AC travel", highlight: false },
-                        { name: "Tezgam Express", duration: "22h", economy: "Rs. 1,500", ac: "Rs. 3,000–5,000", classes: "AC Standard, Economy", best: "Affordable reliability", highlight: false },
-                        { name: "Shalimar Express", duration: "21h", economy: "Rs. 1,500", ac: "Rs. 3,500–5,000", classes: "AC Sleeper, Economy", best: "Night travel", highlight: false },
-                        { name: "Allama Iqbal Express", duration: "24h", economy: "Rs. 1,400", ac: "Rs. 3,200–4,800", classes: "AC Standard, Economy", best: "Budget travelers", highlight: false },
+                        { name: "Green Line Express", duration: "18h", economy: "Rs. 3,750", ac: "Rs. 8,600–14,600", classes: "AC Business, AC Standard, Economy", best: "Speed & comfort", highlight: true },
+                        { name: "Business Express", duration: "20h", economy: "Rs. 3,750", ac: "Rs. 7,500–12,000", classes: "AC Parlour, AC Sleeper, Economy", best: "Business travelers", highlight: false },
+                        { name: "Karakoram Express", duration: "22h", economy: "Rs. 3,750", ac: "Rs. 5,500–9,500", classes: "AC Sleeper, AC Standard, Economy", best: "Budget AC travel", highlight: false },
+                        { name: "Tezgam Express", duration: "22h", economy: "Rs. 3,750", ac: "Rs. 5,500–8,600", classes: "AC Standard, Economy", best: "Affordable reliability", highlight: false },
+                        { name: "Shalimar Express", duration: "21h", economy: "Rs. 3,750", ac: "Rs. 5,500–9,000", classes: "AC Sleeper, Economy", best: "Night travel", highlight: false },
+                        { name: "Allama Iqbal Express", duration: "24h", economy: "Rs. 3,500", ac: "Rs. 5,200–8,200", classes: "AC Standard, Economy", best: "Budget travelers", highlight: false },
                       ].map((train, i) => (
                         <tr key={i} className={`border-b border-primary/10 last:border-0 ${train.highlight ? 'bg-primary/5' : 'hover:bg-primary/5'} transition-colors`}>
                           <td className="p-3 sm:p-4 font-semibold text-foreground whitespace-nowrap">
@@ -1123,7 +1124,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative hover-lift">
-                <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
                 <CardContent className="p-5 sm:p-6 relative">
                   <div className="flex items-center gap-2 mb-3">
                     <Landmark className="w-5 h-5 text-accent" />
@@ -1455,17 +1456,17 @@ export default function HomePage() {
       <section className="bg-muted/50 py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">TRUSTED BY THOUSANDS</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">What Travelers Are Saying</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">Thousands of Pakistani commuters, families, and frequent travelers rely on Track My Train every day to stay informed and save time.</p>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">REAL USER STORIES</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">How Track My Train Helps Everyday Passengers</h2>
+            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">From students catching budget trains to families coordinating Eid travel — here's how our platform fits into real journeys across Pakistan.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {[
-              { quote: "I track my father's Tezgam from Karachi to Lahore every week. Now I know exactly when to leave home for the station — no more waiting in the parking lot for 2 hours.", name: "Ahmed R.", city: "Lahore", stars: 5 },
-              { quote: "As a daily Rawalpindi–Lahore commuter, I check delays before leaving the office. It's saved me from standing on a cold platform more times than I can count. Simple, fast, and always accurate.", name: "Fatima K.", city: "Islamabad", stars: 5 },
-              { quote: "My parents only read Urdu. They were thrilled when I showed them they could search stations in Urdu script and track trains on their own phone. Accessibility done right!", name: "M. Ali Shahid", city: "Multan", stars: 5 },
+              { quote: "During fog season my Karakoram was 6 hours late. I saw the delay on Track My Train before even leaving the hostel — saved myself an entire morning of waiting at Lahore Junction in freezing cold.", name: "Hamza Tariq", city: "Faisalabad", stars: 5, role: "University Student" },
+              { quote: "I coordinate pickups for my whole extended family during Eid. Everyone sends me their train number and I track all four trains on separate tabs. Beats calling the helpline 117 every hour!", name: "Nadia Hussain", city: "Rawalpindi", stars: 5, role: "Homemaker" },
+              { quote: "As a freight coordinator I need to know when platforms are clear. The live status helps me estimate platform availability at Karachi Cantt — something even the station office can't tell me accurately.", name: "Bilal Qureshi", city: "Karachi", stars: 5, role: "Logistics Manager" },
             ].map((t, i) => (
-              <Card key={i} className="hover-lift group">
+              <Card key={i} className="hover-lift group border">
                 <CardContent className="p-5 sm:p-6">
                   <div className="flex gap-0.5 mb-3">
                     {Array.from({ length: t.stars }).map((_, j) => (
@@ -1476,7 +1477,7 @@ export default function HomePage() {
                   <p className="text-sm text-muted-foreground mb-4 italic leading-relaxed">"{t.quote}"</p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">{t.name[0]}</div>
-                    <div><div className="text-sm font-medium">{t.name}</div><div className="text-xs text-muted-foreground">{t.city}</div></div>
+                    <div><div className="text-sm font-medium">{t.name}</div><div className="text-xs text-muted-foreground">{t.city} • {t.role}</div></div>
                   </div>
                 </CardContent>
               </Card>

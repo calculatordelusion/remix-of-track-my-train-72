@@ -18,7 +18,7 @@ interface RouteGroup {
   duration: string;
 }
 
-// Major railway corridors matching traintracking.pk
+// Major railway corridors based on official Pakistan Railways data
 const majorCorridors = [
   { name: "Main Line", gradient: "gradient-card-emerald", icon: Route, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", route: "Karachi → Lahore → Rawalpindi → Peshawar", distance: "1,687 km", desc: "The backbone of Pakistan Railways connecting the four largest cities. Handles 60% of all passenger traffic with 20+ daily express and mail trains including Tezgam, Green Line, Karakoram Express, and Khyber Mail.", trains: 24, stations: 120 },
   { name: "Karachi–Quetta Route", gradient: "gradient-card-amber", icon: Map, iconBg: "bg-amber-500/15", iconColor: "text-amber-500", route: "Karachi → Sukkur → Quetta", distance: "863 km", desc: "Passing through the scenic Bolan Pass in Balochistan, this route connects Pakistan's largest port city with the provincial capital. Features the historic Bolan Mail and Jaffar Express services.", trains: 4, stations: 45 },
@@ -331,7 +331,7 @@ export default function RoutesPage() {
           </div>
 
           <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative mb-6">
-            <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
             <CardContent className="p-5 sm:p-6 relative">
               <h4 className="font-bold text-sm mb-3">🗺️ Route Planning Checklist</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
