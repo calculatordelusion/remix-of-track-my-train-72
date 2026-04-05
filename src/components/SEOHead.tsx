@@ -12,9 +12,7 @@ interface SEOHeadProps {
   howToSchema?: { name: string; steps: { name: string; text: string }[] };
   additionalSchemas?: object[];
   noindex?: boolean;
-  lang?: "en" | "ur";
-  alternateUrdu?: string;
-  alternateEnglish?: string;
+  lang?: "en";
   /** Article publish date (ISO) for blog posts */
   publishedTime?: string;
   /** Article modified date (ISO) */
@@ -34,23 +32,10 @@ export default function SEOHead({
   additionalSchemas,
   noindex = false,
   lang = "en",
-  alternateUrdu,
-  alternateEnglish,
   publishedTime,
   modifiedTime,
 }: SEOHeadProps) {
   const fullCanonical = canonical.startsWith("http") ? canonical : `https://trackmytrain.pk${canonical}`;
-
-  // Auto-generate hreflang paths if not provided
-  const enPath = lang === "ur"
-    ? (alternateEnglish || canonical.replace(/^\/ur/, "") || "/")
-    : canonical;
-  const urPath = lang === "en"
-    ? (alternateUrdu || `/ur${canonical === "/" ? "" : canonical}`)
-    : canonical;
-
-  const fullEnUrl = enPath.startsWith("http") ? enPath : `https://trackmytrain.pk${enPath}`;
-  const fullUrUrl = urPath.startsWith("http") ? urPath : `https://trackmytrain.pk${urPath}`;
 
   // Speakable schema for voice search / Google Assistant
   const speakableSchema = {
@@ -59,7 +44,7 @@ export default function SEOHead({
     "name": title,
     "url": fullCanonical,
     "description": description,
-    "inLanguage": lang === "ur" ? "ur-PK" : "en-PK",
+    "inLanguage": "en-PK",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Track My Train",
@@ -77,18 +62,13 @@ export default function SEOHead({
 
   return (
     <Helmet>
-      <html lang={lang} dir={lang === "ur" ? "rtl" : "ltr"} />
+      <html lang="en" dir="ltr" />
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonical} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {!noindex && <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />}
-
-      {/* Hreflang tags for bilingual SEO */}
-      <link rel="alternate" hrefLang="en" href={fullEnUrl} />
-      <link rel="alternate" hrefLang="ur" href={fullUrUrl} />
-      <link rel="alternate" hrefLang="x-default" href={fullEnUrl} />
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
@@ -99,8 +79,7 @@ export default function SEOHead({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Track My Train" />
-      <meta property="og:locale" content={lang === "ur" ? "ur_PK" : "en_PK"} />
-      <meta property="og:locale:alternate" content={lang === "ur" ? "en_PK" : "ur_PK"} />
+      <meta property="og:locale" content="en_PK" />
 
       {/* Article meta for blog posts */}
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}

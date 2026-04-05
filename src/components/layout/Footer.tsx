@@ -90,7 +90,7 @@ export default function Footer() {
               {/* Language & Helpline */}
               <div className="flex items-center gap-2 text-xs text-[hsl(210_20%_55%)] mb-4">
                 <Globe className="w-3.5 h-3.5" />
-                <span>Available in English & اردو</span>
+                <span>Pakistan Railway Tracker</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/15 to-primary/5 border border-primary/20 flex items-center gap-3.5">

@@ -92,7 +92,6 @@ export default function ScheduleGuide() {
         title="Pakistan Railways Schedule Guide — Tips & Routes"
         description="How to read Pakistan Railways timetables. Green Line, Tezgam, Khyber Mail schedules, route corridors, fog season tips, and seasonal travel advice."
         canonical="/schedule-guide"
-        alternateUrdu="/ur/schedule-guide"
         keywords="how to read train timetable, train schedule guide, railway timing explained, seasonal schedule changes, fog season trains, eid special trains, best time to travel by train, train timetable tips, peak travel season railway, summer train schedule, winter delays guide"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Schedule Guide", url: "/schedule-guide" }]}
         faqSchema={scheduleFaqs}
@@ -524,7 +523,6 @@ export default function ScheduleGuide() {
       {/* Cross-Language Link */}
       <div className="bg-card border-t py-4 text-center">
         <p className="text-sm text-muted-foreground">
-          اردو میں دیکھیں: <Link to="/ur/schedule" className="text-primary font-semibold hover:underline">← پاکستان ریلوے شیڈول اردو</Link>
           {" · "}
           <Link to="/schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
         </p>

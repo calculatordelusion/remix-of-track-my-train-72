@@ -112,7 +112,6 @@ export default function BuyTickets() {
         title="Buy Pakistan Railways Tickets Online — RABTA 2026"
         description="Book Pakistan Railways tickets via RABTA app or website. Pay with JazzCash, Easypaisa, or card. Student discounts, cancellation policy, and step-by-step guide."
         canonical="/buy-tickets"
-        alternateUrdu="/ur/buy-tickets"
         keywords="buy train ticket online pakistan, pakistan railways online booking, book train ticket, RABTA app booking, e ticket pakistan railway, how to buy train ticket, train ticket booking, JazzCash train ticket, easypaisa train ticket, online railway booking, pakistan railway reservation, train seat booking"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Buy Tickets Online", url: "/buy-tickets" }]}
         faqSchema={bookingFaqs}

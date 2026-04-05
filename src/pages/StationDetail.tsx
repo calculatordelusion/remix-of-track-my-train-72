@@ -43,7 +43,6 @@ export default function StationDetailPage() {
         title={`${station.name} Railway Station — Trains, Schedule & Facilities 2026`}
         description={`${station.name} (${station.nameUrdu}) railway station in ${station.city}, ${station.province}. View all ${stationTrains.length} trains, schedules, facilities like ${station.facilities.slice(0, 3).join(", ")}, and real-time tracking information.`}
         canonical={`/stations/${slug}`}
-        alternateUrdu={`/ur/stations/${slug}`}
         keywords={`${station.name} station, ${station.name} railway station, ${station.city} station trains, ${station.name} schedule, ${station.name} facilities, pakistan railways ${station.city}`}
         breadcrumbs={[
           { name: "Home", url: "/" },
