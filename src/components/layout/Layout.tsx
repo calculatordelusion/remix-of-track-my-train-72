@@ -1,16 +1,10 @@
 import { ReactNode } from "react";
-import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
-import UrduNavbar from "./UrduNavbar";
 import Footer from "./Footer";
-import UrduFooter from "./UrduFooter";
 import FloatingButtons from "@/components/FloatingButtons";
 import CookieConsent from "@/components/CookieConsent";
 
 export default function Layout({ children }: { children: ReactNode }) {
-  const location = useLocation();
-  const isUrdu = location.pathname.startsWith("/ur");
-
   return (
     <div className="min-h-screen flex flex-col">
       {/* Skip Links (ARIA) */}
@@ -34,11 +28,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           Skip to search
         </a>
       </div>
-      {isUrdu ? <UrduNavbar /> : <Navbar />}
+      <Navbar />
       <main id="main-content" aria-label="Main content" className="flex-1 pt-16 sm:pt-[68px]">
         {children}
       </main>
-      {isUrdu ? <UrduFooter /> : <Footer />}
+      <Footer />
       <FloatingButtons />
       <CookieConsent />
     </div>
