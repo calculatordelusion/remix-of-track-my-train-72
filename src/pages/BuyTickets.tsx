@@ -160,7 +160,7 @@ export default function BuyTickets() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="relative container mx-auto px-4">
           <div className="flex items-center gap-2 text-sm mb-3">
             <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
@@ -599,7 +599,7 @@ export default function BuyTickets() {
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="relative container mx-auto px-4 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to Book Your Train?</h2>
           <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">

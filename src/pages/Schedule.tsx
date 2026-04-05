@@ -341,7 +341,7 @@ export default function SchedulePage() {
 
           {/* Peak Travel Season Guide */}
           <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative mb-6">
-            <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
             <CardContent className="p-5 sm:p-6 relative">
               <h3 className="font-bold text-base mb-3">🗓️ Peak Travel Season Calendar 2026</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

@@ -787,7 +787,7 @@ export default function HomePage() {
               </Card>
             </div>
             <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative">
-              <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
               <CardContent className="p-5 sm:p-6 relative">
                 <div className="flex items-center gap-2 mb-3">
                   <Info className="w-5 h-5 text-accent" />
@@ -865,7 +865,7 @@ export default function HomePage() {
               </Card>
             </div>
             <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative">
-              <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
               <CardContent className="p-5 sm:p-6 relative">
                 <div className="flex items-center gap-2 mb-3">
                   <AlertTriangle className="w-5 h-5 text-accent" />
@@ -1123,7 +1123,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="bg-hero-gradient text-primary-foreground border-0 overflow-hidden relative hover-lift">
-                <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-10" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
                 <CardContent className="p-5 sm:p-6 relative">
                   <div className="flex items-center gap-2 mb-3">
                     <Landmark className="w-5 h-5 text-accent" />
