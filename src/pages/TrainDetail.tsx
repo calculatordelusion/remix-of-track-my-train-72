@@ -72,7 +72,6 @@ export default function TrainDetailPage() {
         title={`${train.name} ${train.number} — Live Status, Route & Schedule 2026`}
         description={`Track ${train.name} ${train.number} live — ${train.from} to ${train.to}. Real-time GPS position, speed ${speed > 0 ? `(${speed} km/h)` : ""}, delay status${delay > 0 ? ` (${delay} min late)` : ""}, and full route schedule. Journey time: ${train.duration}.`}
         canonical={`/train/${train.id}`}
-        alternateUrdu={`/ur/train/${train.id}`}
         keywords={`${train.name} live status, ${train.name} ${train.number} tracking, ${train.name} delay, ${train.from} to ${train.to} train, ${train.name} schedule, pakistan railways ${train.name}`}
         breadcrumbs={[
           { name: "Home", url: "/" },

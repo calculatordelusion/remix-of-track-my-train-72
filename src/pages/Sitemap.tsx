@@ -47,7 +47,6 @@ export default function SitemapPage() {
         title="Sitemap — Track My Train | All Pages"
         description="Complete directory of all pages on Track My Train — Pakistan's #1 live train tracking platform."
         canonical="/sitemap"
-        alternateUrdu="/ur/sitemap"
         noindex
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Sitemap", url: "/sitemap" }]}
       />

@@ -50,7 +50,6 @@ export default function PrivacyPage() {
         title="Privacy Policy — Track My Train | Zero Data Collection"
         description="Track My Train collects zero personal data, requires no accounts, and never sells information. GPS stays in your browser. 100% HTTPS."
         canonical="/privacy"
-        alternateUrdu="/ur/privacy"
         keywords="track my train privacy policy, train tracker privacy, pakistan railways app privacy, GPS location privacy, data protection train tracking"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Privacy Policy", url: "/privacy" }]}
         additionalSchemas={[{

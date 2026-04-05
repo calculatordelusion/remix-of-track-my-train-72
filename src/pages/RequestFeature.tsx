@@ -69,7 +69,6 @@ export default function RequestFeaturePage() {
         title="Request a Feature — Track My Train"
         description="Suggest features, report bugs, or request improvements for Track My Train. Community-driven development for Pakistan's train tracker."
         canonical="/request-feature"
-        alternateUrdu="/ur/request-feature"
         keywords="track my train feature request, train tracker suggestions, pakistan railways app feedback, report bug train tracker"
         breadcrumbs={[
           { name: "Home", url: "/" },

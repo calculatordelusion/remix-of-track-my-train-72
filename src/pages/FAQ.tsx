@@ -68,7 +68,6 @@ export default function FAQPage() {
         title="Pakistan Railways FAQ — 25+ Travel Questions 2026"
         description="Answers to 25+ Pakistan Railways questions — on-board tips, route connections, wheelchair access, luggage policy, and practical travel advice."
         canonical="/faq"
-        alternateUrdu="/ur/faq"
         keywords="pakistan railways FAQ, train travel questions, railway rules pakistan, luggage limit train, ladies compartment, wheelchair access railway, platform ticket price, train complaint number, first time train travel tips, train food allowed, children ticket age, senior citizen discount railway"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "FAQ", url: "/faq" }]}
         faqSchema={allFaqs}
