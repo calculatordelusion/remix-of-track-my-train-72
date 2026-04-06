@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@/lib/theme";
 import Layout from "@/components/layout/Layout";
 import PageTransition from "@/components/layout/PageTransition";
@@ -51,6 +51,12 @@ const PageLoader = () => (
     <div className="w-8 h-8 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
   </div>
 );
+
+const UrduRedirect = () => {
+  const location = useLocation();
+  const englishPath = location.pathname.replace(/^\/ur(?=\/|$)/, "") || "/";
+  return <Navigate to={`${englishPath}${location.search}${location.hash}`} replace />;
+};
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -113,6 +119,7 @@ const App = () => {
 
 
 
+                  <Route path="/ur/*" element={<UrduRedirect />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>

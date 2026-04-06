@@ -11,7 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead from "@/components/SEOHead";
 
 const stationFaqs = [
-  { q: "How many railway stations are there in Pakistan?", a: "Pakistan Railways operates a network of over 342 major railway stations listed in our database, spread across all four provinces and Azad Jammu & Kashmir. These range from major junction stations like Lahore Junction, Karachi Cantt, and Rawalpindi that handle dozens of trains daily, to smaller stations that serve local passenger trains. Our directory includes searchable stations on the Pakistan Railways network with search functionality in both English and Urdu." },
+  { q: "How many railway stations are there in Pakistan?", a: "Pakistan Railways operates a network of over 342 major railway stations listed in our database, spread across all four provinces and Azad Jammu & Kashmir. These range from major junction stations like Lahore Junction, Karachi Cantt, and Rawalpindi that handle dozens of trains daily, to smaller stations that serve local passenger trains. Our directory includes fast English search across station names, cities, and provinces." },
   { q: "Which is the largest railway station in Pakistan?", a: "Lahore Junction (Lahore Railway Station) is the largest and busiest railway station in Pakistan. Built in 1864 during the British colonial era, it features Victorian-Gothic architecture and handles millions of passengers annually. It has 9 platforms and serves as the main hub for Punjab province, connecting to all major cities across the country." },
   { q: "What facilities are available at major Pakistani railway stations?", a: "Major stations like Lahore Junction, Karachi Cantt, Rawalpindi, Peshawar Cantt, and Quetta offer comprehensive facilities including: computerized ticket booking counters, AC and general waiting rooms (separate for men and women), restaurants and tea stalls, prayer rooms, luggage storage, platform shelters, drinking water, restrooms, ATMs, parking areas, porter services, and retiring rooms. Some premium stations also have VIP lounges for AC class passengers." },
   { q: "How do I find which trains stop at a specific station?", a: "Use our station search above to find your station, then click on it to see the station detail page. There you'll find a complete list of all trains that stop at that station, along with their scheduled arrival and departure times, and route information. You can also use our Journey Planner to find trains between two specific stations." },
@@ -100,7 +100,6 @@ export default function StationsPage() {
         badgeIcon={<MapPin className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
         title={<>Pakistan Railway Stations<br /><span className="text-gradient-gold">Complete Directory & Search</span></>}
         subtitle="Find any railway station in Pakistan. Search by name, city, or province. View station details, trains stopping at each station, and nearby facilities."
-        subtitleUrdu="پاکستان ریلوے اسٹیشنز - مکمل ڈائریکٹری اور تلاش"
         centered
       >
         <div className="max-w-xl mx-auto mt-6">
@@ -181,7 +180,6 @@ export default function StationsPage() {
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="font-medium text-sm">{station.name}</div>
-                        <div className="text-xs text-destructive">{station.nameUrdu}</div>
                         <div className="text-xs text-muted-foreground mt-1">{station.city}, {station.province}</div>
                       </div>
                       <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -215,7 +213,6 @@ export default function StationsPage() {
                     <div>
                       <span className="text-[10px] font-bold uppercase tracking-wider text-primary/70">{s.type} Station</span>
                       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">{s.name}</h3>
-                      <p className="text-sm text-destructive">{s.urdu}</p>
                     </div>
                     <div className="text-right">
                       <span className="text-xs text-muted-foreground">{s.city}</span>

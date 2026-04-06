@@ -61,7 +61,7 @@ export default function ContactPage() {
               "@type": "ContactPoint",
               "contactType": "Customer Support",
               "email": "info@trackmytrain.pk",
-              "availableLanguage": ["English", "Urdu"],
+                "availableLanguage": ["English"],
               "areaServed": { "@type": "Country", "name": "Pakistan" }
             }
           }
@@ -85,7 +85,6 @@ export default function ContactPage() {
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
               Have questions, feedback, or suggestions? We're here to help. Fill out the form below and our team will respond within 2-3 business days.
             </p>
-            <p className="opacity-60 text-sm mt-2">ہم سے رابطہ کریں — آپ کی رائے ہمارے لیے اہم ہے</p>
           </div>
         </div>
       </section>

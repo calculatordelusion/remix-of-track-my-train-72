@@ -100,11 +100,6 @@ export default function PremiumHero({
             </p>
           )}
 
-          {/* Urdu subtitle */}
-          {subtitleUrdu && (
-            <p className="opacity-60 text-sm mt-1">{subtitleUrdu}</p>
-          )}
-
           {/* Slotted children (links, stats, etc.) */}
           {children}
         </div>

@@ -94,7 +94,6 @@ export default function FindMyTrainPage() {
         badge="GPS AUTO-DETECTION • LIVE"
         title={<>Find My Train — <span className="text-gradient-gold">GPS Detection</span></>}
         subtitle="Automatically detect which Pakistan Railway train you're on using your device's GPS. No searching, no train numbers — just tap and we'll find your train instantly with real-time tracking."
-        subtitleUrdu="اپنی ٹرین تلاش کریں - جی پی ایس آٹو ڈیٹیکشن"
       >
         {/* Live stats in hero */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">

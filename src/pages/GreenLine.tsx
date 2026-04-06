@@ -102,7 +102,6 @@ export default function GreenLinePage() {
         badge="PAKISTAN'S #1 PREMIUM TRAIN"
         title={<>Green Line Express{" "}<span className="text-gradient-gold">5UP / 6DN</span><br /><span className="text-xl sm:text-2xl md:text-3xl font-bold opacity-80">Complete Guide 2026</span></>}
         subtitle="Pakistan Railways' flagship premium train — Karachi Cantt to Margala (Islamabad). AC Business class, complimentary meals, free WiFi, and real-time GPS tracking."
-        subtitleUrdu="گرین لائن ایکسپریس — کراچی سے اسلام آباد"
         centered
       >
         <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">

@@ -131,7 +131,6 @@ export default function TrainDetailPage() {
                       <span className="text-sm text-muted-foreground">#{train.id}</span>
                     </div>
                     <h1 className="text-2xl font-bold">{train.name} {train.number}</h1>
-                    <p className="text-muted-foreground">{train.nameUrdu}</p>
                   </div>
                   <span className={`text-xs px-3 py-1 rounded-full font-medium ${statusColor}`}>{statusTag}</span>
                 </div>
@@ -186,7 +185,7 @@ export default function TrainDetailPage() {
               <CardContent className="p-6">
                 <h2 className="text-lg font-bold mb-3">About {train.name}</h2>
                 <div className="text-sm text-muted-foreground space-y-3 leading-relaxed">
-                  <p><strong className="text-foreground">{train.name} ({train.nameUrdu})</strong> is a {train.type === "ac" ? "premium air-conditioned" : train.type === "express" ? "popular express" : train.type} train service operated by Pakistan Railways on the {train.from} to {train.to} route. With a journey time of {train.duration}, it is one of the key rail services connecting these important cities.</p>
+                  <p><strong className="text-foreground">{train.name}</strong> is a {train.type === "ac" ? "premium air-conditioned" : train.type === "express" ? "popular express" : train.type} train service operated by Pakistan Railways on the {train.from} to {train.to} route. With a journey time of {train.duration}, it is one of the key rail services connecting these important cities.</p>
                   <p>The train departs from {train.from} at {train.departureTime} and arrives at {train.to} at {train.arrivalTime}. It operates on {train.days.length === 7 ? "all days of the week (daily service)" : `selected days: ${train.days.join(", ")}`}, making it a {train.days.length === 7 ? "reliable daily" : "scheduled"} option for passengers traveling this route.</p>
                   <p>{train.type === "ac" ? `As an AC (air-conditioned) service, ${train.name} offers premium comfort with climate-controlled coaches, making it especially popular during Pakistan's hot summer months. AC trains typically feature padded seating, cleaner interiors, and a more comfortable travel experience compared to standard services.` : train.type === "express" ? `As an express service, ${train.name} makes fewer stops than passenger trains, resulting in shorter overall journey times. Express trains are the most popular category among intercity travelers in Pakistan, offering a good balance of speed, comfort, and affordability.` : `${train.name} provides essential connectivity for passengers along its route, serving both major stations and smaller intermediate stops.`}</p>
                   <p>You can track {train.name} in real-time on this page whenever it's running. Our GPS-based tracking shows the train's exact position, current speed, and delay status with updates every 30 seconds. For ticket pricing information, visit our <Link to="/ticket-pricing" className="text-primary hover:underline">ticket pricing page</Link>. To check all available trains on this corridor, use the <Link to="/planner" className="text-primary hover:underline">journey planner</Link>.</p>

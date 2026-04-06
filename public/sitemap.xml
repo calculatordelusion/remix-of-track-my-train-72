@@ -173,26 +173,6 @@
   <url><loc>https://trackmytrain.pk/train/277</loc><lastmod>2026-04-05</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url>
   <url><loc>https://trackmytrain.pk/train/278</loc><lastmod>2026-04-05</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url>
 
-  <!-- Urdu Pages -->
-  <url><loc>https://trackmytrain.pk/ur</loc><lastmod>2026-04-05</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/train</loc><lastmod>2026-04-05</lastmod><changefreq>always</changefreq><priority>0.85</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/stations</loc><lastmod>2026-04-05</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/schedule</loc><lastmod>2026-04-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/routes</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/planner</loc><lastmod>2026-04-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/find-my-train</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/check-delays</loc><lastmod>2026-04-05</lastmod><changefreq>always</changefreq><priority>0.8</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/express-trains</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/green-line-express</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/ticket-pricing</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/faq</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/about</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.45</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/contact</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.45</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/blog</loc><lastmod>2026-04-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/privacy</loc><lastmod>2026-04-05</lastmod><changefreq>yearly</changefreq><priority>0.25</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/sitemap</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://trackmytrain.pk/ur/request-feature</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-
   <!-- Route Detail Pages -->
   <url><loc>https://trackmytrain.pk/routes/karachi-to-lahore</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://trackmytrain.pk/routes/karachi-to-rawalpindi</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

@@ -51,7 +51,6 @@ export const searchStations = (q: string) => {
   return stations.filter(s => 
     s.name.toLowerCase().includes(query) || 
     s.city.toLowerCase().includes(query) ||
-    s.nameUrdu.includes(q) ||
     s.slug.includes(query)
   );
 };
