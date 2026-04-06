@@ -13,7 +13,6 @@ interface PremiumHeroProps {
   badgeIcon?: ReactNode;
   title: ReactNode;
   subtitle?: string;
-  subtitleUrdu?: string;
   children?: ReactNode;
   centered?: boolean;
 }
@@ -24,7 +23,6 @@ export default function PremiumHero({
   badgeIcon,
   title,
   subtitle,
-  subtitleUrdu,
   children,
   centered = false,
 }: PremiumHeroProps) {
