@@ -13,7 +13,6 @@ interface PremiumHeroProps {
   badgeIcon?: ReactNode;
   title: ReactNode;
   subtitle?: string;
-  subtitleUrdu?: string;
   children?: ReactNode;
   centered?: boolean;
 }
@@ -24,7 +23,6 @@ export default function PremiumHero({
   badgeIcon,
   title,
   subtitle,
-  subtitleUrdu,
   children,
   centered = false,
 }: PremiumHeroProps) {
@@ -98,11 +96,6 @@ export default function PremiumHero({
             <p className="text-base sm:text-lg opacity-90 mb-2 max-w-2xl leading-relaxed">
               {subtitle}
             </p>
-          )}
-
-          {/* Urdu subtitle */}
-          {subtitleUrdu && (
-            <p className="opacity-60 text-sm mt-1">{subtitleUrdu}</p>
           )}
 
           {/* Slotted children (links, stats, etc.) */}

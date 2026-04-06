@@ -98,7 +98,7 @@ export default function RailwayHelpline() {
           "availableChannel": {
             "@type": "ServiceChannel",
             "servicePhone": "+92117",
-            "availableLanguage": ["English", "Urdu"],
+            "availableLanguage": ["English"],
             "serviceUrl": "https://trackmytrain.pk/railway-helpline"
           }
         }]}

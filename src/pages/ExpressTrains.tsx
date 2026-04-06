@@ -103,7 +103,6 @@ export default function ExpressTrainsPage() {
         badgeIcon={<Zap className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
         title={<>Pakistan Railways<br /><span className="text-gradient-gold">Express Trains — Complete Guide</span></>}
         subtitle="Complete list of all express and AC trains with real-time tracking, schedules, routes, and booking information. Find the perfect train for your journey."
-        subtitleUrdu="پاکستان ریلوے ایکسپریس ٹرینیں — مکمل فہرست اور ٹریکنگ"
         centered
       />
 
@@ -248,7 +247,6 @@ export default function ExpressTrainsPage() {
                             <h3 className="font-bold group-hover:text-primary transition-colors">
                               {train.name} <span className="text-muted-foreground font-normal text-sm">{train.number}</span>
                             </h3>
-                            <p className="text-xs text-destructive mb-1">{train.nameUrdu}</p>
                             <div className="flex items-center gap-1 text-sm text-muted-foreground mt-2">
                               <span>{train.from}</span>
                               <ArrowRight className="w-3 h-3" />
@@ -283,7 +281,6 @@ export default function ExpressTrainsPage() {
                         <h3 className="font-bold group-hover:text-primary transition-colors">
                           {train.name} <span className="text-muted-foreground font-normal text-sm">{train.number}</span>
                         </h3>
-                        <p className="text-xs text-destructive mb-1">{train.nameUrdu}</p>
                         <div className="flex items-center gap-1 text-sm text-muted-foreground mt-2">
                           <span>{train.from}</span>
                           <ArrowRight className="w-3 h-3" />

@@ -145,7 +145,6 @@ export default function RoutesPage() {
         badge="LIVE ROUTE DATA • REAL-TIME"
         title={<>Pakistan Railway{" "}<span className="text-gradient-gold">Routes & Maps</span></>}
         subtitle={`Explore ${routeGroups.length} routes connecting cities across Pakistan with ${trains.length} trains and ${stations.length}+ stations. Find the best route for your journey with complete train information, live tracking, and accurate schedules.`}
-        subtitleUrdu="پاکستان ریلوے کے تمام روٹس - مکمل رہنمائی اور نقشے"
       >
         {/* Live stats in hero */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
@@ -281,7 +280,7 @@ export default function RoutesPage() {
               { icon: BarChart3, gradient: "gradient-card-blue", iconBg: "bg-blue-500/15", iconColor: "text-blue-500", title: "Compare Multiple Trains", desc: "Each route shows all available trains with their schedules, coach types, and fare classes. Compare express vs. passenger trains, AC vs. economy, and departure times to pick the perfect option." },
               { icon: Globe, gradient: "gradient-card-purple", iconBg: "bg-purple-500/15", iconColor: "text-purple-500", title: "Complete Station Guide", desc: "Every route includes detailed station information — platform numbers, facilities available, connecting trains, and estimated arrival/departure times at each stop along the way." },
               { icon: Shield, gradient: "gradient-card-rose", iconBg: "bg-rose-500/15", iconColor: "text-rose-500", title: "Plan Connections Safely", desc: "For multi-leg journeys, our route data helps you identify the best junction stations for connections. We show buffer times needed and alternative trains in case of missed connections." },
-              { icon: Star, gradient: "gradient-card-teal", iconBg: "bg-teal-500/15", iconColor: "text-teal-500", title: "Bilingual Route Names", desc: "All route and station information is available in both English and Urdu. Search in either language and view complete route details with station names in your preferred script." },
+              { icon: Star, gradient: "gradient-card-teal", iconBg: "bg-teal-500/15", iconColor: "text-teal-500", title: "Clear Route Labels", desc: "Every route and station is labeled consistently in English so travelers can scan schedules, stops, and route details faster without mixed-language duplication." },
             ].map((item, i) => (
               <Card key={i} className={`${item.gradient} border hover-lift group`}>
                 <CardContent className="p-5 sm:p-6">

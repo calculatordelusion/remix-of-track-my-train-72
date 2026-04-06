@@ -57,7 +57,7 @@ export default function SchedulePage() {
     if (filter !== "all") list = list.filter(t => t.type === filter);
     if (search.length > 1) {
       const q = search.toLowerCase();
-      list = list.filter(t => t.name.toLowerCase().includes(q) || t.number.toLowerCase().includes(q) || t.from.toLowerCase().includes(q) || t.to.toLowerCase().includes(q) || t.nameUrdu.includes(search));
+      list = list.filter(t => t.name.toLowerCase().includes(q) || t.number.toLowerCase().includes(q) || t.from.toLowerCase().includes(q) || t.to.toLowerCase().includes(q));
     }
     return list;
   }, [search, filter, allTrains]);
@@ -108,7 +108,6 @@ export default function SchedulePage() {
         badge="OFFICIAL TIMETABLES • UPDATED 2026"
         title={<>Pakistan Railways{" "}<span className="text-gradient-gold">Schedule & Timetables</span></>}
         subtitle={`Browse complete train schedules, departure times, and routes for all ${allTrains.length || 164}+ Pakistan Railways trains across 342+ stations.`}
-        subtitleUrdu="پاکستان ریلوے ٹرین شیڈول اور ٹائم ٹیبل ۲۰۲۶"
         centered
       />
 
@@ -210,7 +209,6 @@ export default function SchedulePage() {
                       <td className="py-3 px-4 text-muted-foreground text-xs">{train.id}</td>
                       <td className="py-3 px-4">
                         <div className="font-medium">{train.name} {train.number}</div>
-                        <div className="text-xs text-muted-foreground">{train.nameUrdu}</div>
                       </td>
                       <td className="py-3 px-4 text-muted-foreground">{train.from} → {train.to}</td>
                       <td className="py-3 px-4 font-medium">{train.departureTime}</td>

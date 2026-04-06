@@ -125,7 +125,6 @@ export default function CheckDelays() {
         badgeIcon={<Activity className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
         title={<>Pakistan Railways<br /><span className="text-gradient-gold">Train Delay Status — Live</span></>}
         subtitle="Check real-time delay status of all running Pakistan Railways trains. Live GPS-based tracking updated every 5 seconds with accurate ETAs and delay calculations."
-        subtitleUrdu="پاکستان ریلوے ٹرین تاخیر کی صورتحال — لائیو"
         centered
       />
 

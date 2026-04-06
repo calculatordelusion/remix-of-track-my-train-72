@@ -29,7 +29,7 @@ export default function StationDetailPage() {
   const stationFaqs = [
     { q: `How many trains stop at ${station.name} railway station?`, a: `${station.name} railway station is served by ${stationTrains.length} trains. Of these, ${activeTrains.length} are currently active and running on schedule. The station connects ${station.city} to major cities across Pakistan via the Pakistan Railways network.` },
     { q: `What facilities are available at ${station.name} station?`, a: `${station.name} station offers the following facilities: ${station.facilities.join(", ")}. These amenities ensure a comfortable experience for passengers traveling through ${station.city}, ${station.province}.` },
-    { q: `Where is ${station.name} railway station located?`, a: `${station.name} (${station.nameUrdu}) railway station is located in ${station.city}, ${station.province}, Pakistan. The exact coordinates are latitude ${station.lat.toFixed(4)} and longitude ${station.lng.toFixed(4)}. It is accessible by road from the main city center.` },
+    { q: `Where is ${station.name} railway station located?`, a: `${station.name} railway station is located in ${station.city}, ${station.province}, Pakistan. The exact coordinates are latitude ${station.lat.toFixed(4)} and longitude ${station.lng.toFixed(4)}. It is accessible by road from the main city center.` },
     { q: `Can I track trains arriving at ${station.name} in real-time?`, a: `Yes! You can track all trains arriving at or departing from ${station.name} in real-time using TrackMyTrain.pk's live GPS tracker. Simply visit the Live Trains page, find your train, and see its exact position, speed, and estimated arrival time at ${station.name}.` },
     { q: `What are the main express trains that stop at ${station.name}?`, a: expressTrains.length > 0 ? `The main express trains stopping at ${station.name} include: ${expressTrains.slice(0, 5).map(t => t.name).join(", ")}${expressTrains.length > 5 ? `, and ${expressTrains.length - 5} more` : ""}. These trains connect ${station.city} to major destinations across Pakistan.` : `Currently, ${station.name} is primarily served by passenger trains. Check our live tracker for the latest services available at this station.` },
     { q: `How do I check delays for trains at ${station.name}?`, a: `To check if trains at ${station.name} are running late, visit our Check Delays page at trackmytrain.pk/check-delays. You can see real-time delay status for every active train, including those stopping at ${station.name}. Delay data is updated every 30 seconds.` },
@@ -41,7 +41,7 @@ export default function StationDetailPage() {
     <div>
       <SEOHead
         title={`${station.name} Railway Station — Trains, Schedule & Facilities 2026`}
-        description={`${station.name} (${station.nameUrdu}) railway station in ${station.city}, ${station.province}. View all ${stationTrains.length} trains, schedules, facilities like ${station.facilities.slice(0, 3).join(", ")}, and real-time tracking information.`}
+        description={`${station.name} railway station in ${station.city}, ${station.province}. View all ${stationTrains.length} trains, schedules, facilities like ${station.facilities.slice(0, 3).join(", ")}, and real-time tracking information.`}
         canonical={`/stations/${slug}`}
         keywords={`${station.name} station, ${station.name} railway station, ${station.city} station trains, ${station.name} schedule, ${station.name} facilities, pakistan railways ${station.city}`}
         breadcrumbs={[
@@ -54,7 +54,6 @@ export default function StationDetailPage() {
           "@context": "https://schema.org",
           "@type": "TrainStation",
           "name": `${station.name} Railway Station`,
-          "alternateName": station.nameUrdu,
           "address": {
             "@type": "PostalAddress",
             "addressLocality": station.city,
@@ -91,7 +90,6 @@ export default function StationDetailPage() {
             <Card>
               <CardContent className="p-6">
                 <h1 className="text-2xl font-bold">{station.name} Railway Station</h1>
-                <p className="text-muted-foreground">{station.nameUrdu}</p>
                 <div className="flex items-center gap-4 mt-4 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" /> {station.city}, {station.province}</span>
                   <span>Lat: {station.lat.toFixed(4)}, Lng: {station.lng.toFixed(4)}</span>
@@ -121,7 +119,7 @@ export default function StationDetailPage() {
               <CardContent className="p-6">
                 <h2 className="text-lg font-bold mb-3">About {station.name} Railway Station</h2>
                 <div className="text-sm text-muted-foreground space-y-3 leading-relaxed">
-                  <p>{station.name} ({station.nameUrdu}) is a railway station located in {station.city}, {station.province}, Pakistan. It is one of the important stations on the Pakistan Railways network, serving as a key stop for {stationTrains.length} trains connecting {station.city} to major cities across the country.</p>
+                  <p>{station.name} is a railway station located in {station.city}, {station.province}, Pakistan. It is one of the important stations on the Pakistan Railways network, serving as a key stop for {stationTrains.length} trains connecting {station.city} to major cities across the country.</p>
                   <p>The station is equipped with {station.facilities.length} facilities including {station.facilities.join(", ")}, making it a well-serviced stop for passengers. {station.facilities.includes("WiFi") ? "Free WiFi is available for passengers waiting at the station." : ""} {station.facilities.includes("VIP Lounge") ? "A VIP lounge is available for premium class passengers." : ""} {station.facilities.includes("Medical Aid") ? "Medical aid services are available on-site for emergencies." : ""}</p>
                   <p>Travelers can use TrackMyTrain.pk to check real-time positions of all trains arriving at or departing from {station.name}. Our <Link to="/check-delays" className="text-primary hover:underline">delay checker</Link> shows live delay status, and the <Link to="/planner" className="text-primary hover:underline">journey planner</Link> helps you find the best train options from {station.name} to your destination.</p>
                   {expressTrains.length > 0 && (

@@ -111,7 +111,6 @@ export default function TicketPricingPage() {
         badgeIcon={<CreditCard className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
         title={<>Pakistan Railways<br /><span className="text-gradient-gold">Ticket Prices & Fares 2026</span></>}
         subtitle="Complete and updated fare list for all major routes across Pakistan. Compare prices across Economy, Business, AC Standard, AC Business, Sleeper, and Parlor classes."
-        subtitleUrdu="پاکستان ریلوے ٹکٹ کی قیمتیں — تمام کلاسز اور روٹس"
         centered
       />
 

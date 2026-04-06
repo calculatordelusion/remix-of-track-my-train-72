@@ -77,9 +77,7 @@ function StationDropdown({
   const filtered = useMemo(() => {
     if (!query) return apiStations;
     const q = query.toLowerCase();
-    return apiStations.filter(
-      (s) => s.name.toLowerCase().includes(q) || s.nameUrdu.includes(query)
-    );
+    return apiStations.filter((s) => s.name.toLowerCase().includes(q));
   }, [query, apiStations]);
 
   return (
@@ -129,7 +127,6 @@ function StationDropdown({
               <Icon className="w-4 h-4 text-muted-foreground shrink-0" />
               <div>
                 <div className="text-sm font-medium">{s.name}</div>
-                {s.nameUrdu && <div className="text-xs text-destructive">{s.nameUrdu}</div>}
               </div>
             </button>
           ))}
@@ -238,7 +235,6 @@ export default function JourneyPlannerPage() {
         badge="REAL-TIME ROUTE SEARCH"
         title={<>Plan Your{" "}<span className="text-gradient-gold">Train Journey</span></>}
         subtitle={`Find the best routes between any two stations in Pakistan. Compare timings, durations, and choose the perfect train for your travel across ${meta.totalStations}+ stations.`}
-        subtitleUrdu="اپنا سفر پلان کریں - پاکستان میں کسی بھی دو اسٹیشنوں کے درمیان"
       >
         {/* Stats in hero */}
         <div className="grid grid-cols-3 gap-3 mt-8 max-w-lg">
@@ -363,7 +359,7 @@ export default function JourneyPlannerPage() {
                           <span className="font-bold text-sm">{route.train.name} {route.train.number}</span>
                         </div>
                         <div className="text-xs text-muted-foreground mb-3">
-                          #{route.train.id} • {route.train.nameUrdu}
+                          #{route.train.id}
                           {route.train.days && route.train.days.length < 7 && (
                             <span className="ml-2 text-primary font-medium">Runs: {route.train.days.join(", ")}</span>
                           )}

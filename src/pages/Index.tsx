@@ -178,7 +178,7 @@ export default function HomePage() {
               <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Zero Cost, Always</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Instant Access — No Login</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Optimized for Slow Networks</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Full Urdu Support (اردو)</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> English-Only Experience</span>
             </div>
           </div>
 
@@ -379,7 +379,6 @@ export default function HomePage() {
                     </div>
                     <h3 className="font-bold group-hover:text-primary transition-colors">{train.name} {train.number}</h3>
                     <p className="text-sm text-muted-foreground">{train.from} → {train.to}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{train.nameUrdu}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -424,7 +423,6 @@ export default function HomePage() {
                       <span className="text-xs text-muted-foreground">{station.province}</span>
                     </div>
                     <h3 className="font-bold text-base mb-0.5 group-hover:text-primary transition-colors">{station.name}</h3>
-                    <p className="text-xs text-muted-foreground mb-3">{station.nameUrdu}</p>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-3">{station.desc}</p>
                     <div className="flex flex-wrap gap-1.5">
                       {station.facilities.slice(0, 4).map((f) => (
