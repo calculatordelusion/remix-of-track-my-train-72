@@ -1145,7 +1145,7 @@ Track your train's live GPS position on trackmytrain.pk regardless of which clas
       { q: "How many trains run between Karachi and Islamabad daily?", a: "There are 4–5 direct trains daily from Karachi to Rawalpindi/Islamabad (Margala): Green Line Express, Pakistan Express, Tezgam, Awam Express, and Khyber Mail. Rawalpindi station is just 30 minutes from Islamabad." },
       { q: "Can I book Karachi to Islamabad train tickets online?", a: "Yes, book through the official RABTA app or pakrailways.gov.pk. Pay via JazzCash, Easypaisa, or debit/credit card. Advance booking up to 30 days is available. For Green Line AC Business, book 15+ days early as seats sell out fast." },
     ],
-    content: \`The Karachi to Islamabad railway corridor is one of Pakistan's most traveled long-distance routes, stretching approximately 1,228 kilometers along the Main Line 1 (ML-1). Whether you're traveling for business, visiting family, or relocating, understanding the fare structure across different trains and classes can save you significant money and help you choose the right level of comfort.
+    content: `The Karachi to Islamabad railway corridor is one of Pakistan's most traveled long-distance routes, stretching approximately 1,228 kilometers along the Main Line 1 (ML-1). Whether you're traveling for business, visiting family, or relocating, understanding the fare structure across different trains and classes can save you significant money and help you choose the right level of comfort.
 
 This guide provides the complete, updated Karachi to Islamabad train ticket price list for 2026, reflecting the fare revision effective March 9, 2026.
 
@@ -1237,7 +1237,7 @@ Pakistan Railways offers discounts that apply to all Karachi–Islamabad trains:
 
 ## Track Your Karachi–Islamabad Train Live
 
-Once you've booked, track your train's exact GPS position on trackmytrain.pk. Our live tracker updates every 5 seconds and shows current speed, delay status, and recalculated ETAs for every upcoming station — from Hyderabad Junction to Sukkur, Multan, Lahore, and finally Rawalpindi/Margala.\`,
+Once you've booked, track your train's exact GPS position on trackmytrain.pk. Our live tracker updates every 5 seconds and shows current speed, delay status, and recalculated ETAs for every upcoming station — from Hyderabad Junction to Sukkur, Multan, Lahore, and finally Rawalpindi/Margala.`,
   },
   {
     slug: "rawalpindi-to-lahore-train-timing-schedule-2026",
@@ -1260,7 +1260,7 @@ Once you've booked, track your train's exact GPS position on trackmytrain.pk. Ou
       { q: "How many trains run between Rawalpindi and Lahore daily?", a: "Approximately 10–12 trains operate daily on the Rawalpindi–Lahore corridor, including dedicated services like Subak Raftar and Rawal Express, plus through-trains from Karachi and Peshawar." },
       { q: "Which platform do Lahore-bound trains depart from at Rawalpindi?", a: "Most Lahore-bound trains depart from Platform 1 or Platform 2 at Rawalpindi Cantt Railway Station. Platform assignments can change — check the station display board upon arrival or ask at the inquiry counter (051-99270056)." },
     ],
-    content: \`The Rawalpindi to Lahore railway corridor is one of the busiest short-distance routes on Pakistan Railways' network. Covering approximately 288 kilometers along the Main Line 1 (ML-1), this route connects Pakistan's political capital region (Islamabad/Rawalpindi) with its cultural capital (Lahore) — a journey that millions of commuters, business travelers, and families make every year.
+    content: `The Rawalpindi to Lahore railway corridor is one of the busiest short-distance routes on Pakistan Railways' network. Covering approximately 288 kilometers along the Main Line 1 (ML-1), this route connects Pakistan's political capital region (Islamabad/Rawalpindi) with its cultural capital (Lahore) — a journey that millions of commuters, business travelers, and families make every year.
 
 This comprehensive guide lists every train operating on this route in 2026, with exact timings, journey durations, fares, and practical tips.
 
@@ -1345,6 +1345,6 @@ Between November and February, dense fog in Punjab can delay trains by 1–6 hou
 
 ## Track Your Train Live
 
-Don't waste time at the platform wondering where your train is. Visit trackmytrain.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.\`,
+Don't waste time at the platform wondering where your train is. Visit trackmytrain.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.`,
   },
 ];
