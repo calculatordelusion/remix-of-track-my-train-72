@@ -188,7 +188,7 @@ export default function CheckDelays() {
                       The most delayed active train is currently running <strong className="text-destructive">{formatDelay(maxDelay)}</strong>
                     </p>
                   </div>
-                  <Link to="/train">
+                  <Link to="/live-train">
                     <Button size="sm" variant="outline" className="rounded-xl gap-1 shrink-0">
                       <Navigation className="w-3 h-3" /> View on Map
                     </Button>
@@ -367,7 +367,7 @@ export default function CheckDelays() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/train" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/live-train" },
               { icon: TrendingUp, gradient: "gradient-card-amber", title: "Express Trains", desc: "Browse all express trains with schedules and live tracking.", link: "/express-trains" },
               { icon: Clock, gradient: "gradient-card-blue", title: "Full Schedule", desc: "Complete timetable for all Pakistan Railways trains.", link: "/schedule" },
             ].map((tool, i) => (
@@ -391,7 +391,7 @@ export default function CheckDelays() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Never Miss a Train Again</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Track all Pakistan Railways trains in real-time. Get accurate delay status, ETAs, and live GPS positions updated every 5 seconds.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>

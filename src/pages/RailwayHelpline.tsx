@@ -373,7 +373,7 @@ export default function RailwayHelpline() {
           <h2 className="text-2xl font-black mb-3">Need to Track Your Train?</h2>
           <p className="text-muted-foreground mb-6 text-sm">Use our free live GPS tracker to see exactly where your train is right now — no signup needed.</p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Link to="/train" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors shadow-md">
+            <Link to="/live-train" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors shadow-md">
               <Train className="w-4 h-4" /> Track Live Trains
             </Link>
             <Link to="/find-my-train" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-primary font-bold text-sm hover:bg-primary/5 transition-colors">

@@ -241,7 +241,7 @@ export default function SchedulePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/train" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/live-train" },
               { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations.", link: "/planner" },
               { icon: CreditCard, gradient: "gradient-card-blue", title: "Ticket Pricing", desc: "Complete fare chart for all classes and routes.", link: "/ticket-pricing" },
             ].map((tool, i) => (

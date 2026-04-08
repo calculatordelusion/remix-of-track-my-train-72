@@ -359,7 +359,7 @@ export default function RoutesPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
               { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule and budget.", link: "/planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: "Browse 342+ stations with facilities, connecting trains, and GPS locations.", link: "/stations" },
             ].map((tool, i) => (
@@ -410,7 +410,7 @@ export default function RoutesPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to Track Your Train?</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Start tracking any Pakistan Railways train in real-time. See live GPS positions, speeds, delays, and accurate ETAs — completely free.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>

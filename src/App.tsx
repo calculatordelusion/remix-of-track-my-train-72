@@ -86,11 +86,12 @@ const App = () => {
                 <Routes>
                   {/* English routes */}
                   <Route path="/" element={<Index />} />
-                  <Route path="/train" element={<LiveTrains />} />
-                  <Route path="/trains" element={<LiveTrains />} />
+                  <Route path="/live-train" element={<LiveTrains />} />
+                  <Route path="/train" element={<Navigate to="/live-train" replace />} />
+                  <Route path="/trains" element={<Navigate to="/live-train" replace />} />
+                  <Route path="/live" element={<Navigate to="/live-train" replace />} />
                   <Route path="/trains/:category" element={<LiveTrains />} />
                   <Route path="/train/:id" element={<TrainDetail />} />
-                  <Route path="/live" element={<LiveTrains />} />
                   <Route path="/trains/passengers" element={<LiveTrains />} />
                   <Route path="/schedule" element={<Schedule />} />
                   <Route path="/stations" element={<Stations />} />

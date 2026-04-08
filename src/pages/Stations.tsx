@@ -357,7 +357,7 @@ export default function StationsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
               { icon: Navigation, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations across Pakistan.", link: "/planner" },
               { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with timings.", link: "/schedule" },
             ].map((tool, i) => (
@@ -384,7 +384,7 @@ export default function StationsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Track Your Train Live</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Get real-time GPS location, delay information, and estimated arrival times for all Pakistan Railway trains.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>

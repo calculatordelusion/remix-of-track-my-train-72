@@ -532,7 +532,7 @@ export default function BuyTickets() {
               <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <span><strong className="text-foreground">Wrong date format:</strong> The RABTA app uses DD/MM/YYYY format. Confusing month and day is a common error.</span></li>
               <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <span><strong className="text-foreground">Not carrying original CNIC:</strong> A photocopy or picture is NOT accepted. You must have the original card.</span></li>
               <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <span><strong className="text-foreground">Booking wrong station:</strong> "Lahore Junction" and "Lahore Cantt" are different stations. Verify which one your train departs from.</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <span><strong className="text-foreground">Ignoring delays:</strong> Don't assume your train leaves on time. Check <Link to="/train" className="text-primary hover:underline">live status</Link> before traveling to the station.</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <span><strong className="text-foreground">Ignoring delays:</strong> Don't assume your train leaves on time. Check <Link to="/live-train" className="text-primary hover:underline">live status</Link> before traveling to the station.</span></li>
             </ul>
 
             <h3 className="text-lg font-bold text-foreground">Tracking Your Train After Booking</h3>
@@ -554,7 +554,7 @@ export default function BuyTickets() {
             {[
               { to: "/ticket-pricing", icon: CreditCard, title: "Ticket Prices", desc: "Compare fares for all classes & routes", gradient: "gradient-card-emerald" },
               { to: "/planner", icon: MapPin, title: "Journey Planner", desc: "Find trains between any two stations", gradient: "gradient-card-blue" },
-              { to: "/train", icon: Globe, title: "Live Train Tracker", desc: "Track your train's GPS position", gradient: "gradient-card-amber" },
+              { to: "/live-train", icon: Globe, title: "Live Train Tracker", desc: "Track your train's GPS position", gradient: "gradient-card-amber" },
               { to: "/check-delays", icon: Clock, title: "Check Delays", desc: "Real-time delay status for all trains", gradient: "gradient-card-purple" },
             ].map((link, i) => (
               <Link key={i} to={link.to}>
@@ -611,7 +611,7 @@ export default function BuyTickets() {
               </a>
             </Button>
             <Button asChild variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-bold">
-              <Link to="/train">
+              <Link to="/live-train">
                 <Globe className="w-4 h-4 mr-2" /> Track Live Trains
               </Link>
             </Button>

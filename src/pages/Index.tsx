@@ -162,7 +162,7 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
-                <Link to="/train">
+                <Link to="/live-train">
                   <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-2.5 rounded-xl font-bold shadow-xl shadow-accent/30 px-8 text-[15px] h-[52px] shimmer transition-all hover:scale-[1.03] active:scale-[0.98]">
                     <Train className="w-5 h-5" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
                   </Button>
@@ -298,7 +298,7 @@ export default function HomePage() {
         </div>
         <div ref={featureCards.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {[
-            { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/train" },
+            { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/live-train" },
             { gradient: "gradient-card-amber", icon: Clock, iconBg: "bg-amber-500/15", iconColor: "text-amber-500", badge: "SCHEDULES", badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400", title: "Train Schedules & Timetables", desc: `Browse complete Pakistan Railways timetables with departure and arrival times for all ${netStats.totalStations || 342}+ stations. Updated daily with latest schedule changes.`, link: "/schedule" },
             { gradient: "gradient-card-blue", icon: Navigation, iconBg: "bg-blue-500/15", iconColor: "text-blue-500", badge: "GPS", badgeColor: "bg-blue-500/10 text-blue-600 dark:text-blue-400", title: "Find My Train (GPS)", desc: "Already on a train? Use your phone's GPS to automatically detect which train you're riding. Share your live location with family waiting at the station.", link: "/find-my-train" },
             { gradient: "gradient-card-purple", icon: Route, iconBg: "bg-purple-500/15", iconColor: "text-purple-500", badge: "ROUTES", badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400", title: "Journey Planner", desc: "Compare routes, stops, journey times, and fare classes between any two stations. Find the best train for your schedule and budget across Pakistan.", link: "/planner" },
@@ -395,7 +395,7 @@ export default function HomePage() {
               <h2 className="text-xl sm:text-2xl font-bold">Live Trains Now</h2>
               <p className="text-sm text-muted-foreground">Trains currently running across Pakistan — updated every 5 seconds</p>
             </div>
-            <Link to="/train" className="text-sm text-primary font-medium hover:underline flex items-center gap-1 shrink-0">
+            <Link to="/live-train" className="text-sm text-primary font-medium hover:underline flex items-center gap-1 shrink-0">
               View All <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -420,7 +420,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-6">
-            <Link to="/train"><Button variant="outline" className="rounded-xl">View All Live Trains</Button></Link>
+            <Link to="/live-train"><Button variant="outline" className="rounded-xl">View All Live Trains</Button></Link>
           </div>
         </div>
       </section>
@@ -830,7 +830,7 @@ export default function HomePage() {
                   During fog season (December–February), Karachi–Lahore trains routinely experience 3–6 hour delays as they approach Punjab. Check our live delay checker before heading to the station. Night departures from Karachi Cantt (15:00–18:00) arrive in Lahore the next morning — ideal for sleeping through the journey.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link to="/train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
+                  <Link to="/live-train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
                   <Link to="/planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
                   <Link to="/ticket-pricing"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><CreditCard className="w-3.5 h-3.5" /> Compare Fares</Button></Link>
                 </div>
@@ -908,7 +908,7 @@ export default function HomePage() {
                   This route is heavily impacted by dense fog during December–February. Delays of 2–5 hours are common. Always check our live delay tracker before departing. Afternoon services face less fog than morning trains.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link to="/train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
+                  <Link to="/live-train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
                   <Link to="/planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
                 </div>
               </CardContent>
@@ -1311,7 +1311,7 @@ export default function HomePage() {
                     <span key={t} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">{t}</span>
                   ))}
                 </div>
-                <Link to="/train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
+                <Link to="/live-train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
                   Track Karachi–Peshawar Trains <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardContent>
@@ -1340,7 +1340,7 @@ export default function HomePage() {
                     <span key={t} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">{t}</span>
                   ))}
                 </div>
-                <Link to="/train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
+                <Link to="/live-train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
                   Track Lahore–Multan Trains <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardContent>
@@ -1369,7 +1369,7 @@ export default function HomePage() {
                     <span key={t} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">{t}</span>
                   ))}
                 </div>
-                <Link to="/train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
+                <Link to="/live-train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
                   Track Rawalpindi–Karachi Trains <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardContent>
@@ -1398,7 +1398,7 @@ export default function HomePage() {
                     <span key={t} className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">{t}</span>
                   ))}
                 </div>
-                <Link to="/train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
+                <Link to="/live-train" className="text-xs text-primary font-medium inline-flex items-center gap-1 hover:underline">
                   Track Quetta–Peshawar Trains <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardContent>
@@ -1530,7 +1530,7 @@ export default function HomePage() {
             {[
               { icon: MapPin, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare routes, stops, and journey times between any two stations.", link: "/planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with full details.`, link: "/stations" },
-              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Map", desc: "See all trains on an interactive map with GPS positions.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Map", desc: "See all trains on an interactive map with GPS positions.", link: "/live-train" },
               { icon: BarChart3, gradient: "gradient-card-purple", title: "Ticket Pricing", desc: "Check fare classes and pricing for all train routes.", link: "/ticket-pricing" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
@@ -1634,7 +1634,7 @@ export default function HomePage() {
 
             {/* Premium button group */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 px-4">
-              <Link to="/train" className="group">
+              <Link to="/live-train" className="group">
                 <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:from-accent/90 hover:to-accent/70 rounded-2xl font-black gap-3 shadow-2xl shadow-accent/30 px-10 h-14 text-base shimmer transition-all duration-300 hover:scale-[1.04] hover:shadow-accent/40">
                   <Train className="w-5 h-5" /> 
                   Start Tracking Now 

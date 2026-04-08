@@ -94,7 +94,7 @@ export default function RouteDetailPage() {
             </h1>
             <p className="text-base sm:text-lg opacity-90 mb-6 max-w-2xl">{route.quickAnswer}</p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/train">
+              <Link to="/live-train">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 rounded-xl font-semibold">
                   <Radio className="w-4 h-4" /> Track Live Now <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -210,7 +210,7 @@ export default function RouteDetailPage() {
         <h2 className="text-lg font-bold mb-4">Quick Links</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
-            { label: `Track ${route.from}–${route.to} Live`, icon: Radio, link: "/train", gradient: "gradient-card-emerald" },
+            { label: `Track ${route.from}–${route.to} Live`, icon: Radio, link: "/live-train", gradient: "gradient-card-emerald" },
             { label: "Check Train Delays", icon: AlertTriangle, link: "/check-delays", gradient: "gradient-card-amber" },
             { label: "Compare Ticket Prices", icon: CreditCard, link: "/ticket-pricing", gradient: "gradient-card-blue" },
             { label: "Explore All Routes", icon: Route, link: "/routes", gradient: "gradient-card-purple" },
@@ -251,7 +251,7 @@ export default function RouteDetailPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Track Your {route.from}–{route.to} Train Now</h2>
           <p className="text-base opacity-80 max-w-lg mx-auto mb-6">Get real-time GPS position, live delay status, and accurate ETAs for every train on the {route.from}–{route.to} route. 100% free.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Start Tracking Now
               </Button>

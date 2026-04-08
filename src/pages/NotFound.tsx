@@ -33,7 +33,7 @@ const NotFound = () => {
                 <Home className="w-4 h-4" /> Go Home
               </Button>
             </Link>
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>
@@ -49,7 +49,7 @@ const NotFound = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {[
-            { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time.", link: "/train" },
+            { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time.", link: "/live-train" },
             { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Plan routes between stations.", link: "/planner" },
             { icon: Navigation, gradient: "gradient-card-blue", title: "Find My Train", desc: "GPS auto-detection.", link: "/find-my-train" },
           ].map((item, i) => (

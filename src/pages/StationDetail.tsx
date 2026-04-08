@@ -197,7 +197,7 @@ export default function StationDetailPage() {
                 <Train className="w-8 h-8 mx-auto mb-2" />
                 <h3 className="font-bold mb-1">Track Trains Live</h3>
                 <p className="text-sm opacity-80">See real-time positions of all {activeTrains.length} active trains at {station.name}</p>
-                <Link to="/train">
+                <Link to="/live-train">
                   <Button size="sm" className="mt-3 bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl">
                     Open Live Tracker
                   </Button>
@@ -209,7 +209,7 @@ export default function StationDetailPage() {
               <CardContent className="p-6">
                 <h3 className="font-bold mb-3">Quick Links</h3>
                 <div className="space-y-2">
-                  <Link to="/train" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/live-train" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center"><Train className="w-4 h-4 text-primary" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Live Trains</div><div className="text-[10px] text-muted-foreground">Track trains in real-time</div></div>
                   </Link>

@@ -10,7 +10,7 @@ interface RelatedLinksProps {
 }
 
 const allLinks = [
-  { label: "Track Trains Live", icon: Radio, path: "/train", gradient: "gradient-card-emerald", contexts: ["station", "route", "schedule", "general"] },
+  { label: "Track Trains Live", icon: Radio, path: "/live-train", gradient: "gradient-card-emerald", contexts: ["station", "route", "schedule", "general"] },
   { label: "Journey Planner", icon: Navigation, path: "/planner", gradient: "gradient-card-blue", contexts: ["train", "station", "route", "general"] },
   { label: "Check Train Delays", icon: AlertTriangle, path: "/check-delays", gradient: "gradient-card-amber", contexts: ["train", "station", "route", "schedule"] },
   { label: "Train Schedule", icon: Calendar, path: "/schedule", gradient: "gradient-card-purple", contexts: ["train", "station", "route", "general"] },

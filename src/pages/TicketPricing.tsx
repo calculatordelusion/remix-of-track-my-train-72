@@ -535,7 +535,7 @@ export default function TicketPricingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
               { icon: Navigation, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Find the best routes between any two stations with timing comparisons.", link: "/planner" },
-              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and delay info.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and delay info.", link: "/live-train" },
               { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains.", link: "/schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
@@ -566,7 +566,7 @@ export default function TicketPricingPage() {
                 <Navigation className="w-4 h-4" /> Plan Your Journey
               </Button>
             </Link>
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>

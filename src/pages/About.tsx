@@ -303,7 +303,7 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any of 164+ trains in real-time with GPS accuracy, speed data, and delay status.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any of 164+ trains in real-time with GPS accuracy, speed data, and delay status.", link: "/live-train" },
               { icon: Search, gradient: "gradient-card-amber", title: "Find My Train", desc: "Use your phone's GPS to instantly identify which train you're on without searching.", link: "/find-my-train" },
               { icon: Route, gradient: "gradient-card-blue", title: "Journey Planner", desc: "Search trains between any two stations. View schedules, durations, and running days.", link: "/planner" },
               { icon: AlertTriangle, gradient: "gradient-card-rose", title: "Delay Checker", desc: "Check live delay status for every running train. Get accurate ETAs at your station.", link: "/check-delays" },
@@ -340,7 +340,7 @@ export default function AboutPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Start Tracking Trains Now</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Free, no signup required. Track any Pakistan Railways train in real-time with GPS accuracy.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>
