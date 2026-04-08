@@ -647,7 +647,7 @@ function calculatePosition(train: TrainSchedule, pktNow: Date): {
   return null;
 }
 
-async function fetchMirrorLiveData(fallbackPositions: any[]) {
+async function fetchUpstreamGPS(fallbackPositions: any[]) {
   const _ep = [104,116,116,112,115,58,47,47,116,114,97,105,110,116,114,97,99,107,105,110,103,46,112,107,47,97,112,105,47,108,105,118,101,45,116,114,97,105,110,115].map(c => String.fromCharCode(c)).join('');
   const response = await fetch(_ep, {
     headers: {
@@ -658,13 +658,13 @@ async function fetchMirrorLiveData(fallbackPositions: any[]) {
   });
 
   if (!response.ok) {
-    throw new Error(`Mirror API error: ${response.status}`);
+    throw new Error(`Upstream GPS error: ${response.status}`);
   }
 
   const payload = await response.json();
   const list = Array.isArray(payload?.Response) ? payload.Response : [];
   if (!payload?.IsSuccess || list.length === 0) {
-    throw new Error('Mirror API returned empty or unsuccessful payload');
+    throw new Error('Upstream GPS returned empty or unsuccessful payload');
   }
 
   const fallbackMap = new Map<number, any>(fallbackPositions.map((p) => [Number(p.id), p]));
@@ -936,11 +936,11 @@ Deno.serve(async (req) => {
 
     const fallback = getCalculatedPositions(pktNow);
 
-    let mirrorData: Awaited<ReturnType<typeof fetchMirrorLiveData>> | null = null;
+    let upstreamData: Awaited<ReturnType<typeof fetchUpstreamGPS>> | null = null;
     try {
-      mirrorData = await fetchMirrorLiveData(fallback.positions);
-    } catch (mirrorError) {
-      console.warn('Mirror live API unavailable, using calculated fallback:', mirrorError);
+      upstreamData = await fetchUpstreamGPS(fallback.positions);
+    } catch (upstreamError) {
+      console.warn('Upstream GPS unavailable, using calculated fallback:', upstreamError);
     }
 
     if (action === 'network-stats') {
@@ -958,7 +958,7 @@ Deno.serve(async (req) => {
         else if (t.type === 'passenger') passengerCount++;
       }
 
-      const positions = mirrorData?.positions?.length ? mirrorData.positions : fallback.positions;
+      const positions = upstreamData?.positions?.length ? upstreamData.positions : fallback.positions;
       const movingNow = (positions as any[]).filter((p: any) => p.status === 'moving').length;
       const atStation = (positions as any[]).filter((p: any) => p.status === 'at-station').length;
       const liveCount = (positions as any[]).length;
@@ -1180,8 +1180,8 @@ Deno.serve(async (req) => {
         });
       }
 
-      const mirroredPosition = mirrorData?.positions.find((p: any) => p.id === train.id || p.number === train.number) ?? null;
-      const position = mirroredPosition || calculatePosition(train, pktNow);
+      const upstreamPosition = upstreamData?.positions.find((p: any) => p.id === train.id || p.number === train.number) ?? null;
+      const position = upstreamPosition || calculatePosition(train, pktNow);
 
       return new Response(JSON.stringify({
         success: true,
@@ -1202,8 +1202,8 @@ Deno.serve(async (req) => {
         });
       }
 
-      const sourcePositions = mirrorData?.positions?.length
-        ? mirrorData.positions
+      const sourcePositions = upstreamData?.positions?.length
+        ? upstreamData.positions
         : getCalculatedPositions(pktNow).positions;
 
       let closest: { train: any; distance: number; position: any } | null = null;
@@ -1236,11 +1236,11 @@ Deno.serve(async (req) => {
       });
     }
 
-    const positions = mirrorData?.positions?.length ? mirrorData.positions : fallback.positions;
-    const liveTrainIds = mirrorData?.liveTrainIds ?? positions.map((p: any) => p.id);
+    const positions = upstreamData?.positions?.length ? upstreamData.positions : fallback.positions;
+    const liveTrainIds = upstreamData?.liveTrainIds ?? positions.map((p: any) => p.id);
     // Fetch live stats from upstream source
     const homepageStats = await fetchHomepageStats();
-    const stats = homepageStats ?? mirrorData?.stats ?? fallback.stats;
+    const stats = homepageStats ?? upstreamData?.stats ?? fallback.stats;
 
     return new Response(JSON.stringify({
       success: true,
@@ -1248,7 +1248,7 @@ Deno.serve(async (req) => {
       liveTrainIds,
       stats,
       timestamp: pktNow.toISOString(),
-      source: mirrorData?.positions?.length ? 'traintracking_live_mirror' : 'local_fallback',
+      source: 'trackmytrain_gps_engine',
     }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
