@@ -229,49 +229,58 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Search Section */}
-      <section aria-label="Train search" className="container mx-auto px-4 -mt-6 sm:-mt-8 relative z-10">
-        <Card className="shadow-xl border-primary/10">
-          <CardContent className="p-4 sm:p-6">
-            <h2 className="text-lg font-bold mb-1">Search Any Train</h2>
-            <p className="text-sm text-muted-foreground mb-4">Enter train number, name, or route to start tracking</p>
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-              <Input
-                id="search"
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                placeholder="Search train by name or number (e.g., Tezgam, 7UP)..."
-                className="pl-10 h-12 text-base"
-                aria-label="Search trains"
-                aria-autocomplete="list"
-                aria-controls={showResults && searchResults.length > 0 ? "search-results" : undefined}
-                aria-expanded={showResults && searchResults.length > 0}
-                role="combobox"
-                onFocus={() => searchQuery.length > 1 && setShowResults(true)}
-                onBlur={() => setTimeout(() => setShowResults(false), 200)}
-              />
-              {showResults && searchResults.length > 0 && (
-                <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border rounded-xl shadow-lg z-50 max-h-80 overflow-auto">
-                  {searchResults.map((train) => (
-                    <Link key={train.id} to={`/train/${train.id}`} role="option" className="flex items-center gap-3 px-4 py-3 hover:bg-muted transition-colors border-b last:border-0">
-                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">#{train.id}</div>
-                      <div className="min-w-0 flex-1">
-                        <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
-                        <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
-                      </div>
-                      <div className="shrink-0">
-                        <span className={`text-xs px-2 py-0.5 rounded-full ${liveTrainIds.has(train.id) ? 'bg-primary/10 text-primary' : train.status === 'active' ? 'bg-accent/10 text-accent-foreground' : 'bg-muted text-muted-foreground'}`}>
-                          {liveTrainIds.has(train.id) ? '🟢 Live' : train.status === 'active' ? 'Active' : 'Inactive'}
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
+      {/* Search Section — Premium */}
+      <section aria-label="Train search" className="container mx-auto px-4 -mt-8 sm:-mt-12 relative z-10">
+        <div className="gradient-border rounded-2xl">
+          <Card className="shadow-2xl border-0 rounded-2xl bg-card">
+            <CardContent className="p-5 sm:p-8">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Search className="w-5 h-5 text-primary" />
                 </div>
-              )}
-            </div>
-          </CardContent>
-        </Card>
+                <div>
+                  <h2 className="text-lg font-bold">Search Any Train</h2>
+                  <p className="text-xs text-muted-foreground">Enter train number, name, or route to start tracking</p>
+                </div>
+              </div>
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                <Input
+                  id="search"
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  placeholder="Search train by name or number (e.g., Tezgam, 7UP)..."
+                  className="pl-12 h-14 text-base rounded-xl border-2 border-border focus:border-primary transition-colors"
+                  aria-label="Search trains"
+                  aria-autocomplete="list"
+                  aria-controls={showResults && searchResults.length > 0 ? "search-results" : undefined}
+                  aria-expanded={showResults && searchResults.length > 0}
+                  role="combobox"
+                  onFocus={() => searchQuery.length > 1 && setShowResults(true)}
+                  onBlur={() => setTimeout(() => setShowResults(false), 200)}
+                />
+                {showResults && searchResults.length > 0 && (
+                  <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border-2 border-primary/20 rounded-xl shadow-2xl z-50 max-h-80 overflow-auto">
+                    {searchResults.map((train) => (
+                      <Link key={train.id} to={`/train/${train.id}`} role="option" className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors border-b border-border/50 last:border-0">
+                        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary ring-1 ring-primary/20">#{train.id}</div>
+                        <div className="min-w-0 flex-1">
+                          <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
+                          <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
+                        </div>
+                        <div className="shrink-0">
+                          <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${liveTrainIds.has(train.id) ? 'bg-primary/10 text-primary ring-1 ring-primary/20' : train.status === 'active' ? 'bg-accent/10 text-accent-foreground' : 'bg-muted text-muted-foreground'}`}>
+                            {liveTrainIds.has(train.id) ? '🟢 Live' : train.status === 'active' ? 'Active' : 'Inactive'}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       {/* Gradient Feature Cards - Hero Boxes */}
