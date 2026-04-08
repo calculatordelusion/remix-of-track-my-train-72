@@ -6,8 +6,7 @@ export default function Footer() {
   const location = useLocation();
 
   const quickLinks = [
-    { label: "All Trains", path: "/live-train", icon: Train },
-    { label: "Live Trains", path: "/live-train", icon: Wifi },
+    { label: "Live Train Tracker", path: "/live-train", icon: Train },
     { label: "Train Schedule", path: "/schedule", icon: Calendar },
     { label: "Station Directory", path: "/stations", icon: Landmark },
     { label: "Schedule Guide", path: "/schedule-guide", icon: FileSearch },
