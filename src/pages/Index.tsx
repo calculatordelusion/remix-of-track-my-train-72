@@ -1599,8 +1599,8 @@ export default function HomePage() {
       {/* CTA — Premium */}
       <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-16 sm:py-24">
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
-        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(165_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(38_92%_50%/0.06)] blur-[80px] float-medium" />
         <div className="relative container mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 glass-hero rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6">
             <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
