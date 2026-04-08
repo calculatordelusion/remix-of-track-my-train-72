@@ -229,6 +229,76 @@
   .stat-counter {
     @apply tabular-nums font-bold;
   }
+  /* Glassmorphism */
+  .glass {
+    background: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+  .glass-hero {
+    background: hsl(0 0% 100% / 0.08);
+    backdrop-filter: blur(16px) saturate(1.6);
+    -webkit-backdrop-filter: blur(16px) saturate(1.6);
+    border: 1px solid hsl(0 0% 100% / 0.12);
+  }
+  /* Animated gradient border */
+  .gradient-border {
+    position: relative;
+    overflow: hidden;
+  }
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+  }
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  /* Floating animation */
+  .float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+  .float-medium {
+    animation: floatMedium 4s ease-in-out infinite;
+  }
+  @keyframes floatMedium {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  /* Shimmer effect */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, hsl(0 0% 100% / 0.1) 45%, hsl(0 0% 100% / 0.2) 50%, hsl(0 0% 100% / 0.1) 55%, transparent 60%);
+    background-size: 250% 100%;
+    animation: shimmerMove 3s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes shimmerMove {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
   /* Touch targets for mobile */
   @media (max-width: 640px) {
     .touch-target {

@@ -123,147 +123,175 @@ export default function HomePage() {
         ogImage="https://trackmytrain.pk/og-image.png"
         faqSchema={faqs}
       />
-      {/* Hero Section */}
+      {/* Hero Section — Premium Design */}
       <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient text-primary-foreground">
         {/* Multi-layer background */}
         <div className="absolute inset-0">
-          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-[0.12]" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[hsl(var(--hero-gradient-end)/0.9)]" />
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-[0.15] mix-blend-luminosity" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--hero-gradient-start)/0.3)] via-transparent to-[hsl(var(--hero-gradient-end)/0.95)]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-gradient-start)/0.8)] via-transparent to-transparent" />
         </div>
-        {/* Decorative gradient orbs */}
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.07)] blur-3xl" />
-        <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.05)] blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(152_60%_30%/0.06)] blur-3xl" />
-        {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        {/* Animated decorative orbs */}
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
+        <div className="absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(210_80%_50%/0.04)] blur-[100px] float-slow" style={{ animationDelay: '2s' }} />
+        {/* Refined grid pattern */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.05) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.05) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
 
-        <div className="relative container mx-auto px-4 py-14 sm:py-20 md:py-28">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-7 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
-              </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">LIVE SATELLITE TRACKING • REFRESHES EVERY 5 SECONDS</span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-5 leading-[1.08] drop-shadow-sm">
-              Track My Train —{" "}
-              <span className="text-gradient-gold">Live Railway GPS Tracker</span>
-            </h1>
-
-            <p className="text-base sm:text-lg md:text-xl opacity-85 mb-8 sm:mb-10 max-w-2xl leading-relaxed">
-              See exactly where your Pakistan Railways train is right now. Live GPS positions, up-to-the-second delay info, and accurate ETAs for {netStats.totalTrains || "164"}+ trains across {netStats.totalStations || "342"}+ stations — completely free, no signup needed.
-            </p>
-
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 sm:mb-10">
-              <Link to="/train">
-                <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-2 rounded-xl font-bold shadow-lg shadow-accent/25 px-7 text-base">
-                  <Train className="w-5 h-5" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
-              <Link to="/find-my-train">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/25 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 gap-2 rounded-xl font-semibold px-6">
-                  <Navigation className="w-4 h-4" /> Find My Train (GPS)
-                </Button>
-              </Link>
-              <Link to="/schedule">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/25 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 gap-2 rounded-xl font-semibold px-6">
-                  <Clock className="w-4 h-4" /> View Schedules
-                </Button>
-              </Link>
-            </div>
-
-            <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm opacity-75">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Zero Cost, Always</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Instant Access — No Login</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Optimized for Slow Networks</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> English-Only Experience</span>
-            </div>
-          </div>
-
-          {/* Stats - Desktop sidebar */}
-          <div className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
-            {[
-              { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "bg-emerald-500/15" },
-              { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "bg-amber-500/15" },
-              { icon: Zap, value: stats.total, label: "Total Trains", color: "text-blue-400", bg: "bg-blue-500/15" },
-            ].map((stat, i) => (
-              <div key={i} className="bg-card/90 backdrop-blur-md text-card-foreground rounded-xl px-5 py-3.5 flex items-center gap-3.5 shadow-xl border border-border/50 hover-lift cursor-default">
-                <div className={`w-11 h-11 rounded-xl ${stat.bg} flex items-center justify-center`}>
-                  <stat.icon className={`w-5 h-5 ${stat.color}`} />
-                </div>
-                <div>
-                  <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight`}>{stat.value}</div>
-                  <div className="text-xs text-muted-foreground font-medium">{stat.label}</div>
-                </div>
+        <div className="relative container mx-auto px-4 py-16 sm:py-24 md:py-32 lg:py-36">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-center">
+            <div className="max-w-3xl">
+              {/* Live badge with shimmer */}
+              <div className="inline-flex items-center gap-2.5 glass-hero rounded-full px-5 py-2.5 text-sm mb-8 shimmer">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_50%)] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(152_55%_50%)]" />
+                </span>
+                <span className="font-semibold tracking-[0.15em] text-[hsl(152_55%_60%)] text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
               </div>
-            ))}
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight">
+                <span className="block">Track My Train</span>
+                <span className="block mt-1 text-gradient-gold" style={{ WebkitTextStroke: '0.5px hsl(43 74% 49% / 0.3)' }}>Live GPS Tracker</span>
+              </h1>
+
+              <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-2xl leading-relaxed font-light">
+                See exactly where your Pakistan Railways train is right now. Live GPS positions, real-time delays, and accurate ETAs for <strong className="font-semibold opacity-100">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold opacity-100">{netStats.totalStations || "342"}+ stations</strong> — completely free.
+              </p>
+
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
+                <Link to="/train">
+                  <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-2.5 rounded-xl font-bold shadow-xl shadow-accent/30 px-8 text-base h-13 shimmer">
+                    <Train className="w-5 h-5" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link to="/find-my-train">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] gap-2 rounded-xl font-semibold px-6 h-13">
+                    <Navigation className="w-4 h-4" /> Find My Train (GPS)
+                  </Button>
+                </Link>
+                <Link to="/schedule">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] gap-2 rounded-xl font-semibold px-6 h-13">
+                    <Clock className="w-4 h-4" /> View Schedules
+                  </Button>
+                </Link>
+              </div>
+
+              <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs sm:text-sm opacity-70">
+                {["Zero Cost, Always", "Instant Access — No Login", "Optimized for Slow Networks", "English-Only Experience"].map((item) => (
+                  <span key={item} className="flex items-center gap-2">
+                    <span className="w-4 h-4 rounded-full bg-[hsl(152_55%_50%/0.2)] flex items-center justify-center">
+                      <CheckCircle2 className="w-3 h-3 text-[hsl(152_55%_60%)]" />
+                    </span>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Stats - Desktop glassmorphism panel */}
+            <div className="hidden lg:flex flex-col gap-3 float-slow">
+              {[
+                { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "bg-emerald-500/15", ring: "ring-emerald-500/20" },
+                { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "bg-amber-500/15", ring: "ring-amber-500/20" },
+                { icon: Zap, value: stats.total, label: "Total Tracked", color: "text-blue-400", bg: "bg-blue-500/15", ring: "ring-blue-500/20" },
+              ].map((stat, i) => (
+                <div key={i} className="glass rounded-2xl px-6 py-4 flex items-center gap-4 shadow-2xl hover-lift cursor-default ring-1 ring-inset" style={{ ['--tw-ring-color' as string]: undefined }}>
+                  <div className={`w-12 h-12 rounded-xl ${stat.bg} flex items-center justify-center ring-1 ${stat.ring}`}>
+                    <stat.icon className={`w-5 h-5 ${stat.color}`} />
+                  </div>
+                  <div>
+                    <div className={`text-3xl font-black stat-counter ${stat.color} tracking-tight leading-none`}>{stat.value}</div>
+                    <div className="text-xs text-muted-foreground font-medium mt-1">{stat.label}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Stats - Mobile inline */}
-          <div className="grid grid-cols-3 gap-3 mt-10 lg:hidden">
+          {/* Stats - Mobile inline with glassmorphism */}
+          <div className="grid grid-cols-3 gap-3 mt-12 lg:hidden">
             {[
-              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400" },
-              { value: stats.atStation, label: "At Station", color: "text-amber-400" },
-              { value: stats.total, label: "Total", color: "text-blue-400" },
+              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400", icon: Wifi },
+              { value: stats.atStation, label: "At Station", color: "text-amber-400", icon: Train },
+              { value: stats.total, label: "Total", color: "text-blue-400", icon: Zap },
             ].map((stat, i) => (
-              <div key={i} className="bg-primary-foreground/8 backdrop-blur-sm rounded-xl p-3.5 text-center border border-primary-foreground/10 shadow-lg">
+              <div key={i} className="glass-hero rounded-2xl p-4 text-center">
+                <stat.icon className={`w-4 h-4 ${stat.color} mx-auto mb-1.5 opacity-70`} />
                 <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight`}>{stat.value}</div>
-                <div className="text-xs opacity-70 font-medium mt-0.5">{stat.label}</div>
+                <div className="text-[10px] opacity-60 font-medium mt-0.5 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Bottom decorative wave */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Search Section */}
-      <section aria-label="Train search" className="container mx-auto px-4 -mt-6 sm:-mt-8 relative z-10">
-        <Card className="shadow-xl border-primary/10">
-          <CardContent className="p-4 sm:p-6">
-            <h2 className="text-lg font-bold mb-1">Search Any Train</h2>
-            <p className="text-sm text-muted-foreground mb-4">Enter train number, name, or route to start tracking</p>
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-              <Input
-                id="search"
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                placeholder="Search train by name or number (e.g., Tezgam, 7UP)..."
-                className="pl-10 h-12 text-base"
-                aria-label="Search trains"
-                aria-autocomplete="list"
-                aria-controls={showResults && searchResults.length > 0 ? "search-results" : undefined}
-                aria-expanded={showResults && searchResults.length > 0}
-                role="combobox"
-                onFocus={() => searchQuery.length > 1 && setShowResults(true)}
-                onBlur={() => setTimeout(() => setShowResults(false), 200)}
-              />
-              {showResults && searchResults.length > 0 && (
-                <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border rounded-xl shadow-lg z-50 max-h-80 overflow-auto">
-                  {searchResults.map((train) => (
-                    <Link key={train.id} to={`/train/${train.id}`} role="option" className="flex items-center gap-3 px-4 py-3 hover:bg-muted transition-colors border-b last:border-0">
-                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">#{train.id}</div>
-                      <div className="min-w-0 flex-1">
-                        <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
-                        <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
-                      </div>
-                      <div className="shrink-0">
-                        <span className={`text-xs px-2 py-0.5 rounded-full ${liveTrainIds.has(train.id) ? 'bg-primary/10 text-primary' : train.status === 'active' ? 'bg-accent/10 text-accent-foreground' : 'bg-muted text-muted-foreground'}`}>
-                          {liveTrainIds.has(train.id) ? '🟢 Live' : train.status === 'active' ? 'Active' : 'Inactive'}
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
+      {/* Search Section — Premium */}
+      <section aria-label="Train search" className="container mx-auto px-4 -mt-8 sm:-mt-12 relative z-10">
+        <div className="gradient-border rounded-2xl">
+          <Card className="shadow-2xl border-0 rounded-2xl bg-card">
+            <CardContent className="p-5 sm:p-8">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Search className="w-5 h-5 text-primary" />
                 </div>
-              )}
-            </div>
-          </CardContent>
-        </Card>
+                <div>
+                  <h2 className="text-lg font-bold">Search Any Train</h2>
+                  <p className="text-xs text-muted-foreground">Enter train number, name, or route to start tracking</p>
+                </div>
+              </div>
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                <Input
+                  id="search"
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  placeholder="Search train by name or number (e.g., Tezgam, 7UP)..."
+                  className="pl-12 h-14 text-base rounded-xl border-2 border-border focus:border-primary transition-colors"
+                  aria-label="Search trains"
+                  aria-autocomplete="list"
+                  aria-controls={showResults && searchResults.length > 0 ? "search-results" : undefined}
+                  aria-expanded={showResults && searchResults.length > 0}
+                  role="combobox"
+                  onFocus={() => searchQuery.length > 1 && setShowResults(true)}
+                  onBlur={() => setTimeout(() => setShowResults(false), 200)}
+                />
+                {showResults && searchResults.length > 0 && (
+                  <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border-2 border-primary/20 rounded-xl shadow-2xl z-50 max-h-80 overflow-auto">
+                    {searchResults.map((train) => (
+                      <Link key={train.id} to={`/train/${train.id}`} role="option" className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors border-b border-border/50 last:border-0">
+                        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary ring-1 ring-primary/20">#{train.id}</div>
+                        <div className="min-w-0 flex-1">
+                          <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
+                          <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
+                        </div>
+                        <div className="shrink-0">
+                          <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${liveTrainIds.has(train.id) ? 'bg-primary/10 text-primary ring-1 ring-primary/20' : train.status === 'active' ? 'bg-accent/10 text-accent-foreground' : 'bg-muted text-muted-foreground'}`}>
+                            {liveTrainIds.has(train.id) ? '🟢 Live' : train.status === 'active' ? 'Active' : 'Inactive'}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       {/* Gradient Feature Cards - Hero Boxes */}
-      <section className="container mx-auto px-4 py-10 sm:py-14">
+      <section className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 text-xs font-bold text-primary tracking-wider mb-3">
+            <Zap className="w-3.5 h-3.5" /> POWERFUL TOOLS
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold">Everything You Need for Train Travel</h2>
+          <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Six essential tools designed for Pakistan Railways passengers — all free, all instant, all in one place.</p>
+        </div>
         <div ref={featureCards.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {[
             { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/train" },
@@ -274,18 +302,19 @@ export default function HomePage() {
             { gradient: "gradient-card-teal", icon: Map, iconBg: "bg-teal-500/15", iconColor: "text-teal-500", badge: "EXPLORE", badgeColor: "bg-teal-500/10 text-teal-600 dark:text-teal-400", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with GPS coordinates, connecting trains, and platform facilities. Your complete station guide.`, link: "/stations" },
           ].map((card, i) => (
             <Link key={i} to={card.link} {...featureCards.getAnimationProps(i)}>
-              <Card className={`${card.gradient} border hover-lift group h-full cursor-pointer`}>
-                <CardContent className="p-5 sm:p-6">
+              <Card className={`${card.gradient} border hover-lift group h-full cursor-pointer relative overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/5 to-transparent rounded-bl-full" />
+                <CardContent className="p-5 sm:p-6 relative">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center transition-transform duration-300 group-hover:scale-110`}>
+                    <div className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3`}>
                       <card.icon className={`w-6 h-6 ${card.iconColor}`} />
                     </div>
-                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${card.badgeColor}`}>{card.badge}</span>
+                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${card.badgeColor} tracking-wider`}>{card.badge}</span>
                   </div>
                   <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Open <ArrowRight className="w-4 h-4" />
+                  <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+                    Explore <ArrowRight className="w-4 h-4" />
                   </div>
                 </CardContent>
               </Card>
@@ -293,6 +322,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+
 
       {/* ===== NEW: Top Express Trains of Pakistan ===== */}
       <section className="bg-muted/50 py-12 sm:py-16">
@@ -1565,19 +1596,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Track Your Train?</h2>
-          <p className="text-base sm:text-lg opacity-80 max-w-xl mx-auto mb-8">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — all free, no signup required. Join thousands of travelers who never miss their train.</p>
+      {/* CTA — Premium */}
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-16 sm:py-24">
+        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 glass-hero rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6">
+            <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5 tracking-tight">Ready to Track Your Train?</h2>
+          <p className="text-base sm:text-lg opacity-75 max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Link to="/train">
-              <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
-                <Train className="w-4 h-4" /> Start Tracking Now
+              <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2 shadow-xl shadow-accent/25 px-8 h-13 shimmer">
+                <Train className="w-5 h-5" /> Start Tracking Now <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/planner">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] rounded-xl gap-2 font-semibold px-7 h-13">
                 <MapPin className="w-4 h-4" /> Plan a Journey
               </Button>
             </Link>
