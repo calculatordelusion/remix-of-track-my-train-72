@@ -268,7 +268,7 @@ export default function HomePage() {
                   <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border-2 border-primary/20 rounded-xl shadow-2xl z-50 max-h-80 overflow-auto">
                     {searchResults.map((train) => (
                       <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`} role="option" className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors border-b border-border/50 last:border-0">
-                        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary ring-1 ring-primary/20">#{train.id}</div>
+                        <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary ring-1 ring-primary/20">#{train.number}</div>
                         <div className="min-w-0 flex-1">
                           <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
                           <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
@@ -411,7 +411,7 @@ export default function HomePage() {
                           <span className="w-1.5 h-1.5 rounded-full bg-primary live-pulse" /> LIVE
                         </span>
                       )}
-                      <span className="text-xs text-muted-foreground">#{train.id}</span>
+                      <span className="text-xs text-muted-foreground">#{train.number}</span>
                     </div>
                     <h3 className="font-bold group-hover:text-primary transition-colors">{train.name} {train.number}</h3>
                     <p className="text-sm text-muted-foreground">{train.from} → {train.to}</p>

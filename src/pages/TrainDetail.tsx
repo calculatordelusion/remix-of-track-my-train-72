@@ -77,12 +77,12 @@ export default function TrainDetailPage() {
       <SEOHead
         title={`${train.name} ${train.number} — Live Status, Route & Schedule 2026`}
         description={`Track ${train.name} ${train.number} live — ${train.from} to ${train.to}. Real-time GPS position, speed ${speed > 0 ? `(${speed} km/h)` : ""}, delay status${delay > 0 ? ` (${delay} min late)` : ""}, and full route schedule. Journey time: ${train.duration}.`}
-        canonical={`/train/${train.id}`}
+        canonical={`/train/${generateTrainSlug(train.name, train.number)}`}
         keywords={`${train.name} live status, ${train.name} ${train.number} tracking, ${train.name} delay, ${train.from} to ${train.to} train, ${train.name} schedule, pakistan railways ${train.name}`}
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Live Trains", url: "/live-train" },
-          { name: `${train.name} ${train.number}`, url: `/train/${train.id}` },
+          { name: `${train.name} ${train.number}`, url: `/train/${generateTrainSlug(train.name, train.number)}` },
         ]}
         faqSchema={trainFaqs}
         additionalSchemas={[{
@@ -134,7 +134,7 @@ export default function TrainDetailPage() {
                           <span className="w-1.5 h-1.5 rounded-full bg-primary live-pulse" /> LIVE
                         </span>
                       )}
-                      <span className="text-sm text-muted-foreground">#{train.id}</span>
+                      <span className="text-sm text-muted-foreground">#{train.number}</span>
                     </div>
                     <h1 className="text-2xl font-bold">{train.name} {train.number}</h1>
                   </div>

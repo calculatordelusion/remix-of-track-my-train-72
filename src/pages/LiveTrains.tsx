@@ -190,7 +190,7 @@ export default function LiveTrainsPage() {
                       {train.name} {train.number}
                     </h3>
                     <p className="text-xs text-muted-foreground">
-                      <span className="font-medium">#{train.id}</span>
+                      <span className="font-medium">#{train.number}</span>
                     </p>
                     <p className="text-xs text-muted-foreground mt-1">
                       {train.from} To {train.to}

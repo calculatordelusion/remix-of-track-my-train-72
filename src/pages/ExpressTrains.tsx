@@ -244,7 +244,7 @@ export default function ExpressTrainsPage() {
                           <CardContent className="p-5">
                             <div className="flex items-center gap-2 mb-2">
                               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent/10 text-accent-foreground">AC PREMIUM</span>
-                              <span className="text-xs text-muted-foreground">#{train.id}</span>
+                              <span className="text-xs text-muted-foreground">#{train.number}</span>
                             </div>
                             <h3 className="font-bold group-hover:text-primary transition-colors">
                               {train.name} <span className="text-muted-foreground font-normal text-sm">{train.number}</span>
@@ -278,7 +278,7 @@ export default function ExpressTrainsPage() {
                       <CardContent className="p-5">
                         <div className="flex items-center gap-2 mb-2">
                           <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-primary/10 text-primary">EXPRESS</span>
-                          <span className="text-xs text-muted-foreground">#{train.id}</span>
+                          <span className="text-xs text-muted-foreground">#{train.number}</span>
                         </div>
                         <h3 className="font-bold group-hover:text-primary transition-colors">
                           {train.name} <span className="text-muted-foreground font-normal text-sm">{train.number}</span>

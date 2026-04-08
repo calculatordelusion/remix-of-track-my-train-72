@@ -49,7 +49,7 @@ export default function RouteDetailPage() {
             "@type": "ListItem",
             "position": i + 1,
             "name": train.name,
-            "url": `https://trackmytrain.pk/train/${train.id}`,
+            "url": `https://trackmytrain.pk/train/${generateTrainSlug(train.name, train.number)}`,
             "item": {
               "@type": "TrainTrip",
               "name": train.name,
