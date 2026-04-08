@@ -150,7 +150,7 @@ export default function ScheduleGuide() {
             <p className="text-base sm:text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
               Complete guide to all 164+ Pakistan Railways train timings — accurate departure & arrival times, running days, coach classes, route corridors, seasonal disruptions, and expert travel tips.
             </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے ٹرین شیڈول اور ٹائم ٹیبل ۲۰۲۶ — مکمل گائیڈ</p>
+            
             <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
               <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold">
                 <Link to="/schedule">
