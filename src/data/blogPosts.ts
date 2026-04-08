@@ -8,6 +8,8 @@ import eidTravelImg from "@/assets/blog/eid-travel.jpg";
 import bestExpressImg from "@/assets/blog/best-express-trains.jpg";
 import howToTrackImg from "@/assets/blog/how-to-track-train.jpg";
 import trainClassesImg from "@/assets/blog/train-classes-guide.jpg";
+import karachiIslamabadImg from "@/assets/blog/karachi-islamabad-ticket-price.jpg";
+import rawalpindiLahoreImg from "@/assets/blog/rawalpindi-lahore-timing.jpg";
 
 export interface BlogPost {
   slug: string;
