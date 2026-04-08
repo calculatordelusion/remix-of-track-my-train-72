@@ -44,16 +44,16 @@
     --hero-gradient-end: 165 40% 22%;
     --hero-text: 0 0% 100%;
     --hero-text-muted: 0 0% 100% / 0.75;
-    --hero-badge-bg: 165 60% 28% / 0.12;
-    --hero-glass: 222 47% 11% / 0.07;
-    --hero-glass-border: 222 47% 11% / 0.15;
-    --hero-orb-1: 165 55% 35% / 0.15;
-    --hero-orb-2: 38 92% 50% / 0.10;
-    --hero-orb-3: 200 80% 50% / 0.08;
-    --hero-grid-line: 222 47% 11% / 0.06;
-    --hero-img-opacity: 0.12;
-    --hero-stat-glass: 222 47% 11% / 0.06;
-    --hero-wave-from: var(--background);
+    --hero-badge-bg: 0 0% 100% / 0.12;
+    --hero-glass: 0 0% 100% / 0.08;
+    --hero-glass-border: 0 0% 100% / 0.15;
+    --hero-orb-1: 165 55% 50% / 0.15;
+    --hero-orb-2: 38 92% 55% / 0.10;
+    --hero-orb-3: 200 80% 55% / 0.08;
+    --hero-grid-line: 0 0% 100% / 0.06;
+    --hero-img-opacity: 0.15;
+    --hero-stat-glass: 0 0% 100% / 0.06;
+    --hero-wave-from: 165 45% 30%;
 
     --footer-bg: 220 20% 96%;
     --footer-surface: 220 15% 92%;
