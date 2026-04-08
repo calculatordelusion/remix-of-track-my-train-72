@@ -60,7 +60,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col leading-none min-w-0">
               <span className="text-foreground text-[15px] sm:text-base font-black tracking-tight whitespace-nowrap">
-                Track<span className="text-primary">My</span>Train
+                Track <span className="text-primary">My</span> Train
               </span>
               <span className="text-[7px] sm:text-[8px] font-semibold tracking-[0.2em] text-muted-foreground uppercase whitespace-nowrap mt-0.5">
                 Pakistan Railways
