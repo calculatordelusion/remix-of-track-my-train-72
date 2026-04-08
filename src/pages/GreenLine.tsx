@@ -106,7 +106,7 @@ export default function GreenLinePage() {
         centered
       >
         <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
-          <Link to="/train/5">
+          <Link to="/train/business-express-5up">
             <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
               <Navigation className="w-4 h-4" /> Track Green Line Live
             </Button>
@@ -299,7 +299,7 @@ export default function GreenLinePage() {
                 </div>
               )}
               <div className="flex justify-center">
-                <Link to="/train/5">
+                <Link to="/train/business-express-5up">
                   <Button size="lg" className="rounded-xl font-semibold gap-2">
                     <Train className="w-4 h-4" /> Open Live Tracker
                   </Button>
@@ -393,7 +393,7 @@ export default function GreenLinePage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to Travel on Green Line?</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Track the Green Line Express in real-time, check ticket prices, and plan your perfect journey across Pakistan.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train/5">
+            <Link to="/train/business-express-5up">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Track Green Line Live
               </Button>
