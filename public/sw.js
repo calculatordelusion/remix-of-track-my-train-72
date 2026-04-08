@@ -1,5 +1,5 @@
 // TrackMyTrain.com.pk Service Worker — Offline + Push Notifications
-const CACHE_VERSION = 'trackmytrain-v2';
+const CACHE_VERSION = 'trackmytrain-v3';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `dynamic-${CACHE_VERSION}`;
 
