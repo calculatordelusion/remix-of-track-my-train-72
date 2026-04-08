@@ -112,8 +112,9 @@
     --hero-gradient-end: 220 40% 5%;
     --hero-text: 0 0% 100%;
     --hero-text-muted: 210 20% 80%;
-    --hero-badge-bg: 0 0% 100% / 0.08;
-    --hero-glass: 0 0% 100% / 0.08;
+    --hero-badge-bg: 0 0% 100% / 0.10;
+    --hero-badge-text: 0 0% 100%;
+    --hero-glass: 0 0% 100% / 0.10;
     --hero-glass-border: 0 0% 100% / 0.12;
     --hero-orb-1: 165 55% 40% / 0.08;
     --hero-orb-2: 38 92% 50% / 0.06;
