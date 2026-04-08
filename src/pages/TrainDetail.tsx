@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
 import TopicCluster, { getTrainCluster } from "@/components/TopicCluster";
-import { trainSlugToId } from "@/data/trains";
+import { trainSlugToId, generateTrainSlug } from "@/data/trains";
 
 export default function TrainDetailPage() {
   const { slug } = useParams();
