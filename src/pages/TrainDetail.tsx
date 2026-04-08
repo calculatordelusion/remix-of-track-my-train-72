@@ -85,25 +85,85 @@ export default function TrainDetailPage() {
           { name: `${train.name} ${train.number}`, url: `/train/${generateTrainSlug(train.name, train.number)}` },
         ]}
         faqSchema={trainFaqs}
-        additionalSchemas={[{
-          "@context": "https://schema.org",
-          "@type": "Trip",
-          "name": `${train.name} ${train.number}`,
-          "description": `${train.name} train service from ${train.from} to ${train.to}. Duration: ${train.duration}. Departure: ${train.departureTime}.`,
-          "departureTime": train.departureTime,
-          "arrivalTime": train.arrivalTime,
-          "itinerary": {
-            "@type": "ItemList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": train.from },
-              { "@type": "ListItem", "position": 2, "name": train.to }
-            ]
+        additionalSchemas={[
+          // TrainTrip schema for Google rich results
+          {
+            "@context": "https://schema.org",
+            "@type": "TrainTrip",
+            "name": `${train.name} ${train.number}`,
+            "trainName": train.name,
+            "trainNumber": train.number,
+            "departureTime": train.departureTime,
+            "arrivalTime": train.arrivalTime,
+            "departureStation": {
+              "@type": "TrainStation",
+              "name": train.from,
+              "address": { "@type": "PostalAddress", "addressCountry": "PK" }
+            },
+            "arrivalStation": {
+              "@type": "TrainStation",
+              "name": train.to,
+              "address": { "@type": "PostalAddress", "addressCountry": "PK" }
+            },
+            "provider": {
+              "@type": "Organization",
+              "name": "Pakistan Railways",
+              "url": "https://pakrail.gov.pk"
+            }
           },
-          "provider": {
-            "@type": "Organization",
-            "name": "Pakistan Railways"
-          }
-        }]}
+          // Trip schema with full itinerary
+          {
+            "@context": "https://schema.org",
+            "@type": "Trip",
+            "name": `${train.name} ${train.number} — ${train.from} to ${train.to}`,
+            "description": `${train.name} (${train.number}) ${train.type} train from ${train.from} to ${train.to}. Departs ${train.departureTime}, arrives ${train.arrivalTime}. Duration: ${train.duration}. Runs on: ${train.days.join(", ")}.`,
+            "departureTime": train.departureTime,
+            "arrivalTime": train.arrivalTime,
+            "itinerary": {
+              "@type": "ItemList",
+              "numberOfItems": train.stops.length + 2,
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": train.from, "description": `Departure: ${train.departureTime}` },
+                ...train.stops.map((stop, i) => ({
+                  "@type": "ListItem",
+                  "position": i + 2,
+                  "name": stop.station,
+                  "description": `Arrival: ${stop.arrival}${stop.departure ? `, Departure: ${stop.departure}` : ""}, ${stop.distance} km from origin`
+                })),
+                { "@type": "ListItem", "position": train.stops.length + 2, "name": train.to, "description": `Arrival: ${train.arrivalTime}` }
+              ]
+            },
+            "provider": {
+              "@type": "Organization",
+              "name": "Pakistan Railways",
+              "url": "https://pakrail.gov.pk"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "PKR",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Pakistan Railways"
+              }
+            },
+            "subjectOf": {
+              "@type": "WebPage",
+              "url": `https://trackmytrain.com.pk/train/${generateTrainSlug(train.name, train.number)}`
+            }
+          },
+          // Table schema for schedule (targets rich results for timetable queries)
+          ...(train.stops.length > 0 ? [{
+            "@context": "https://schema.org",
+            "@type": "Dataset",
+            "name": `${train.name} ${train.number} Schedule & Timetable`,
+            "description": `Complete station-by-station timetable for ${train.name} (${train.number}) from ${train.from} to ${train.to} with ${train.stops.length} stops, arrival/departure times, and distances.`,
+            "keywords": [`${train.name} schedule`, `${train.name} timetable`, `${train.from} to ${train.to} train timing`, `${train.number} stops`],
+            "creator": { "@type": "Organization", "name": "Track My Train", "url": "https://trackmytrain.com.pk" },
+            "temporalCoverage": "2026",
+            "spatialCoverage": { "@type": "Place", "name": "Pakistan" }
+          }] : [])
+        ]}
       />
       <section className="bg-hero-gradient text-primary-foreground py-6">
         <div className="container mx-auto px-4">
