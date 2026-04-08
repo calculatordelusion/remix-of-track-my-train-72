@@ -17,6 +17,9 @@ import onlineBookingImg from "@/assets/blog/pakistan-railways-online-booking.jpg
 import lahoreKarachiImg from "@/assets/blog/lahore-karachi-ticket-price.jpg";
 import peshawarLahoreImg from "@/assets/blog/peshawar-lahore-schedule.jpg";
 import quettaKarachiImg from "@/assets/blog/quetta-karachi-timing.jpg";
+import sukkurKarachiImg from "@/assets/blog/sukkur-karachi-timing.jpg";
+import lahoreMultanImg from "@/assets/blog/lahore-multan-schedule.jpg";
+import islamabadPeshawarImg from "@/assets/blog/islamabad-peshawar-fare.jpg";
 
 export interface BlogPost {
   slug: string;
