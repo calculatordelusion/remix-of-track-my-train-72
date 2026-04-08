@@ -20,6 +20,9 @@ import quettaKarachiImg from "@/assets/blog/quetta-karachi-timing.jpg";
 import sukkurKarachiImg from "@/assets/blog/sukkur-karachi-timing.jpg";
 import lahoreMultanImg from "@/assets/blog/lahore-multan-schedule.jpg";
 import islamabadPeshawarImg from "@/assets/blog/islamabad-peshawar-fare.jpg";
+import hyderabadKarachiImg from "@/assets/blog/hyderabad-karachi-timing.jpg";
+import rawalpindiKarachiFareImg from "@/assets/blog/rawalpindi-karachi-fare.jpg";
+import faisalabadIslamabadImg from "@/assets/blog/faisalabad-islamabad-schedule.jpg";
 
 export interface BlogPost {
   slug: string;
