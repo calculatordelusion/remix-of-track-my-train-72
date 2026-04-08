@@ -324,6 +324,18 @@ export default function TrainDetailPage() {
           </div>
         </div>
       </div>
+      <TopicCluster
+        entity={train?.name || "Train"}
+        entityType="train"
+        links={train ? getTrainCluster(
+          train.name,
+          train.from.toLowerCase().replace(/\s+/g, '-'),
+          train.from,
+          train.to.toLowerCase().replace(/\s+/g, '-'),
+          train.to
+        ) : []}
+        heading={`${train?.name} — Connected Pages`}
+      />
       <RelatedLinks context="train" currentName={train?.name} />
     </div>
   );

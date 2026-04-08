@@ -243,6 +243,12 @@ export default function StationDetailPage() {
           </div>
         </div>
       </div>
+      <TopicCluster
+        entity={station.name}
+        entityType="station"
+        links={getStationCluster(station.name, station.province)}
+        heading={`${station.name} — Related Topics`}
+      />
       <RelatedLinks context="station" currentName={station?.name} />
     </div>
   );
