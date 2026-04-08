@@ -7,6 +7,7 @@ const DYNAMIC_CACHE = `dynamic-${CACHE_VERSION}`;
 const PRECACHE_URLS = [
   '/',
   '/index.html',
+  '/offline.html',
   '/manifest.json',
   '/favicon.ico',
 ];
@@ -79,7 +80,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() =>
-          caches.match(request).then((cached) => cached || caches.match('/'))
+          caches.match(request).then((cached) => cached || caches.match('/offline.html'))
         )
     );
     return;
