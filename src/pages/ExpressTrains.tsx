@@ -7,6 +7,7 @@ import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
+import TopicCluster, { expressTrainsCluster } from "@/components/TopicCluster";
 import { fetchAllTrains } from "@/lib/trainApi";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -468,6 +469,7 @@ export default function ExpressTrainsPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
+      <TopicCluster entity="Express Trains" entityType="train" links={expressTrainsCluster} heading="Express Trains — Related Topics" />
       <RelatedLinks context="general" />
     </main>
   );

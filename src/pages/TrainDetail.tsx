@@ -7,6 +7,7 @@ import { fetchTrainDetail, type TrainDetail } from "@/lib/trainApi";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
+import TopicCluster, { getTrainCluster } from "@/components/TopicCluster";
 
 export default function TrainDetailPage() {
   const { id } = useParams();
@@ -323,6 +324,18 @@ export default function TrainDetailPage() {
           </div>
         </div>
       </div>
+      <TopicCluster
+        entity={train?.name || "Train"}
+        entityType="train"
+        links={train ? getTrainCluster(
+          train.name,
+          train.from.toLowerCase().replace(/\s+/g, '-'),
+          train.from,
+          train.to.toLowerCase().replace(/\s+/g, '-'),
+          train.to
+        ) : []}
+        heading={`${train?.name} — Connected Pages`}
+      />
       <RelatedLinks context="train" currentName={train?.name} />
     </div>
   );

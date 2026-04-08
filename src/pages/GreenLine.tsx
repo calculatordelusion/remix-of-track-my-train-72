@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import RelatedLinks from "@/components/RelatedLinks";
+import TopicCluster, { greenLineCluster } from "@/components/TopicCluster";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -415,6 +416,7 @@ export default function GreenLinePage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
+      <TopicCluster entity="Green Line Express" entityType="train" links={greenLineCluster} heading="Green Line Express — Connected Pages" />
       <RelatedLinks context="train" currentName="Green Line Express" />
     </main>
   );

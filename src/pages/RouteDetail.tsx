@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Train, Clock, MapPin, ArrowRight, Route, CreditCard, Radio, Navigation, Lightbulb, CheckCircle2, AlertTriangle, Landmark, Timer, Zap } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import TopicCluster, { getRouteCluster } from "@/components/TopicCluster";
 import { getRouteBySlug } from "@/data/routeDetails";
 import NotFound from "./NotFound";
 
@@ -263,6 +264,12 @@ export default function RouteDetailPage() {
           </div>
         </div>
       </section>
+      <TopicCluster
+        entity={`${route.from} to ${route.to}`}
+        entityType="route"
+        links={getRouteCluster(route.from, route.to)}
+        heading={`${route.from}–${route.to} — Related Topics`}
+      />
     </div>
   );
 }
