@@ -183,8 +183,8 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs sm:text-sm text-[hsl(var(--hero-text-muted))]">
                 {["Zero Cost, Always", "Instant Access — No Login", "Optimized for Slow Networks", "English-Only Experience"].map((item) => (
                   <span key={item} className="flex items-center gap-2">
-                    <span className="w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center">
-                      <CheckCircle2 className="w-3 h-3 text-primary" />
+                    <span className="w-4 h-4 rounded-full bg-white/20 flex items-center justify-center">
+                      <CheckCircle2 className="w-3 h-3 text-white" />
                     </span>
                     {item}
                   </span>
