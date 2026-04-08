@@ -10,7 +10,6 @@ import { searchPlannerRoutes, fetchPlannerStations } from "@/lib/trainApi";
 
 interface PlannerStation {
   name: string;
-  nameUrdu: string;
 }
 
 interface MatchedRoute {
@@ -18,7 +17,6 @@ interface MatchedRoute {
     id: number;
     number: string;
     name: string;
-    nameUrdu: string;
     from: string;
     to: string;
     type: string;
@@ -50,7 +48,6 @@ function StationDropdown({
   icon: Icon,
   iconColor,
   label,
-  labelUrdu,
   apiStations,
 }: {
   value: string;
@@ -59,7 +56,6 @@ function StationDropdown({
   icon: typeof MapPin;
   iconColor: string;
   label: string;
-  labelUrdu: string;
   apiStations: PlannerStation[];
 }) {
   const [open, setOpen] = useState(false);
@@ -85,7 +81,6 @@ function StationDropdown({
       <div className="flex items-center gap-2 mb-2">
         <span className={`w-3 h-3 rounded-full ${iconColor}`} />
         <span className="text-sm font-semibold">{label}</span>
-        <span className="text-sm text-destructive font-medium">{labelUrdu}</span>
       </div>
       <div
         className={`flex items-center gap-2 border-2 rounded-xl px-4 py-3 cursor-text transition-colors ${
@@ -264,7 +259,6 @@ export default function JourneyPlannerPage() {
                 icon={Navigation}
                 iconColor="bg-primary"
                 label="From Station"
-                labelUrdu="روانگی"
                 apiStations={apiStations}
               />
               
@@ -287,12 +281,11 @@ export default function JourneyPlannerPage() {
                 icon={MapPin}
                 iconColor="bg-destructive"
                 label="To Station"
-                labelUrdu="منزل"
                 apiStations={apiStations}
               />
             </div>
             <Button onClick={handleSearch} disabled={searching || !from || !to} className="w-full rounded-xl gap-2 h-12 text-base">
-              {searching ? <><Loader2 className="w-5 h-5 animate-spin" /> Searching...</> : <><Search className="w-5 h-5" /> Find Routes <span className="opacity-70">تلاش کریں</span></>}
+              {searching ? <><Loader2 className="w-5 h-5 animate-spin" /> Searching...</> : <><Search className="w-5 h-5" /> Find Routes</>}
             </Button>
           </CardContent>
         </Card>
@@ -458,7 +451,7 @@ export default function JourneyPlannerPage() {
                   { icon: BarChart3, gradient: "gradient-card-blue", iconBg: "bg-blue-500/15", iconColor: "text-blue-500", title: "Compare All Options", desc: "See all available trains side by side with departure times, arrival times, duration, train type, and running days. Make informed decisions about your travel." },
                   { icon: Globe, gradient: "gradient-card-purple", iconBg: "bg-purple-500/15", iconColor: "text-purple-500", title: "Official Timetable Data", desc: "All timings are sourced from official Pakistan Railways government timetable data. Accurate departure and arrival times for every station on every route." },
                   { icon: Shield, gradient: "gradient-card-rose", iconBg: "bg-rose-500/15", iconColor: "text-rose-500", title: "Live Tracking Integration", desc: "After finding your route, click any train to see its real-time GPS position, current speed, delay status, and estimated arrival at your station." },
-                  { icon: Star, gradient: "gradient-card-teal", iconBg: "bg-teal-500/15", iconColor: "text-teal-500", title: "Bilingual Support", desc: "Search stations in English or Urdu. All train names and station names displayed in both languages for easy identification during your journey." },
+                  { icon: Star, gradient: "gradient-card-teal", iconBg: "bg-teal-500/15", iconColor: "text-teal-500", title: "Mobile Optimized", desc: "Plan your journey on any device. Fully responsive design works flawlessly on phones, tablets, and desktops even on slow mobile networks across Pakistan." },
                 ].map((item, i) => (
                   <Card key={i} className={`${item.gradient} border hover-lift group`}>
                     <CardContent className="p-5 sm:p-6">

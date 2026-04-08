@@ -11,7 +11,7 @@ import { fetchAllTrains } from "@/lib/trainApi";
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface TrainData {
-  id: number; number: string; name: string; nameUrdu: string;
+  id: number; number: string; name: string;
   from: string; to: string; type: string; departureTime: string;
   arrivalTime: string; duration: string; status: string; days: string[];
 }
