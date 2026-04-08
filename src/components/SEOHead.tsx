@@ -115,6 +115,11 @@ export default function SEOHead({
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {!noindex && <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />}
 
+      {/* hreflang: Signal to Google this is the English version for Pakistan */}
+      <link rel="alternate" hrefLang="en-pk" href={fullCanonical} />
+      <link rel="alternate" hrefLang="en" href={fullCanonical} />
+      <link rel="alternate" hrefLang="x-default" href={fullCanonical} />
+
       {/* E-E-A-T: Author & expertise signals */}
       <meta name="author" content="Track My Train — Railway Technology Team" />
       <meta name="copyright" content="© 2024-2026 Track My Train. All original content protected." />
