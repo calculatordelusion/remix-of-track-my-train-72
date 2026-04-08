@@ -405,42 +405,16 @@
         </nav>
       </header>
 
-      <!-- Prerendered Hero -->
+      <!-- Generic loading skeleton (works for ALL pages) -->
       <main class="ssr-main" id="main-content" role="main">
-        <section class="ssr-hero" aria-label="Hero section">
-          <div class="ssr-badge" role="status" aria-live="polite">
-            <span class="ssr-badge-dot" aria-hidden="true"></span>
-            LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS
-          </div>
-          <h1 class="ssr-h1">Track My Train — <em>Live Railway GPS Tracker</em></h1>
-          <p class="ssr-desc">See exactly where your Pakistan Railways train is right now. Live GPS positions, up-to-the-second delay info, and accurate ETAs for 164+ trains across 342+ stations — completely free, no signup needed.</p>
-          <div class="ssr-ctas">
-             <a href="/live-train" class="ssr-cta ssr-cta-primary" role="button">🚂 Open Live Tracker →</a>
-             <a href="/find-my-train" class="ssr-cta ssr-cta-secondary">📍 Find My Train (GPS)</a>
-             <a href="/train-schedule" class="ssr-cta ssr-cta-secondary">🕐 View Schedules</a>
-          </div>
-          <div class="ssr-stats" role="group" aria-label="Network statistics">
-            <div class="ssr-stat" role="status">
-              <div class="ssr-stat-num">38</div>
-              <div class="ssr-stat-label">Moving</div>
-            </div>
-            <div class="ssr-stat" role="status">
-              <div class="ssr-stat-num">65</div>
-              <div class="ssr-stat-label">At Station</div>
-            </div>
-            <div class="ssr-stat" role="status">
-              <div class="ssr-stat-num">103</div>
-              <div class="ssr-stat-label">Total</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Prerendered Search -->
-        <section class="ssr-search" id="search" aria-label="Train search">
-          <div class="ssr-search-box">
-            <div class="ssr-search-title">Search Any Train</div>
-            <div class="ssr-search-sub">Enter train number, name, or route to start tracking</div>
-            <input class="ssr-search-input" type="search" placeholder="Search train by name or number (e.g., Tezgam, 7UP)..." aria-label="Search trains" disabled />
+        <section class="ssr-hero" aria-label="Loading">
+          <div class="ssr-skeleton" style="width:260px;height:36px;margin-bottom:20px"></div>
+          <div class="ssr-skeleton" style="width:100%;max-width:500px;height:44px;margin-bottom:14px"></div>
+          <div class="ssr-skeleton" style="width:100%;max-width:600px;height:18px;margin-bottom:8px"></div>
+          <div class="ssr-skeleton" style="width:80%;max-width:480px;height:18px;margin-bottom:32px"></div>
+          <div style="display:flex;gap:12px">
+            <div class="ssr-skeleton" style="width:160px;height:48px;border-radius:12px"></div>
+            <div class="ssr-skeleton" style="width:140px;height:48px;border-radius:12px"></div>
           </div>
         </section>
       </main>
