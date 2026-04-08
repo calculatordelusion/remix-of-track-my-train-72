@@ -46,74 +46,64 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden" role="contentinfo" aria-label="Site footer">
-      {/* Gradient accent top bar */}
-      <div className="h-1.5 bg-gradient-to-r from-primary via-accent to-primary" aria-hidden="true" />
-
-      {/* Main Footer */}
-      <div className="bg-[hsl(220_20%_8%)] text-[hsl(210_40%_90%)]">
-        <div className="container mx-auto px-4 py-14 sm:py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-6">
-
-            {/* Brand Column */}
-            <div className="lg:col-span-4">
-              <Link to="/" className="flex items-center gap-3 mb-6 group" onClick={(e) => { if (location.pathname === "/") { e.preventDefault(); window.location.href = "/"; } }}>
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-[hsl(152_55%_25%)] flex items-center justify-center shadow-lg shadow-primary/20 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+      {/* Main Footer — deep navy with warm accents */}
+      <div className="bg-[hsl(222_47%_8%)] text-[hsl(210_30%_85%)]">
+        {/* Top section — brand strip */}
+        <div className="border-b border-[hsl(222_30%_14%)]">
+          <div className="container mx-auto px-4 py-8 sm:py-10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+              <Link to="/" className="flex items-center gap-3 group" onClick={(e) => { if (location.pathname === "/") { e.preventDefault(); window.location.href = "/"; } }}>
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-[hsl(165_55%_22%)] flex items-center justify-center shadow-lg shadow-primary/15 transition-transform duration-300 group-hover:scale-105">
                   <Train className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xl font-black tracking-tight leading-tight text-white">
-                    Track My <span className="text-primary">Train</span>
+                    Track<span className="text-primary">My</span>Train
                   </span>
-                  <span className="text-[11px] font-medium text-primary/80 tracking-wider uppercase">Pakistan Railways Live Tracking</span>
+                  <span className="text-[10px] font-medium text-[hsl(210_20%_50%)] tracking-[0.15em] uppercase">Pakistan Railways Live Tracking</span>
                 </div>
               </Link>
 
-              <p className="text-sm text-[hsl(210_20%_60%)] mb-6 leading-relaxed max-w-sm">
-                Pakistan's most trusted independent train tracking platform. Real-time GPS positions, live delays, accurate ETAs — completely free, no signup needed.
-              </p>
-
-              {/* Live Stats */}
-              <div className="grid grid-cols-3 gap-3 mb-6">
-                {[
-                  { value: "164+", label: "Active Trains", icon: Train },
-                  { value: "342+", label: "Stations", icon: Landmark },
-                  { value: "24/7", label: "Live Updates", icon: Gauge },
-                ].map((stat, i) => (
-                  <div key={i} className="text-center p-3 rounded-xl bg-[hsl(220_18%_12%)] border border-[hsl(220_18%_18%)]">
-                    <stat.icon className="w-4 h-4 text-primary mx-auto mb-1.5" />
-                    <div className="text-base font-extrabold text-white">{stat.value}</div>
-                    <div className="text-[9px] text-[hsl(210_20%_55%)] uppercase tracking-widest">{stat.label}</div>
+              <div className="flex items-center gap-6">
+                {/* Helpline — pill style */}
+                <div className="flex items-center gap-3 bg-[hsl(222_30%_12%)] rounded-full px-5 py-2.5 border border-[hsl(222_25%_16%)]">
+                  <Phone className="w-4 h-4 text-accent" />
+                  <div>
+                    <span className="text-[9px] text-[hsl(210_20%_45%)] block uppercase tracking-widest leading-none">Helpline</span>
+                    <span className="text-lg font-black text-accent leading-tight">117</span>
                   </div>
-                ))}
-              </div>
-
-              {/* Language & Helpline */}
-              <div className="flex items-center gap-2 text-xs text-[hsl(210_20%_55%)] mb-4">
-                <Globe className="w-3.5 h-3.5" />
-                <span>Pakistan Railway Tracker</span>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/15 to-primary/5 border border-primary/20 flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <div>
-                  <span className="text-[10px] text-[hsl(210_20%_55%)] block uppercase tracking-widest">Railway Helpline</span>
-                  <span className="text-2xl font-black text-primary leading-tight">117</span>
+
+                {/* Stats mini */}
+                <div className="hidden md:flex items-center gap-4">
+                  {[
+                    { value: "164+", label: "Trains" },
+                    { value: "342+", label: "Stations" },
+                    { value: "24/7", label: "Live" },
+                  ].map((stat, i) => (
+                    <div key={i} className="text-center">
+                      <div className="text-sm font-black text-white">{stat.value}</div>
+                      <div className="text-[9px] text-[hsl(210_20%_45%)] uppercase tracking-wider">{stat.label}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        {/* Links grid */}
+        <div className="container mx-auto px-4 py-10 sm:py-14">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {/* Quick Links */}
-            <div className="lg:col-span-2">
-              <h3 className="font-bold text-xs mb-5 flex items-center gap-2 uppercase tracking-widest text-white/70">
-                <span className="w-6 h-0.5 bg-gradient-to-r from-primary to-primary/30 rounded-full" />
+            <div>
+              <h3 className="font-bold text-xs mb-5 uppercase tracking-[0.2em] text-[hsl(210_20%_55%)]">
                 Quick Links
               </h3>
               <div className="space-y-3">
                 {quickLinks.map((link) => (
-                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2.5 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group hover:translate-x-1">
-                    <link.icon className="w-3.5 h-3.5 text-[hsl(210_20%_40%)] group-hover:text-primary transition-colors shrink-0" />
+                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group">
+                    <span className="w-1 h-1 rounded-full bg-[hsl(210_20%_30%)] group-hover:bg-primary transition-colors" />
                     {link.label}
                   </Link>
                 ))}
@@ -121,44 +111,44 @@ export default function Footer() {
             </div>
 
             {/* Travel Guides */}
-            <div className="lg:col-span-3">
-              <h3 className="font-bold text-xs mb-5 flex items-center gap-2 uppercase tracking-widest text-white/70">
-                <span className="w-6 h-0.5 bg-gradient-to-r from-primary to-primary/30 rounded-full" />
+            <div>
+              <h3 className="font-bold text-xs mb-5 uppercase tracking-[0.2em] text-[hsl(210_20%_55%)]">
                 Travel Guides
               </h3>
               <div className="space-y-3">
                 {travelGuides.map((link) => (
-                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2.5 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group hover:translate-x-1">
-                    <link.icon className="w-3.5 h-3.5 text-[hsl(210_20%_40%)] group-hover:text-primary transition-colors shrink-0" />
+                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group">
+                    <span className="w-1 h-1 rounded-full bg-[hsl(210_20%_30%)] group-hover:bg-primary transition-colors" />
                     {link.label}
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Popular Routes + Legal */}
-            <div className="lg:col-span-3">
-              <h3 className="font-bold text-xs mb-5 flex items-center gap-2 uppercase tracking-widest text-white/70">
-                <span className="w-6 h-0.5 bg-gradient-to-r from-accent to-accent/30 rounded-full" />
+            {/* Popular Routes */}
+            <div>
+              <h3 className="font-bold text-xs mb-5 uppercase tracking-[0.2em] text-[hsl(38_80%_50%)]">
                 Popular Routes
               </h3>
-              <div className="space-y-3 mb-8">
+              <div className="space-y-3">
                 {popularRoutes.map((route) => (
-                  <Link key={route.path} to={route.path} className="flex items-center gap-2.5 text-sm text-[hsl(210_20%_60%)] hover:text-accent transition-all duration-200 group hover:translate-x-1">
-                    <ArrowRight className="w-3 h-3 text-[hsl(210_20%_40%)] group-hover:text-accent transition-colors shrink-0" />
+                  <Link key={route.path} to={route.path} className="flex items-center gap-2 text-sm text-[hsl(210_20%_60%)] hover:text-accent transition-all duration-200 group">
+                    <ArrowRight className="w-3 h-3 text-[hsl(210_20%_30%)] group-hover:text-accent transition-colors shrink-0" />
                     {route.label}
                   </Link>
                 ))}
               </div>
+            </div>
 
-              <h3 className="font-bold text-xs mb-4 flex items-center gap-2 uppercase tracking-widest text-white/70">
-                <span className="w-6 h-0.5 bg-gradient-to-r from-primary to-primary/30 rounded-full" />
+            {/* Legal & More */}
+            <div>
+              <h3 className="font-bold text-xs mb-5 uppercase tracking-[0.2em] text-[hsl(210_20%_55%)]">
                 Legal & More
               </h3>
-              <div className="space-y-2.5">
+              <div className="space-y-3">
                 {legalMore.map((link) => (
-                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2.5 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group hover:translate-x-1">
-                    <link.icon className="w-3.5 h-3.5 text-[hsl(210_20%_40%)] group-hover:text-primary transition-colors shrink-0" />
+                  <Link key={link.path + link.label} to={link.path} className="flex items-center gap-2 text-sm text-[hsl(210_20%_60%)] hover:text-primary transition-all duration-200 group">
+                    <span className="w-1 h-1 rounded-full bg-[hsl(210_20%_30%)] group-hover:bg-primary transition-colors" />
                     {link.label}
                   </Link>
                 ))}
@@ -168,20 +158,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[hsl(220_18%_15%)]">
+        <div className="border-t border-[hsl(222_30%_12%)]">
           <div className="container mx-auto px-4 py-5">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
-              <p className="text-xs text-[hsl(210_20%_45%)] text-center sm:text-left">
-                © {new Date().getFullYear()} Track My <span className="text-primary font-semibold">Train</span> — Pakistan's #1 Live Train Tracker. Made with <Heart className="w-3 h-3 inline text-destructive" aria-hidden="true" /> for travelers.
+              <p className="text-xs text-[hsl(210_20%_40%)] text-center sm:text-left">
+                © {new Date().getFullYear()} Track<span className="text-primary font-semibold">My</span>Train — Pakistan's Independent Live Train Tracker. Made with <Heart className="w-3 h-3 inline text-destructive" aria-hidden="true" /> for travelers.
               </p>
               <div className="flex items-center gap-4">
                 <button
                   onClick={resetCookieConsent}
-                  className="text-[11px] text-[hsl(210_20%_45%)] hover:text-primary transition-colors flex items-center gap-1"
+                  className="text-[11px] text-[hsl(210_20%_40%)] hover:text-primary transition-colors flex items-center gap-1"
                 >
                   <Cookie className="w-3 h-3" /> Cookie Settings
                 </button>
-                <p className="text-[11px] text-[hsl(210_20%_35%)] text-center sm:text-right max-w-md flex items-center gap-1.5">
+                <p className="text-[11px] text-[hsl(210_20%_30%)] text-center sm:text-right max-w-md flex items-center gap-1.5">
                   <AlertTriangle className="w-3 h-3 shrink-0" aria-hidden="true" />
                   Independent — NOT affiliated with Pakistan Railways.
                 </p>

@@ -132,9 +132,9 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-gradient-start)/0.8)] via-transparent to-transparent" />
         </div>
         {/* Animated decorative orbs */}
-        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
-        <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
-        <div className="absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(210_80%_50%/0.04)] blur-[100px] float-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[hsl(165_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[hsl(38_92%_50%/0.06)] blur-[80px] float-medium" />
+        <div className="absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(200_80%_50%/0.04)] blur-[100px] float-slow" style={{ animationDelay: '2s' }} />
         {/* Refined grid pattern */}
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.05) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.05) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
 
@@ -144,15 +144,15 @@ export default function HomePage() {
               {/* Live badge with shimmer */}
               <div className="inline-flex items-center gap-2.5 glass-hero rounded-full px-5 py-2.5 text-sm mb-8 shimmer">
                 <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_50%)] opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(152_55%_50%)]" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
                 </span>
-                <span className="font-semibold tracking-[0.15em] text-[hsl(152_55%_60%)] text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
+                <span className="font-semibold tracking-[0.15em] text-primary text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight">
                 <span className="block">Track My Train</span>
-                <span className="block mt-1 text-gradient-gold" style={{ WebkitTextStroke: '0.5px hsl(43 74% 49% / 0.3)' }}>Live GPS Tracker</span>
+                <span className="block mt-1 text-gradient-gold">Live GPS Tracker</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-2xl leading-relaxed font-light">
@@ -180,8 +180,8 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs sm:text-sm opacity-70">
                 {["Zero Cost, Always", "Instant Access — No Login", "Optimized for Slow Networks", "English-Only Experience"].map((item) => (
                   <span key={item} className="flex items-center gap-2">
-                    <span className="w-4 h-4 rounded-full bg-[hsl(152_55%_50%/0.2)] flex items-center justify-center">
-                      <CheckCircle2 className="w-3 h-3 text-[hsl(152_55%_60%)]" />
+                    <span className="w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center">
+                      <CheckCircle2 className="w-3 h-3 text-primary" />
                     </span>
                     {item}
                   </span>
@@ -1599,8 +1599,8 @@ export default function HomePage() {
       {/* CTA — Premium */}
       <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-16 sm:py-24">
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
-        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(165_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(38_92%_50%/0.06)] blur-[80px] float-medium" />
         <div className="relative container mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 glass-hero rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6">
             <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
