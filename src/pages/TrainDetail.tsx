@@ -7,6 +7,7 @@ import { fetchTrainDetail, type TrainDetail } from "@/lib/trainApi";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
+import TopicCluster, { getTrainCluster } from "@/components/TopicCluster";
 
 export default function TrainDetailPage() {
   const { id } = useParams();
