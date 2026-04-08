@@ -1600,28 +1600,67 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA — Theme-Aware Premium */}
-      <section className="relative overflow-hidden bg-hero-gradient py-16 sm:py-24">
-        <div className="absolute inset-0" style={{ opacity: 0.04, backgroundImage: 'linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[100px] float-slow" />
-        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[80px] float-medium" />
-        <div className="relative container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-[hsl(var(--hero-badge-bg))] backdrop-blur-xl border border-[hsl(var(--hero-glass-border))] rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6 text-[hsl(var(--hero-text))]">
-            <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5 tracking-tight text-[hsl(var(--hero-text))]">Ready to Track Your Train?</h2>
-          <p className="text-base sm:text-lg text-[hsl(var(--hero-text-muted))] max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
-              <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2.5 shadow-xl shadow-accent/25 px-8 h-[52px] text-[15px] shimmer transition-all hover:scale-[1.03]">
-                <Train className="w-5 h-5" /> Start Tracking Now <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
-            <Link to="/planner">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-xl border-2 border-[hsl(var(--hero-glass-border))] rounded-xl gap-2.5 font-bold px-8 h-[52px] text-[15px] transition-all hover:scale-[1.03] text-[hsl(var(--hero-text))]">
-                <MapPin className="w-5 h-5" /> Plan a Journey
-              </Button>
-            </Link>
+      {/* CTA — Ultra Premium */}
+      <section className="relative overflow-hidden py-20 sm:py-32">
+        {/* Layered gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--hero-gradient-start))] via-background to-[hsl(var(--hero-gradient-end))]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
+        {/* Animated grid */}
+        <div className="absolute inset-0" style={{ opacity: 0.03, backgroundImage: 'linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
+        {/* Orbs */}
+        <div className="absolute -top-40 left-1/4 w-[600px] h-[600px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[120px] float-slow" />
+        <div className="absolute -bottom-40 right-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[100px] float-medium" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-3))] blur-[80px]" />
+
+        <div className="relative container mx-auto px-4">
+          {/* Glassmorphism card */}
+          <div className="max-w-3xl mx-auto text-center">
+            {/* Floating badge */}
+            <div className="inline-flex items-center gap-2.5 bg-[hsl(var(--hero-badge-bg))] backdrop-blur-2xl border border-[hsl(var(--hero-glass-border))] rounded-full px-5 py-2.5 text-xs font-bold tracking-[0.15em] uppercase mb-8 text-[hsl(var(--hero-text))] shadow-lg shadow-primary/5">
+              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              Free Forever • No Signup
+            </div>
+
+            {/* Heading with gradient text */}
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1]">
+              <span className="text-[hsl(var(--hero-text))]">Ready to </span>
+              <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">Track Your Train</span>
+              <span className="text-[hsl(var(--hero-text))]">?</span>
+            </h2>
+
+            <p className="text-base sm:text-lg md:text-xl text-[hsl(var(--hero-text-muted))] max-w-2xl mx-auto mb-10 leading-relaxed font-light px-4">
+              Join thousands of smart travelers — get instant GPS positions, live delay alerts, and accurate ETAs for every Pakistan Railways train.
+            </p>
+
+            {/* Premium button group */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 px-4">
+              <Link to="/train" className="group">
+                <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:from-accent/90 hover:to-accent/70 rounded-2xl font-black gap-3 shadow-2xl shadow-accent/30 px-10 h-14 text-base shimmer transition-all duration-300 hover:scale-[1.04] hover:shadow-accent/40">
+                  <Train className="w-5 h-5" /> 
+                  Start Tracking Now 
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link to="/planner" className="group">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-2xl border-2 border-[hsl(var(--hero-glass-border))] rounded-2xl gap-3 font-black px-10 h-14 text-base transition-all duration-300 hover:scale-[1.04] text-[hsl(var(--hero-text))] hover:border-primary/30 hover:bg-primary/5">
+                  <MapPin className="w-5 h-5" /> Plan a Journey
+                </Button>
+              </Link>
+            </div>
+
+            {/* Trust signals row */}
+            <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8">
+              {[
+                { icon: Shield, text: "100% Free", color: "text-emerald-400" },
+                { icon: Wifi, text: "Real-Time GPS", color: "text-blue-400" },
+                { icon: Train, text: "164+ Trains", color: "text-amber-400" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-[hsl(var(--hero-text-muted))]">
+                  <item.icon className={`w-4 h-4 ${item.color}`} />
+                  <span className="text-xs sm:text-sm font-semibold">{item.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
