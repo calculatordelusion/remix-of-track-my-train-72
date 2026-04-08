@@ -94,9 +94,11 @@ const App = () => {
                   <Route path="/train/:slug" element={<TrainDetail />} />
                   <Route path="/trains/passengers" element={<LiveTrains />} />
                   <Route path="/train-schedule" element={<Schedule />} />
+                  <Route path="/schedule" element={<Navigate to="/train-schedule" replace />} />
                   <Route path="/stations" element={<Stations />} />
                   <Route path="/stations/:slug" element={<StationDetail />} />
                   <Route path="/train-journey-planner" element={<JourneyPlanner />} />
+                  <Route path="/planner" element={<Navigate to="/train-journey-planner" replace />} />
                   <Route path="/find-my-train" element={<FindMyTrain />} />
                   <Route path="/express-trains" element={<ExpressTrains />} />
                   <Route path="/ticket-pricing" element={<TicketPricing />} />
@@ -105,6 +107,7 @@ const App = () => {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/privacy" element={<Privacy />} />
                   <Route path="/train-routes" element={<RoutesPage />} />
+                  <Route path="/routes" element={<Navigate to="/train-routes" replace />} />
                   <Route path="/routes/:slug" element={<RouteDetail />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/blog/:slug" element={<BlogPost />} />
@@ -112,7 +115,9 @@ const App = () => {
                   <Route path="/request-feature" element={<RequestFeature />} />
                   <Route path="/green-line-express" element={<GreenLine />} />
                   <Route path="/check-train-delays" element={<CheckDelays />} />
+                  <Route path="/check-delays" element={<Navigate to="/check-train-delays" replace />} />
                   <Route path="/buy-train-tickets" element={<BuyTickets />} />
+                  <Route path="/buy-tickets" element={<Navigate to="/buy-train-tickets" replace />} />
                   <Route path="/schedule-guide" element={<ScheduleGuide />} />
                   <Route path="/railway-helpline" element={<RailwayHelpline />} />
                   <Route path="/terms" element={<Terms />} />
