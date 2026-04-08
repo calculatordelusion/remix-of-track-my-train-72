@@ -45,7 +45,7 @@ export default function TermsPage() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-xl ${section.gradient} shrink-0`}>
-                      <section.icon className="w-5 h-5 text-white" />
+                      <section.icon className="w-5 h-5 text-foreground" />
                     </div>
                     <div>
                       <h2 className="text-lg font-bold text-foreground mb-2">{section.title}</h2>
