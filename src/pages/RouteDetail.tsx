@@ -135,7 +135,7 @@ export default function RouteDetailPage() {
         <p className="text-sm text-muted-foreground mb-6">Compare all daily train services on this route — click any train for live GPS tracking.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {route.trainOptions.map((train, i) => (
-            <Link key={i} to={`/train/${train.id}`}>
+            <Link key={i} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
               <Card className="hover-lift group border h-full cursor-pointer">
                 <CardContent className="p-5">
                   <div className="flex items-center justify-between mb-2">

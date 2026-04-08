@@ -174,7 +174,7 @@ export default function LiveTrainsPage() {
             const direction = train.number.toLowerCase().includes('up') ? 'UP' : 'DN';
             
             return (
-              <Link key={train.id} to={`/train/${train.id}`}>
+              <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
                 <Card className={`hover:shadow-lg hover:border-primary/30 transition-all group ${isLive ? 'border-primary/20' : 'opacity-75'}`}>
                   <CardContent className="p-4">
                     <div className="flex items-center gap-2 mb-2">

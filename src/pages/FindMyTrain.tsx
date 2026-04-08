@@ -143,7 +143,7 @@ export default function FindMyTrainPage() {
                   <h4 className="font-bold text-primary text-lg">🎉 Train Detected!</h4>
                   <p className="text-sm mt-1">You are on <strong>{result.train.name} {result.train.number}</strong> ({result.distance}m away)</p>
                   <p className="text-xs text-muted-foreground mt-1">Speed: {result.position?.speed} km/h • {result.position?.delayMinutes === 0 ? 'On Time' : `${result.position?.delayMinutes}m late`}</p>
-                  <Link to={`/train/${result.train.id}`}>
+                  <Link to={`/train/${generateTrainSlug(result.train.name, result.train.number)}`}>
                     <Button className="mt-3 rounded-xl gap-2" size="sm"><Eye className="w-4 h-4" /> View Live Tracking</Button>
                   </Link>
                 </div>
@@ -155,7 +155,7 @@ export default function FindMyTrainPage() {
                   <p className="text-sm text-muted-foreground mt-1">
                     Nearest train: <strong>{result.train.name} {result.train.number}</strong> ({(result.distance / 1000).toFixed(1)} km away)
                   </p>
-                  <Link to={`/train/${result.train.id}`}>
+                  <Link to={`/train/${generateTrainSlug(result.train.name, result.train.number)}`}>
                     <Button variant="outline" className="mt-3 rounded-xl gap-2" size="sm"><MapPin className="w-4 h-4" /> Track Nearest Train</Button>
                   </Link>
                 </div>

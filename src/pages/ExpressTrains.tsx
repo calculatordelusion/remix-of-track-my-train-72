@@ -138,7 +138,7 @@ export default function ExpressTrainsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {featuredTrains.map((t, i) => (
-              <Link key={i} to={`/train/${t.id}`}>
+              <Link key={i} to={`/train/${generateTrainSlug(t.name, t.number)}`}>
                 <Card className={`${t.gradient} border hover-lift group h-full overflow-hidden`}>
                   <CardContent className="p-5 sm:p-6">
                     <div className="flex items-center justify-between mb-3">
@@ -238,7 +238,7 @@ export default function ExpressTrainsPage() {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     {acTrains.map((train) => (
-                      <Link key={train.id} to={`/train/${train.id}`}>
+                      <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
                         <Card className="gradient-card-amber border hover-lift group h-full">
                           <CardContent className="p-5">
                             <div className="flex items-center gap-2 mb-2">
@@ -272,7 +272,7 @@ export default function ExpressTrainsPage() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {regularExpress.map((train) => (
-                  <Link key={train.id} to={`/train/${train.id}`}>
+                  <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
                     <Card className="hover-lift group h-full hover:border-primary/30 transition-all">
                       <CardContent className="p-5">
                         <div className="flex items-center gap-2 mb-2">
