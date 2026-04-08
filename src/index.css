@@ -121,8 +121,26 @@
     --hero-img-opacity: 0.15;
     --hero-stat-glass: 0 0% 100% / 0.04;
     --hero-wave-from: var(--background);
+
+    --footer-bg: 230 40% 5%;
+    --footer-surface: 225 30% 10%;
+    --footer-surface-hover: 225 30% 14%;
+    --footer-text: 220 15% 52%;
+    --footer-text-muted: 220 15% 35%;
+    --footer-heading: 0 0% 85%;
+    --footer-border: 225 25% 15%;
+    --footer-orb-1: 165 50% 30% / 0.04;
+    --footer-orb-2: 38 80% 50% / 0.03;
+    --footer-orb-3: 220 60% 50% / 0.02;
+    --footer-separator-from: var(--background);
+    --footer-separator-to: 230 40% 5%;
+    --footer-helpline-bg: 225 30% 10%;
+    --footer-helpline-border: 225 25% 15%;
+    --footer-stat-bg: 225 30% 8%;
+    --footer-stat-border: 225 25% 13%;
+    --footer-bottom-bg: 230 40% 3.5%;
+    --footer-bottom-text: 220 15% 35%;
   }
-}
 
 @layer base {
   * {
