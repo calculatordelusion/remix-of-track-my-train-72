@@ -231,7 +231,7 @@ Remember, you can always check your train's live status on trackmytrain.pk befor
     gradient: "gradient-card-amber",
     image: karachiLahoreImg,
     imageAlt: "Express train crossing bridge near Karachi — best trains Karachi to Lahore guide",
-    keywords: "best train karachi to lahore, karachi lahore train, green line express, tezgam express, karakoram express, karachi to lahore ticket price 2026, fastest train karachi lahore",
+    keywords: "best train karachi to lahore, karachi lahore train, karachi to lahore train ticket price, lahore to karachi train ticket price, green line express, tezgam express, karakoram express, karachi to lahore ticket price 2026, fastest train karachi lahore",
     metaDescription: "Complete comparison of all Karachi to Lahore trains in 2026. Green Line, Tezgam, Karakoram, Shalimar — fares, journey times, comfort, food, and reliability ratings side by side.",
     author: "Track My Train Editorial",
     faqs: [
