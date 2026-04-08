@@ -132,18 +132,18 @@ export default function AboutPage() {
         {/* How Our Technology Works */}
         <section className="mb-12 sm:mb-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">TECHNOLOGY</p>
-            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Layers className="w-6 h-6 text-primary" /> How Our Tracking Technology Works</h2>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">ENGINEERING</p>
+            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Layers className="w-6 h-6 text-primary" /> Our Technical Pipeline</h2>
           </div>
           <div className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-            <p className="text-base leading-relaxed">At the core of TrackMyTrain.pk is a sophisticated real-time tracking engine that processes thousands of GPS data points every minute. Here's how we deliver accurate, reliable train position data to your screen:</p>
+            <p className="text-base leading-relaxed">TrackMyTrain.pk's backend is a four-stage data pipeline that transforms raw satellite telemetry into the clean, actionable dashboard you see on your phone. Here's a simplified breakdown of each stage:</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
               {[
-                { icon: Wifi, title: "GPS Data Collection", desc: "Our system continuously receives GPS coordinates from Pakistan Railways trains equipped with tracking devices. Each data point includes latitude, longitude, speed, heading, and timestamp — allowing us to pinpoint every active train's exact position on the network." },
-                { icon: BarChart3, title: "Delay Algorithm", desc: "We compare real-time GPS positions against the official timetable using a proprietary algorithm. By calculating expected position based on departure time, average section speeds, and scheduled halt durations, we produce delay figures accurate within ±5 minutes for most services." },
-                { icon: MapPin, title: "Route Matching", desc: "Raw GPS coordinates are matched to the nearest railway line segment using geospatial algorithms. This allows us to determine exactly which section of track a train is on, which station it last passed, and which station it's approaching — even when GPS accuracy fluctuates." },
-                { icon: Zap, title: "Optimized Delivery", desc: "Train data is compressed and cached at multiple layers to minimize bandwidth consumption. The entire tracking payload for 164+ trains is under 50 KB, making it usable even on Pakistan's slowest 2G mobile connections in rural areas." },
+                { icon: Wifi, title: "Telemetry Ingestion", desc: "Onboard GPS units transmit coordinates via cellular modems. Our ingest layer receives these raw lat/lng/speed/heading packets and queues them for processing. Dead-zone gaps (tunnels, cuttings) are interpolated using last-known-velocity projection." },
+                { icon: BarChart3, title: "Position-vs-Schedule Analysis", desc: "Each incoming coordinate is compared to a 'timetable graph' — a time-distance curve generated from the official schedule. The offset between expected and actual position yields the accumulated delay figure. We smooth this over a 60-second rolling window to filter GPS jitter." },
+                { icon: MapPin, title: "Geospatial Snap-to-Rail", desc: "Raw coordinates can drift by 50–200 meters due to atmospheric interference. Our snap-to-rail algorithm projects each point onto the nearest rail line segment using perpendicular distance calculations, ensuring the map marker always sits on the track — not in a field next to it." },
+                { icon: Zap, title: "Edge-Cached Delivery", desc: "Clean data is serialized into a compressed JSON payload (< 50 KB for all 164+ trains) and pushed to edge CDN nodes. Your browser fetches only the delta since the last poll, keeping bandwidth consumption minimal — critical for 2G-dominant coverage areas." },
               ].map((t, i) => (
                 <Card key={i} className="border">
                   <CardContent className="p-5">
@@ -155,7 +155,7 @@ export default function AboutPage() {
               ))}
             </div>
 
-            <p className="text-base leading-relaxed mt-4">Our commitment to technical excellence means we're constantly refining these systems. We monitor data quality, optimize refresh rates, and improve our delay prediction algorithms based on historical patterns — all to ensure you get the most reliable train tracking experience possible.</p>
+            <p className="text-base leading-relaxed mt-4">We continuously benchmark data quality and tune our algorithms using historical delay patterns. If a section of track consistently produces GPS drift (e.g., the Bolan Pass cuttings), we apply corridor-specific correction factors to maintain accuracy.</p>
           </div>
         </section>
 
