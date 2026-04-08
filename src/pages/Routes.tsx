@@ -410,7 +410,7 @@ export default function RoutesPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to Track Your Train?</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Start tracking any Pakistan Railways train in real-time. See live GPS positions, speeds, delays, and accurate ETAs — completely free.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>

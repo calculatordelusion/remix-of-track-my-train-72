@@ -340,7 +340,7 @@ export default function AboutPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Start Tracking Trains Now</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Free, no signup required. Track any Pakistan Railways train in real-time with GPS accuracy.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>

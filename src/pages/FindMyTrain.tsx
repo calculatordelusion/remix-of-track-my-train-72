@@ -175,7 +175,7 @@ export default function FindMyTrainPage() {
           </Card>
 
           <p className="text-sm text-muted-foreground mt-4 text-center">
-            Prefer to search manually? <Link to="/train" className="text-primary font-medium hover:underline">Open the Live Train Tracker</Link>.
+            Prefer to search manually? <Link to="/live-train" className="text-primary font-medium hover:underline">Open the Live Train Tracker</Link>.
           </p>
         </div>
 
@@ -379,7 +379,7 @@ export default function FindMyTrainPage() {
             <Button onClick={startDetection} size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
               <Satellite className="w-4 h-4" /> Find My Train Now
             </Button>
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Train className="w-4 h-4" /> Browse All Trains
               </Button>

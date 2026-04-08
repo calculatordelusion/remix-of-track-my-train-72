@@ -8,7 +8,7 @@ const sections = [
     title: "Main Pages", icon: Train, gradient: "gradient-card-emerald",
     links: [
       { label: "Home", path: "/", icon: Globe },
-      { label: "Live Trains", path: "/train", icon: Train },
+      { label: "Live Trains", path: "/live-train", icon: Train },
       { label: "Train Schedule", path: "/schedule", icon: Calendar },
       { label: "Journey Planner", path: "/planner", icon: MapPin },
       { label: "Stations Directory", path: "/stations", icon: Navigation },

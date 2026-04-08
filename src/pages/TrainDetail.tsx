@@ -44,7 +44,7 @@ export default function TrainDetailPage() {
         <Train className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
         <h1 className="text-2xl font-bold mb-2">Train Not Found</h1>
         <p className="text-muted-foreground mb-6">The train you're looking for doesn't exist.</p>
-        <Link to="/train"><Button>Back to Live Trains</Button></Link>
+        <Link to="/live-train"><Button>Back to Live Trains</Button></Link>
       </div>
     );
   }
@@ -105,7 +105,7 @@ export default function TrainDetailPage() {
           <div className="flex items-center gap-2 text-sm mb-2">
             <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
             <span className="opacity-50">›</span>
-            <Link to="/train" className="opacity-70 hover:opacity-100">Live Trains</Link>
+            <Link to="/live-train" className="opacity-70 hover:opacity-100">Live Trains</Link>
             <span className="opacity-50">›</span>
             <span>{train.name} {train.number}</span>
           </div>
@@ -113,7 +113,7 @@ export default function TrainDetailPage() {
       </section>
 
       <div className="container mx-auto px-4 py-8">
-        <Link to="/train" className="inline-flex items-center gap-1 text-sm text-primary mb-6 hover:underline">
+        <Link to="/live-train" className="inline-flex items-center gap-1 text-sm text-primary mb-6 hover:underline">
           <ArrowLeft className="w-4 h-4" /> Back to all trains
         </Link>
 

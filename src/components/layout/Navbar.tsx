@@ -20,7 +20,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", path: "/", icon: Home },
-    { label: "Live Trains", path: "/train", icon: Train },
+    { label: "Live Trains", path: "/live-train", icon: Train },
     { label: "Journey Planner", path: "/planner", icon: MapPin },
     { label: "Schedule", path: "/schedule", icon: Calendar },
   ];
@@ -146,7 +146,7 @@ export default function Navbar() {
               {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
-            <Link to="/train" className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary/10 text-xs font-bold text-primary hover:bg-primary/15 transition-colors" aria-label="View live train tracking">
+            <Link to="/live-train" className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary/10 text-xs font-bold text-primary hover:bg-primary/15 transition-colors" aria-label="View live train tracking">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />

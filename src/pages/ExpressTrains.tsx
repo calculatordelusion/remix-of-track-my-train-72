@@ -218,7 +218,7 @@ export default function ExpressTrainsPage() {
               <p className="text-sm text-muted-foreground">Click any train to track live position and view full schedule</p>
             </div>
             <div className="flex gap-2">
-              <Link to="/train"><Button variant="outline" size="sm" className="rounded-xl gap-1"><Navigation className="w-3 h-3" /> Track All Live</Button></Link>
+              <Link to="/live-train"><Button variant="outline" size="sm" className="rounded-xl gap-1"><Navigation className="w-3 h-3" /> Track All Live</Button></Link>
               <Link to="/ticket-pricing"><Button variant="outline" size="sm" className="rounded-xl gap-1"><CreditCard className="w-3 h-3" /> Ticket Prices</Button></Link>
             </div>
           </div>
@@ -446,7 +446,7 @@ export default function ExpressTrainsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Track Express Trains Live</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">See real-time GPS locations, speeds, delays, and ETAs for all Express trains. Updated every 5 seconds.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>

@@ -115,7 +115,7 @@ export function getTrainCluster(trainName: string, fromSlug: string, fromName: s
 
 export function getStationCluster(stationName: string, province: string): TopicLink[] {
   return [
-    { label: "Live Train Tracker", path: "/train", icon: Train, relation: `Track trains at ${stationName}` },
+    { label: "Live Train Tracker", path: "/live-train", icon: Train, relation: `Track trains at ${stationName}` },
     { label: "Journey Planner", path: "/planner", icon: Navigation, relation: `Plan trips from ${stationName}` },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard, relation: "Compare fares" },
     { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Real-time delay info" },
@@ -128,7 +128,7 @@ export function getStationCluster(stationName: string, province: string): TopicL
 
 export function getRouteCluster(fromName: string, toName: string): TopicLink[] {
   return [
-    { label: "Live Train Tracker", path: "/train", icon: Train, relation: `Track ${fromName}–${toName} trains` },
+    { label: "Live Train Tracker", path: "/live-train", icon: Train, relation: `Track ${fromName}–${toName} trains` },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard, relation: "Fare comparison" },
     { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Delay status" },
     { label: "Journey Planner", path: "/planner", icon: Navigation, relation: "Find best connections" },

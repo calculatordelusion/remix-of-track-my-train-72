@@ -205,7 +205,7 @@ export default function BlogPostPage() {
                     <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0"><AlertTriangle className="w-5 h-5 text-destructive" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Check Delays</div><div className="text-xs text-muted-foreground">Live delay monitor for all trains</div></div>
                   </Link>
-                  <Link to="/train" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/live-train" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Train className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Live Train Tracker</div><div className="text-xs text-muted-foreground">Real-time GPS tracking</div></div>
                   </Link>
@@ -257,7 +257,7 @@ export default function BlogPostPage() {
                 </>
               ) : (
                 <>
-                  <Link to="/train" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/live-train" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Train className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Live Trains</div><div className="text-xs text-muted-foreground">Track any train in real-time</div></div>
                   </Link>
@@ -304,7 +304,7 @@ export default function BlogPostPage() {
               <h3 className="text-lg font-bold mb-2">Track Your Train Right Now</h3>
               <p className="text-sm text-muted-foreground mb-4">See the live GPS position, speed, and delay status of any Pakistan Railways train — updated every 5 seconds.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link to="/train">
+                <Link to="/live-train">
                   <Button className="rounded-full gap-2 w-full sm:w-auto">Open Live Tracker <ArrowRight className="w-4 h-4" /></Button>
                 </Link>
                 <Link to="/planner">

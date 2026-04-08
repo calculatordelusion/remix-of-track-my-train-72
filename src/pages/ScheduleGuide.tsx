@@ -158,7 +158,7 @@ export default function ScheduleGuide() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-bold">
-                <Link to="/train">
+                <Link to="/live-train">
                   <Navigation className="w-4 h-4 mr-2" /> Track Live Trains
                 </Link>
               </Button>
@@ -191,7 +191,7 @@ export default function ScheduleGuide() {
               </div>
               <div className="mt-4 pt-4 border-t flex flex-wrap gap-4 text-xs text-muted-foreground">
                 <Link to="/schedule" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Timer className="w-3.5 h-3.5" /> View Full Timetable →</Link>
-                <Link to="/train" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Navigation className="w-3.5 h-3.5" /> Track Any Train Live →</Link>
+                <Link to="/live-train" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Navigation className="w-3.5 h-3.5" /> Track Any Train Live →</Link>
                 <Link to="/buy-tickets" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Star className="w-3.5 h-3.5" /> Buy Tickets Online →</Link>
               </div>
             </CardContent>

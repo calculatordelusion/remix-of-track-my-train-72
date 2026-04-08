@@ -566,7 +566,7 @@ export default function TicketPricingPage() {
                 <Navigation className="w-4 h-4" /> Plan Your Journey
               </Button>
             </Link>
-            <Link to="/train">
+            <Link to="/live-train">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>
