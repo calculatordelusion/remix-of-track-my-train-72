@@ -159,19 +159,19 @@ export default function HomePage() {
                 See exactly where your Pakistan Railways train is right now. Live GPS positions, real-time delays, and accurate ETAs for <strong className="font-semibold opacity-100">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold opacity-100">{netStats.totalStations || "342"}+ stations</strong> — completely free.
               </p>
 
-              <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-10">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
                 <Link to="/train">
-                  <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-3 rounded-2xl font-extrabold shadow-2xl shadow-accent/40 px-10 text-lg h-16 shimmer transition-transform hover:scale-[1.03] active:scale-[0.98]">
-                    <Train className="w-6 h-6" /> Open Live Tracker <ArrowRight className="w-5 h-5" />
+                  <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-2.5 rounded-xl font-bold shadow-xl shadow-accent/30 px-8 text-[15px] h-[52px] shimmer transition-all hover:scale-[1.03] active:scale-[0.98]">
+                    <Train className="w-5 h-5" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
                 <Link to="/find-my-train">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.1)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.25)] hover:bg-[hsl(0_0%_100%/0.2)] hover:border-[hsl(0_0%_100%/0.4)] gap-3 rounded-2xl font-bold px-8 text-base h-14 transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.08)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.2)] hover:bg-[hsl(0_0%_100%/0.15)] hover:border-[hsl(0_0%_100%/0.35)] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
                     <Navigation className="w-5 h-5" /> Find My Train (GPS)
                   </Button>
                 </Link>
                 <Link to="/schedule">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.1)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.25)] hover:bg-[hsl(0_0%_100%/0.2)] hover:border-[hsl(0_0%_100%/0.4)] gap-3 rounded-2xl font-bold px-8 text-base h-14 transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.08)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.2)] hover:bg-[hsl(0_0%_100%/0.15)] hover:border-[hsl(0_0%_100%/0.35)] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
                     <Clock className="w-5 h-5" /> View Schedules
                   </Button>
                 </Link>
@@ -190,20 +190,20 @@ export default function HomePage() {
             </div>
 
             {/* Stats - Desktop glassmorphism panel */}
-            <div className="hidden lg:flex flex-col gap-4 float-slow">
+            <div className="hidden lg:flex flex-col gap-3 float-slow">
               {[
-                { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "from-emerald-500/20 to-emerald-600/10", border: "border-emerald-400/30", glow: "shadow-emerald-500/20" },
-                { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "from-amber-500/20 to-amber-600/10", border: "border-amber-400/30", glow: "shadow-amber-500/20" },
-                { icon: Zap, value: stats.total, label: "Total Tracked", color: "text-blue-400", bg: "from-blue-500/20 to-blue-600/10", border: "border-blue-400/30", glow: "shadow-blue-500/20" },
+                { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "from-emerald-500/15 to-emerald-600/5", border: "border-emerald-400/25", glow: "shadow-emerald-500/15" },
+                { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "from-amber-500/15 to-amber-600/5", border: "border-amber-400/25", glow: "shadow-amber-500/15" },
+                { icon: Zap, value: stats.total, label: "Total Tracked", color: "text-blue-400", bg: "from-blue-500/15 to-blue-600/5", border: "border-blue-400/25", glow: "shadow-blue-500/15" },
               ].map((stat, i) => (
-                <div key={i} className={`relative overflow-hidden bg-gradient-to-br ${stat.bg} backdrop-blur-2xl rounded-2xl px-7 py-5 flex items-center gap-5 shadow-xl ${stat.glow} border ${stat.border} hover-lift cursor-default min-w-[220px] transition-all duration-300`}>
-                  <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.04)]" />
-                  <div className={`relative w-14 h-14 rounded-2xl bg-[hsl(0_0%_100%/0.08)] flex items-center justify-center border ${stat.border}`}>
-                    <stat.icon className={`w-7 h-7 ${stat.color}`} />
+                <div key={i} className={`relative overflow-hidden bg-gradient-to-br ${stat.bg} backdrop-blur-2xl rounded-xl px-5 py-3.5 flex items-center gap-4 shadow-lg ${stat.glow} border ${stat.border} hover-lift cursor-default min-w-[190px] transition-all duration-300`}>
+                  <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.03)]" />
+                  <div className={`relative w-11 h-11 rounded-xl bg-[hsl(0_0%_100%/0.07)] flex items-center justify-center border ${stat.border}`}>
+                    <stat.icon className={`w-5 h-5 ${stat.color}`} />
                   </div>
                   <div className="relative">
-                    <div className={`text-4xl font-black stat-counter ${stat.color} tracking-tight leading-none drop-shadow-sm`}>{stat.value}</div>
-                    <div className="text-sm text-primary-foreground/70 font-semibold mt-1.5 tracking-wide">{stat.label}</div>
+                    <div className={`text-3xl font-black stat-counter ${stat.color} tracking-tight leading-none drop-shadow-sm`}>{stat.value}</div>
+                    <div className="text-xs text-primary-foreground/60 font-semibold mt-1 tracking-wide">{stat.label}</div>
                   </div>
                 </div>
               ))}
@@ -211,17 +211,17 @@ export default function HomePage() {
           </div>
 
           {/* Stats - Mobile inline with glassmorphism */}
-          <div className="grid grid-cols-3 gap-3 mt-12 lg:hidden">
+          <div className="grid grid-cols-3 gap-2.5 mt-10 lg:hidden">
             {[
-              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400", border: "border-emerald-400/30", bg: "from-emerald-500/20 to-emerald-600/5", icon: Wifi },
-              { value: stats.atStation, label: "At Station", color: "text-amber-400", border: "border-amber-400/30", bg: "from-amber-500/20 to-amber-600/5", icon: Train },
-              { value: stats.total, label: "Total", color: "text-blue-400", border: "border-blue-400/30", bg: "from-blue-500/20 to-blue-600/5", icon: Zap },
+              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400", border: "border-emerald-400/25", bg: "from-emerald-500/15 to-emerald-600/5", icon: Wifi },
+              { value: stats.atStation, label: "At Station", color: "text-amber-400", border: "border-amber-400/25", bg: "from-amber-500/15 to-amber-600/5", icon: Train },
+              { value: stats.total, label: "Total", color: "text-blue-400", border: "border-blue-400/25", bg: "from-blue-500/15 to-blue-600/5", icon: Zap },
             ].map((stat, i) => (
-              <div key={i} className={`relative overflow-hidden bg-gradient-to-b ${stat.bg} backdrop-blur-xl rounded-2xl p-4 text-center border ${stat.border} shadow-lg`}>
-                <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.03)]" />
-                <stat.icon className={`w-5 h-5 ${stat.color} mx-auto mb-2 relative`} />
-                <div className={`text-3xl font-black stat-counter ${stat.color} tracking-tight relative drop-shadow-sm`}>{stat.value}</div>
-                <div className="text-[11px] text-primary-foreground/60 font-semibold mt-1 uppercase tracking-wider relative">{stat.label}</div>
+              <div key={i} className={`relative overflow-hidden bg-gradient-to-b ${stat.bg} backdrop-blur-xl rounded-xl p-3 text-center border ${stat.border} shadow-md`}>
+                <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.02)]" />
+                <stat.icon className={`w-4 h-4 ${stat.color} mx-auto mb-1.5 relative`} />
+                <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight relative`}>{stat.value}</div>
+                <div className="text-[10px] text-primary-foreground/55 font-semibold mt-0.5 uppercase tracking-wider relative">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -1611,13 +1611,13 @@ export default function HomePage() {
           <p className="text-base sm:text-lg opacity-75 max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Link to="/train">
-              <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2 shadow-xl shadow-accent/25 px-8 h-13 shimmer">
+              <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2.5 shadow-xl shadow-accent/25 px-8 h-[52px] text-[15px] shimmer transition-all hover:scale-[1.03]">
                 <Train className="w-5 h-5" /> Start Tracking Now <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/planner">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] rounded-xl gap-2 font-semibold px-7 h-13">
-                <MapPin className="w-4 h-4" /> Plan a Journey
+              <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] rounded-xl gap-2.5 font-bold px-8 h-[52px] text-[15px] transition-all hover:scale-[1.03]">
+                <MapPin className="w-5 h-5" /> Plan a Journey
               </Button>
             </Link>
           </div>
