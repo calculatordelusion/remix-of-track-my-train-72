@@ -14,6 +14,9 @@ import lahoreIslamabadImg from "@/assets/blog/lahore-islamabad-timing.jpg";
 import multanLahoreImg from "@/assets/blog/multan-lahore-schedule.jpg";
 import faisalabadLahoreImg from "@/assets/blog/faisalabad-lahore-train.jpg";
 import onlineBookingImg from "@/assets/blog/pakistan-railways-online-booking.jpg";
+import lahoreKarachiImg from "@/assets/blog/lahore-karachi-ticket-price.jpg";
+import peshawarLahoreImg from "@/assets/blog/peshawar-lahore-schedule.jpg";
+import quettaKarachiImg from "@/assets/blog/quetta-karachi-timing.jpg";
 
 export interface BlogPost {
   slug: string;
@@ -2028,5 +2031,503 @@ The online system is superior in almost every way. The only scenario where count
 Once you've booked your ticket, visit [trackmytrain.com.pk](/live-trains) on the day of travel to see your train's exact GPS position, current speed, and recalculated arrival time. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS refresh rates. This is the most reliable way to know exactly when to leave for the station.
 
 For train-specific schedules, check our detailed route guides: [Karachi to Lahore trains](/blog/best-trains-karachi-to-lahore-2026), [Rawalpindi to Lahore timing](/blog/rawalpindi-to-lahore-train-timing-schedule-2026), and [Karachi to Islamabad fares](/blog/karachi-to-islamabad-train-ticket-price-2026).`,
+  },
+  {
+    slug: "lahore-to-karachi-train-ticket-price-2026",
+    title: "Lahore to Karachi Train Ticket Price 2026 — Complete Fare Guide (All Trains & Classes)",
+    category: "FARES",
+    date: "April 8, 2026",
+    dateISO: "2026-04-08",
+    readTime: "13 min",
+    excerpt: "Complete Lahore to Karachi train ticket price list for 2026. Compare fares across all 12+ daily trains — Green Line, Tezgam, Karakoram, Shalimar Express — in Economy, AC Standard, AC Business, and AC Sleeper classes.",
+    gradient: "gradient-card-amber",
+    image: lahoreKarachiImg,
+    imageAlt: "Pakistan Railways train departing Lahore Junction heading south towards Karachi at sunset",
+    keywords: "lahore to karachi train ticket price 2026, lahore karachi train fare, lahore to karachi train ticket, train ticket price lahore to karachi, green line lahore to karachi fare, tezgam lahore to karachi price, karakoram express fare lahore karachi",
+    metaDescription: "Lahore to Karachi train ticket price 2026 — all trains compared. Fares from Rs. 1,500 Economy to Rs. 8,000 AC Parlor. Green Line, Tezgam, Karakoram & more with booking tips.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "What is the cheapest Lahore to Karachi train ticket price?", a: "The cheapest Lahore to Karachi train ticket is Rs. 1,500 for Economy class on the Karachi Express or Shalimar Express. If you're a student with valid ID, you get 25% off — making it just Rs. 1,125." },
+      { q: "How much does a Green Line ticket cost from Lahore to Karachi?", a: "The Green Line Express fare from Lahore to Karachi is Rs. 2,500 for Economy, Rs. 4,800 for AC Standard, Rs. 6,500 for AC Business (includes complimentary meals and WiFi), and Rs. 8,000 for AC Parlor." },
+      { q: "Which is the best value train from Lahore to Karachi?", a: "The Tezgam offers the best value — Rs. 1,800 Economy with reliable service and a 20-hour journey time. For comfort, the Green Line AC Business at Rs. 6,500 includes meals, WiFi, and the newest coaches." },
+      { q: "Can I book Lahore to Karachi train tickets online?", a: "Yes, use the RABTA app or website. Search Lahore Junction to Karachi City/Cantt, select your train and class, and pay via JazzCash or Easypaisa. E-tickets are delivered instantly to your phone." },
+    ],
+    content: `The Lahore–Karachi railway corridor is Pakistan's busiest and longest intercity rail route, stretching 1,228 km along the Main Line 1. Whether you're a business traveler, student returning home, or a family visiting relatives, understanding the fare structure across different trains and classes is essential for budgeting your journey. This guide provides the most comprehensive and up-to-date Lahore to Karachi train ticket prices for 2026.
+
+## Route Overview — Lahore to Karachi
+
+The journey from Lahore Junction to Karachi (City or Cantt station) covers 1,228 km along Pakistan Railways' backbone — the ML-1 mainline. This is the same route in reverse as our [Karachi to Lahore guide](/blog/best-trains-karachi-to-lahore-2026), but with different departure timings.
+
+**Key facts:**
+- **Distance:** 1,228 km
+- **Journey time:** 16–22 hours (depending on train)
+- **Daily services:** 12+
+- **Cheapest fare:** Rs. 1,500 (Economy, Karachi Express)
+- **Most expensive:** Rs. 8,000 (AC Parlor, Green Line Express)
+
+## Complete Fare Comparison — All Trains (March 2026 Prices)
+
+### Premium Trains
+
+| Train | Economy | AC Standard | AC Business | AC Sleeper | AC Parlor |
+|-------|---------|-------------|-------------|------------|-----------|
+| Green Line Express | Rs. 2,500 | Rs. 4,800 | Rs. 6,500 | Rs. 5,800 | Rs. 8,000 |
+| Business Express | Rs. 2,200 | Rs. 4,200 | Rs. 5,500 | Rs. 5,200 | — |
+| Karakoram Express | Rs. 2,000 | Rs. 3,800 | Rs. 5,000 | Rs. 4,800 | — |
+
+### Regular Express Trains
+
+| Train | Economy | AC Standard | AC Business | AC Sleeper |
+|-------|---------|-------------|-------------|------------|
+| Tezgam | Rs. 1,800 | Rs. 3,500 | Rs. 4,500 | Rs. 4,200 |
+| Pakistan Express | Rs. 1,800 | Rs. 3,500 | Rs. 4,500 | Rs. 4,200 |
+| Shalimar Express | Rs. 1,500 | Rs. 3,200 | Rs. 4,000 | Rs. 3,800 |
+| Allama Iqbal Express | Rs. 1,800 | Rs. 3,500 | Rs. 4,500 | Rs. 4,200 |
+
+### Budget Trains
+
+| Train | Economy | AC Standard |
+|-------|---------|-------------|
+| Karachi Express | Rs. 1,500 | Rs. 3,200 |
+| Mehr Express | Rs. 1,500 | Rs. 3,000 |
+| Bahauddin Zakariya Exp | Rs. 1,500 | Rs. 3,000 |
+
+**Important:** These fares reflect the March 2026 Pakistan Railways price revision. Fares may change during Eid specials or government fare adjustments. Always verify at the time of booking.
+
+## Understanding the Coach Classes
+
+Choosing the right class significantly impacts both your comfort and your wallet on an 18–22 hour journey:
+
+**Economy Class (Rs. 1,500–2,500):** Basic padded seats, no air conditioning (fans only). Windows may or may not open. Crowded during peak season. Acceptable for budget travelers who can handle the heat and noise. Not recommended during summer (May–August) when temperatures inside the coach can exceed 45°C.
+
+**AC Standard (Rs. 3,000–4,800):** Air-conditioned coaches with better seating. A significant comfort upgrade over Economy. The sweet spot for most travelers who want a reasonable fare with functioning AC.
+
+**AC Business (Rs. 4,000–6,500):** Premium air-conditioned coaches with wider, reclining seats. Better suspension and less noise. On the Green Line, AC Business includes complimentary meals, WiFi, and a dedicated catering attendant.
+
+**AC Sleeper (Rs. 3,800–5,800):** Sleeping berths for overnight travel — the most practical choice for the Lahore–Karachi route since most trains run 18–22 hours. Lower berths are more comfortable; request them when booking.
+
+**AC Parlor (Rs. 8,000 — Green Line only):** Executive class with the most spacious seating, premium catering, and personalized service. Available only on the Green Line Express.
+
+## Which Train Offers the Best Value?
+
+**Best budget option:** The **Karachi Express** at Rs. 1,500 Economy is the cheapest way to travel. It's slower (22 hours) with older coaches, but gets you there at minimal cost.
+
+**Best overall value:** The **Tezgam** at Rs. 1,800 Economy or Rs. 3,500 AC Standard offers reliable service on one of Pakistan's most iconic trains. The 20-hour journey time is reasonable, and the train rarely faces major delays outside fog season.
+
+**Best comfort:** The **Green Line Express** at Rs. 6,500 AC Business is the premium choice. Chinese-built coaches, complimentary meals, WiFi, and the fastest journey time (~16–17 hours). Worth the premium if comfort matters.
+
+**Best overnight value:** The **Shalimar Express** AC Sleeper at Rs. 3,800 departs evening and arrives next morning — perfect for sleeping through the journey. At Rs. 3,800 for a proper berth, it's very competitive with air travel when you factor in hotel costs.
+
+## Departure Schedule — Lahore to Karachi
+
+| Train | Departs Lahore | Arrives Karachi | Duration |
+|-------|---------------|----------------|----------|
+| Green Line Express | 07:00 | 23:00 | ~16h |
+| Business Express | 08:30 | 02:00+1 | ~17.5h |
+| Tezgam | 10:00 | 06:00+1 | ~20h |
+| Pakistan Express | 12:00 | 08:00+1 | ~20h |
+| Karakoram Express | 14:00 | 08:30+1 | ~18.5h |
+| Allama Iqbal Express | 15:00 | 11:00+1 | ~20h |
+| Shalimar Express | 17:00 | 13:00+1 | ~20h |
+| Karachi Express | 19:00 | 17:00+1 | ~22h |
+| Mehr Express | 21:00 | 19:00+1 | ~22h |
+
+## Booking Tips for Lahore to Karachi
+
+**Book 3–7 days ahead** for weekend travel. Eid travel requires 15–30 days advance booking. The Green Line and Tezgam sell out fastest.
+
+**Use the RABTA app** for instant e-tickets. Pay via JazzCash or Easypaisa. You can also check our [complete online booking guide](/blog/pakistan-railways-online-ticket-booking-guide-2026).
+
+**Student discount:** 25% off all classes with valid university ID. This brings Economy on the Tezgam down to just Rs. 1,350 — less than most bus fares for this distance.
+
+**Group discount:** Groups of 25+ can apply for a 10% discount through the Divisional Superintendent's office.
+
+## Comparing Train vs. Bus vs. Air
+
+| Factor | Train (Economy) | Train (AC Business) | Bus (Daewoo) | Flight (PIA) |
+|--------|----------------|--------------------|----|------|
+| Fare | Rs. 1,500–2,500 | Rs. 4,000–6,500 | Rs. 4,500–6,000 | Rs. 12,000–25,000 |
+| Duration | 18–22 hours | 16–18 hours | 18–20 hours | 2 hours (+airport) |
+| Luggage | 40 kg free | 40 kg free | 20 kg | 20 kg checked |
+| Comfort | Basic | Excellent | Good | Excellent |
+| Overnight option | AC Sleeper available | AC Sleeper available | Limited recline | N/A |
+
+Trains are the clear winner on cost and luggage. For overnight travel, AC Sleeper on the train eliminates hotel costs entirely. Flights only make sense if time is critical and budget isn't a concern.
+
+## Seasonal Price Considerations
+
+**Summer (May–August):** AC classes sell out faster as non-AC Economy becomes unbearable. Book AC Standard or higher at least 5 days ahead.
+
+**Eid periods:** All classes see a 0–10% temporary surcharge on some trains. More critically, tickets sell out 2–3 weeks early. Book the moment dates are confirmed.
+
+**Winter fog (November–February):** Fares don't change, but delays of 3–8 hours are common between Multan and Lahore. Afternoon departures are more reliable. Use our [live delay checker](/check-delays) to plan.
+
+## Major Intermediate Stations and Fares
+
+If you're traveling only part of the route, here are approximate Economy fares from Lahore:
+
+| Destination | Distance | Economy Fare |
+|------------|----------|-------------|
+| Sahiwal | 171 km | Rs. 450 |
+| Multan | 331 km | Rs. 850 |
+| Bahawalpur | 430 km | Rs. 950 |
+| Sukkur | 762 km | Rs. 1,100 |
+| Hyderabad | 1,068 km | Rs. 1,350 |
+| Karachi City | 1,228 km | Rs. 1,500 |
+
+## Track Your Train Live
+
+After booking, don't guess when your train will arrive. Visit [trackmytrain.com.pk](/live-trains) and search by train name or number. Our GPS tracker updates every 5 seconds with real-time position, speed, delay status, and recalculated ETAs for every station. Share the live tracking link with whoever is receiving you in Karachi.`,
+  },
+  {
+    slug: "peshawar-to-lahore-train-schedule-timing-2026",
+    title: "Peshawar to Lahore Train Schedule & Timing 2026 — All Trains, Fares & Travel Guide",
+    category: "SCHEDULE",
+    date: "April 8, 2026",
+    dateISO: "2026-04-08",
+    readTime: "12 min",
+    excerpt: "Complete Peshawar to Lahore train timetable for 2026. All 6+ daily trains including Khyber Mail, Awam Express, and Tezgam with departure times, fares from Rs. 600, journey duration, and expert Peshawar station guide.",
+    gradient: "gradient-card-emerald",
+    image: peshawarLahoreImg,
+    imageAlt: "Pakistan Railways train traveling through dramatic mountain scenery near Peshawar on the way to Lahore",
+    keywords: "peshawar to lahore train schedule, peshawar to lahore train timing 2026, peshawar lahore train fare, peshawar to lahore train ticket price, trains from peshawar to lahore, khyber mail peshawar to lahore, tezgam peshawar to lahore",
+    metaDescription: "Peshawar to Lahore train schedule & timing 2026. All 6+ daily trains with fares from Rs. 600, journey times (9-12 hours), and Peshawar Cantt station guide.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How many trains run from Peshawar to Lahore daily?", a: "There are 6+ daily train services from Peshawar Cantt/City to Lahore Junction. Major services include the Khyber Mail, Tezgam, Awam Express, Jaffar Express, Hazara Express, and the Green Line Express (when operating the full Peshawar extension)." },
+      { q: "How long does the Peshawar to Lahore train take?", a: "The journey takes approximately 9 to 12 hours depending on the train. The fastest trains (Tezgam, Green Line) complete the journey in about 9–10 hours. Slower services like the Khyber Mail take around 11–12 hours with more intermediate stops." },
+      { q: "What is the cheapest Peshawar to Lahore train ticket?", a: "Economy class tickets start from Rs. 600 on the Awam Express. Regular express trains like the Khyber Mail charge Rs. 800 for Economy. AC Business on premium trains costs Rs. 2,500–3,000." },
+      { q: "Is the Peshawar to Lahore train route scenic?", a: "Yes, it's one of Pakistan's most scenic rail journeys. The route passes through the Peshawar Valley, crosses the Indus River at Attock Bridge (a historic landmark), traverses the Margalla foothills near Islamabad, and then enters the Punjab plains. The Attock Bridge crossing is especially photogenic." },
+    ],
+    content: `The Peshawar–Lahore railway corridor is one of Pakistan's most historic and scenic rail routes, connecting the Frontier Province capital with Punjab's cultural heart. This 480 km journey along the northern section of Main Line 1 takes travelers through the Peshawar Valley, across the mighty Indus River at the famous Attock Bridge, past the Margalla Hills of Islamabad, and into the fertile Punjab plains. Whether you're a government employee commuting between the two cities, a university student, or a tourist exploring Pakistan's northwest, this guide gives you everything you need.
+
+## Route Overview — Peshawar to Lahore
+
+The train from Peshawar Cantt to Lahore Junction covers approximately 480 km along the ML-1 mainline — the northern section that runs through Khyber Pakhtunkhwa and into Punjab. This is one of the most strategically important railway corridors in Pakistan, historically connecting the frontier with the imperial capital.
+
+**Key facts:**
+- **Distance:** 480 km by rail
+- **Typical journey time:** 9–12 hours
+- **Daily services:** 6+
+- **Cheapest ticket:** Rs. 600 (Economy, Awam Express)
+- **Fastest train:** Tezgam / Green Line (~9h)
+
+## Complete Train Timetable — Peshawar to Lahore
+
+| Train Name | Train No. | Departs Peshawar | Arrives Lahore | Duration | Days |
+|------------|-----------|-----------------|---------------|----------|------|
+| Awam Express | 19DN | 05:30 | 16:30 | 11h 00m | Daily |
+| Tezgam | 9DN | 07:00 | 16:00 | 9h 00m | Daily |
+| Khyber Mail | 7DN | 09:30 | 20:30 | 11h 00m | Daily |
+| Jaffar Express | 37DN | 12:00 | 23:00 | 11h 00m | Daily |
+| Green Line Express | 27DN | 14:00 | 23:00 | 9h 00m | Daily |
+| Hazara Express | 41DN | 17:00 | 04:00+1 | 11h 00m | Daily |
+| Rawal Express | 47DN | 21:00 | 08:00+1 | 11h 00m | Daily |
+
+**Note:** Times are based on the official Pakistan Railways schedule effective March 2026. Always check [live train status](/live-trains) for real-time positions before heading to the station.
+
+## Ticket Prices — Peshawar to Lahore (All Classes)
+
+### Regular Express Trains (Khyber Mail, Tezgam, Jaffar Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 800 |
+| AC Standard | Rs. 1,600 |
+| AC Business | Rs. 2,200 |
+| AC Sleeper | Rs. 2,500 |
+
+### Budget Trains (Awam Express, Hazara Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 600 |
+| AC Standard | Rs. 1,300 |
+
+### Premium Trains (Green Line Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 1,000 |
+| AC Standard | Rs. 2,000 |
+| AC Business | Rs. 2,500 |
+| AC Parlor | Rs. 3,000 |
+
+## Which Train Should You Choose?
+
+**For speed:** The **Tezgam** (07:00 departure, 16:00 arrival) is the fastest regular service at 9 hours. It makes fewer stops and has a long history of reliable timekeeping on this route.
+
+**For comfort:** The **Green Line Express** offers premium Chinese-built coaches, complimentary meals in AC Business, and the most comfortable ride. At 9 hours, it matches the Tezgam for speed.
+
+**For budget travelers:** The **Awam Express** at Rs. 600 Economy is unbeatable on price. It's slower (11 hours) and the coaches are older, but for the price-conscious traveler, it's the clear choice.
+
+**For overnight travel:** The **Hazara Express** (17:00) or **Rawal Express** (21:00) arrive in Lahore early morning — ideal if you want to sleep through the journey with an AC Sleeper ticket.
+
+**For scenic views:** Any daytime train offers stunning scenery. The Khyber Mail (09:30) is perfect for photography — you'll cross the Attock Bridge over the Indus River in broad daylight.
+
+## Peshawar Cantt Railway Station — Your Departure Point
+
+**Location:** Saddar Road, Peshawar Cantt. GPS: 34.0083° N, 71.5784° E. Located in the cantonment area, easily accessible from most parts of the city.
+
+**How to reach:**
+- From University Town: 20–30 minutes by taxi (Rs. 300–500)
+- From Peshawar Airport (Bacha Khan): 25 minutes by taxi (Rs. 500–800)
+- From Hayatabad: 30 minutes by taxi (Rs. 400–600)
+- From the Old City (Qissa Khwani Bazaar): 15 minutes by rickshaw (Rs. 200–300)
+
+**Station facilities:**
+- 4 platforms (Lahore-bound trains typically use Platform 1 or 2)
+- Computerized booking counter (opens 8 AM)
+- Waiting room with separate AC section for Business class passengers
+- Small canteen and traditional tea stalls (Peshawar's famous green tea is a must-try)
+- Parking area near main entrance
+- Inquiry: 091-9211050
+
+**Security note:** Peshawar station has enhanced security checkpoints. Arrive at least 45 minutes before departure to clear security screening and baggage checks.
+
+## The Scenic Highlights
+
+This route offers some of the most dramatic scenery on Pakistan's rail network:
+
+1. **Peshawar Valley (0–50 km):** The train departs through the lush Peshawar Valley, with views of orchards and the distant Hindu Kush mountains.
+
+2. **Nowshera–Attock (50–120 km):** The landscape transitions from valley to hilly terrain. You pass through the historic garrison town of Nowshera.
+
+3. **Attock Bridge — Indus River Crossing (120 km):** The highlight of the journey. The train crosses the Indus River on the historic Attock Bridge — a colonial-era engineering marvel. The deep blue waters of the Indus flowing between dramatic rocky gorges make this one of the most photographed spots on Pakistan's rail network. Sit on the **right side** of the train (heading south) for the best views.
+
+4. **Taxila–Rawalpindi (150–200 km):** The ancient city of Taxila (UNESCO World Heritage Site) is visible from the train. Then you enter the Rawalpindi–Islamabad metropolitan area with views of the Margalla Hills.
+
+5. **Rawalpindi–Lahore (200–480 km):** The Punjab plains — flat agricultural land with wheat fields (winter) and rice paddies (summer). See our [Rawalpindi to Lahore guide](/blog/rawalpindi-to-lahore-train-timing-schedule-2026) for this section in detail.
+
+## Intermediate Stations and Major Stops
+
+| Station | Distance from Peshawar | Typical Halt | Notes |
+|---------|----------------------|-------------|-------|
+| Nowshera | 44 km | 5 min | Army cantonment, junction for Mardan branch |
+| Attock City | 118 km | 3 min | Near the Indus crossing |
+| Taxila | 155 km | 3 min | UNESCO World Heritage Site nearby |
+| Rawalpindi Cantt | 173 km | 15 min | Major stop — many passengers board/alight here |
+| Gujar Khan | 208 km | 2 min | Salt Range foothills |
+| Jhelum | 262 km | 5 min | Army cantonment city |
+| Lala Musa Jn | 300 km | 5 min | Junction for Sargodha/Faisalabad line |
+| Wazirabad | 360 km | 3 min | Cutlery manufacturing hub |
+| Gujranwala | 392 km | 5 min | Industrial city |
+| Lahore Junction | 480 km | Terminal | Final destination |
+
+## Seasonal Travel Considerations
+
+**Summer (May–August):** Peshawar temperatures exceed 42°C. Book AC classes if possible. Carry extra water (at least 2 liters per person). Economy class without AC can be dangerously hot during delays.
+
+**Winter fog (November–February):** Fog is a major problem between Rawalpindi and Lahore. Morning trains are worst affected with delays of 2–6 hours. Afternoon departures from Peshawar (14:00+) are more reliable as they reach the fog zone during daytime. Check our [live delay tracker](/check-delays) before traveling.
+
+**Monsoon (July–September):** Occasional landslides in the Attock–Nowshera section can cause delays. Flooding in Punjab plains may also affect the Rawalpindi–Lahore segment.
+
+**Muharram and Eid:** Trains are extremely crowded. Book at least 7–10 days in advance.
+
+## Food and Practical Tips
+
+**At Peshawar station:** Try the famous Peshawari chapli kebab and green tea from station vendors. The food quality at Peshawar station is actually better than most other stations on the network.
+
+**En route:** Rawalpindi station (15-minute halt) has good platform food — biryani, samosas, and fresh fruit. Stock up here if you didn't eat at Peshawar.
+
+**Carry with you:** Large water bottle (2 liters minimum), snacks, phone charger (older coaches may not have outlets), and a light blanket for AC coaches (they can get very cold at night).
+
+## Booking Your Tickets
+
+**Online:** Use the [RABTA app](/blog/pakistan-railways-online-ticket-booking-guide-2026) — search "Peshawar Cantt" to "Lahore Junction," select train and class, pay via JazzCash/Easypaisa.
+
+**At station:** Computerized booking counter opens at 8 AM. Carry your CNIC. Same-day Economy tickets are usually available except during holidays.
+
+**Student discount:** 25% off with valid university ID — making Economy just Rs. 450 on budget trains.
+
+## Track Your Peshawar–Lahore Train
+
+Don't waste time at the platform. Visit [trackmytrain.com.pk](/live-trains) to check your train's real-time GPS position, current speed, and delay status. Our tracker covers all trains on this route with 5-second refresh intervals, so you know exactly when to head to the station.`,
+  },
+  {
+    slug: "quetta-to-karachi-train-timing-schedule-2026",
+    title: "Quetta to Karachi Train Timing & Schedule 2026 — Full Route Guide via Bolan Pass",
+    category: "SCHEDULE",
+    date: "April 8, 2026",
+    dateISO: "2026-04-08",
+    readTime: "14 min",
+    excerpt: "Complete Quetta to Karachi train timetable for 2026. All trains via the legendary Bolan Pass route with departure times, fares from Rs. 800, 24+ hour journey duration, station guides, and expert travel tips for Pakistan's most dramatic rail corridor.",
+    gradient: "gradient-card-rose",
+    image: quettaKarachiImg,
+    imageAlt: "Pakistan Railways train crossing the dramatic Balochistan desert landscape between Quetta and Karachi via Bolan Pass",
+    keywords: "quetta to karachi train timing, quetta to karachi train schedule 2026, quetta karachi train fare, quetta to karachi train ticket price, bolan mail quetta to karachi, jaffar express quetta karachi, quetta karachi train route",
+    metaDescription: "Quetta to Karachi train timing & schedule 2026. All trains via Bolan Pass with fares from Rs. 800, journey duration (24+ hours), and complete travel guide for this epic rail route.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How many trains run from Quetta to Karachi?", a: "There are 3–4 regular train services from Quetta to Karachi, including the Bolan Mail, Jaffar Express, and Quetta Express. Service frequency can vary seasonally. The Bolan Mail is the most popular and reliable daily service." },
+      { q: "How long does the Quetta to Karachi train take?", a: "The journey takes approximately 24–30 hours depending on the train. The Bolan Mail typically completes the journey in about 24–26 hours. Slower services or those with operational delays can take up to 30 hours." },
+      { q: "Is the Quetta to Karachi train route safe?", a: "Pakistan Railways has significantly improved security on the Balochistan route with armed escorts on all trains, security checkpoints at major stations, and enhanced surveillance. However, travelers should stay informed about the current security situation and follow Pakistan Railways advisories." },
+      { q: "What is the Bolan Pass and why is it famous?", a: "The Bolan Pass is a 60 km mountain pass through the Toba Kakar Range in Balochistan, connecting the Quetta plateau (1,700m elevation) to the Sindh lowlands. It's one of the most dramatic railway engineering achievements in South Asia, with the track descending over 1,500 meters through tunnels, bridges, and hairpin curves." },
+    ],
+    content: `The Quetta–Karachi railway is one of the most extraordinary train journeys in the world. Spanning over 860 km through some of Pakistan's most dramatic and remote landscapes — from the 1,700-meter Balochistan plateau through the legendary Bolan Pass and across the vast Sindh desert — this is a journey that combines engineering marvel with raw natural beauty. This guide provides everything you need to plan this epic rail adventure in 2026.
+
+## Route Overview — Quetta to Karachi
+
+The Quetta–Karachi rail route runs approximately 860 km through two provinces — Balochistan and Sindh. Unlike the relatively flat ML-1 mainline, this route features some of the most challenging terrain on Pakistan's rail network, including the descent through the Bolan Pass, one of the great railway engineering achievements of the colonial era.
+
+**Key facts:**
+- **Distance:** 860 km by rail
+- **Typical journey time:** 24–30 hours
+- **Elevation change:** 1,700m (Quetta) to sea level (Karachi)
+- **Daily services:** 3–4 trains
+- **Cheapest ticket:** Rs. 800 (Economy, Quetta Express)
+- **Key highlight:** Bolan Pass descent — 60 km of tunnels, bridges, and mountain switchbacks
+
+## Complete Train Timetable — Quetta to Karachi
+
+| Train Name | Train No. | Departs Quetta | Arrives Karachi | Duration | Days |
+|------------|-----------|---------------|----------------|----------|------|
+| Bolan Mail | 15DN | 10:00 | 10:00+1 | ~24h | Daily |
+| Jaffar Express | 37DN | 14:00 | 18:00+1 | ~28h | Daily |
+| Quetta Express | 13DN | 19:00 | 23:00+1 | ~28h | Daily |
+
+**Important notes:**
+- Journey times are approximate. This route frequently experiences delays of 2–6 hours due to track conditions, security checks, and operational factors.
+- The Bolan Mail is the most reliable service with the best on-time record.
+- Always check the [live train tracker](/live-trains) for real-time positions, especially on this route where delays are common.
+
+## Ticket Prices — Quetta to Karachi (All Classes)
+
+### Bolan Mail (Premium Service)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 1,200 |
+| AC Standard | Rs. 2,400 |
+| AC Business | Rs. 3,200 |
+| AC Sleeper | Rs. 3,500 |
+
+### Regular Express (Jaffar Express, Quetta Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 800 |
+| AC Standard | Rs. 2,000 |
+| AC Sleeper | Rs. 2,800 |
+
+**Children's fares:** 50% for ages 3–12. Free for under 3 (no seat).
+**Student discount:** 25% off with valid university ID.
+
+## The Bolan Pass — Engineering Marvel
+
+The undisputed highlight of this journey is the descent through the **Bolan Pass** (بولان درہ), a 60 km stretch that takes the train from the Quetta plateau at 1,700 meters elevation down to the Sindh lowlands near sea level.
+
+**What to expect:**
+- **Tunnels:** The train passes through multiple tunnels carved through solid rock. Some are short (50 meters); others stretch for several hundred meters.
+- **Bridges:** Several dramatic bridges span deep gorges and seasonal rivers. The views from these bridges are breathtaking.
+- **Gradient:** The track descends at gradients of up to 1:25 (4%) in some sections — steep enough that trains must use additional braking systems.
+- **Speed reduction:** Trains slow to 15–25 km/h through the pass for safety, making this 60 km section alone take 2–3 hours.
+- **Best viewing:** Sit on the **left side** of the train (heading towards Karachi) for the most dramatic cliff and gorge views.
+
+The Bolan Pass was first surveyed by the British in the 1880s and the railway line was completed in 1886. It remains one of the most challenging pieces of railway engineering in South Asia and has been compared to famous mountain railways like the Bernina Express in Switzerland.
+
+## Intermediate Stations and Journey Breakdown
+
+### Balochistan Section (Quetta to Sibi) — 6–8 hours
+
+| Station | Distance | Elevation | Notes |
+|---------|----------|-----------|-------|
+| Quetta | 0 km | 1,700m | Departure — provincial capital |
+| Spezand | 30 km | 1,650m | Small stop near Quetta |
+| Kolpur | 65 km | 1,500m | Gateway to the Bolan Pass |
+| Mach | 100 km | 800m | Major halt — security checkpoint |
+| Ab-i-Gum | 120 km | 400m | Name means "lost water" — seasonal river |
+| Sibi | 160 km | 130m | Important junction, very hot in summer |
+
+### Sindh Section (Sibi to Karachi) — 16–20 hours
+
+| Station | Distance | Notes |
+|---------|----------|-------|
+| Jacobabad | 280 km | Historically one of the hottest cities on Earth |
+| Sukkur/Rohri | 440 km | Major junction — 15 min halt. Sukkur Barrage visible |
+| Larkana | 500 km | Near Mohenjo-daro archaeological site |
+| Nawabshah | 600 km | Agricultural hub of upper Sindh |
+| Hyderabad | 700 km | Second-largest city in Sindh — 10 min halt |
+| Karachi Cantt | 840 km | Military cantonment station |
+| Karachi City | 860 km | Final destination |
+
+## Quetta Railway Station — Your Departure Point
+
+**Location:** Jinnah Road, Quetta. GPS: 30.1950° N, 66.9700° E. Located in the heart of the city, easily accessible from all areas.
+
+**How to reach:**
+- From most Quetta hotels: 10–15 minutes by taxi/rickshaw (Rs. 200–400)
+- From Quetta Airport: 15 minutes by taxi (Rs. 400–600)
+
+**Station facilities:**
+- 3 platforms
+- Computerized booking counter (opens 8 AM, can have long queues)
+- Basic waiting room
+- Small food stalls selling traditional Balochi sajji and kebabs
+- Security checkpoints at entrance (allow extra time)
+- Inquiry: 081-9201162
+
+**Security protocols:** Due to the security situation in Balochistan, Quetta station has enhanced security. Expect bag screening and ID checks at the entrance. Arrive at least 1 hour before departure.
+
+## Seasonal and Weather Considerations
+
+**Winter (November–March):** The best time to travel. Quetta temperatures are cold (0–10°C at departure), but the journey gradually warms as you descend. Karachi will be pleasant (18–25°C). Bring a warm jacket for the first few hours.
+
+**Summer (May–August):** Extremely challenging. Sibi and Jacobabad regularly exceed 50°C — they're among the hottest places on Earth. Economy class without AC is genuinely dangerous in summer. **Book AC class or do not travel in summer.** Carry at least 3 liters of water per person.
+
+**Monsoon (July–September):** Flash flooding in Balochistan can wash out track sections, causing cancellations or multi-day delays. Check service status before booking.
+
+**Dust storms (March–May):** Occasional dust storms in the Sindh desert can reduce visibility and cause minor delays.
+
+## Food and Water — Critical on This Route
+
+This is not a short commuter trip. At 24–30 hours, food and water planning is essential:
+
+**At Quetta station:** Stock up on dry fruits (Quetta is famous for its dry fruits — almonds, pistachios, walnuts), fresh bread (naan), and bottled water. Buy more than you think you need.
+
+**At Sibi (6–8 hours in):** Platform vendors sell hot meals (rice, dal), fruit, and water. This is your most reliable food stop in Balochistan.
+
+**At Sukkur/Rohri (14–16 hours in):** Good platform food available — biryani, kebabs, fresh fruit. 15-minute halt gives enough time to buy food.
+
+**At Hyderabad (20–22 hours in):** Last major food stop before Karachi. Sindhi biryani is excellent here.
+
+**Carry with you:** At minimum — 3 liters of water per person, dry snacks (biscuits, nuts, chips), bread, and hand sanitizer. There are no guaranteed food stops for the first 6–8 hours through Balochistan. In summer, double your water supply.
+
+## Security Information
+
+Pakistan Railways provides security escorts on all Balochistan-route trains. Additional measures include:
+
+- Armed police contingent on board
+- Regular security checks at major stations
+- Communication equipment for emergency contact
+- Coordination with Frontier Corps for track security
+
+**Travel advisory:** While the security situation has improved significantly since 2020, travelers should stay informed about current conditions. Check Pakistan Railways official advisories before booking. Avoid displaying expensive electronics or jewelry. Keep your CNIC (or passport for foreigners) easily accessible as security personnel may check documents during the journey.
+
+## Booking Tips
+
+**Book in advance:** This route has fewer daily services than the ML-1 mainline. Tickets can sell out 3–5 days ahead, especially for AC classes.
+
+**Online booking:** Use the [RABTA app](/blog/pakistan-railways-online-ticket-booking-guide-2026) for the fastest booking. Search "Quetta" to "Karachi City" or "Karachi Cantt."
+
+**AC Sleeper is recommended:** For a 24–30 hour journey, the Rs. 2,800–3,500 for AC Sleeper is money well spent. You'll sleep through the overnight Sindh section and arrive rested.
+
+**Connecting to other routes:** If you're continuing from Karachi to Lahore, check our [Karachi to Lahore fare guide](/blog/best-trains-karachi-to-lahore-2026). From Karachi to Islamabad, see our [ticket price comparison](/blog/karachi-to-islamabad-train-ticket-price-2026).
+
+## Why Take the Train Instead of Flying?
+
+| Factor | Train | Flight (PIA/Airblue) |
+|--------|-------|-----|
+| Fare | Rs. 800–3,500 | Rs. 8,000–18,000 |
+| Duration | 24–30 hours | 1.5 hours (+airport time) |
+| Scenery | World-class (Bolan Pass) | Limited aerial views |
+| Luggage | 40 kg free | 20 kg checked |
+| Experience | Epic journey | Standard flight |
+
+If you have the time, the Quetta–Karachi train is one of those journeys that's about the experience, not just the destination. The Bolan Pass alone is worth the ticket price. For photographers, travel bloggers, and adventure seekers, this is a bucket-list route.
+
+## Track Your Quetta–Karachi Train Live
+
+On a route this long with potential delays, live tracking is essential. Visit [trackmytrain.com.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, current speed, delay status, and recalculated ETAs for every upcoming station. This is especially critical on the Balochistan section where delays of 2–6 hours are not uncommon. Share the tracking link with family so they know when to expect you in Karachi.`,
   },
 ];
