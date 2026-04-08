@@ -1124,4 +1124,227 @@ Parlor class is the most exclusive offering, available on a handful of trains. I
 
 Track your train's live GPS position on trackmytrain.pk regardless of which class you travel — real-time tracking works for all coach classes and all trains.`,
   },
+  {
+    slug: "karachi-to-islamabad-train-ticket-price-2026",
+    title: "Karachi to Islamabad Train Ticket Price 2026 — All Classes Compared",
+    category: "FARE GUIDE",
+    date: "April 5, 2026",
+    dateISO: "2026-04-05",
+    readTime: "11 min",
+    excerpt: "Complete Karachi to Islamabad train ticket price list for 2026. Compare Economy, AC Standard, AC Business, and Sleeper fares across Green Line, Tezgam, Pakistan Express, and more.",
+    gradient: "gradient-card-emerald",
+    image: karachiIslamabadImg,
+    imageAlt: "Pakistan Railways express train traveling through Punjab countryside — Karachi to Islamabad fare guide",
+    keywords: "karachi to islamabad train ticket price, karachi to islamabad train fare, karachi islamabad train, train ticket price karachi to islamabad 2026, green line karachi to islamabad fare, cheapest train karachi to islamabad, pakistan express fare",
+    metaDescription: "Updated Karachi to Islamabad train ticket prices for 2026. Economy Rs 4,200–6,350, AC Standard Rs 7,550–11,650, AC Business Rs 10,950–14,600. All trains compared with booking tips.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "What is the cheapest Karachi to Islamabad train ticket price?", a: "The cheapest option is the Pakistan Express Economy class at approximately Rs. 4,200. The Awam Express Economy is also affordable at around Rs. 4,000. These fan-cooled coaches are budget-friendly but less comfortable for the 22–26 hour journey." },
+      { q: "How much does a Green Line Express ticket cost from Karachi to Islamabad?", a: "Green Line Express fares from Karachi to Islamabad (Margala) are: Economy Rs. 6,350, AC Standard Rs. 11,650, AC Business Rs. 14,600, and AC Sleeper Rs. 13,800. AC Business includes complimentary meals and WiFi." },
+      { q: "Which is the fastest train from Karachi to Islamabad?", a: "The Green Line Express (5UP/6DN) is the fastest, completing the journey in approximately 20 hours 30 minutes. The Pakistan Express takes about 24–26 hours, while the Tezgam takes approximately 26–28 hours." },
+      { q: "How many trains run between Karachi and Islamabad daily?", a: "There are 4–5 direct trains daily from Karachi to Rawalpindi/Islamabad (Margala): Green Line Express, Pakistan Express, Tezgam, Awam Express, and Khyber Mail. Rawalpindi station is just 30 minutes from Islamabad." },
+      { q: "Can I book Karachi to Islamabad train tickets online?", a: "Yes, book through the official RABTA app or pakrailways.gov.pk. Pay via JazzCash, Easypaisa, or debit/credit card. Advance booking up to 30 days is available. For Green Line AC Business, book 15+ days early as seats sell out fast." },
+    ],
+    content: \`The Karachi to Islamabad railway corridor is one of Pakistan's most traveled long-distance routes, stretching approximately 1,228 kilometers along the Main Line 1 (ML-1). Whether you're traveling for business, visiting family, or relocating, understanding the fare structure across different trains and classes can save you significant money and help you choose the right level of comfort.
+
+This guide provides the complete, updated Karachi to Islamabad train ticket price list for 2026, reflecting the fare revision effective March 9, 2026.
+
+## Karachi to Islamabad Fare Chart — All Trains & Classes
+
+Here is the complete fare comparison for every train operating on this route:
+
+### Green Line Express (5UP/6DN) — Premium Service
+
+| Class | Fare (Rs.) | Features |
+|-------|-----------|----------|
+| Economy | 6,350 | Reserved seating, fan-cooled |
+| AC Standard | 11,650 | Air-conditioned, reclining seats |
+| AC Business | 14,600 | Complimentary meals, WiFi, wide seats |
+| AC Sleeper | 13,800 | Sleeping berths, bedding provided |
+
+The Green Line Express is Pakistan Railways' flagship service and the fastest option at approximately 20.5 hours. AC Business class includes gourmet meals, free WiFi, power outlets at every seat, and dedicated hospitality staff.
+
+### Pakistan Express (3UP/4DN)
+
+| Class | Fare (Rs.) | Features |
+|-------|-----------|----------|
+| Economy | 4,200 | Budget-friendly, fan-cooled |
+| AC Standard | 10,450 | Air-conditioned comfort |
+| AC Business | 11,450 | Premium seating |
+| AC Sleeper | 16,550 | Overnight berths |
+
+The Pakistan Express is the workhorse of this corridor, operating daily with a journey time of approximately 24–26 hours. It offers good value for money, especially in AC Standard class.
+
+### Tezgam Express (7UP/8DN)
+
+| Class | Fare (Rs.) | Features |
+|-------|-----------|----------|
+| Economy | 4,900 | Budget-friendly |
+| AC Standard | 10,200 | Comfortable AC seating |
+| AC Business | 12,800 | Premium AC coaches |
+| AC Sleeper | 15,000 | Overnight comfort |
+
+The Tezgam is one of the oldest and most recognized trains in Pakistan. Despite longer journey times (26–28 hours), it remains popular due to its wide route coverage and availability.
+
+### Awam Express
+
+| Class | Fare (Rs.) | Features |
+|-------|-----------|----------|
+| Economy | 4,000 | Most affordable option |
+| AC Standard | 9,800 | Basic AC comfort |
+
+The Awam Express is the budget traveler's choice with the lowest Economy fares on this route. Limited AC classes available.
+
+### Khyber Mail
+
+| Class | Fare (Rs.) | Features |
+|-------|-----------|----------|
+| Economy | 4,200 | Standard fan-cooled |
+| AC Standard | 10,450 | Air-conditioned |
+| AC Business | 11,450 | Premium AC |
+
+The historic Khyber Mail extends beyond Rawalpindi to Peshawar, making it convenient for travelers heading to KPK.
+
+## How to Choose the Right Train and Class
+
+Your decision should factor in budget, comfort needs, and journey timing:
+
+**Choose Green Line Express AC Business if:** You want the best possible experience, need WiFi for work, value punctuality (85%+ on-time rate), and your budget allows Rs. 14,600.
+
+**Choose Pakistan Express AC Standard if:** You want a good balance of comfort and affordability. At Rs. 10,450, you get full AC comfort for about 65% of Green Line AC Business's price.
+
+**Choose Awam Express Economy if:** Budget is the primary concern. At Rs. 4,000, it's the cheapest way to travel this route, though the 24+ hour journey in fan-cooled coaches can be taxing, especially in summer.
+
+**Choose AC Sleeper on any train if:** You're traveling overnight and want to sleep. The berth, bedding, and AC make a huge difference on a 20+ hour journey. Prices range from Rs. 13,800 (Green Line) to Rs. 16,550 (Pakistan Express).
+
+## Booking Tips for Karachi–Islamabad Route
+
+- **Book 15–30 days in advance** for Green Line Express, especially AC Business — seats sell out fast during peak season.
+- **Use the RABTA app** for the fastest booking experience with JazzCash or Easypaisa payment.
+- **Check live delays** on trackmytrain.pk before leaving for the station — winter fog can delay trains by 3–8 hours.
+- **Consider afternoon departures** during fog season (Nov–Feb) as morning trains face the worst delays.
+- **AC Standard is the sweet spot** — 80% of Business class comfort at 65% of the price.
+
+## Student and Concession Fares
+
+Pakistan Railways offers discounts that apply to all Karachi–Islamabad trains:
+
+- **Students:** 25% off with valid college/university ID
+- **Senior citizens (60+):** 25% off with CNIC
+- **Disabled persons:** 50% off with disability certificate
+- **Children (3–12):** Half fare
+- **Children under 3:** Free (no separate seat)
+
+## Track Your Karachi–Islamabad Train Live
+
+Once you've booked, track your train's exact GPS position on trackmytrain.pk. Our live tracker updates every 5 seconds and shows current speed, delay status, and recalculated ETAs for every upcoming station — from Hyderabad Junction to Sukkur, Multan, Lahore, and finally Rawalpindi/Margala.\`,
+  },
+  {
+    slug: "rawalpindi-to-lahore-train-timing-schedule-2026",
+    title: "Rawalpindi to Lahore Train Timing & Schedule 2026 — All Trains Listed",
+    category: "SCHEDULE",
+    date: "April 3, 2026",
+    dateISO: "2026-04-03",
+    readTime: "10 min",
+    excerpt: "Complete Rawalpindi to Lahore train timing guide for 2026. Departure times, journey duration, fares, and platform details for all 10+ daily trains including Green Line, Subak Raftar, and Rawal Express.",
+    gradient: "gradient-card-blue",
+    image: rawalpindiLahoreImg,
+    imageAlt: "Pakistan Railways train at Rawalpindi station platform — train timing and schedule guide",
+    keywords: "rawalpindi to lahore train timing, rawalpindi to lahore train schedule, rawalpindi lahore train, pindi to lahore train time, train timing rawalpindi to lahore 2026, rawal express timing, subak raftar timing, green line rawalpindi to lahore",
+    metaDescription: "Complete Rawalpindi to Lahore train timing and schedule for 2026. 10+ daily trains with departure times, journey duration (4–5 hours), fares from Rs 1,100, and platform details.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "What are the train timings from Rawalpindi to Lahore?", a: "Trains depart Rawalpindi for Lahore throughout the day. Key departures include: Subak Raftar at 06:00, Green Line at 11:15 (arriving from Karachi), Rawal Express at 14:30, and Pakistan Express at various times. Most trains take 4–5 hours." },
+      { q: "Which is the fastest train from Rawalpindi to Lahore?", a: "The Subak Raftar Express and Rawal Express are the fastest dedicated services, completing the journey in approximately 4 hours. The Green Line Express also covers this segment in about 4–4.5 hours but is a through-train from Karachi." },
+      { q: "How much does a Rawalpindi to Lahore train ticket cost?", a: "Economy class fares start from Rs. 1,100 on regular express trains. AC Standard is around Rs. 1,950, AC Business Rs. 2,150. Green Line fares for this segment: Economy Rs. 2,350, AC Business Rs. 4,700." },
+      { q: "How many trains run between Rawalpindi and Lahore daily?", a: "Approximately 10–12 trains operate daily on the Rawalpindi–Lahore corridor, including dedicated services like Subak Raftar and Rawal Express, plus through-trains from Karachi and Peshawar." },
+      { q: "Which platform do Lahore-bound trains depart from at Rawalpindi?", a: "Most Lahore-bound trains depart from Platform 1 or Platform 2 at Rawalpindi Cantt Railway Station. Platform assignments can change — check the station display board upon arrival or ask at the inquiry counter (051-99270056)." },
+    ],
+    content: \`The Rawalpindi to Lahore railway corridor is one of the busiest short-distance routes on Pakistan Railways' network. Covering approximately 288 kilometers along the Main Line 1 (ML-1), this route connects Pakistan's political capital region (Islamabad/Rawalpindi) with its cultural capital (Lahore) — a journey that millions of commuters, business travelers, and families make every year.
+
+This comprehensive guide lists every train operating on this route in 2026, with exact timings, journey durations, fares, and practical tips.
+
+## Complete Rawalpindi to Lahore Train Timetable 2026
+
+### Morning Departures
+
+| Train | Departure | Arrival Lahore | Duration | Economy Fare |
+|-------|-----------|---------------|----------|-------------|
+| Subak Raftar Express | 06:00 | 10:00 | 4h 00m | Rs. 1,100 |
+| Awam Express | 07:30 | 12:00 | 4h 30m | Rs. 1,050 |
+| Pakistan Express | 08:15 | 12:45 | 4h 30m | Rs. 1,100 |
+
+### Afternoon Departures
+
+| Train | Departure | Arrival Lahore | Duration | Economy Fare |
+|-------|-----------|---------------|----------|-------------|
+| Green Line Express | 11:15* | 15:30 | 4h 15m | Rs. 2,350 |
+| Rawal Express | 14:30 | 18:30 | 4h 00m | Rs. 1,100 |
+| Khyber Mail | 15:00 | 19:30 | 4h 30m | Rs. 1,100 |
+
+### Evening & Night Departures
+
+| Train | Departure | Arrival Lahore | Duration | Economy Fare |
+|-------|-----------|---------------|----------|-------------|
+| Tezgam Express | 17:00 | 21:30 | 4h 30m | Rs. 1,250 |
+| Hazara Express | 19:00 | 23:30 | 4h 30m | Rs. 1,100 |
+| Shalimar Express | 21:00 | 01:30+1 | 4h 30m | Rs. 1,100 |
+
+*Green Line timing is approximate as it's a through-train from Karachi. Check live position on trackmytrain.pk for exact arrival at Rawalpindi.
+
+**Note:** Timings are scheduled and subject to change. During fog season (November–February), trains through Punjab frequently experience delays of 1–4 hours. Always check trackmytrain.pk for real-time status before heading to the station.
+
+## Fare Comparison — All Classes
+
+| Class | Regular Express | Green Line |
+|-------|----------------|------------|
+| Economy | Rs. 1,100 | Rs. 2,350 |
+| AC Standard | Rs. 1,950 | Rs. 3,800 |
+| AC Business | Rs. 2,150 | Rs. 4,700 |
+| AC Sleeper | Rs. 2,400 | Rs. 4,200 |
+
+Green Line fares are higher because it's a premium service with complimentary meals, WiFi, and superior coaches in AC Business class.
+
+## Which Train Should You Choose?
+
+**For early arrivals:** Take the Subak Raftar Express (06:00 departure, 10:00 arrival). It's the earliest and fastest dedicated service. Perfect if you have a morning meeting in Lahore.
+
+**For comfort:** The Green Line Express offers the best coaches and service quality, but at a premium price. If you're already on the Green Line from Karachi, the Rawalpindi–Lahore leg is included.
+
+**For budget travel:** The Awam Express at Rs. 1,050 Economy is the cheapest option. The difference between Rs. 1,050 and Rs. 2,350 (Green Line) buys the same 4-hour journey with less comfort but at less than half the cost.
+
+**For overnight travel:** The Shalimar Express departing at 21:00 arrives at Lahore Junction around 01:30 AM. If you have AC Sleeper tickets, you can sleep through the journey. However, for such a short trip (4 hours), most travelers prefer day services.
+
+## Rawalpindi Railway Station — Practical Guide
+
+**Location:** Rawalpindi Cantt Railway Station, Saddar Road, Rawalpindi. Approximately 15 km from Islamabad city center.
+
+**How to reach:** From Islamabad, take a taxi (30–45 minutes via Murree Road) or local bus services. Ride-hailing apps (Careem, InDriver) typically charge Rs. 600–1,000 from F-sectors to the station.
+
+**Facilities:**
+- Computerized booking counter (opens 8 AM)
+- Waiting room with separate sections for AC and Economy passengers
+- Small food stalls and tea vendors on platforms
+- Parking available (limited)
+- Inquiry counter: 051-99270056
+
+**Platform tips:** Arrive at least 30 minutes before departure. Platform assignments are displayed on the electronic board in the main hall. Ask a porter if unsure — they wear khaki uniforms.
+
+## Booking Tips
+
+- **Same-day tickets** are usually available for regular express trains on this route. Green Line requires advance booking.
+- **The RABTA app** is the fastest way to book — search "Rawalpindi to Lahore," select your train and class, and pay via JazzCash or Easypaisa.
+- **Students** get 25% off with valid ID. Present your ID at the booking counter or select the concession option in the RABTA app.
+- **Weekend travel** (Friday evening and Sunday) sees higher demand. Book 2–3 days ahead for guaranteed seats.
+
+## Winter Fog Advisory
+
+Between November and February, dense fog in Punjab can delay trains by 1–6 hours, especially morning departures. The Subak Raftar (06:00) and Awam Express (07:30) are most affected. Afternoon trains (14:00+) are significantly more reliable during fog season.
+
+**Pro tip:** Check the fog situation on trackmytrain.pk before leaving home. If your morning train shows a 3-hour delay, consider switching to an afternoon departure.
+
+## Track Your Train Live
+
+Don't waste time at the platform wondering where your train is. Visit trackmytrain.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.\`,
+  },
 ];
