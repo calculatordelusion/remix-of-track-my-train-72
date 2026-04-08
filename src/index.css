@@ -65,7 +65,7 @@
     --footer-orb-1: 165 50% 50% / 0.08;
     --footer-orb-2: 38 80% 50% / 0.06;
     --footer-orb-3: 220 60% 50% / 0.04;
-    --footer-separator-from: var(--background);
+    --footer-separator-from: 165 45% 30%;
     --footer-separator-to: 220 20% 96%;
     --footer-helpline-bg: 0 0% 100%;
     --footer-helpline-border: 220 15% 85%;
