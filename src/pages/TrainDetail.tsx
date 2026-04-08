@@ -8,17 +8,22 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
 import TopicCluster, { getTrainCluster } from "@/components/TopicCluster";
+import { trainSlugToId } from "@/data/trains";
 
 export default function TrainDetailPage() {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [train, setTrain] = useState<TrainDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [lastUpdate, setLastUpdate] = useState(new Date());
 
+  // Resolve slug to id; support both slug and legacy numeric id
+  const trainId = slug ? (trainSlugToId.get(slug) ?? (isNaN(Number(slug)) ? undefined : Number(slug))) : undefined;
+
   useEffect(() => {
+    if (trainId === undefined) { setLoading(false); return; }
     const load = async () => {
       try {
-        const data = await fetchTrainDetail(Number(id));
+        const data = await fetchTrainDetail(trainId);
         setTrain(data);
         setLastUpdate(new Date());
       } catch (e) { console.error(e); }
@@ -27,7 +32,7 @@ export default function TrainDetailPage() {
     load();
     const interval = setInterval(load, 30000);
     return () => clearInterval(interval);
-  }, [id]);
+  }, [trainId]);
 
   if (loading) {
     return (
