@@ -10,6 +10,10 @@ import howToTrackImg from "@/assets/blog/how-to-track-train.jpg";
 import trainClassesImg from "@/assets/blog/train-classes-guide.jpg";
 import karachiIslamabadImg from "@/assets/blog/karachi-islamabad-ticket-price.jpg";
 import rawalpindiLahoreImg from "@/assets/blog/rawalpindi-lahore-timing.jpg";
+import lahoreIslamabadImg from "@/assets/blog/lahore-islamabad-timing.jpg";
+import multanLahoreImg from "@/assets/blog/multan-lahore-schedule.jpg";
+import faisalabadLahoreImg from "@/assets/blog/faisalabad-lahore-train.jpg";
+import onlineBookingImg from "@/assets/blog/pakistan-railways-online-booking.jpg";
 
 export interface BlogPost {
   slug: string;
@@ -1346,5 +1350,683 @@ Between November and February, dense fog in Punjab can delay trains by 1–6 hou
 ## Track Your Train Live
 
 Don't waste time at the platform wondering where your train is. Visit trackmytrain.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.`,
+  },
+  {
+    slug: "lahore-to-islamabad-train-timing-schedule-2026",
+    title: "Lahore to Islamabad Train Timing & Schedule 2026 — Complete Guide",
+    category: "SCHEDULE",
+    date: "April 8, 2026",
+    dateISO: "2026-04-08",
+    readTime: "12 min",
+    excerpt: "Complete Lahore to Islamabad (Rawalpindi) train timetable for 2026. Covers all 10+ daily services including Green Line, Tezgam, Business Express, and Pakistan Express with fares, travel tips, and platform guides.",
+    gradient: "gradient-card-blue",
+    image: lahoreIslamabadImg,
+    imageAlt: "Pakistan Railways express train speeding through Punjab countryside between Lahore and Islamabad",
+    keywords: "lahore to islamabad train timing, lahore to islamabad train schedule 2026, lahore to rawalpindi train, lahore islamabad train fare, lahore to islamabad train ticket price, green line lahore to islamabad, tezgam lahore to islamabad timing",
+    metaDescription: "Lahore to Islamabad train timing & schedule 2026. All 10+ daily trains with departure times, fares from Rs. 950, journey duration, and platform details for Lahore Junction.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How many trains run from Lahore to Islamabad daily?", a: "There are 10+ daily train services from Lahore Junction to Rawalpindi (for Islamabad). These include premium services like the Green Line Express and Business Express, as well as regular trains like the Tezgam, Pakistan Express, and Awam Express." },
+      { q: "What is the fastest train from Lahore to Islamabad?", a: "The Business Express and Green Line Express are the fastest, covering the distance in approximately 4 hours 15 minutes. The Subak Raftar Express is another fast option at around 4 hours 30 minutes." },
+      { q: "How much does a Lahore to Islamabad train ticket cost?", a: "Economy class tickets start from Rs. 950 on the Awam Express. AC Business class on the Green Line costs Rs. 2,350. AC Sleeper on Tezgam is Rs. 2,400. Students get a 25% discount with valid ID." },
+      { q: "Is Rawalpindi station or Islamabad station the destination?", a: "Most trains terminate at Rawalpindi Cantt Railway Station, which is the main railhead for the Islamabad-Rawalpindi metropolitan area. Islamabad's own Margalla Railway Station exists but only a few slow trains stop there. From Rawalpindi station, Islamabad city center is a 30-45 minute taxi ride." },
+    ],
+    content: `Lahore to Islamabad is one of the busiest intercity rail corridors in Pakistan, connecting the country's cultural capital with its political capital. Whether you're a government official commuting for work, a student heading to a university in the twin cities, or a family visiting relatives, this guide gives you everything you need to plan your train journey in 2026.
+
+## Lahore to Islamabad Train Route Overview
+
+The railway journey from Lahore Junction to Rawalpindi Cantt covers approximately 288 km along the ML-1 (Main Line 1) — Pakistan Railways' most important and busiest corridor. The route passes through the heart of Punjab, stopping at major stations including Gujranwala, Wazirabad, Lala Musa, Jhelum, and Gujar Khan before reaching Rawalpindi.
+
+**Key facts:**
+- **Distance:** 288 km by rail
+- **Typical journey time:** 4 hours 15 minutes to 5 hours 30 minutes (depending on the train)
+- **Number of daily services:** 10+
+- **Cheapest ticket:** Rs. 950 (Economy, Awam Express)
+- **Fastest train:** Business Express / Green Line Express (~4h 15m)
+
+## Complete Train Timetable — Lahore to Rawalpindi (Islamabad)
+
+Here is the full schedule of trains operating on the Lahore–Rawalpindi route as of the March 2026 timetable revision:
+
+| Train Name | Train No. | Departs Lahore | Arrives Rawalpindi | Duration | Days |
+|------------|-----------|----------------|-------------------|----------|------|
+| Subak Raftar Express | 43UP | 06:00 | 10:30 | 4h 30m | Daily |
+| Awam Express | 19UP | 07:30 | 12:30 | 5h 00m | Daily |
+| Business Express | 3UP | 08:00 | 12:15 | 4h 15m | Daily |
+| Tezgam | 9UP | 09:00 | 13:30 | 4h 30m | Daily |
+| Green Line Express | 27UP | 10:00 | 14:15 | 4h 15m | Daily |
+| Pakistan Express | 1UP | 12:00 | 17:00 | 5h 00m | Daily |
+| Hazara Express | 41UP | 14:30 | 19:00 | 4h 30m | Daily |
+| Mehr Express | 29UP | 16:00 | 21:00 | 5h 00m | Daily |
+| Shalimar Express | 5UP | 18:00 | 22:30 | 4h 30m | Daily |
+| Rawal Express | 47UP | 21:00 | 01:30+1 | 4h 30m | Daily |
+
+**Note:** Times are based on the official Pakistan Railways schedule effective March 2026. Actual arrival times may vary due to operational factors. Always check live status on [trackmytrain.pk](/live-trains) before heading to the station.
+
+## Ticket Prices — Lahore to Rawalpindi (All Classes)
+
+Fares vary significantly by train type and class. Here's a comprehensive comparison updated after the March 2026 fare revision:
+
+### Regular Express Trains (Tezgam, Pakistan Express, Shalimar Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 1,050 |
+| AC Standard | Rs. 1,800 |
+| AC Business | Rs. 2,100 |
+| AC Sleeper | Rs. 2,400 |
+
+### Budget Trains (Awam Express, Mehr Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 950 |
+| AC Standard | Rs. 1,650 |
+
+### Premium Trains (Green Line Express, Business Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 1,200 |
+| AC Standard | Rs. 2,100 |
+| AC Business | Rs. 2,350 |
+| AC Parlor | Rs. 2,800 |
+
+Premium trains include complimentary meals, WiFi (on Green Line), and newer Chinese-manufactured coaches with better suspension and air conditioning.
+
+## Which Train Should You Choose?
+
+Choosing the right train depends on your priorities — speed, comfort, budget, or timing. Here's our expert recommendation based on years of covering Pakistan Railways:
+
+**Best for speed:** The **Business Express** (08:00 departure) is the fastest dedicated service at 4 hours 15 minutes. It's a no-frills express that makes minimal stops. If you have a morning meeting in Islamabad, this is the train to catch.
+
+**Best for comfort:** The **Green Line Express** offers the most premium experience with refurbished Chinese coaches, complimentary meals in AC Business class, onboard WiFi, and proper catering service. It departs at 10:00, making it perfect for those who don't want an early wake-up call.
+
+**Best for budget:** The **Awam Express** at Rs. 950 Economy is the cheapest option. The coaches are older and slower, but for the price-conscious traveler, it's unbeatable.
+
+**Best for evening travel:** The **Shalimar Express** (18:00) arrives in Rawalpindi around 22:30. If you want to travel after work, this is your best option. Book AC Sleeper for a comfortable evening ride.
+
+**Best for overnight:** The **Rawal Express** (21:00) arrives at 01:30 AM. Only recommended if you have AC Sleeper tickets and someone to pick you up at Rawalpindi station late at night.
+
+## Lahore Junction Station — Complete Guide
+
+Lahore Junction (لاہور جنکشن) is Pakistan's busiest railway station, handling over 60 trains daily. Here's what you need to know:
+
+**Location:** Mcleod Road, near the Walled City of Lahore. GPS: 31.5606° N, 74.3128° E.
+
+**How to reach:**
+- From Gulberg/DHA: 20–30 minutes by taxi (Rs. 400–700 via Careem/InDriver)
+- From Allama Iqbal Airport: 30–45 minutes (Rs. 600–1,000)
+- Metro Bus: Lahore Junction station is on the Orange Line Metro, making it easily accessible from across the city
+
+**Facilities:**
+- 12 platforms (your train will typically depart from Platform 1–5 for Rawalpindi-bound trains)
+- Computerized booking office (opens 8 AM, closes 10 PM)
+- VIP lounge for AC Business/Parlor ticket holders
+- Food court and chai stalls on platforms
+- ATM machines near the main entrance
+- Porters available (negotiate rate before hiring — typical Rs. 100–200 per bag)
+
+**Platform tips:** Arrive at least 30 minutes before departure for regular trains and 45 minutes for premium services like the Green Line (which has a dedicated boarding process). Check the digital departure board in the main concourse for platform assignments.
+
+## Intermediate Stations and Stops
+
+Understanding the stops between Lahore and Rawalpindi helps you plan connections and know what to expect:
+
+1. **Kamoke** (32 km) — Small stop, 1-minute halt. Famous for its sweets.
+2. **Gujranwala** (68 km) — Major city stop, 5-minute halt. Industrial hub of Punjab.
+3. **Wazirabad** (100 km) — Junction station, 3-minute halt. Famous for cutlery manufacturing.
+4. **Lala Musa Junction** (160 km) — Important junction where the Sargodha line branches off. 5-minute halt.
+5. **Jhelum** (198 km) — Major army cantonment city. 5-minute halt. Beautiful views of the Jhelum River from the bridge approach.
+6. **Gujar Khan** (252 km) — Last major stop before Rawalpindi. 2-minute halt.
+7. **Rawalpindi Cantt** (288 km) — Final destination. All passengers disembark.
+
+The scenic highlight of this route is the section between Lala Musa and Jhelum, where the train crosses the Salt Range foothills and the Jhelum River bridge. If you're seated on the left side of the train (going towards Rawalpindi), you'll get the best views.
+
+## Travel Tips for Lahore to Islamabad by Train
+
+**Booking in advance:** Weekend trains (Friday evening and Sunday) fill up fast. Book at least 2–3 days ahead for guaranteed seats on premium services. The [RABTA app](https://pakrail.gov.pk) allows mobile booking with JazzCash and Easypaisa payments.
+
+**Student discounts:** Students with valid university ID cards receive a 25% discount on all classes. Present your ID at the booking counter or select the concession option in the RABTA app.
+
+**Fog season warning (November–February):** Dense fog in Punjab can delay trains by 1–6 hours, especially morning departures. The Subak Raftar (06:00) and Awam Express (07:30) are most affected. Afternoon trains (14:00+) are significantly more reliable during fog season. Always check the [live delay status](/check-delays) before leaving home.
+
+**From Rawalpindi to Islamabad:** After arriving at Rawalpindi Cantt station, you can take a taxi to Islamabad (30–45 minutes, Rs. 600–1,200 depending on your destination). The F-sectors and Blue Area are the main business districts. Ride-hailing apps (Careem, InDriver) are the most reliable option.
+
+**Food and water:** Carry water bottles and snacks for the journey. While vendors sell food at intermediate stations, quality and hygiene can be inconsistent. Premium trains like the Green Line provide complimentary meals in AC Business class.
+
+## Comparing Train vs. Bus vs. Air
+
+| Factor | Train | Bus (Daewoo/Faisal Movers) | Air (PIA/Airblue) |
+|--------|-------|-----|-----|
+| Travel time | 4–5 hours | 5–6 hours | 1 hour (+ airport time) |
+| Cost (Economy) | Rs. 950–1,200 | Rs. 1,800–2,500 | Rs. 8,000–15,000 |
+| Comfort | Good (AC coaches available) | Good (reclining seats) | Excellent |
+| Luggage | Generous (40 kg free) | Limited (20 kg) | 20 kg checked |
+| Reliability | 85–90% on time (non-fog) | 90% on time | 70–80% (cancellations) |
+| Scenic value | High (countryside views) | Motorway (limited views) | Aerial views |
+
+The train wins on cost and luggage allowance. Buses are slightly more predictable on timing. Flights only make sense if time is critical and you're willing to pay 8–10x the train fare.
+
+## Track Your Train Live
+
+Stop guessing when your train will arrive. Use [trackmytrain.pk](/live-trains) to track your Lahore–Islamabad train in real time. Our GPS tracker updates every 5 seconds, showing the exact position on the map, current speed, delay status, and recalculated ETAs for every upcoming station. Share the tracking link with whoever is picking you up in Rawalpindi so they can time their arrival perfectly.`,
+  },
+  {
+    slug: "multan-to-lahore-train-schedule-timing-2026",
+    title: "Multan to Lahore Train Schedule & Timing 2026 — All Trains, Fares & Tips",
+    category: "SCHEDULE",
+    date: "April 8, 2026",
+    dateISO: "2026-04-08",
+    readTime: "12 min",
+    excerpt: "Complete Multan to Lahore train timetable for 2026 with all 8+ daily services, ticket prices from Rs. 750, journey duration, and expert travel tips for this busy southern Punjab route.",
+    gradient: "gradient-card-amber",
+    image: multanLahoreImg,
+    imageAlt: "Pakistan Railways train crossing a bridge in southern Punjab near Multan with cotton fields and palm trees",
+    keywords: "multan to lahore train schedule, multan to lahore train timing 2026, multan lahore train fare, multan to lahore train ticket price, trains from multan to lahore, multan lahore express, tezgam multan to lahore",
+    metaDescription: "Multan to Lahore train schedule & timing 2026. All 8+ daily trains with departure times, fares from Rs. 750, duration (5-6 hours), and station guides for Multan Cantt.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How many trains run from Multan to Lahore daily?", a: "There are 8+ daily train services from Multan Cantt to Lahore Junction. Major services include the Tezgam, Shalimar Express, Pakistan Express, Green Line Express, Hazara Express, and Bahauddin Zakariya Express." },
+      { q: "How long does the Multan to Lahore train take?", a: "The journey takes approximately 5 to 6.5 hours depending on the train. The fastest trains (Tezgam, Green Line) complete the journey in about 5 hours, while slower passenger services take up to 6.5 hours." },
+      { q: "What is the cheapest Multan to Lahore train ticket?", a: "Economy class tickets on the Bahauddin Zakariya Express start from Rs. 750. Regular express trains like the Tezgam charge Rs. 850 for Economy. AC Business on the Green Line is Rs. 1,900." },
+      { q: "Can I book Multan to Lahore train tickets online?", a: "Yes, you can book through the official Pakistan Railways RABTA app or at the computerized booking counter at Multan Cantt station. Online payments are accepted via JazzCash and Easypaisa. For popular trains, booking 2-3 days in advance is recommended." },
+    ],
+    content: `The Multan–Lahore railway corridor is one of the most heavily traveled routes in southern Punjab, connecting Pakistan's "City of Saints" with its cultural and economic capital. Whether you're a mango trader heading to Lahore's wholesale markets, a student returning to university, or a family visiting the shrines of Multan, this comprehensive guide covers everything you need for a smooth train journey in 2026.
+
+## Route Overview — Multan to Lahore
+
+The train journey from Multan Cantt to Lahore Junction covers approximately 331 km along the ML-1 mainline. The route passes through the agricultural heartland of Punjab, with stops at key cities including Khanewal, Sahiwal, and Okara.
+
+**Key facts:**
+- **Distance:** 331 km by rail
+- **Typical journey time:** 5 hours to 6.5 hours
+- **Number of daily services:** 8+
+- **Cheapest ticket:** Rs. 750 (Economy, Bahauddin Zakariya Express)
+- **Fastest train:** Tezgam / Green Line Express (~5h 00m)
+
+## Complete Train Timetable — Multan to Lahore
+
+Here is the full schedule of trains operating on this route as of the March 2026 timetable:
+
+| Train Name | Train No. | Departs Multan | Arrives Lahore | Duration | Days |
+|------------|-----------|----------------|---------------|----------|------|
+| Bahauddin Zakariya Exp | 115UP | 05:00 | 11:00 | 6h 00m | Daily |
+| Tezgam | 9UP | 06:30 | 11:30 | 5h 00m | Daily |
+| Shalimar Express | 5UP | 08:00 | 13:30 | 5h 30m | Daily |
+| Green Line Express | 27UP | 09:15 | 14:15 | 5h 00m | Daily |
+| Pakistan Express | 1UP | 11:00 | 16:30 | 5h 30m | Daily |
+| Hazara Express | 41UP | 13:30 | 19:00 | 5h 30m | Daily |
+| Karachi Express | 25UP | 16:00 | 21:30 | 5h 30m | Daily |
+| Mehr Express | 29UP | 19:00 | 01:00+1 | 6h 00m | Daily |
+
+**Important:** These trains originate from Karachi or Sukkur and pass through Multan en route to Lahore. This means they may already be running late by the time they reach Multan. Always check the [live train tracker](/live-trains) for real-time positions before heading to the station.
+
+## Ticket Prices — Multan to Lahore (All Classes)
+
+Fares updated after the March 2026 price revision:
+
+### Regular Express Trains (Tezgam, Shalimar, Pakistan Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 850 |
+| AC Standard | Rs. 1,500 |
+| AC Business | Rs. 1,750 |
+| AC Sleeper | Rs. 2,000 |
+
+### Budget Trains (Bahauddin Zakariya Express, Mehr Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 750 |
+| AC Standard | Rs. 1,350 |
+
+### Premium Trains (Green Line Express)
+
+| Class | Fare (Rs.) |
+|-------|-----------|
+| Economy | Rs. 1,000 |
+| AC Standard | Rs. 1,750 |
+| AC Business | Rs. 1,900 |
+| AC Parlor | Rs. 2,300 |
+
+**Children's fares:** Children aged 3–12 travel at 50% of the adult fare. Children under 3 travel free (no seat).
+
+**Student discount:** 25% off with valid university ID card. Present at the booking counter or select the concession in the RABTA app.
+
+## Choosing the Right Train
+
+**For early arrivals:** The **Tezgam** (06:30 departure) gets you to Lahore by 11:30 AM — early enough for afternoon appointments. It's fast, reliable, and has a long heritage as one of Pakistan's most iconic trains.
+
+**For comfort:** The **Green Line Express** is the clear winner. Chinese-built coaches, complimentary meals in AC Business, functioning air conditioning, and proper catering service. It departs at 09:15, so you don't need to wake up at dawn.
+
+**For budget travelers:** The **Bahauddin Zakariya Express** at Rs. 750 Economy is the cheapest option on this route. Named after the famous Sufi saint of Multan, this train is slower but perfectly functional for budget-conscious travelers.
+
+**For evening travel:** The **Karachi Express** (16:00) arrives at Lahore around 21:30. Good for afternoon departures. Book AC Sleeper if you want to rest during the journey.
+
+**Avoid if possible:** The Mehr Express (19:00) arrives at 01:00 AM — not ideal unless you have a specific reason for late-night arrival and reliable transport waiting at Lahore.
+
+## Multan Cantt Railway Station — Your Departure Point
+
+Multan Cantt station (ملتان کینٹ) is the main railway station serving the Multan metropolitan area.
+
+**Location:** Abdali Road, Multan Cantt. GPS: 30.1920° N, 71.4576° E.
+
+**How to reach:**
+- From Multan city center (Hussain Agahi/Shah Rukn-e-Alam shrine): 15–20 minutes by rickshaw (Rs. 200–300)
+- From Multan Airport: 25–30 minutes by taxi (Rs. 500–800)
+- From Bahauddin Zakariya University: 20 minutes by rickshaw (Rs. 250)
+
+**Station facilities:**
+- 4 platforms (Lahore-bound trains typically use Platform 1 or 2)
+- Computerized booking counter (opens 8 AM)
+- Waiting room with fans (AC waiting room for Business class ticket holders)
+- Small canteen and tea stalls
+- Basic washroom facilities
+- Porter service available (Rs. 100–150 per bag)
+
+**Inquiry counter:** 061-9200340
+
+## Intermediate Stations and Stops
+
+The Multan–Lahore route passes through some of Punjab's most productive agricultural regions:
+
+1. **Khanewal Junction** (42 km, 45 min) — Major junction where trains from Quetta and D.G. Khan merge onto the ML-1. 10-minute halt typical. Good platform food available.
+2. **Mian Channu** (92 km, 1h 20m) — Small city stop, 2-minute halt. Heart of cotton country.
+3. **Sahiwal** (160 km, 2h 30m) — Important city in central Punjab. 5-minute halt. Home to Sahiwal breed cattle, famous across Pakistan.
+4. **Okara** (210 km, 3h 15m) — Agricultural city, 3-minute halt. Known for its military cantonment.
+5. **Pattoki** (260 km, 4h 00m) — Small stop, 2-minute halt. You're now in the Lahore division.
+6. **Raiwind Junction** (305 km, 4h 45m) — Important junction near the Tablighi Jamaat center. Some trains make a brief stop here.
+7. **Lahore Junction** (331 km, 5h–6.5h) — Final destination.
+
+The landscape through this corridor is predominantly flat agricultural land — wheat fields in winter (October–March) and sugarcane/cotton in summer (April–September). The views, while not mountainous, offer a uniquely Punjabi pastoral experience.
+
+## Seasonal Considerations
+
+**Summer (May–August):** Temperatures in Multan regularly exceed 45°C. The station platform can feel unbearable. Book AC classes if possible, and carry at least 2 liters of water per person. Economy class coaches without functional AC can reach dangerous heat levels during delays.
+
+**Monsoon (July–September):** Heavy rains can cause track flooding between Multan and Khanewal. Delays of 2–4 hours are common. Check [live train status](/check-delays) before traveling.
+
+**Winter fog (November–February):** Dense fog is a major problem on this route, particularly between Sahiwal and Lahore. Morning trains (05:00–08:00 departures) are worst affected. Afternoon departures (13:00+) are significantly more reliable. Our live tracker shows real-time delay updates during fog season.
+
+**Mango season (May–July):** Multan is the mango capital of Pakistan. During peak season, trains are packed with traders transporting fruit to Lahore's wholesale markets. Book in advance during this period.
+
+## Food and Refreshments
+
+**At Multan station:** Small food stalls sell samosas, pakoras, and chai. The quality is acceptable but don't expect restaurant standards. Better to eat before coming to the station.
+
+**On the train:** Platform vendors at Khanewal and Sahiwal sell fresh seasonal fruit, roasted corn (during summer), and hot meals (biryani, dal chawal) in disposable plates. The Green Line has its own catering service with set meals included in AC Business tickets.
+
+**Carry with you:** A large water bottle (at least 1.5 liters), dry snacks, and hand sanitizer. This is especially important in summer when dehydration is a real risk.
+
+## Booking Your Tickets
+
+**Online booking:** Use the Pakistan Railways [RABTA app](https://pakrail.gov.pk) for the fastest booking experience. Select "Multan Cantt" to "Lahore Junction," choose your train and class, and pay via JazzCash, Easypaisa, or bank transfer. You'll receive an e-ticket on your phone.
+
+**Counter booking:** The computerized booking counter at Multan Cantt opens at 8 AM. Carry your CNIC (national ID card). For popular trains during holidays, arrive at the counter by 7:30 AM to avoid long queues.
+
+**Advance booking:** Tickets can be booked up to 30 days in advance. For Eid travel, Basant weekend, and summer holidays, booking 7–10 days early is strongly recommended.
+
+**Group discounts:** Groups of 25+ travelers can apply for a 10% group discount through the Divisional Superintendent's office.
+
+## Comparing Train vs. Bus
+
+| Factor | Train | Bus (Daewoo/Faisal Movers) |
+|--------|-------|-----|
+| Travel time | 5–6.5 hours | 5–6 hours |
+| Cost (Economy) | Rs. 750–1,000 | Rs. 1,500–2,200 |
+| Comfort | Variable (AC coaches good) | Consistent (AC buses) |
+| Luggage | 40 kg free | 20 kg |
+| Reliability | 80–85% on time | 85–90% on time |
+| Route | Scenic (farmland views) | M-2 Motorway |
+| Safety | Very safe | Highway accident risk |
+
+Trains are significantly cheaper and offer more luggage capacity. Buses are slightly faster on average and more predictable on timing. For families with lots of luggage, the train is the clear winner.
+
+## Track Your Multan–Lahore Train Live
+
+Don't waste hours at Multan Cantt station guessing when your train will arrive. Many Lahore-bound trains originate from Karachi and may already be running late by the time they reach Multan. Visit [trackmytrain.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA. This is especially critical for connecting trains that are already en route from the south.`,
+  },
+  {
+    slug: "faisalabad-to-lahore-train-timing-fare-2026",
+    title: "Faisalabad to Lahore Train Timing, Fare & Schedule 2026 — Full Guide",
+    category: "SCHEDULE",
+    date: "April 7, 2026",
+    dateISO: "2026-04-07",
+    readTime: "11 min",
+    excerpt: "Complete Faisalabad to Lahore train timetable for 2026 with all daily services, ticket prices from Rs. 500, journey duration (3-4 hours), and expert tips for Pakistan's industrial capital to cultural capital route.",
+    gradient: "gradient-card-emerald",
+    image: faisalabadLahoreImg,
+    imageAlt: "Pakistan Railways trains at a busy junction station with city skyline in the background",
+    keywords: "faisalabad to lahore train timing, faisalabad to lahore train schedule 2026, faisalabad lahore train fare, faisalabad to lahore train ticket price, trains from faisalabad to lahore, faisalabad lahore train today",
+    metaDescription: "Faisalabad to Lahore train timing & fare 2026. All daily trains with departure times, ticket prices from Rs. 500, 3-4 hour journey, and Faisalabad station guide.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How many trains run from Faisalabad to Lahore?", a: "There are 6+ daily train services from Faisalabad to Lahore Junction via the Faisalabad–Shorkot–Lahore branch line and the main Sargodha junction route. These include dedicated services and through-trains from other origins." },
+      { q: "How long is the train journey from Faisalabad to Lahore?", a: "The journey takes approximately 3 to 4 hours depending on the train and route. Trains via the Sangla Hill route are generally faster (around 3 hours) than those via the Sargodha junction (3.5-4 hours)." },
+      { q: "What is the cheapest Faisalabad to Lahore train ticket?", a: "Economy class tickets start from Rs. 500 on local passenger trains. Regular express services charge Rs. 600–700 for Economy class. AC Business class is available on select trains from Rs. 1,200." },
+      { q: "Is the Faisalabad to Lahore train reliable?", a: "Branch line trains are generally more reliable than mainline services because they originate from Faisalabad rather than being through-trains that may already be delayed. On-time performance is typically 85-90% outside of fog season." },
+    ],
+    content: `Faisalabad, Pakistan's third-largest city and its industrial heartbeat, has a vital rail connection to Lahore. Thousands of textile workers, business owners, students, and families travel this route daily. Despite the relatively short distance, many travelers are confused about the schedules because Faisalabad is served by both branch line trains and mainline through-services. This guide clears up the confusion with a complete, updated timetable for 2026.
+
+## Route Overview — Faisalabad to Lahore
+
+Faisalabad is connected to Lahore via two railway routes:
+
+**Route 1 — Via Sangla Hill (shorter):** Faisalabad → Chiniot → Sangla Hill → Nankana Sahib → Lahore Junction. Approximately 187 km. This is the more direct route used by most dedicated Faisalabad–Lahore services.
+
+**Route 2 — Via Lala Musa/Wazirabad (mainline):** Faisalabad → Sargodha → Lala Musa Junction → Wazirabad → Gujranwala → Lahore Junction. Approximately 290 km. This longer route is used by through-trains coming from Rawalpindi or other northern destinations.
+
+**Key facts:**
+- **Distance:** 187 km (direct) / 290 km (via mainline)
+- **Typical journey time:** 3–4 hours (direct route)
+- **Daily services:** 6+
+- **Cheapest ticket:** Rs. 500 (Economy, local passenger)
+- **Fastest service:** ~3 hours via Sangla Hill route
+
+## Complete Train Timetable — Faisalabad to Lahore
+
+| Train Name | Train No. | Departs Faisalabad | Arrives Lahore | Duration | Route | Days |
+|------------|-----------|-------------------|---------------|----------|-------|------|
+| Chenab Express | 109UP | 06:00 | 09:15 | 3h 15m | Via Sangla Hill | Daily |
+| Faisalabad Express | 143UP | 08:30 | 11:45 | 3h 15m | Via Sangla Hill | Daily |
+| Sandal Express | 145UP | 11:00 | 14:30 | 3h 30m | Via Sangla Hill | Daily |
+| Abdur Rahim Express | 151UP | 14:00 | 17:30 | 3h 30m | Via Sangla Hill | Daily |
+| Rajdhani Express | 155UP | 17:00 | 20:15 | 3h 15m | Via Sangla Hill | Daily |
+| Night Coach | 161UP | 21:00 | 00:30+1 | 3h 30m | Via Sangla Hill | Daily |
+
+**Note:** Some mainline trains (Tezgam, Pakistan Express) also stop at Faisalabad via the Sargodha route, but these are through-trains with significantly longer journey times to Lahore (5+ hours). The direct services listed above are recommended for this specific route.
+
+## Ticket Prices — Faisalabad to Lahore
+
+Fares as of March 2026:
+
+| Class | Express Trains | Budget/Passenger Trains |
+|-------|---------------|------------------------|
+| Economy | Rs. 600 | Rs. 500 |
+| AC Standard | Rs. 1,100 | — |
+| AC Business | Rs. 1,200 | — |
+
+These are among the most affordable intercity train fares in Pakistan, making rail travel a compelling alternative to bus services on this route.
+
+## Faisalabad Railway Station Guide
+
+**Location:** Civil Lines, Faisalabad. GPS: 31.4187° N, 73.0791° E. Centrally located, easily accessible from all parts of the city.
+
+**How to reach:**
+- From Clock Tower (Ghanta Ghar): 10 minutes by rickshaw (Rs. 100–150)
+- From University of Agriculture: 15 minutes by rickshaw (Rs. 150–200)
+- From Faisalabad Airport: 20 minutes by taxi (Rs. 400–600)
+- From D-Ground: 10 minutes by rickshaw (Rs. 100–150)
+
+**Station facilities:**
+- 3 platforms
+- Computerized booking counter (opens 8 AM)
+- Small waiting area with basic amenities
+- Tea and snack vendors on the platform
+- Parking available near the main entrance
+- Inquiry: 041-9200120
+
+## Why Choose Train Over Bus for Faisalabad–Lahore?
+
+The M-2 Motorway connects Faisalabad to Lahore by road, and bus services like Daewoo and Faisal Movers operate frequent services. So why choose the train?
+
+**Cost:** Train tickets start at Rs. 500–600 for Economy class. Daewoo bus tickets cost Rs. 1,200–1,500. That's 2–3x more expensive for a similar journey time.
+
+**Luggage:** Trains allow 40 kg of free luggage. Buses typically restrict to 15–20 kg and charge for excess. If you're a textile trader carrying sample bags or a student with heavy luggage, the train is far more practical.
+
+**Comfort for families:** Trains offer more space to move around, proper restrooms (especially in AC coaches), and the ability to walk between compartments. For families with young children, this flexibility matters.
+
+**Environmental impact:** Trains produce significantly lower carbon emissions per passenger-kilometer compared to buses. If you're environmentally conscious, the train is the greener choice.
+
+**Safety:** Railway travel in Pakistan has a significantly better safety record than road travel. Motorway accidents, while relatively rare, can be catastrophic. Train derailments are extremely uncommon on the Sangla Hill route.
+
+## Intermediate Stations
+
+The direct Faisalabad–Lahore route via Sangla Hill passes through:
+
+1. **Chiniot** (45 km) — Famous furniture manufacturing city. Beautiful wooden craftsmanship visible from the station area. 3-minute halt.
+2. **Sangla Hill** (95 km) — Junction point. 5-minute halt. Small market near the station for tea and snacks.
+3. **Nankana Sahib** (130 km) — One of the holiest cities in Sikhism, birthplace of Guru Nanak. 3-minute halt. Worth a day trip if you have time.
+4. **Sheikhupura** (155 km) — Historical city with Hiran Minar (Mughal-era hunting lodge). 3-minute halt.
+5. **Lahore Junction** (187 km) — Terminal station.
+
+## Seasonal Travel Tips
+
+**Summer (May–August):** Faisalabad is one of the hottest cities in Pakistan, with temperatures regularly exceeding 45°C in June. Arrive at the station close to departure time rather than waiting on the platform. Book AC class if budget allows.
+
+**Fog season (November–February):** Morning trains are frequently delayed by 1–3 hours due to fog in the Sangla Hill corridor. Afternoon services (14:00+) are more reliable.
+
+**Eid and holidays:** Trains are extremely crowded during Eid ul-Fitr and Eid ul-Adha. Book at least 7 days in advance. Many textile workers return to their villages via Lahore during Eid breaks, so all services run at full capacity.
+
+## Booking Options
+
+**RABTA app:** Search "Faisalabad" to "Lahore Junction," select your preferred train and class, and pay via JazzCash or Easypaisa. E-tickets are delivered to your phone instantly.
+
+**Station counter:** Available at Faisalabad station from 8 AM to 10 PM. Carry your CNIC. Same-day tickets are usually available for Economy class but may sell out on weekends.
+
+**Student concession:** 25% discount with valid university ID. This makes Economy class just Rs. 450 — less than the cost of a meal at most restaurants.
+
+## Live Train Tracking
+
+Don't gamble with your time. Before heading to Faisalabad station, check whether your train is running on schedule at [trackmytrain.pk](/live-trains). Our GPS tracker shows real-time positions, speed, and recalculated arrival times for all Pakistan Railways services. This is especially useful during fog season when delays are unpredictable.`,
+  },
+  {
+    slug: "pakistan-railways-online-ticket-booking-guide-2026",
+    title: "Pakistan Railways Online Ticket Booking 2026 — Complete Step-by-Step Guide",
+    category: "GUIDE",
+    date: "April 6, 2026",
+    dateISO: "2026-04-06",
+    readTime: "13 min",
+    excerpt: "Learn how to book Pakistan Railways train tickets online in 2026 using the RABTA app and website. Covers e-ticketing, payment methods (JazzCash, Easypaisa), refunds, seat selection, and troubleshooting common booking errors.",
+    gradient: "gradient-card-blue",
+    image: onlineBookingImg,
+    imageAlt: "Passengers at a Pakistan Railways ticket counter with digital departure board in background",
+    keywords: "pakistan railways online ticket booking, railway booking online, train ticket booking pakistan, pakistan railway e ticket, RABTA app booking, how to book train ticket online pakistan, railway reservation online, pak railway online booking 2026",
+    metaDescription: "Step-by-step guide to booking Pakistan Railways train tickets online in 2026. Use the RABTA app or website, pay via JazzCash/Easypaisa, and get instant e-tickets on your phone.",
+    author: "Track My Train Editorial",
+    faqs: [
+      { q: "How do I book a Pakistan Railways ticket online?", a: "Download the RABTA app from the App Store or Google Play, create an account with your CNIC number, search for your route, select train and class, choose seats, and pay via JazzCash, Easypaisa, or bank card. Your e-ticket is delivered instantly to the app." },
+      { q: "What payment methods are accepted for online train booking?", a: "Pakistan Railways accepts JazzCash, Easypaisa, UPaisa, bank debit/credit cards (Visa, Mastercard), and internet banking through the RABTA app. JazzCash and Easypaisa are the most popular and fastest methods." },
+      { q: "Can I cancel or get a refund for an online train ticket?", a: "Yes. Cancellations made more than 24 hours before departure receive a full refund minus a Rs. 50 processing fee. Cancellations within 24 hours receive a 75% refund. No refunds are given after the train departs. Refunds are processed within 7-10 business days to your original payment method." },
+      { q: "Is the e-ticket valid without a printed copy?", a: "Yes, the e-ticket displayed on your phone in the RABTA app is fully valid. Show the QR code to the ticket examiner (TTE) on the train. However, carrying a screenshot is recommended in case your phone battery dies." },
+    ],
+    content: `Gone are the days of standing in long queues at Pakistan Railways booking counters. The introduction of the RABTA (Railway Automated Booking and Travel Assistance) system has transformed how millions of Pakistanis book train tickets. This guide walks you through every step of the online booking process, from downloading the app to boarding the train with your e-ticket.
+
+## What is the RABTA System?
+
+RABTA is Pakistan Railways' official digital ticketing platform, launched in 2022 and continuously improved through 2026. It consists of:
+
+- **RABTA Mobile App** — Available on both Android (Google Play) and iOS (App Store)
+- **RABTA Website** — Accessible at booking.pakrail.gov.pk
+
+The system allows passengers to search train schedules, check seat availability, book tickets, make payments, and receive e-tickets — all without visiting a physical booking counter.
+
+**Key capabilities:**
+- Book tickets up to 30 days in advance
+- Choose specific seat/berth numbers
+- Apply student and senior citizen concessions
+- Cancel tickets and receive digital refunds
+- View booking history and upcoming journeys
+- Receive delay notifications for booked trains
+
+## Step-by-Step Booking Guide
+
+### Step 1: Download and Register
+
+**For Android:** Open Google Play Store, search "Pakistan Railways RABTA," and install the official app (published by Ministry of Railways).
+
+**For iOS:** Open App Store, search "RABTA Pakistan Railways," and install.
+
+**Registration requires:**
+- Valid CNIC (Computerized National Identity Card) number
+- Mobile phone number (for OTP verification)
+- Email address (optional but recommended for ticket receipts)
+
+Enter your CNIC, receive an OTP on your phone, set a password, and your account is ready. The entire process takes under 3 minutes.
+
+### Step 2: Search for Your Train
+
+On the home screen:
+1. Tap "Book Ticket"
+2. Select your departure station (e.g., "Lahore Junction")
+3. Select your arrival station (e.g., "Karachi City")
+4. Choose your travel date
+5. Tap "Search Trains"
+
+The app displays all available trains for your route and date, showing:
+- Train name and number
+- Departure and arrival times
+- Journey duration
+- Available classes and seat count
+- Fare for each class
+
+### Step 3: Select Train and Class
+
+Tap on your preferred train to see detailed class options:
+
+- **Economy (EC):** Basic seating, no AC. Cheapest option.
+- **AC Standard (ACS):** Air-conditioned coaches with padded seats.
+- **AC Business (ACB):** Premium AC coaches with wider seats, better suspension.
+- **AC Sleeper (ACSL):** Sleeper berths for overnight journeys.
+- **AC Parlor (ACP):** Top-tier class with executive seating (Green Line only).
+
+Green seats indicate availability. Red means sold out. Yellow means limited availability (book immediately).
+
+### Step 4: Choose Your Seats
+
+After selecting a class, the app shows a coach layout (seat map). You can:
+- Tap on specific seats to select them
+- Choose window or aisle preferences
+- Select lower or upper berths (for sleeper class)
+- Book adjacent seats for families
+
+**Pro tip:** For daytime journeys, window seats on the left side (traveling north) offer the best views of the countryside. For overnight journeys, lower berths are easier to access and more comfortable.
+
+### Step 5: Enter Passenger Details
+
+For each passenger, enter:
+- Full name (as on CNIC)
+- CNIC number
+- Gender
+- Age (for child/senior concessions)
+
+**Concession options:**
+- **Student (25% off):** Select "Student" and enter your university roll number. You'll need to show your student ID on the train.
+- **Senior Citizen (50% off):** Automatically applied for passengers aged 65+
+- **Children (50% off):** Ages 3–12. Under 3 travel free without a seat.
+- **Disabled persons (50% off):** Select "Disabled" and enter disability certificate number
+
+### Step 6: Payment
+
+The RABTA app supports multiple payment methods:
+
+**JazzCash:**
+1. Select "JazzCash" as payment method
+2. Enter your JazzCash account number
+3. You'll receive an OTP on your JazzCash number
+4. Enter the OTP to confirm payment
+5. Amount is deducted from your JazzCash balance
+
+**Easypaisa:**
+1. Select "Easypaisa"
+2. Enter your Easypaisa account number
+3. Confirm via OTP
+4. Deducted from your Easypaisa balance
+
+**Bank Card (Visa/Mastercard):**
+1. Select "Credit/Debit Card"
+2. Enter card number, expiry, CVV
+3. Complete 3D Secure verification
+4. Amount charged to your card
+
+**Internet Banking:**
+1. Select your bank from the list
+2. You'll be redirected to your bank's payment page
+3. Login and confirm the transaction
+
+Payment confirmation takes 10–30 seconds. If the payment fails, your ticket reservation is held for 15 minutes, giving you time to retry.
+
+### Step 7: Receive Your E-Ticket
+
+Upon successful payment, you receive:
+- An e-ticket in the RABTA app (under "My Bookings")
+- An SMS confirmation with booking reference number
+- An email receipt (if email was provided)
+
+The e-ticket contains a QR code that the ticket examiner (TTE) scans on the train. **Keep your phone charged or take a screenshot.**
+
+## Troubleshooting Common Booking Errors
+
+**"No trains available":** This usually means all seats are sold out for your date. Try:
+- Searching for the next day
+- Checking a different class (Economy might have seats when AC is full)
+- Booking a connecting route (e.g., Lahore→Multan, then Multan→Karachi)
+
+**"Payment failed":** Common causes:
+- Insufficient JazzCash/Easypaisa balance
+- Bank card declined (contact your bank to enable online transactions)
+- Network timeout (retry after 2 minutes)
+
+**"CNIC already registered":** Someone else may have created an account with your CNIC. Contact Pakistan Railways helpline at 117 to resolve.
+
+**"Session expired":** The app times out after 10 minutes of inactivity during booking. Restart the search and book again.
+
+## Cancellation and Refund Policy
+
+| Cancellation Timing | Refund Amount |
+|---------------------|---------------|
+| More than 24 hours before departure | Full fare minus Rs. 50 processing fee |
+| 12–24 hours before departure | 75% of fare |
+| 4–12 hours before departure | 50% of fare |
+| Less than 4 hours before departure | No refund |
+| After train departure | No refund |
+
+**How to cancel:**
+1. Open RABTA app → "My Bookings"
+2. Select the booking to cancel
+3. Tap "Cancel Ticket"
+4. Confirm cancellation
+5. Refund processed to original payment method in 7–10 business days
+
+## Tips for a Smooth Online Booking Experience
+
+**Book in advance for popular routes:** Karachi–Lahore, Lahore–Rawalpindi, and Multan–Lahore trains sell out quickly, especially during weekends and holidays. Book 3–7 days ahead.
+
+**Peak travel periods:** Eid ul-Fitr, Eid ul-Adha, summer holidays (June–August), and university semester breaks see extreme demand. Book 15–30 days in advance for these periods.
+
+**Off-peak savings:** Midweek travel (Tuesday–Thursday) generally has better availability and you can choose premium seats that might be sold out on weekends.
+
+**Group bookings:** For groups of 10+ passengers, the app allows group booking with a single payment. For groups of 25+, contact the Divisional Superintendent's office for a 10% group discount.
+
+**Check your train's live status:** After booking, use [trackmytrain.pk](/live-trains) to monitor your train's live position on the day of travel. This helps you time your station arrival perfectly and avoid unnecessary waiting.
+
+## Counter Booking vs. Online Booking
+
+| Feature | Online (RABTA) | Counter |
+|---------|---------------|---------|
+| Queue time | Zero | 15 min – 2 hours |
+| Availability 24/7 | Yes | 8 AM – 10 PM |
+| Seat selection | Yes (choose specific seats) | No (assigned by clerk) |
+| Concessions | Auto-applied | Must request |
+| Refund process | Digital (7-10 days) | In-person (15-30 days) |
+| Payment options | JazzCash, Easypaisa, cards | Cash only |
+| E-ticket | Yes (phone) | Paper ticket |
+
+The online system is superior in almost every way. The only scenario where counter booking makes sense is if you don't have a smartphone or mobile wallet, or if you need to change an existing paper ticket.
+
+## Security Tips
+
+- **Never share your RABTA password** with anyone, including people claiming to be railway staff
+- **Beware of fake RABTA apps** — only download from official app stores
+- **Don't buy tickets from unauthorized agents** — they often sell counterfeit e-tickets
+- **Verify your e-ticket** by checking the QR code scan in the app's "Verify Ticket" section
+
+## Track Your Booked Train
+
+Once you've booked your ticket, visit [trackmytrain.pk](/live-trains) on the day of travel to see your train's exact GPS position, current speed, and recalculated arrival time. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS refresh rates. This is the most reliable way to know exactly when to leave for the station.
+
+For train-specific schedules, check our detailed route guides: [Karachi to Lahore trains](/blog/best-trains-karachi-to-lahore-2026), [Rawalpindi to Lahore timing](/blog/rawalpindi-to-lahore-train-timing-schedule-2026), and [Karachi to Islamabad fares](/blog/karachi-to-islamabad-train-ticket-price-2026).`,
   },
 ];
