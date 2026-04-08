@@ -139,7 +139,7 @@ export default function ExpressTrainsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {featuredTrains.map((t, i) => (
-              <Link key={i} to={`/train/${generateTrainSlug(t.name, t.number)}`}>
+              <Link key={i} to={`/train/${trainIdToSlug.get(t.id) ?? t.id}`}>
                 <Card className={`${t.gradient} border hover-lift group h-full overflow-hidden`}>
                   <CardContent className="p-5 sm:p-6">
                     <div className="flex items-center justify-between mb-3">
