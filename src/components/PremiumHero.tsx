@@ -59,16 +59,16 @@ export default function PremiumHero({
 
       <div className={`relative container mx-auto px-4 ${centered ? "text-center" : ""}`}>
         {/* Breadcrumbs */}
-        <div className="flex items-center gap-2 text-sm mb-4">
+        <div className="flex items-center gap-2 text-sm mb-4 text-[hsl(var(--hero-text-muted))]">
           {breadcrumbs.map((bc, i) => (
             <span key={i} className="flex items-center gap-2">
               {i > 0 && <span className="opacity-40">›</span>}
               {bc.to ? (
-                <Link to={bc.to} className="opacity-60 hover:opacity-100 transition-opacity">
+                <Link to={bc.to} className="opacity-70 hover:opacity-100 transition-opacity hover:text-primary">
                   {bc.label}
                 </Link>
               ) : (
-                <span className="opacity-80">{bc.label}</span>
+                <span className="opacity-90">{bc.label}</span>
               )}
             </span>
           ))}
@@ -88,13 +88,13 @@ export default function PremiumHero({
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight tracking-tight text-[hsl(var(--hero-text))]">
             {title}
           </h1>
 
           {/* Subtitle */}
           {subtitle && (
-            <p className="text-base sm:text-lg opacity-75 mb-2 max-w-2xl leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-[hsl(var(--hero-text-muted))] mb-2 max-w-2xl leading-relaxed font-light">
               {subtitle}
             </p>
           )}
