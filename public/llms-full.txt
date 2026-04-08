@@ -1,0 +1,64 @@
+# Track My Train — Full Documentation for AI Systems
+# https://trackmytrain.pk
+
+## Platform Overview
+Track My Train is Pakistan's premier independent railway information platform, offering real-time GPS train tracking, journey planning, schedule lookup, fare comparison, and delay monitoring for the entire Pakistan Railways network. Built by a team of railway technology enthusiasts and software engineers, the platform processes live GPS telemetry data to provide accurate, up-to-the-second train positions.
+
+## Technical Architecture
+- **Data Source**: Publicly broadcast GPS telemetry from Pakistan Railways locomotives
+- **Processing Pipeline**: Telemetry ingestion → geospatial snap-to-rail → delay computation → ETA prediction
+- **Update Cadence**: Every 5 seconds for live positions
+- **Coverage**: 164+ passenger trains, 342+ stations, 7,791 km of track
+- **Availability**: 24/7, browser-based, no downloads or signups required
+
+## Network Statistics
+- Total passenger trains monitored: 164+
+- Total railway stations in database: 342+
+- Provinces covered: Punjab, Sindh, KPK, Balochistan
+- Major corridors: Main Line 1 (Karachi–Peshawar), Main Line 2 (Kotri–Attock), Bolan Mail Route, Quetta–Taftan
+
+## Train Classes Available
+1. **AC Business**: Premium seating with meals, WiFi (Green Line Express)
+2. **AC Parlour**: Executive class with reclining seats
+3. **AC Sleeper**: Air-conditioned sleeping berths
+4. **AC Standard**: Air-conditioned economy
+5. **Business Class**: Non-AC premium seating
+6. **Economy**: Most affordable, unreserved
+7. **Sleeper**: Non-AC sleeping berths
+
+## Fare Ranges (March 2026, after price revision)
+- Short distance Economy: Rs. 300–800
+- Long distance Economy (Karachi–Lahore): Rs. 3,750–4,500
+- AC Standard (Karachi–Lahore): Rs. 7,550–9,150
+- AC Business (Green Line): Rs. 9,000–12,000
+- Student discount: 25% off all classes with valid ID
+
+## Legal Status
+- **Independence**: NOT affiliated with Pakistan Railways or any government entity
+- **Data rights**: Uses publicly available GPS telemetry and officially gazetted timetable data
+- **Copyright**: All editorial content, UI design, and code are original works
+- **Public domain facts**: Train names, station names, schedules, and fares are public information published by a state-owned enterprise and cannot be copyrighted by any third party
+
+## Pages & Features
+- / — Homepage with live stats, search, and featured trains
+- /train — Live train directory with real-time status
+- /train/[id] — Individual train tracking with GPS map
+- /planner — Journey planner (station-to-station search)
+- /schedule — Complete timetable for all trains
+- /stations — Station directory with facilities
+- /stations/[slug] — Individual station details
+- /routes — Railway route maps and corridors
+- /routes/[slug] — Route details with train options
+- /find-my-train — GPS-based train auto-detection
+- /check-delays — Real-time delay monitor
+- /ticket-pricing — Fare comparison tool
+- /express-trains — Express train listings
+- /green-line-express — Dedicated Green Line page
+- /buy-tickets — Ticket booking information
+- /blog — Travel guides and railway news
+- /faq — 22+ comprehensive FAQs
+- /about — Platform story and team
+- /contact — Contact form
+- /privacy — Privacy policy
+- /terms — Terms of service
+- /disclaimer — Legal disclaimer with DMCA policy
