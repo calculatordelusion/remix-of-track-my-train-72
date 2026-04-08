@@ -359,7 +359,7 @@ export default function RoutesPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
               { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule and budget.", link: "/planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: "Browse 342+ stations with facilities, connecting trains, and GPS locations.", link: "/stations" },
             ].map((tool, i) => (

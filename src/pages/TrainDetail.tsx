@@ -76,7 +76,7 @@ export default function TrainDetailPage() {
         keywords={`${train.name} live status, ${train.name} ${train.number} tracking, ${train.name} delay, ${train.from} to ${train.to} train, ${train.name} schedule, pakistan railways ${train.name}`}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Live Trains", url: "/train" },
+          { name: "Live Trains", url: "/live-train" },
           { name: `${train.name} ${train.number}`, url: `/train/${train.id}` },
         ]}
         faqSchema={trainFaqs}

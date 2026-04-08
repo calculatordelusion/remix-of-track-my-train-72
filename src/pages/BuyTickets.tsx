@@ -554,7 +554,7 @@ export default function BuyTickets() {
             {[
               { to: "/ticket-pricing", icon: CreditCard, title: "Ticket Prices", desc: "Compare fares for all classes & routes", gradient: "gradient-card-emerald" },
               { to: "/planner", icon: MapPin, title: "Journey Planner", desc: "Find trains between any two stations", gradient: "gradient-card-blue" },
-              { to: "/train", icon: Globe, title: "Live Train Tracker", desc: "Track your train's GPS position", gradient: "gradient-card-amber" },
+              { to: "/live-train", icon: Globe, title: "Live Train Tracker", desc: "Track your train's GPS position", gradient: "gradient-card-amber" },
               { to: "/check-delays", icon: Clock, title: "Check Delays", desc: "Real-time delay status for all trains", gradient: "gradient-card-purple" },
             ].map((link, i) => (
               <Link key={i} to={link.to}>

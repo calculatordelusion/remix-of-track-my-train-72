@@ -367,7 +367,7 @@ export default function CheckDelays() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/train" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/live-train" },
               { icon: TrendingUp, gradient: "gradient-card-amber", title: "Express Trains", desc: "Browse all express trains with schedules and live tracking.", link: "/express-trains" },
               { icon: Clock, gradient: "gradient-card-blue", title: "Full Schedule", desc: "Complete timetable for all Pakistan Railways trains.", link: "/schedule" },
             ].map((tool, i) => (

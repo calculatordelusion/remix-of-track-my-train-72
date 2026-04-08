@@ -257,7 +257,7 @@ export default function ContactPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning, speed, and delay status.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning, speed, and delay status.", link: "/live-train" },
               { icon: HelpCircle, gradient: "gradient-card-amber", title: "FAQ", desc: "Comprehensive answers to 20+ common questions about train tracking.", link: "/faq" },
               { icon: Globe, gradient: "gradient-card-blue", title: "About Us", desc: "Learn about our mission, technology, and commitment to Pakistani travelers.", link: "/about" },
               { icon: Search, gradient: "gradient-card-purple", title: "Find My Train", desc: "Auto-detect your train using phone GPS. No searching required.", link: "/find-my-train" },

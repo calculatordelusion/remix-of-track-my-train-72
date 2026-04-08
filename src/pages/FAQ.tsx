@@ -160,7 +160,7 @@ export default function FAQPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time.", link: "/live-train" },
               { icon: BookOpen, gradient: "gradient-card-amber", title: "Travel Blog", desc: "Guides, tips, and travel articles.", link: "/blog" },
               { icon: Shield, gradient: "gradient-card-blue", title: "Contact Us", desc: "Get in touch with our team.", link: "/contact" },
             ].map((tool, i) => (

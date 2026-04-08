@@ -298,7 +298,7 @@ export default function HomePage() {
         </div>
         <div ref={featureCards.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {[
-            { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/train" },
+            { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/live-train" },
             { gradient: "gradient-card-amber", icon: Clock, iconBg: "bg-amber-500/15", iconColor: "text-amber-500", badge: "SCHEDULES", badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400", title: "Train Schedules & Timetables", desc: `Browse complete Pakistan Railways timetables with departure and arrival times for all ${netStats.totalStations || 342}+ stations. Updated daily with latest schedule changes.`, link: "/schedule" },
             { gradient: "gradient-card-blue", icon: Navigation, iconBg: "bg-blue-500/15", iconColor: "text-blue-500", badge: "GPS", badgeColor: "bg-blue-500/10 text-blue-600 dark:text-blue-400", title: "Find My Train (GPS)", desc: "Already on a train? Use your phone's GPS to automatically detect which train you're riding. Share your live location with family waiting at the station.", link: "/find-my-train" },
             { gradient: "gradient-card-purple", icon: Route, iconBg: "bg-purple-500/15", iconColor: "text-purple-500", badge: "ROUTES", badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400", title: "Journey Planner", desc: "Compare routes, stops, journey times, and fare classes between any two stations. Find the best train for your schedule and budget across Pakistan.", link: "/planner" },
@@ -1530,7 +1530,7 @@ export default function HomePage() {
             {[
               { icon: MapPin, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare routes, stops, and journey times between any two stations.", link: "/planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with full details.`, link: "/stations" },
-              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Map", desc: "See all trains on an interactive map with GPS positions.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-amber", title: "Live Train Map", desc: "See all trains on an interactive map with GPS positions.", link: "/live-train" },
               { icon: BarChart3, gradient: "gradient-card-purple", title: "Ticket Pricing", desc: "Check fare classes and pricing for all train routes.", link: "/ticket-pricing" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>

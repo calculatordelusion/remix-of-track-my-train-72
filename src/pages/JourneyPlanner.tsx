@@ -534,7 +534,7 @@ export default function JourneyPlannerPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/train" },
+              { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
               { icon: Navigation, gradient: "gradient-card-amber", title: "Find My Train (GPS)", desc: "Auto-detect which train you're on using your phone's GPS location.", link: "/find-my-train" },
               { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with departure and arrival times.", link: "/schedule" },
             ].map((tool, i) => (

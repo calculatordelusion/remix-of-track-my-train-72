@@ -210,7 +210,7 @@ export default function RouteDetailPage() {
         <h2 className="text-lg font-bold mb-4">Quick Links</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
-            { label: `Track ${route.from}–${route.to} Live`, icon: Radio, link: "/train", gradient: "gradient-card-emerald" },
+            { label: `Track ${route.from}–${route.to} Live`, icon: Radio, link: "/live-train", gradient: "gradient-card-emerald" },
             { label: "Check Train Delays", icon: AlertTriangle, link: "/check-delays", gradient: "gradient-card-amber" },
             { label: "Compare Ticket Prices", icon: CreditCard, link: "/ticket-pricing", gradient: "gradient-card-blue" },
             { label: "Explore All Routes", icon: Route, link: "/routes", gradient: "gradient-card-purple" },

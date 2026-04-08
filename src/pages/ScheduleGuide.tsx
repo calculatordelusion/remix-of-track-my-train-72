@@ -470,7 +470,7 @@ export default function ScheduleGuide() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time GPS position on an interactive map.", link: "/train" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time GPS position on an interactive map.", link: "/live-train" },
               { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best train between any two stations with fare estimates.", link: "/planner" },
               { icon: Star, gradient: "gradient-card-blue", title: "Buy Tickets Online", desc: "Step-by-step guide to booking via RABTA app, website, or counter.", link: "/buy-tickets" },
               { icon: Clock, gradient: "gradient-card-purple", title: "Check Delays", desc: "Real-time delay status for all running trains with estimated arrivals.", link: "/check-delays" },
