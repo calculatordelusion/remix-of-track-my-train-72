@@ -126,7 +126,7 @@ export default function RoutesPage() {
           "@type": "ItemList",
           "name": "Pakistan Railways Routes & Corridors",
           "description": "All major Pakistan Railways routes and railway corridors covering 7,791 km of track across four provinces",
-          "url": "https://trackmytrain.pk/routes",
+          "url": "https://trackmytrain.pk/train-routes",
           "numberOfItems": routeGroups.length || 20,
           "itemListElement": majorCorridors.map((c, i) => ({
             "@type": "ListItem",

@@ -87,7 +87,7 @@ export default function SchedulePage() {
           "@type": "ItemList",
           "name": "Pakistan Railways Train Schedule 2026",
           "description": "Complete timetable of 164+ Pakistan Railways trains with departure/arrival times, stops, and running days",
-          "url": "https://trackmytrain.pk/schedule",
+          "url": "https://trackmytrain.pk/train-schedule",
           "numberOfItems": allTrains.length || 164,
           "itemListElement": (allTrains.length > 0 ? allTrains.slice(0, 20) : []).map((t, i) => ({
             "@type": "ListItem",
