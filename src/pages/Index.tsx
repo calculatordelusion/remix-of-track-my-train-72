@@ -322,12 +322,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </section>
+
+
 
       {/* ===== NEW: Top Express Trains of Pakistan ===== */}
       <section className="bg-muted/50 py-12 sm:py-16">
