@@ -45,7 +45,7 @@ export default function DisclaimerPage() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-xl ${section.gradient} shrink-0`}>
-                      <section.icon className="w-5 h-5 text-white" />
+                      <section.icon className="w-5 h-5 text-foreground" />
                     </div>
                     <div>
                       <h2 className="text-lg font-bold text-foreground mb-2">{section.title}</h2>
@@ -85,7 +85,7 @@ export default function DisclaimerPage() {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl gradient-card-blue shrink-0">
-                    <Scale className="w-5 h-5 text-white" />
+                    <Scale className="w-5 h-5 text-foreground" />
                   </div>
                   <div>
                     <h2 className="text-lg font-bold text-foreground mb-3">Public Domain Data & Fair Use Statement</h2>
@@ -160,7 +160,7 @@ export default function DisclaimerPage() {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl gradient-card-purple shrink-0">
-                    <FileText className="w-5 h-5 text-white" />
+                    <FileText className="w-5 h-5 text-foreground" />
                   </div>
                   <div>
                     <h2 className="text-lg font-bold text-foreground mb-3">Filing a Legitimate DMCA Notice</h2>
