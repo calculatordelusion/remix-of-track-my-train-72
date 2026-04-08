@@ -27,14 +27,15 @@ export default function PremiumHero({
   centered = false,
 }: PremiumHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
+    <section className="relative overflow-hidden bg-hero-gradient py-12 sm:py-16 md:py-20">
       {/* Background layers */}
       <div className="absolute inset-0">
         <img
           src={heroTrainBg}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover opacity-[0.08] mix-blend-luminosity"
+          className="w-full h-full object-cover mix-blend-luminosity"
+          style={{ opacity: 'var(--hero-img-opacity)' }}
           width={1920}
           height={1080}
         />
@@ -42,32 +43,32 @@ export default function PremiumHero({
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-gradient-start)/0.7)] via-transparent to-transparent" />
       </div>
 
-      {/* Decorative orbs */}
-      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(165_55%_40%/0.06)] blur-[80px]" />
-      <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(38_92%_50%/0.04)] blur-[80px]" />
+      {/* Decorative orbs — theme-aware */}
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[80px]" />
+      <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[80px]" />
 
-      {/* Grid pattern */}
+      {/* Grid pattern — theme-aware */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "linear-gradient(hsl(0 0% 100% / 0.04) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.04) 1px, transparent 1px)",
+            "linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
 
       <div className={`relative container mx-auto px-4 ${centered ? "text-center" : ""}`}>
         {/* Breadcrumbs */}
-        <div className="flex items-center gap-2 text-sm mb-4">
+        <div className="flex items-center gap-2 text-sm mb-4 text-[hsl(var(--hero-text-muted))]">
           {breadcrumbs.map((bc, i) => (
             <span key={i} className="flex items-center gap-2">
               {i > 0 && <span className="opacity-40">›</span>}
               {bc.to ? (
-                <Link to={bc.to} className="opacity-60 hover:opacity-100 transition-opacity">
+                <Link to={bc.to} className="opacity-70 hover:opacity-100 transition-opacity hover:text-primary">
                   {bc.label}
                 </Link>
               ) : (
-                <span className="opacity-80">{bc.label}</span>
+                <span className="opacity-90">{bc.label}</span>
               )}
             </span>
           ))}
@@ -87,13 +88,13 @@ export default function PremiumHero({
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight tracking-tight text-[hsl(var(--hero-text))]">
             {title}
           </h1>
 
           {/* Subtitle */}
           {subtitle && (
-            <p className="text-base sm:text-lg opacity-75 mb-2 max-w-2xl leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-[hsl(var(--hero-text-muted))] mb-2 max-w-2xl leading-relaxed font-light">
               {subtitle}
             </p>
           )}
