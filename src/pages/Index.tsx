@@ -284,7 +284,14 @@ export default function HomePage() {
       </section>
 
       {/* Gradient Feature Cards - Hero Boxes */}
-      <section className="container mx-auto px-4 py-10 sm:py-14">
+      <section className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 text-xs font-bold text-primary tracking-wider mb-3">
+            <Zap className="w-3.5 h-3.5" /> POWERFUL TOOLS
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold">Everything You Need for Train Travel</h2>
+          <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">Six essential tools designed for Pakistan Railways passengers — all free, all instant, all in one place.</p>
+        </div>
         <div ref={featureCards.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {[
             { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/train" },
@@ -295,19 +302,26 @@ export default function HomePage() {
             { gradient: "gradient-card-teal", icon: Map, iconBg: "bg-teal-500/15", iconColor: "text-teal-500", badge: "EXPLORE", badgeColor: "bg-teal-500/10 text-teal-600 dark:text-teal-400", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with GPS coordinates, connecting trains, and platform facilities. Your complete station guide.`, link: "/stations" },
           ].map((card, i) => (
             <Link key={i} to={card.link} {...featureCards.getAnimationProps(i)}>
-              <Card className={`${card.gradient} border hover-lift group h-full cursor-pointer`}>
-                <CardContent className="p-5 sm:p-6">
+              <Card className={`${card.gradient} border hover-lift group h-full cursor-pointer relative overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/5 to-transparent rounded-bl-full" />
+                <CardContent className="p-5 sm:p-6 relative">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center transition-transform duration-300 group-hover:scale-110`}>
+                    <div className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3`}>
                       <card.icon className={`w-6 h-6 ${card.iconColor}`} />
                     </div>
-                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${card.badgeColor}`}>{card.badge}</span>
+                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${card.badgeColor} tracking-wider`}>{card.badge}</span>
                   </div>
                   <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Open <ArrowRight className="w-4 h-4" />
+                  <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+                    Explore <ArrowRight className="w-4 h-4" />
                   </div>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </section>
                 </CardContent>
               </Card>
             </Link>
