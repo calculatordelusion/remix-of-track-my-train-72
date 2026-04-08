@@ -261,10 +261,10 @@
     border: 1px solid hsl(var(--border) / 0.5);
   }
   .glass-hero {
-    background: hsl(0 0% 100% / 0.08);
+    background: hsl(var(--hero-glass));
     backdrop-filter: blur(16px) saturate(1.6);
     -webkit-backdrop-filter: blur(16px) saturate(1.6);
-    border: 1px solid hsl(0 0% 100% / 0.12);
+    border: 1px solid hsl(var(--hero-glass-border));
   }
   /* Animated gradient border */
   .gradient-border {
