@@ -141,6 +141,7 @@
     --footer-bottom-bg: 230 40% 3.5%;
     --footer-bottom-text: 220 15% 35%;
   }
+}
 
 @layer base {
   * {

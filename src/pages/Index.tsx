@@ -153,8 +153,8 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight text-[hsl(var(--hero-text))]">
-                <span className="block">Track My Train</span>
-                <span className="block mt-1 text-gradient-gold">Live GPS Tracker</span>
+                <span className="block">Track My Train —</span>
+                <span className="block mt-1"><span className="text-gradient-gold">Live Railway</span> GPS Tracker</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-[hsl(var(--hero-text-muted))] mb-10 max-w-2xl leading-relaxed font-light">
