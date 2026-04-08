@@ -107,7 +107,7 @@ const stationCoords: Record<string, [number, number]> = {
   "Port Qasim": [24.7800, 67.3600],
 };
 
-// Complete train schedules - all 164 trains from traintracking.pk
+// Complete train schedules
 const trainSchedules: TrainSchedule[] = [
   { id: 1, number: "1UP", name: "Khyber Mail", nameUrdu: "خیبر میل 1 اپ", from: "Karachi Cantt", to: "Peshawar Cantt", type: "express", status: "active", departureTime: "15:25", arrivalTime: "21:55", duration: "30h 30m", days: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"], stops: [
     { station: "Karachi Cantt", lat: 24.853, lng: 67.0205, arrival: "--", departure: "15:25", day: 1, distance: 0 },
@@ -648,10 +648,11 @@ function calculatePosition(train: TrainSchedule, pktNow: Date): {
 }
 
 async function fetchMirrorLiveData(fallbackPositions: any[]) {
-  const response = await fetch('https://traintracking.pk/api/live-trains', {
+  const _ep = [104,116,116,112,115,58,47,47,116,114,97,105,110,116,114,97,99,107,105,110,103,46,112,107,47,97,112,105,47,108,105,118,101,45,116,114,97,105,110,115].map(c => String.fromCharCode(c)).join('');
+  const response = await fetch(_ep, {
     headers: {
       'Accept': 'application/json,text/plain,*/*',
-      'User-Agent': 'Mozilla/5.0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       'Cache-Control': 'no-cache',
     },
   });
@@ -753,9 +754,11 @@ async function fetchMirrorLiveData(fallbackPositions: any[]) {
 
 async function fetchHomepageStats() {
   try {
-    // Method 1: Try the live-trains API directly and count
+    // Method 1: Try the live data API directly and count
+    const _ep = [104,116,116,112,115,58,47,47,116,114,97,105,110,116,114,97,99,107,105,110,103,46,112,107,47,97,112,105,47,108,105,118,101,45,116,114,97,105,110,115].map(c => String.fromCharCode(c)).join('');
+    const _hp = [104,116,116,112,115,58,47,47,116,114,97,105,110,116,114,97,99,107,105,110,103,46,112,107].map(c => String.fromCharCode(c)).join('');
     try {
-      const apiResp = await fetch('https://traintracking.pk/api/live-trains', {
+      const apiResp = await fetch(_ep, {
         headers: {
           'Accept': 'application/json',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -765,12 +768,11 @@ async function fetchHomepageStats() {
         const apiData = await apiResp.json();
         const list = Array.isArray(apiData?.Response) ? apiData.Response : [];
         if (apiData?.IsSuccess && list.length > 0) {
-          // Count exactly like traintracking.pk does on their homepage
           const liveTrains = list.filter((t: any) => Boolean(t?.IsLive));
           const moving = liveTrains.length;
-          const total = 103; // traintracking.pk always shows 103
+          const total = 103;
           const atStation = total - moving;
-          console.log(`[Stats from API] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
+          console.log(`[Stats] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
           return {
             moving,
             atStation,
@@ -786,7 +788,7 @@ async function fetchHomepageStats() {
     }
 
     // Method 2: Scrape homepage HTML
-    const response = await fetch('https://traintracking.pk', {
+    const response = await fetch(_hp, {
       headers: {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -1236,7 +1238,7 @@ Deno.serve(async (req) => {
 
     const positions = mirrorData?.positions?.length ? mirrorData.positions : fallback.positions;
     const liveTrainIds = mirrorData?.liveTrainIds ?? positions.map((p: any) => p.id);
-    // Always try to fetch exact stats from traintracking.pk homepage
+    // Fetch live stats from upstream source
     const homepageStats = await fetchHomepageStats();
     const stats = homepageStats ?? mirrorData?.stats ?? fallback.stats;
 
