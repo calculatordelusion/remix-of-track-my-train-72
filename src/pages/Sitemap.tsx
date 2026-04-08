@@ -23,6 +23,9 @@ const sections = [
       { label: "Express Trains", path: "/express-trains", icon: Zap },
       { label: "Green Line Express", path: "/green-line-express", icon: Leaf },
       { label: "Ticket Pricing", path: "/ticket-pricing", icon: CreditCard },
+      { label: "Buy Train Tickets", path: "/buy-train-tickets", icon: CreditCard },
+      { label: "Schedule Guide", path: "/schedule-guide", icon: Calendar },
+      { label: "Railway Helpline", path: "/railway-helpline", icon: Phone },
     ],
   },
   {
