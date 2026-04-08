@@ -203,9 +203,9 @@ export default function JourneyPlannerPage() {
       <SEOHead
         title="Pakistan Railways Journey Planner — Find Trains"
         description={`Plan your journey between ${meta.totalStations}+ stations. Compare ${meta.totalTrains}+ trains by duration, class, and fare. Free planner, no signup needed.`}
-        canonical="/planner"
+        canonical="/train-journey-planner"
         keywords="journey planner pakistan railway, find train between stations, train route finder, station to station train, karachi to lahore train, lahore to rawalpindi train, train search, best train for journey, train planner, compare trains, which train to take, plan train travel"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Journey Planner", url: "/planner" }]}
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Journey Planner", url: "/train-journey-planner" }]}
         faqSchema={plannerFaqs}
         howToSchema={{
           name: "How to Plan a Train Journey in Pakistan",
@@ -537,7 +537,7 @@ export default function JourneyPlannerPage() {
             {[
               { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
               { icon: Navigation, gradient: "gradient-card-amber", title: "Find My Train (GPS)", desc: "Auto-detect which train you're on using your phone's GPS location.", link: "/find-my-train" },
-              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with departure and arrival times.", link: "/schedule" },
+              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with departure and arrival times.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>
@@ -589,7 +589,7 @@ export default function JourneyPlannerPage() {
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>
             </Link>
-            <Link to="/schedule">
+            <Link to="/train-schedule">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> View Schedules
               </Button>

@@ -420,7 +420,7 @@ export default function ExpressTrainsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare express trains between any two stations with timing & duration.", link: "/planner" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare express trains between any two stations with timing & duration.", link: "/train-journey-planner" },
               { icon: CreditCard, gradient: "gradient-card-amber", title: "Ticket Pricing", desc: "Complete fare chart for all classes across major routes.", link: "/ticket-pricing" },
               { icon: MapPin, gradient: "gradient-card-blue", title: "Railway Stations", desc: "Browse 342+ stations and find which trains stop at each.", link: "/stations" },
             ].map((tool, i) => (
@@ -452,7 +452,7 @@ export default function ExpressTrainsPage() {
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>
             </Link>
-            <Link to="/schedule">
+            <Link to="/train-schedule">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> View Full Schedule
               </Button>

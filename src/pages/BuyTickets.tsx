@@ -111,9 +111,9 @@ export default function BuyTickets() {
       <SEOHead
         title="Buy Pakistan Railways Tickets Online — RABTA 2026"
         description="Book Pakistan Railways tickets via RABTA app or website. Pay with JazzCash, Easypaisa, or card. Student discounts, cancellation policy, and step-by-step guide."
-        canonical="/buy-tickets"
+        canonical="/buy-train-tickets"
         keywords="buy train ticket online pakistan, pakistan railways online booking, book train ticket, RABTA app booking, e ticket pakistan railway, how to buy train ticket, train ticket booking, JazzCash train ticket, easypaisa train ticket, online railway booking, pakistan railway reservation, train seat booking"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Buy Tickets Online", url: "/buy-tickets" }]}
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Buy Tickets Online", url: "/buy-train-tickets" }]}
         faqSchema={bookingFaqs}
         howToSchema={{
           name: "How to Book Pakistan Railways Train Tickets Online",
@@ -523,7 +523,7 @@ export default function BuyTickets() {
               The biggest mistake first-time train travelers make is booking too late during peak periods. <strong className="text-foreground">Eid-ul-Fitr</strong> and <strong className="text-foreground">Eid-ul-Adha</strong> are the two highest-demand periods — trains on the Karachi–Lahore, Karachi–Rawalpindi, and Lahore–Peshawar corridors sell out <strong className="text-foreground">15–20 days before the holiday</strong>. Summer holidays (June–July) and December holidays also see elevated demand. The solution is simple: book as soon as the 30-day booking window opens. Set a phone alarm for the exact date your travel window opens and book immediately.
             </p>
             <p className="leading-relaxed">
-              During fog season (December–February), Punjab-bound trains frequently experience <strong className="text-foreground">3–8 hour delays</strong>. While this doesn't affect your ticket validity, it does mean you should use our <Link to="/check-delays" className="text-primary hover:underline font-semibold">live delay checker</Link> before heading to the station. An afternoon departure is significantly more reliable than a morning one during this period.
+              During fog season (December–February), Punjab-bound trains frequently experience <strong className="text-foreground">3–8 hour delays</strong>. While this doesn't affect your ticket validity, it does mean you should use our <Link to="/check-train-delays" className="text-primary hover:underline font-semibold">live delay checker</Link> before heading to the station. An afternoon departure is significantly more reliable than a morning one during this period.
             </p>
 
             <h3 className="text-lg font-bold text-foreground">Common Booking Mistakes to Avoid</h3>
@@ -553,9 +553,9 @@ export default function BuyTickets() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {[
               { to: "/ticket-pricing", icon: CreditCard, title: "Ticket Prices", desc: "Compare fares for all classes & routes", gradient: "gradient-card-emerald" },
-              { to: "/planner", icon: MapPin, title: "Journey Planner", desc: "Find trains between any two stations", gradient: "gradient-card-blue" },
+              { to: "/train-journey-planner", icon: MapPin, title: "Journey Planner", desc: "Find trains between any two stations", gradient: "gradient-card-blue" },
               { to: "/live-train", icon: Globe, title: "Live Train Tracker", desc: "Track your train's GPS position", gradient: "gradient-card-amber" },
-              { to: "/check-delays", icon: Clock, title: "Check Delays", desc: "Real-time delay status for all trains", gradient: "gradient-card-purple" },
+              { to: "/check-train-delays", icon: Clock, title: "Check Delays", desc: "Real-time delay status for all trains", gradient: "gradient-card-purple" },
             ].map((link, i) => (
               <Link key={i} to={link.to}>
                 <Card className={`${link.gradient} border hover-lift h-full`}>

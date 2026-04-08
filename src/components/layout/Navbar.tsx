@@ -21,8 +21,8 @@ export default function Navbar() {
   const navItems = [
     { label: "Home", path: "/", icon: Home },
     { label: "Live Trains", path: "/live-train", icon: Train },
-    { label: "Journey Planner", path: "/planner", icon: MapPin },
-    { label: "Schedule", path: "/schedule", icon: Calendar },
+    { label: "Journey Planner", path: "/train-journey-planner", icon: MapPin },
+    { label: "Schedule", path: "/train-schedule", icon: Calendar },
   ];
 
   const moreItems = [
@@ -32,7 +32,7 @@ export default function Navbar() {
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard },
     { label: "Express Trains", path: "/express-trains", icon: Zap },
     { label: "Green Line Express", path: "/green-line-express", icon: Leaf },
-    { label: "Buy Tickets", path: "/buy-tickets", icon: Ticket },
+    { label: "Buy Tickets", path: "/buy-train-tickets", icon: Ticket },
     { label: "Schedule Guide", path: "/schedule-guide", icon: BookOpen },
     { label: "Railway Helpline", path: "/railway-helpline", icon: Headphones },
     { label: "FAQs", path: "/faq", icon: HelpCircle },

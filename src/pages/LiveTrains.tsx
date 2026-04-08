@@ -110,7 +110,7 @@ export default function LiveTrainsPage() {
         <div className="flex flex-wrap items-center gap-2 mt-6">
           <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>
           <Link to="/trains/passenger" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Passenger Trains</Link>
-          <Link to="/schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
+          <Link to="/train-schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
           <Link to="/stations" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Stations</Link>
         </div>
       </PremiumHero>

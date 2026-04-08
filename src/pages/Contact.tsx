@@ -261,8 +261,8 @@ export default function ContactPage() {
               { icon: HelpCircle, gradient: "gradient-card-amber", title: "FAQ", desc: "Comprehensive answers to 20+ common questions about train tracking.", link: "/faq" },
               { icon: Globe, gradient: "gradient-card-blue", title: "About Us", desc: "Learn about our mission, technology, and commitment to Pakistani travelers.", link: "/about" },
               { icon: Search, gradient: "gradient-card-purple", title: "Find My Train", desc: "Auto-detect your train using phone GPS. No searching required.", link: "/find-my-train" },
-              { icon: Route, gradient: "gradient-card-rose", title: "Route Maps", desc: "Explore all Pakistan Railways corridors and branch lines.", link: "/routes" },
-              { icon: Calendar, gradient: "gradient-card-teal", title: "Train Schedules", desc: "Complete timetables for 164+ trains with arrival/departure times.", link: "/schedule" },
+              { icon: Route, gradient: "gradient-card-rose", title: "Route Maps", desc: "Explore all Pakistan Railways corridors and branch lines.", link: "/train-routes" },
+              { icon: Calendar, gradient: "gradient-card-teal", title: "Train Schedules", desc: "Complete timetables for 164+ trains with arrival/departure times.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>

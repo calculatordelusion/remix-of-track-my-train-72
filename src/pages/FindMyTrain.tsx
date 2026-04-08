@@ -329,8 +329,8 @@ export default function FindMyTrainPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
               { icon: Radio, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning, speed, and delay data across the entire Pakistan Railways network.", link: "/live-train" },
-              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule, budget, and preferred coach class.", link: "/planner" },
-              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with departure, arrival, and running days.", link: "/schedule" },
+              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule, budget, and preferred coach class.", link: "/train-journey-planner" },
+              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with departure, arrival, and running days.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>

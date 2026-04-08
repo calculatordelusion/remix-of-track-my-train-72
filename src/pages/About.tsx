@@ -305,9 +305,9 @@ export default function AboutPage() {
             {[
               { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any of 164+ trains in real-time with GPS accuracy, speed data, and delay status.", link: "/live-train" },
               { icon: Search, gradient: "gradient-card-amber", title: "Find My Train", desc: "Use your phone's GPS to instantly identify which train you're on without searching.", link: "/find-my-train" },
-              { icon: Route, gradient: "gradient-card-blue", title: "Journey Planner", desc: "Search trains between any two stations. View schedules, durations, and running days.", link: "/planner" },
-              { icon: AlertTriangle, gradient: "gradient-card-rose", title: "Delay Checker", desc: "Check live delay status for every running train. Get accurate ETAs at your station.", link: "/check-delays" },
-              { icon: Calendar, gradient: "gradient-card-purple", title: "Train Schedules", desc: "Complete timetables with arrival/departure times, halt durations, and platform info.", link: "/schedule" },
+              { icon: Route, gradient: "gradient-card-blue", title: "Journey Planner", desc: "Search trains between any two stations. View schedules, durations, and running days.", link: "/train-journey-planner" },
+              { icon: AlertTriangle, gradient: "gradient-card-rose", title: "Delay Checker", desc: "Check live delay status for every running train. Get accurate ETAs at your station.", link: "/check-train-delays" },
+              { icon: Calendar, gradient: "gradient-card-purple", title: "Train Schedules", desc: "Complete timetables with arrival/departure times, halt durations, and platform info.", link: "/train-schedule" },
               { icon: MapPin, gradient: "gradient-card-teal", title: "Station Directory", desc: "Browse 342+ stations with facilities, train listings, and location information.", link: "/stations" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
@@ -345,7 +345,7 @@ export default function AboutPage() {
                 <Train className="w-4 h-4" /> Open Live Tracker
               </Button>
             </Link>
-            <Link to="/planner">
+            <Link to="/train-journey-planner">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Navigation className="w-4 h-4" /> Plan a Journey
               </Button>

@@ -117,9 +117,9 @@ export default function RoutesPage() {
       <SEOHead
         title="Pakistan Railway Routes — Map & Corridors 2026"
         description={`Explore ${routeGroups.length} Pakistan Railways routes with stops, distances, and train options across ${stations.length}+ stations. ML-1 corridor maps included.`}
-        canonical="/routes"
+        canonical="/train-routes"
         keywords="pakistan railway routes, train route map pakistan, railway route with stops, karachi to lahore route, lahore to islamabad train route, ML-1 railway corridor, pakistan railway network, train routes and stops, city to city train, main line railway pakistan, railway line map, all train routes"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/routes" }]}
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/train-routes" }]}
         faqSchema={routeFaqs}
         additionalSchemas={[{
           "@context": "https://schema.org",
@@ -361,7 +361,7 @@ export default function RoutesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
-              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule and budget.", link: "/planner" },
+              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Compare routes and find the best train for your schedule and budget.", link: "/train-journey-planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: "Browse 342+ stations with facilities, connecting trains, and GPS locations.", link: "/stations" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>

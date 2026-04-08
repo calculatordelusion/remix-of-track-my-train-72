@@ -93,10 +93,10 @@ const App = () => {
                   <Route path="/trains/:category" element={<LiveTrains />} />
                   <Route path="/train/:slug" element={<TrainDetail />} />
                   <Route path="/trains/passengers" element={<LiveTrains />} />
-                  <Route path="/schedule" element={<Schedule />} />
+                  <Route path="/train-schedule" element={<Schedule />} />
                   <Route path="/stations" element={<Stations />} />
                   <Route path="/stations/:slug" element={<StationDetail />} />
-                  <Route path="/planner" element={<JourneyPlanner />} />
+                  <Route path="/train-journey-planner" element={<JourneyPlanner />} />
                   <Route path="/find-my-train" element={<FindMyTrain />} />
                   <Route path="/express-trains" element={<ExpressTrains />} />
                   <Route path="/ticket-pricing" element={<TicketPricing />} />
@@ -104,15 +104,15 @@ const App = () => {
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/privacy" element={<Privacy />} />
-                  <Route path="/routes" element={<RoutesPage />} />
+                  <Route path="/train-routes" element={<RoutesPage />} />
                   <Route path="/routes/:slug" element={<RouteDetail />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/blog/:slug" element={<BlogPost />} />
                   <Route path="/sitemap" element={<Sitemap />} />
                   <Route path="/request-feature" element={<RequestFeature />} />
                   <Route path="/green-line-express" element={<GreenLine />} />
-                  <Route path="/check-delays" element={<CheckDelays />} />
-                  <Route path="/buy-tickets" element={<BuyTickets />} />
+                  <Route path="/check-train-delays" element={<CheckDelays />} />
+                  <Route path="/buy-train-tickets" element={<BuyTickets />} />
                   <Route path="/schedule-guide" element={<ScheduleGuide />} />
                   <Route path="/railway-helpline" element={<RailwayHelpline />} />
                   <Route path="/terms" element={<Terms />} />

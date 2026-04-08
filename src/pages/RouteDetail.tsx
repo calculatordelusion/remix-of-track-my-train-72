@@ -27,7 +27,7 @@ export default function RouteDetailPage() {
         keywords={`${route.from.toLowerCase()} to ${route.to.toLowerCase()} train, ${route.from.toLowerCase()} ${route.to.toLowerCase()} train ticket price, ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train schedule 2026, ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train live status, is ${route.from.toLowerCase()} to ${route.to.toLowerCase()} train late today`}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Routes", url: "/routes" },
+          { name: "Routes", url: "/train-routes" },
           { name: `${route.from} to ${route.to}`, url: `/routes/${route.slug}` },
         ]}
         faqSchema={route.faqs}
@@ -100,7 +100,7 @@ export default function RouteDetailPage() {
                   <Radio className="w-4 h-4" /> Track Live Now <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link to="/planner">
+              <Link to="/train-journey-planner">
                 <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 gap-2 rounded-xl">
                   <Navigation className="w-4 h-4" /> Plan This Journey
                 </Button>
@@ -212,9 +212,9 @@ export default function RouteDetailPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
             { label: `Track ${route.from}–${route.to} Live`, icon: Radio, link: "/live-train", gradient: "gradient-card-emerald" },
-            { label: "Check Train Delays", icon: AlertTriangle, link: "/check-delays", gradient: "gradient-card-amber" },
+            { label: "Check Train Delays", icon: AlertTriangle, link: "/check-train-delays", gradient: "gradient-card-amber" },
             { label: "Compare Ticket Prices", icon: CreditCard, link: "/ticket-pricing", gradient: "gradient-card-blue" },
-            { label: "Explore All Routes", icon: Route, link: "/routes", gradient: "gradient-card-purple" },
+            { label: "Explore All Routes", icon: Route, link: "/train-routes", gradient: "gradient-card-purple" },
           ].map((item, i) => (
             <Link key={i} to={item.link}>
               <Card className={`${item.gradient} border hover-lift group h-full`}>
@@ -257,7 +257,7 @@ export default function RouteDetailPage() {
                 <Train className="w-4 h-4" /> Start Tracking Now
               </Button>
             </Link>
-            <Link to="/schedule">
+            <Link to="/train-schedule">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> View Full Schedule
               </Button>

@@ -7,7 +7,7 @@ export default function Footer() {
 
   const quickLinks = [
     { label: "Live Train Tracker", path: "/live-train", icon: Train },
-    { label: "Train Schedule", path: "/schedule", icon: Calendar },
+    { label: "Train Schedule", path: "/train-schedule", icon: Calendar },
     { label: "Station Directory", path: "/stations", icon: Landmark },
     { label: "Schedule Guide", path: "/schedule-guide", icon: FileSearch },
     { label: "Green Line Express", path: "/green-line-express", icon: Leaf },
@@ -15,13 +15,13 @@ export default function Footer() {
   ];
 
   const travelGuides = [
-    { label: "Journey Planner", path: "/planner", icon: Map },
+    { label: "Journey Planner", path: "/train-journey-planner", icon: Map },
     { label: "Express Trains", path: "/express-trains", icon: Zap },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard },
     { label: "Route Maps", path: "/routes", icon: RouteIcon },
     { label: "Find My Train (GPS)", path: "/find-my-train", icon: Navigation },
-    { label: "Check Delays", path: "/check-delays", icon: AlertTriangle },
-    { label: "Buy Tickets Online", path: "/buy-tickets", icon: Ticket },
+    { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle },
+    { label: "Buy Tickets Online", path: "/buy-train-tickets", icon: Ticket },
     { label: "Blog & Guides", path: "/blog", icon: BookOpen },
   ];
 

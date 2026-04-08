@@ -123,7 +123,7 @@ export default function StationDetailPage() {
                 <div className="text-sm text-muted-foreground space-y-3 leading-relaxed">
                   <p>{station.name} is a railway station located in {station.city}, {station.province}, Pakistan. It is one of the important stations on the Pakistan Railways network, serving as a key stop for {stationTrains.length} trains connecting {station.city} to major cities across the country.</p>
                   <p>The station is equipped with {station.facilities.length} facilities including {station.facilities.join(", ")}, making it a well-serviced stop for passengers. {station.facilities.includes("WiFi") ? "Free WiFi is available for passengers waiting at the station." : ""} {station.facilities.includes("VIP Lounge") ? "A VIP lounge is available for premium class passengers." : ""} {station.facilities.includes("Medical Aid") ? "Medical aid services are available on-site for emergencies." : ""}</p>
-                  <p>Travelers can use TrackMyTrain.pk to check real-time positions of all trains arriving at or departing from {station.name}. Our <Link to="/check-delays" className="text-primary hover:underline">delay checker</Link> shows live delay status, and the <Link to="/planner" className="text-primary hover:underline">journey planner</Link> helps you find the best train options from {station.name} to your destination.</p>
+                  <p>Travelers can use TrackMyTrain.pk to check real-time positions of all trains arriving at or departing from {station.name}. Our <Link to="/check-train-delays" className="text-primary hover:underline">delay checker</Link> shows live delay status, and the <Link to="/train-journey-planner" className="text-primary hover:underline">journey planner</Link> helps you find the best train options from {station.name} to your destination.</p>
                   {expressTrains.length > 0 && (
                     <p>Major express services stopping at {station.name} include {expressTrains.slice(0, 4).map(t => t.name).join(", ")}{expressTrains.length > 4 ? ` and ${expressTrains.length - 4} more` : ""}. These trains provide connectivity to {[...new Set(expressTrains.flatMap(t => [t.from, t.to]).filter(c => c !== station.name))].slice(0, 5).join(", ")} and other destinations.</p>
                   )}
@@ -214,19 +214,19 @@ export default function StationDetailPage() {
                     <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center"><Train className="w-4 h-4 text-primary" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Live Trains</div><div className="text-[10px] text-muted-foreground">Track trains in real-time</div></div>
                   </Link>
-                  <Link to="/routes" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/train-routes" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center"><Route className="w-4 h-4 text-accent-foreground" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Route Maps</div><div className="text-[10px] text-muted-foreground">All railway corridors</div></div>
                   </Link>
-                  <Link to="/planner" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/train-journey-planner" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-secondary/50 flex items-center justify-center"><Navigation className="w-4 h-4 text-secondary-foreground" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Journey Planner</div><div className="text-[10px] text-muted-foreground">Find trains from {station.name}</div></div>
                   </Link>
-                  <Link to="/schedule" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/train-schedule" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center"><Calendar className="w-4 h-4 text-primary" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Train Schedule</div><div className="text-[10px] text-muted-foreground">Complete timetables</div></div>
                   </Link>
-                  <Link to="/check-delays" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/check-train-delays" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-destructive/10 flex items-center justify-center"><AlertTriangle className="w-4 h-4 text-destructive" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Check Delays</div><div className="text-[10px] text-muted-foreground">Live delay status</div></div>
                   </Link>

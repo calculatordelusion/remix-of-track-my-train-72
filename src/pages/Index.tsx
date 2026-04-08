@@ -173,7 +173,7 @@ export default function HomePage() {
                     <Navigation className="w-5 h-5" /> Find My Train (GPS)
                   </Button>
                 </Link>
-                <Link to="/schedule">
+                <Link to="/train-schedule">
                   <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-xl border-2 border-[hsl(var(--hero-glass-border))] hover:bg-[hsl(var(--hero-glass))] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-[hsl(var(--hero-text))]">
                     <Clock className="w-5 h-5" /> View Schedules
                   </Button>
@@ -300,10 +300,10 @@ export default function HomePage() {
         <div ref={featureCards.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {[
             { gradient: "gradient-card-emerald", icon: Radio, iconBg: "bg-emerald-500/15", iconColor: "text-emerald-500", badge: "LIVE", badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400", title: "Live Train Tracker", desc: "View all active trains across Pakistan with real-time GPS positions, speeds, and delay information. See trains moving on the map in real-time with 5-second updates.", link: "/live-train" },
-            { gradient: "gradient-card-amber", icon: Clock, iconBg: "bg-amber-500/15", iconColor: "text-amber-500", badge: "SCHEDULES", badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400", title: "Train Schedules & Timetables", desc: `Browse complete Pakistan Railways timetables with departure and arrival times for all ${netStats.totalStations || 342}+ stations. Updated daily with latest schedule changes.`, link: "/schedule" },
+            { gradient: "gradient-card-amber", icon: Clock, iconBg: "bg-amber-500/15", iconColor: "text-amber-500", badge: "SCHEDULES", badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400", title: "Train Schedules & Timetables", desc: `Browse complete Pakistan Railways timetables with departure and arrival times for all ${netStats.totalStations || 342}+ stations. Updated daily with latest schedule changes.`, link: "/train-schedule" },
             { gradient: "gradient-card-blue", icon: Navigation, iconBg: "bg-blue-500/15", iconColor: "text-blue-500", badge: "GPS", badgeColor: "bg-blue-500/10 text-blue-600 dark:text-blue-400", title: "Find My Train (GPS)", desc: "Already on a train? Use your phone's GPS to automatically detect which train you're riding. Share your live location with family waiting at the station.", link: "/find-my-train" },
-            { gradient: "gradient-card-purple", icon: Route, iconBg: "bg-purple-500/15", iconColor: "text-purple-500", badge: "ROUTES", badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400", title: "Journey Planner", desc: "Compare routes, stops, journey times, and fare classes between any two stations. Find the best train for your schedule and budget across Pakistan.", link: "/planner" },
-            { gradient: "gradient-card-rose", icon: Bell, iconBg: "bg-rose-500/15", iconColor: "text-rose-500", badge: "DELAYS", badgeColor: "bg-rose-500/10 text-rose-600 dark:text-rose-400", title: "Check Train Delays", desc: "Real-time delay monitoring for every Pakistan Railways train. See accumulated delay in minutes, understand why trains are late, and get adjusted ETAs before heading to the station.", link: "/check-delays" },
+            { gradient: "gradient-card-purple", icon: Route, iconBg: "bg-purple-500/15", iconColor: "text-purple-500", badge: "ROUTES", badgeColor: "bg-purple-500/10 text-purple-600 dark:text-purple-400", title: "Journey Planner", desc: "Compare routes, stops, journey times, and fare classes between any two stations. Find the best train for your schedule and budget across Pakistan.", link: "/train-journey-planner" },
+            { gradient: "gradient-card-rose", icon: Bell, iconBg: "bg-rose-500/15", iconColor: "text-rose-500", badge: "DELAYS", badgeColor: "bg-rose-500/10 text-rose-600 dark:text-rose-400", title: "Check Train Delays", desc: "Real-time delay monitoring for every Pakistan Railways train. See accumulated delay in minutes, understand why trains are late, and get adjusted ETAs before heading to the station.", link: "/check-train-delays" },
             { gradient: "gradient-card-teal", icon: Map, iconBg: "bg-teal-500/15", iconColor: "text-teal-500", badge: "EXPLORE", badgeColor: "bg-teal-500/10 text-teal-600 dark:text-teal-400", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with GPS coordinates, connecting trains, and platform facilities. Your complete station guide.`, link: "/stations" },
           ].map((card, i) => (
             <Link key={i} to={card.link} {...featureCards.getAnimationProps(i)}>
@@ -573,10 +573,10 @@ export default function HomePage() {
                   <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                     <p>Pakistan Railways experiences massive demand spikes during festivals and harsh delays during winter fog. Here's how to navigate both like a pro:</p>
                     <ul className="space-y-2">
-                      <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Eid Rush (2x per year)</strong> — Trains sell out 3–4 weeks before Eid-ul-Fitr and Eid-ul-Adha. Book the moment dates are announced. Special Eid trains are added on major routes — check our <Link to="/schedule" className="text-primary font-medium underline">schedule page</Link> for updates.</span></li>
+                      <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Eid Rush (2x per year)</strong> — Trains sell out 3–4 weeks before Eid-ul-Fitr and Eid-ul-Adha. Book the moment dates are announced. Special Eid trains are added on major routes — check our <Link to="/train-schedule" className="text-primary font-medium underline">schedule page</Link> for updates.</span></li>
                       <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Fog Season (Dec–Feb)</strong> — Dense fog in Punjab causes average delays of 3–8 hours. Always check live delay status on our tracker before leaving home. Consider afternoon departures which face less fog.</span></li>
                       <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Summer (May–Jul)</strong> — AC classes sell out fast. Book Economy if AC is unavailable. Carry water and snacks as vendors may run out on fully-packed trains during peak summer travel.</span></li>
-                      <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Pro Tip</strong> — Use our <Link to="/check-delays" className="text-primary font-medium underline">delay checker</Link> 1–2 hours before your scheduled departure to see if your train is running late. This simple habit can save you hours of waiting at the platform.</span></li>
+                      <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" /><span><strong className="text-foreground">Pro Tip</strong> — Use our <Link to="/check-train-delays" className="text-primary font-medium underline">delay checker</Link> 1–2 hours before your scheduled departure to see if your train is running late. This simple habit can save you hours of waiting at the platform.</span></li>
                     </ul>
                   </div>
                 </CardContent>
@@ -739,7 +739,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-6">
-            <Link to="/routes"><Button variant="outline" className="rounded-xl">Explore All Routes</Button></Link>
+            <Link to="/train-routes"><Button variant="outline" className="rounded-xl">Explore All Routes</Button></Link>
           </div>
         </div>
       </section>
@@ -832,7 +832,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link to="/live-train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
-                  <Link to="/planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
+                  <Link to="/train-journey-planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
                   <Link to="/ticket-pricing"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><CreditCard className="w-3.5 h-3.5" /> Compare Fares</Button></Link>
                 </div>
               </CardContent>
@@ -910,7 +910,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link to="/live-train"><Button size="sm" className="rounded-xl gap-1.5 bg-primary-foreground text-primary hover:bg-primary-foreground/90"><Radio className="w-3.5 h-3.5" /> Track Live</Button></Link>
-                  <Link to="/planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
+                  <Link to="/train-journey-planner"><Button size="sm" variant="outline" className="rounded-xl gap-1.5 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"><Route className="w-3.5 h-3.5" /> Plan Journey</Button></Link>
                 </div>
               </CardContent>
             </Card>
@@ -1477,7 +1477,7 @@ export default function HomePage() {
                     <h4 className="font-bold text-sm">When to Fly Instead</h4>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    If you're doing Karachi–Islamabad for business and need same-day return, flying makes sense. For family travel, holidays, or budget trips — the train is unbeatable. Use our <Link to="/planner" className="text-primary font-medium underline">Journey Planner</Link> to compare.
+                    If you're doing Karachi–Islamabad for business and need same-day return, flying makes sense. For family travel, holidays, or budget trips — the train is unbeatable. Use our <Link to="/train-journey-planner" className="text-primary font-medium underline">Journey Planner</Link> to compare.
                   </p>
                 </CardContent>
               </Card>
@@ -1529,7 +1529,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: MapPin, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare routes, stops, and journey times between any two stations.", link: "/planner" },
+              { icon: MapPin, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Compare routes, stops, and journey times between any two stations.", link: "/train-journey-planner" },
               { icon: Globe, gradient: "gradient-card-blue", title: "Stations Directory", desc: `Explore ${netStats.totalStations || 342}+ Pakistan Railways stations with full details.`, link: "/stations" },
               { icon: Train, gradient: "gradient-card-amber", title: "Live Train Map", desc: "See all trains on an interactive map with GPS positions.", link: "/live-train" },
               { icon: BarChart3, gradient: "gradient-card-purple", title: "Ticket Pricing", desc: "Check fare classes and pricing for all train routes.", link: "/ticket-pricing" },
@@ -1642,7 +1642,7 @@ export default function HomePage() {
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link to="/planner" className="group">
+              <Link to="/train-journey-planner" className="group">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-2xl border-2 border-[hsl(var(--hero-glass-border))] rounded-2xl gap-3 font-black px-10 h-14 text-base transition-all duration-300 hover:scale-[1.04] text-[hsl(var(--hero-text))] hover:border-primary/30 hover:bg-primary/5">
                   <MapPin className="w-5 h-5" /> Plan a Journey
                 </Button>

@@ -78,9 +78,9 @@ export default function SchedulePage() {
       <SEOHead
         title="Pakistan Railways Schedule 2026 — All 164+ Trains"
         description={`Complete Pakistan Railways timetable. Departure and arrival times for ${allTrains.length || 164}+ trains. Express, AC, and Passenger schedules. Updated 2026.`}
-        canonical="/schedule"
+        canonical="/train-schedule"
         keywords="pakistan railway schedule, train schedule pakistan, pakistan train timetable 2026, railway time table today, train timing, train departure time, train arrival time, pakistan railways timetable, railway schedule today, all trains timing, express train timing, train time table pakistan railways"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Schedule", url: "/schedule" }]}
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Schedule", url: "/train-schedule" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{
           "@context": "https://schema.org",
@@ -243,7 +243,7 @@ export default function SchedulePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
               { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/live-train" },
-              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations.", link: "/planner" },
+              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations.", link: "/train-journey-planner" },
               { icon: CreditCard, gradient: "gradient-card-blue", title: "Ticket Pricing", desc: "Complete fare chart for all classes and routes.", link: "/ticket-pricing" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>

@@ -534,9 +534,9 @@ export default function TicketPricingPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Navigation, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Find the best routes between any two stations with timing comparisons.", link: "/planner" },
+              { icon: Navigation, gradient: "gradient-card-emerald", title: "Journey Planner", desc: "Find the best routes between any two stations with timing comparisons.", link: "/train-journey-planner" },
               { icon: Train, gradient: "gradient-card-amber", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and delay info.", link: "/live-train" },
-              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains.", link: "/schedule" },
+              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>
@@ -561,7 +561,7 @@ export default function TicketPricingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to Book Your Journey?</h2>
           <p className="text-base opacity-80 max-w-xl mx-auto mb-6">Plan your route, compare fares, and track your train in real-time — all in one place.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/planner">
+            <Link to="/train-journey-planner">
               <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
                 <Navigation className="w-4 h-4" /> Plan Your Journey
               </Button>

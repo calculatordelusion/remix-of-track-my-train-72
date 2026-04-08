@@ -153,7 +153,7 @@ export default function ScheduleGuide() {
             
             <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
               <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold">
-                <Link to="/schedule">
+                <Link to="/train-schedule">
                   <Train className="w-4 h-4 mr-2" /> View Full Timetable
                 </Link>
               </Button>
@@ -190,9 +190,9 @@ export default function ScheduleGuide() {
                 <div className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" /><span><strong className="text-foreground">Most popular:</strong> Tezgam — runs daily, Karachi–Rawalpindi</span></div>
               </div>
               <div className="mt-4 pt-4 border-t flex flex-wrap gap-4 text-xs text-muted-foreground">
-                <Link to="/schedule" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Timer className="w-3.5 h-3.5" /> View Full Timetable →</Link>
+                <Link to="/train-schedule" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Timer className="w-3.5 h-3.5" /> View Full Timetable →</Link>
                 <Link to="/live-train" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Navigation className="w-3.5 h-3.5" /> Track Any Train Live →</Link>
-                <Link to="/buy-tickets" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Star className="w-3.5 h-3.5" /> Buy Tickets Online →</Link>
+                <Link to="/buy-train-tickets" className="flex items-center gap-1 text-primary font-semibold hover:underline"><Star className="w-3.5 h-3.5" /> Buy Tickets Online →</Link>
               </div>
             </CardContent>
           </Card>
@@ -269,7 +269,7 @@ export default function ScheduleGuide() {
             </table>
           </div>
           <div className="text-center mt-4">
-            <Link to="/schedule" className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
+            <Link to="/train-schedule" className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
               View all 164+ trains in the full timetable <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -376,7 +376,7 @@ export default function ScheduleGuide() {
               <AlertTriangle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
                 <strong className="text-foreground">Fog Season Alert (Dec–Feb):</strong> Morning trains through Lahore, Faisalabad, Sahiwal, and Multan face 2-8 hour delays. Pakistan Railways shifts to revised fog timetables.{" "}
-                <Link to="/check-delays" className="text-primary font-semibold hover:underline">Check live delays →</Link>
+                <Link to="/check-train-delays" className="text-primary font-semibold hover:underline">Check live delays →</Link>
               </p>
             </div>
           </div>
@@ -471,9 +471,9 @@ export default function ScheduleGuide() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
               { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time GPS position on an interactive map.", link: "/live-train" },
-              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best train between any two stations with fare estimates.", link: "/planner" },
-              { icon: Star, gradient: "gradient-card-blue", title: "Buy Tickets Online", desc: "Step-by-step guide to booking via RABTA app, website, or counter.", link: "/buy-tickets" },
-              { icon: Clock, gradient: "gradient-card-purple", title: "Check Delays", desc: "Real-time delay status for all running trains with estimated arrivals.", link: "/check-delays" },
+              { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best train between any two stations with fare estimates.", link: "/train-journey-planner" },
+              { icon: Star, gradient: "gradient-card-blue", title: "Buy Tickets Online", desc: "Step-by-step guide to booking via RABTA app, website, or counter.", link: "/buy-train-tickets" },
+              { icon: Clock, gradient: "gradient-card-purple", title: "Check Delays", desc: "Real-time delay status for all running trains with estimated arrivals.", link: "/check-train-delays" },
               { icon: Train, gradient: "gradient-card-rose", title: "Express Trains", desc: "Complete list of all Express and AC Premium trains with details.", link: "/express-trains" },
               { icon: Zap, gradient: "gradient-card-teal", title: "Green Line Express", desc: "Pakistan's premium AC train — schedule, fares, classes, and tips.", link: "/green-line-express" },
             ].map((item, i) => (
@@ -524,7 +524,7 @@ export default function ScheduleGuide() {
       <div className="bg-card border-t py-4 text-center">
         <p className="text-sm text-muted-foreground">
           {" · "}
-          <Link to="/schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
+          <Link to="/train-schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
         </p>
       </div>
     </main>

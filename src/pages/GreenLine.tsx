@@ -371,7 +371,7 @@ export default function GreenLinePage() {
             {[
               { icon: Zap, gradient: "gradient-card-emerald", title: "All Express Trains", desc: "Browse all express and AC trains with schedules and live tracking.", link: "/express-trains" },
               { icon: CreditCard, gradient: "gradient-card-amber", title: "Ticket Pricing", desc: "Complete fare chart for all classes across all major routes.", link: "/ticket-pricing" },
-              { icon: MapPin, gradient: "gradient-card-blue", title: "Journey Planner", desc: "Plan your route and compare trains between any two stations.", link: "/planner" },
+              { icon: MapPin, gradient: "gradient-card-blue", title: "Journey Planner", desc: "Plan your route and compare trains between any two stations.", link: "/train-journey-planner" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>
@@ -398,7 +398,7 @@ export default function GreenLinePage() {
                 <Train className="w-4 h-4" /> Track Green Line Live
               </Button>
             </Link>
-            <Link to="/schedule">
+            <Link to="/train-schedule">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> View Full Schedule
               </Button>
