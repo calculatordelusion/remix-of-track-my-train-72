@@ -245,7 +245,7 @@
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://trackmytrain.pk/train?q={search_term_string}"
+          "urlTemplate": "https://trackmytrain.pk/live-train?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
@@ -259,14 +259,17 @@
       "@type": "SiteNavigationElement",
       "name": "Main Navigation",
       "hasPart": [
-        { "@type": "WebPage", "name": "Live Train Tracker", "url": "https://trackmytrain.pk/train" },
-        { "@type": "WebPage", "name": "Journey Planner", "url": "https://trackmytrain.pk/planner" },
-        { "@type": "WebPage", "name": "Train Schedule", "url": "https://trackmytrain.pk/schedule" },
+        { "@type": "WebPage", "name": "Live Train Tracker", "url": "https://trackmytrain.pk/live-train" },
+        { "@type": "WebPage", "name": "Journey Planner", "url": "https://trackmytrain.pk/train-journey-planner" },
+        { "@type": "WebPage", "name": "Train Schedule", "url": "https://trackmytrain.pk/train-schedule" },
         { "@type": "WebPage", "name": "Stations Directory", "url": "https://trackmytrain.pk/stations" },
-        { "@type": "WebPage", "name": "Route Maps", "url": "https://trackmytrain.pk/routes" },
-        { "@type": "WebPage", "name": "Find My Train", "url": "https://trackmytrain.pk/find-my-train" },
-        { "@type": "WebPage", "name": "Check Delays", "url": "https://trackmytrain.pk/check-delays" },
+        { "@type": "WebPage", "name": "Train Routes", "url": "https://trackmytrain.pk/train-routes" },
+        { "@type": "WebPage", "name": "Find My Train GPS", "url": "https://trackmytrain.pk/find-my-train" },
+        { "@type": "WebPage", "name": "Check Train Delays", "url": "https://trackmytrain.pk/check-train-delays" },
         { "@type": "WebPage", "name": "Ticket Pricing", "url": "https://trackmytrain.pk/ticket-pricing" },
+        { "@type": "WebPage", "name": "Buy Train Tickets", "url": "https://trackmytrain.pk/buy-train-tickets" },
+        { "@type": "WebPage", "name": "Schedule Guide", "url": "https://trackmytrain.pk/schedule-guide" },
+        { "@type": "WebPage", "name": "Railway Helpline", "url": "https://trackmytrain.pk/railway-helpline" },
         { "@type": "WebPage", "name": "Express Trains", "url": "https://trackmytrain.pk/express-trains" },
         { "@type": "WebPage", "name": "Green Line Express", "url": "https://trackmytrain.pk/green-line-express" },
         { "@type": "WebPage", "name": "FAQ", "url": "https://trackmytrain.pk/faq" },
@@ -366,11 +369,11 @@
       "numberOfItems": 6,
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Green Line Express (101UP/102DN)", "url": "https://trackmytrain.pk/green-line-express", "description": "Pakistan's fastest train — Islamabad to Karachi in 18 hours. Premium AC Business, AC Standard & Economy with meals, WiFi, power outlets."},
-        {"@type": "ListItem", "position": 2, "name": "Tezgam Express (7UP/8DN)", "url": "https://trackmytrain.pk/train/7", "description": "Pakistan's most iconic express since 1973. Karachi to Rawalpindi in 22 hours with affordable Economy class."},
-        {"@type": "ListItem", "position": 3, "name": "Karakoram Express (11UP/12DN)", "url": "https://trackmytrain.pk/train/11", "description": "Most popular Karachi–Lahore service. 22 hours with Sleeper, AC Standard, and Economy classes."},
-        {"@type": "ListItem", "position": 4, "name": "Khyber Mail (1UP/2DN)", "url": "https://trackmytrain.pk/train/1", "description": "Longest daily service covering entire Main Line 1 — Karachi to Peshawar, 1,680 km through all four provinces."},
-        {"@type": "ListItem", "position": 5, "name": "Business Express (5UP/6DN)", "url": "https://trackmytrain.pk/train/5", "description": "Karachi to Lahore in 20 hours. AC Sleeper, AC Parlour with on-board refreshments for business travelers."},
-        {"@type": "ListItem", "position": 6, "name": "Jaffar Express (39UP/40DN)", "url": "https://trackmytrain.pk/train/39", "description": "Quetta to Peshawar through dramatic Bolan Pass — Pakistan's most scenic train journey."}
+        {"@type": "ListItem", "position": 2, "name": "Tezgam Express (7UP/8DN)", "url": "https://trackmytrain.pk/train/tezgam-express-7up", "description": "Pakistan's most iconic express since 1973. Karachi to Rawalpindi in 22 hours with affordable Economy class."},
+        {"@type": "ListItem", "position": 3, "name": "Karakoram Express (11UP/12DN)", "url": "https://trackmytrain.pk/train/karakoram-express-11up", "description": "Most popular Karachi–Lahore service. 22 hours with Sleeper, AC Standard, and Economy classes."},
+        {"@type": "ListItem", "position": 4, "name": "Khyber Mail (1UP/2DN)", "url": "https://trackmytrain.pk/train/khyber-mail-1up", "description": "Longest daily service covering entire Main Line 1 — Karachi to Peshawar, 1,680 km through all four provinces."},
+        {"@type": "ListItem", "position": 5, "name": "Business Express (5UP/6DN)", "url": "https://trackmytrain.pk/train/business-express-5up", "description": "Karachi to Lahore in 20 hours. AC Sleeper, AC Parlour with on-board refreshments for business travelers."},
+        {"@type": "ListItem", "position": 6, "name": "Jaffar Express (39UP/40DN)", "url": "https://trackmytrain.pk/train/jaffar-express-39up", "description": "Quetta to Peshawar through dramatic Bolan Pass — Pakistan's most scenic train journey."}
       ]
     }
     </script>
@@ -412,9 +415,9 @@
           <h1 class="ssr-h1">Track My Train — <em>Live Railway GPS Tracker</em></h1>
           <p class="ssr-desc">See exactly where your Pakistan Railways train is right now. Live GPS positions, up-to-the-second delay info, and accurate ETAs for 116+ trains across 42+ stations — completely free, no signup needed.</p>
           <div class="ssr-ctas">
-            <a href="/train" class="ssr-cta ssr-cta-primary" role="button">🚂 Open Live Tracker →</a>
-            <a href="/find-my-train" class="ssr-cta ssr-cta-secondary">📍 Find My Train (GPS)</a>
-            <a href="/schedule" class="ssr-cta ssr-cta-secondary">🕐 View Schedules</a>
+             <a href="/live-train" class="ssr-cta ssr-cta-primary" role="button">🚂 Open Live Tracker →</a>
+             <a href="/find-my-train" class="ssr-cta ssr-cta-secondary">📍 Find My Train (GPS)</a>
+             <a href="/train-schedule" class="ssr-cta ssr-cta-secondary">🕐 View Schedules</a>
           </div>
           <div class="ssr-stats" role="group" aria-label="Network statistics">
             <div class="ssr-stat" role="status">
