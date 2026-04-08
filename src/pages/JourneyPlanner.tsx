@@ -259,7 +259,6 @@ export default function JourneyPlannerPage() {
                 icon={Navigation}
                 iconColor="bg-primary"
                 label="From Station"
-                labelUrdu=""
                 apiStations={apiStations}
               />
               
@@ -282,7 +281,6 @@ export default function JourneyPlannerPage() {
                 icon={MapPin}
                 iconColor="bg-destructive"
                 label="To Station"
-                labelUrdu=""
                 apiStations={apiStations}
               />
             </div>

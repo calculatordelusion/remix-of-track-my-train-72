@@ -26,7 +26,7 @@ const aboutFaqs = [
 
 const teamValues = [
   { icon: Target, title: "Accuracy First", desc: "Every data point is verified. We combine GPS tracking with official schedules to deliver the most reliable train information in Pakistan.", gradient: "gradient-card-emerald" },
-  { icon: Users, title: "Built for Everyone", desc: "Bilingual support (English & Urdu), mobile-optimized, works on slow 2G/3G networks. Designed for every Pakistani traveler regardless of device or location.", gradient: "gradient-card-amber" },
+  { icon: Users, title: "Built for Everyone", desc: "Mobile-optimized, works on slow 2G/3G networks. Designed for every Pakistani traveler regardless of device or location.", gradient: "gradient-card-amber" },
   { icon: Shield, title: "Privacy by Design", desc: "No accounts required, no personal data tracking, no data selling. GPS data from Find My Train is processed locally and never stored on our servers.", gradient: "gradient-card-blue" },
   { icon: Globe, title: "Independence", desc: "We operate independently, free from political or commercial pressure. Our only allegiance is to Pakistani travelers who depend on accurate information.", gradient: "gradient-card-purple" },
   { icon: Zap, title: "Speed & Performance", desc: "Optimized for Pakistan's mobile networks. Pages load in under 2 seconds, data refreshes every 5 seconds, and the entire platform works on basic 2G connections.", gradient: "gradient-card-rose" },
