@@ -113,7 +113,7 @@ export default function CheckDelays() {
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Pakistan Railways Delay Checker",
-          "url": "https://trackmytrain.pk/check-delays",
+          "url": "https://trackmytrain.com.pk/check-delays",
           "applicationCategory": "TravelApplication",
           "operatingSystem": "Web",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },

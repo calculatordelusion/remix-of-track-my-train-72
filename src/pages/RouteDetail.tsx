@@ -43,13 +43,13 @@ export default function RouteDetailPage() {
           "@type": "ItemList",
           "name": `Trains from ${route.from} to ${route.to}`,
           "description": `All ${route.dailyTrains}+ daily train services on the ${route.from}–${route.to} railway route with schedules, durations, and live tracking.`,
-          "url": `https://trackmytrain.pk/routes/${route.slug}`,
+          "url": `https://trackmytrain.com.pk/routes/${route.slug}`,
           "numberOfItems": route.trainOptions.length,
           "itemListElement": route.trainOptions.map((train, i) => ({
             "@type": "ListItem",
             "position": i + 1,
             "name": train.name,
-            "url": `https://trackmytrain.pk/train/${generateTrainSlug(train.name, train.number)}`,
+            "url": `https://trackmytrain.com.pk/train/${generateTrainSlug(train.name, train.number)}`,
             "item": {
               "@type": "TrainTrip",
               "name": train.name,

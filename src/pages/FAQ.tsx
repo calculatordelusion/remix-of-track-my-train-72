@@ -76,9 +76,9 @@ export default function FAQPage() {
           "@type": "WebPage",
           "name": "Pakistan Railways FAQ",
           "description": "25+ frequently asked questions about Pakistan Railways travel",
-          "url": "https://trackmytrain.pk/faq",
+          "url": "https://trackmytrain.com.pk/faq",
           "mainEntity": { "@type": "FAQPage" },
-          "isPartOf": { "@type": "WebSite", "name": "Track My Train", "url": "https://trackmytrain.pk" }
+          "isPartOf": { "@type": "WebSite", "name": "Track My Train", "url": "https://trackmytrain.com.pk" }
         }]}
       />
       {/* Hero */}

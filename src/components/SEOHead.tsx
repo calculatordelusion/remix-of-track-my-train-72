@@ -28,7 +28,7 @@ export default function SEOHead({
   description,
   canonical,
   keywords,
-  ogImage = "https://trackmytrain.pk/og-image.png",
+  ogImage = "https://trackmytrain.com.pk/og-image.png",
   ogType = "website",
   breadcrumbs,
   faqSchema,
@@ -41,7 +41,7 @@ export default function SEOHead({
   primaryEntity,
   contentCategory = "informational",
 }: SEOHeadProps) {
-  const fullCanonical = canonical.startsWith("http") ? canonical : `https://trackmytrain.pk${canonical}`;
+  const fullCanonical = canonical.startsWith("http") ? canonical : `https://trackmytrain.com.pk${canonical}`;
   const currentDate = new Date().toISOString().split("T")[0];
 
   // Enhanced WebPage schema with E-E-A-T signals
@@ -58,13 +58,13 @@ export default function SEOHead({
     "isPartOf": {
       "@type": "WebSite",
       "name": "Track My Train",
-      "url": "https://trackmytrain.pk"
+      "url": "https://trackmytrain.com.pk"
     },
     // E-E-A-T: Author with expertise credentials
     "author": {
       "@type": "Organization",
       "name": "Track My Train",
-      "url": "https://trackmytrain.pk",
+      "url": "https://trackmytrain.com.pk",
       "description": "Independent railway technology team specializing in GPS telemetry, geospatial data processing, and real-time transit information systems for Pakistan Railways.",
       "foundingDate": "2024",
       "knowsAbout": ["Pakistan Railways", "Train Tracking", "GPS Telemetry", "Railway Schedules", "Public Transportation Pakistan"]
@@ -73,10 +73,10 @@ export default function SEOHead({
     "publisher": {
       "@type": "Organization",
       "name": "Track My Train",
-      "url": "https://trackmytrain.pk",
+      "url": "https://trackmytrain.com.pk",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://trackmytrain.pk/logo.png"
+        "url": "https://trackmytrain.com.pk/logo.png"
       }
     },
     // Speakable for voice/AI search
@@ -102,7 +102,7 @@ export default function SEOHead({
       "name": "Track My Train"
     },
     "copyrightYear": 2024,
-    "license": "https://trackmytrain.pk/terms"
+    "license": "https://trackmytrain.com.pk/terms"
   };
 
   return (
@@ -179,7 +179,7 @@ export default function SEOHead({
               "@type": "ListItem",
               "position": i + 1,
               "name": b.name,
-              "item": b.url.startsWith("http") ? b.url : `https://trackmytrain.pk${b.url}`,
+              "item": b.url.startsWith("http") ? b.url : `https://trackmytrain.com.pk${b.url}`,
             })),
           })}
         </script>

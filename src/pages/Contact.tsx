@@ -11,10 +11,10 @@ import SEOHead from "@/components/SEOHead";
 const contactFaqs = [
   { q: "How long does it take to get a response from TrackMyTrain.pk?", a: "We typically respond to all inquiries within 2-3 business days. For urgent bug reports that affect live tracking accuracy, we aim to respond within 24 hours. Our team monitors submissions daily during business hours (Monday–Friday, 9 AM – 6 PM PKT)." },
   { q: "Can I report incorrect train schedule data?", a: "Absolutely! If you notice a train's schedule, route, or station information is incorrect on our platform, please use the contact form with the subject 'Train Data Issue'. Include the train name/number and what data appears incorrect. We verify and update our database regularly based on community reports." },
-  { q: "How do I suggest a new feature for TrackMyTrain.pk?", a: "We love hearing feature ideas from our community! Use the contact form with the subject 'Feature Request' or visit our dedicated Feature Request page at trackmytrain.pk/request-feature. Popular community-requested features have included the Find My Train GPS detector and the delay prediction system." },
+  { q: "How do I suggest a new feature for TrackMyTrain.pk?", a: "We love hearing feature ideas from our community! Use the contact form with the subject 'Feature Request' or visit our dedicated Feature Request page at trackmytrain.com.pk/request-feature. Popular community-requested features have included the Find My Train GPS detector and the delay prediction system." },
   { q: "Is there a phone number I can call for train-related queries?", a: "TrackMyTrain.pk is a digital-only platform and does not operate a phone helpline. For official Pakistan Railways inquiries like ticket booking, cancellations, or lost property, please call the Pakistan Railways helpline at 117, which is available 24/7." },
   { q: "Can I report a bug or technical issue with the website?", a: "Yes! Please use the contact form with the subject 'Bug Report' and include as much detail as possible: your device type, browser, what page you were on, and what happened. Screenshots are extremely helpful. Technical bugs are prioritized in our development queue." },
-  { q: "Does TrackMyTrain.pk have social media accounts?", a: "Currently, TrackMyTrain.pk operates primarily through our website. We focus all our development energy on improving the tracking platform itself. For updates and announcements, check our blog at trackmytrain.pk/blog." },
+  { q: "Does TrackMyTrain.pk have social media accounts?", a: "Currently, TrackMyTrain.pk operates primarily through our website. We focus all our development energy on improving the tracking platform itself. For updates and announcements, check our blog at trackmytrain.com.pk/blog." },
   { q: "Can I partner with TrackMyTrain.pk or advertise on the platform?", a: "We're open to partnerships that benefit Pakistani railway travelers. For partnership inquiries, please use the contact form with the subject 'Other Inquiry' and describe your proposal. We evaluate all partnership requests based on how they can improve the experience for our users." },
   { q: "I found wrong delay data for a specific train. What should I do?", a: "Delay calculations depend on real-time GPS data, which can occasionally be affected by signal issues, especially in mountainous or tunnel sections. If you consistently notice incorrect delay data for a specific train, please report it via the contact form with the train name, date, and your observed vs. displayed delay." },
   { q: "Can I contribute to TrackMyTrain.pk as a developer?", a: "We appreciate the enthusiasm! If you're a developer interested in contributing to Pakistan's railway technology ecosystem, please reach out via the contact form with the subject 'Other Inquiry'. Describe your skills, experience, and how you'd like to contribute." },
@@ -56,11 +56,11 @@ export default function ContactPage() {
           "mainEntity": {
             "@type": "Organization",
             "name": "Track My Train",
-            "url": "https://trackmytrain.pk",
+            "url": "https://trackmytrain.com.pk",
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "Customer Support",
-              "email": "info@trackmytrain.pk",
+              "email": "info@trackmytrain.com.pk",
                 "availableLanguage": ["English"],
               "areaServed": { "@type": "Country", "name": "Pakistan" }
             }
@@ -93,7 +93,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 -mt-6 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {[
-            { icon: Mail, value: "Email Us", label: "info@trackmytrain.pk", gradient: "gradient-card-emerald" },
+            { icon: Mail, value: "Email Us", label: "info@trackmytrain.com.pk", gradient: "gradient-card-emerald" },
             { icon: Phone, value: "Helpline", label: "Pakistan Railways: 117", gradient: "gradient-card-amber" },
             { icon: Clock, value: "Response", label: "2-3 Business Days", gradient: "gradient-card-blue" },
             { icon: MapPin, value: "Location", label: "Lahore, Pakistan", gradient: "gradient-card-purple" },

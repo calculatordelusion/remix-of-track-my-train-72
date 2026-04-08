@@ -9,7 +9,7 @@ const aboutFaqs = [
   { q: "Who operates TrackMyTrain.pk?", a: "TrackMyTrain.pk is run by an independent team of software engineers and data analysts based in Pakistan. We have zero affiliation with Pakistan Railways, the Ministry of Railways, or any government department. For official bookings and complaints, dial the Railways helpline 117." },
   { q: "Where does TrackMyTrain.pk source its data?", a: "We aggregate publicly broadcast GPS telemetry and cross-reference it with gazetted Pakistan Railways timetables. Our delay-computation engine then layers real-time speed, stop patterns, and historical performance data to generate live ETAs. No proprietary or paywalled data sources are used." },
   { q: "Does using TrackMyTrain.pk cost anything?", a: "Every tool on the platform — live tracking, journey planner, delay checker, station directory — is permanently free. There are no subscriptions, premium tiers, or feature gates. The project sustains itself through contextual advertising." },
-  { q: "Do I need to register or log in?", a: "No registration is required, ever. Open trackmytrain.pk in any browser and start tracking immediately. We collect zero personal data — no email, no phone number, no cookies beyond essential functionality." },
+  { q: "Do I need to register or log in?", a: "No registration is required, ever. Open trackmytrain.com.pk in any browser and start tracking immediately. We collect zero personal data — no email, no phone number, no cookies beyond essential functionality." },
   { q: "How precise is the live GPS tracking?", a: "Positional accuracy is typically 100–500 meters, depending on the onboard GPS hardware and cellular connectivity along the route. Our refresh cycle is 5 seconds in the tracker view. Delay estimates are accurate within ±3–5 minutes under normal operating conditions." },
   { q: "Which devices and browsers are supported?", a: "TrackMyTrain.pk is a Progressive Web App that works on all modern browsers — Chrome, Safari, Firefox, Edge — on phones, tablets, and desktops. The payload is optimized to load under 2 seconds on 2G/3G connections common across rural Pakistan." },
   { q: "How many trains does the platform cover?", a: "We monitor 164+ scheduled Pakistan Railways services, including all Express, Mail, and AC-only trains across the ML-1 mainline (Karachi–Peshawar), the Bolan corridor (Quetta link), and branch lines to Sialkot, Faisalabad, and Havelian." },
@@ -17,11 +17,11 @@ const aboutFaqs = [
   { q: "How frequently does position data refresh?", a: "The live tracker page polls for new GPS data every 5 seconds. Individual train detail pages refresh every 30 seconds. This near-real-time cadence ensures you always see the most current position without excessive data consumption." },
   { q: "What exactly does 'Find My Train' do?", a: "When you grant browser location access, our algorithm compares your GPS coordinates against the geometries of all active train routes. If your position falls within 2 km of a running train's current route segment, we match you to that service and display its schedule, delay, and next-stop info — no manual searching needed." },
   { q: "Does the site work without internet?", a: "Static schedule and station data is cached via our service worker for limited offline access. However, live GPS tracking inherently requires an active connection. We keep data payloads under 50 KB so the tracker functions even on very slow networks." },
-  { q: "How do I report a data error?", a: "Head to trackmytrain.pk/contact to flag incorrect schedules, wrong station names, or GPS anomalies. Our data team reviews every submission and typically pushes fixes within 48 hours." },
+  { q: "How do I report a data error?", a: "Head to trackmytrain.com.pk/contact to flag incorrect schedules, wrong station names, or GPS anomalies. Our data team reviews every submission and typically pushes fixes within 48 hours." },
   { q: "Which railway corridors are covered?", a: "Full coverage: Main Line 1 (Karachi–Peshawar), Bolan corridor (Jacobabad–Quetta), branch lines to Sialkot, Faisalabad–Sargodha, Rawalpindi–Havelian, and Hyderabad–Mirpur Khas. Over 342 stations across all four provinces are indexed." },
   { q: "Is there a mobile app?", a: "TrackMyTrain.pk is a PWA — add it to your home screen on Android or iOS for a native-app experience without any app-store download. It uses minimal storage and updates automatically." },
   { q: "How is delay calculated technically?", a: "Our engine projects where a train should be at any given moment based on departure time, inter-station average speeds, and scheduled halt durations. The difference between this projected position and the actual GPS position yields the delay figure, which is then smoothed over a rolling 60-second window to filter GPS jitter." },
-  { q: "Can I search for connecting trains?", a: "Yes. The Journey Planner at trackmytrain.pk/planner accepts any origin-destination pair and returns all direct trains. For connections, check junction stations — Lahore, Rawalpindi, Multan, Sukkur — where multiple services converge." },
+  { q: "Can I search for connecting trains?", a: "Yes. The Journey Planner at trackmytrain.com.pk/planner accepts any origin-destination pair and returns all direct trains. For connections, check junction stations — Lahore, Rawalpindi, Multan, Sukkur — where multiple services converge." },
 ];
 
 const teamValues = [
@@ -51,7 +51,7 @@ export default function AboutPage() {
           "mainEntity": {
             "@type": "Organization",
             "name": "Track My Train",
-            "url": "https://trackmytrain.pk",
+            "url": "https://trackmytrain.com.pk",
             "foundingDate": "2024",
             "foundingLocation": { "@type": "Place", "name": "Lahore, Pakistan" },
             "description": "Independent platform providing free, real-time GPS train tracking for Pakistan Railways passengers.",

@@ -4,7 +4,7 @@ import { AlertTriangle, Info, Shield, Train, CreditCard, Globe, ExternalLink, Co
 import SEOHead from "@/components/SEOHead";
 
 const disclaimerSections = [
-  { icon: Info, title: "General Disclaimer", gradient: "gradient-card-emerald", content: "The information provided on Track My Train (trackmytrain.pk) is for general informational purposes only. While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of any information, products, services, or related graphics contained on the website." },
+  { icon: Info, title: "General Disclaimer", gradient: "gradient-card-emerald", content: "The information provided on Track My Train (trackmytrain.com.pk) is for general informational purposes only. While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of any information, products, services, or related graphics contained on the website." },
   { icon: Train, title: "Train Data Accuracy", gradient: "gradient-card-amber", content: "Train positions, schedules, delays, estimated arrival times, and fare information displayed on our platform are derived from publicly available GPS telemetry feeds and algorithmic computations. This data may not always reflect actual real-time conditions. Factors such as signal outages, unscheduled stops, route diversions, weather events, and technical issues may affect accuracy. Always confirm critical travel plans with Pakistan Railways helpline (117) or at your nearest booking office." },
   { icon: Shield, title: "No Official Affiliation", gradient: "gradient-card-blue", content: "Track My Train is a completely independent, privately-operated information service. We are NOT affiliated with, endorsed by, sponsored by, or connected to Pakistan Railways, the Ministry of Railways, or any other government entity. Our use of publicly available train names, station names, and route information is for informational purposes only and does not imply any official relationship." },
   { icon: CreditCard, title: "Fare & Ticket Information", gradient: "gradient-card-purple", content: "Ticket prices and fare information displayed on our platform are approximate estimates based on publicly available data. Actual fares may vary based on season, class availability, promotional offers, and Pakistan Railways policy changes. Track My Train does not sell tickets and cannot guarantee any fare amount. For official ticket pricing and booking, contact Pakistan Railways directly." },
@@ -66,7 +66,7 @@ export default function DisclaimerPage() {
                   <div>
                     <h2 className="text-lg font-bold text-foreground mb-3">Original Content & Copyright Notice</h2>
                     <div className="space-y-3 text-muted-foreground leading-relaxed">
-                      <p>All textual content, editorial articles, travel guides, user interface designs, CSS styling, page layouts, source code, and software on trackmytrain.pk are <strong className="text-foreground">original works independently created by the Track My Train development team</strong>. These works are protected under:</p>
+                      <p>All textual content, editorial articles, travel guides, user interface designs, CSS styling, page layouts, source code, and software on trackmytrain.com.pk are <strong className="text-foreground">original works independently created by the Track My Train development team</strong>. These works are protected under:</p>
                       <ul className="list-disc ml-6 space-y-1">
                         <li><strong className="text-foreground">Pakistan's Copyright Ordinance, 1962</strong> (as amended 2000) — Sections 3, 56, and 66</li>
                         <li><strong className="text-foreground">The Berne Convention</strong> for the Protection of Literary and Artistic Works (1886)</li>
@@ -168,7 +168,7 @@ export default function DisclaimerPage() {
                       <p>If you believe specific <strong className="text-foreground">original creative expression</strong> (not facts) on our site infringes your copyright, you must provide:</p>
                       <ol className="list-decimal ml-6 space-y-1">
                         <li>Identification of the specific copyrighted work (with proof of ownership or registration)</li>
-                        <li>The exact URL(s) on trackmytrain.pk containing the allegedly infringing material</li>
+                        <li>The exact URL(s) on trackmytrain.com.pk containing the allegedly infringing material</li>
                         <li>A <strong>side-by-side comparison</strong> showing the specific expression that was copied (not general topics or facts)</li>
                         <li>Your full legal name, address, phone number, and email</li>
                         <li>A statement under penalty of perjury that you have a good faith belief the use is not authorized</li>
