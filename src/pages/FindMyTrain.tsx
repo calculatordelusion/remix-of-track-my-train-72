@@ -99,14 +99,14 @@ export default function FindMyTrainPage() {
         {/* Live stats in hero */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
           {[
-            { value: stats.running || stats.liveCount || stats.moving, label: "Trains Moving", color: "text-emerald-400" },
-            { value: stats.atStation, label: "At Stations", color: "text-amber-400" },
-            { value: stats.total, label: "Total Trackable", color: "text-blue-400" },
-            { value: "500m", label: "Detection Range", color: "text-purple-400" },
+            { value: stats.running || stats.liveCount || stats.moving, label: "Trains Moving", color: "text-emerald-600 dark:text-emerald-400" },
+            { value: stats.atStation, label: "At Stations", color: "text-amber-600 dark:text-amber-400" },
+            { value: stats.total, label: "Total Trackable", color: "text-blue-600 dark:text-blue-400" },
+            { value: "500m", label: "Detection Range", color: "text-purple-600 dark:text-purple-400" },
           ].map((s, i) => (
             <div key={i} className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-3 text-center border border-primary-foreground/10">
               <div className={`text-2xl font-bold stat-counter ${s.color}`}>{s.value}</div>
-              <div className="text-xs opacity-70">{s.label}</div>
+              <div className="text-xs text-[hsl(var(--hero-text-muted))]">{s.label}</div>
             </div>
           ))}
         </div>

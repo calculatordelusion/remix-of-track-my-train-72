@@ -1652,9 +1652,9 @@ export default function HomePage() {
             {/* Trust signals row */}
             <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8">
               {[
-                { icon: Shield, text: "100% Free", color: "text-emerald-400" },
-                { icon: Wifi, text: "Real-Time GPS", color: "text-blue-400" },
-                { icon: Train, text: "164+ Trains", color: "text-amber-400" },
+                { icon: Shield, text: "100% Free", color: "text-emerald-600 dark:text-emerald-400" },
+                { icon: Wifi, text: "Real-Time GPS", color: "text-blue-600 dark:text-blue-400" },
+                { icon: Train, text: "164+ Trains", color: "text-amber-600 dark:text-amber-400" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-[hsl(var(--hero-text-muted))]">
                   <item.icon className={`w-4 h-4 ${item.color}`} />
