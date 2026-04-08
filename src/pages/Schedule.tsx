@@ -93,7 +93,7 @@ export default function SchedulePage() {
             "@type": "ListItem",
             "position": i + 1,
             "name": `${t.name} (${t.number})`,
-            "url": `https://trackmytrain.pk/train/${t.id}`,
+            "url": `https://trackmytrain.pk/train/${generateTrainSlug(t.name, t.number)}`,
             "item": {
               "@type": "Trip",
               "name": t.name,

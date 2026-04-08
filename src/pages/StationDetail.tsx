@@ -138,7 +138,7 @@ export default function StationDetailPage() {
                   <div className="space-y-2">
                     {stationTrains.map((train) => (
                       <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`} className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
-                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">#{train.id}</div>
+                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">#{train.number}</div>
                         <div className="flex-1">
                           <div className="font-medium text-sm">{train.name} {train.number}</div>
                           <div className="text-xs text-muted-foreground">{train.from} → {train.to}</div>
