@@ -265,7 +265,7 @@ export default function CheckDelays() {
                         <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${delayBadge(train.delayMinutes)}`}>
                           {train.delayMinutes <= 0 ? "ON TIME" : train.delayMinutes < 30 ? "MINOR DELAY" : train.delayMinutes < 60 ? "MAJOR DELAY" : "SEVERE DELAY"}
                         </span>
-                        <span className="text-xs text-muted-foreground">#{train.id}</span>
+                        <span className="text-xs text-muted-foreground">#{train.number}</span>
                       </div>
                       <h3 className="font-bold group-hover:text-primary transition-colors">
                         {train.name}
