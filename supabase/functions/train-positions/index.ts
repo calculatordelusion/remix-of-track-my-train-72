@@ -1248,7 +1248,7 @@ Deno.serve(async (req) => {
       liveTrainIds,
       stats,
       timestamp: pktNow.toISOString(),
-      source: mirrorData?.positions?.length ? 'traintracking_live_mirror' : 'local_fallback',
+      source: 'trackmytrain_gps_engine',
     }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
