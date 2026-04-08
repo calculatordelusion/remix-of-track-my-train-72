@@ -24,6 +24,10 @@ export interface TrainStop {
   platform?: number;
 }
 
+export function generateTrainSlug(name: string, number: string): string {
+  return `${name}-${number}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 // Complete 103 trains sourced from official Pakistan Railways timetable data
 export const trains: Train[] = [
   { id: 1, number: "1UP", name: "Khyber Mail", nameUrdu: "خیبر میل 1 اپ", from: "Karachi Cantt", to: "Peshawar Cantt", type: "express", status: "active", days: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"], departureTime: "15:25", arrivalTime: "21:55", duration: "30h 30m", stops: [] },
