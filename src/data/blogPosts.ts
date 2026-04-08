@@ -49,10 +49,10 @@ export const blogPosts: BlogPost[] = [
     metaDescription: "Step-by-step guide to checking Pakistan Railways train delays in 2026. Use GPS live tracking, helpline 117, and station counters to know exactly when your train will arrive.",
     author: "Track My Train Editorial",
     faqs: [
-      { q: "How do I check if my Pakistan Railways train is delayed?", a: "Visit trackmytrain.pk, enter your train name or number, and view the live GPS position. The delay is shown in minutes next to the train status. You can also call the Pakistan Railways helpline at 117 for voice-based delay information." },
+      { q: "How do I check if my Pakistan Railways train is delayed?", a: "Visit trackmytrain.com.pk, enter your train name or number, and view the live GPS position. The delay is shown in minutes next to the train status. You can also call the Pakistan Railways helpline at 117 for voice-based delay information." },
       { q: "Is the delay information on Track My Train accurate?", a: "Our GPS data refreshes every 5 seconds and is sourced from Pakistan Railways' onboard tracking systems. Accuracy is typically within 1–2 minutes of the actual position. However, signal gaps in remote areas may cause brief delays in updates." },
       { q: "What causes most train delays in Pakistan?", a: "The top causes are fog during winter months (November–February), monsoon flooding in July–September, track maintenance on the ML-1 corridor, signal failures at major junctions like Lahore and Sukkur, and VIP movements requiring security clearance." },
-      { q: "Should I arrive at the station on time if my train is delayed?", a: "We recommend arriving 15–20 minutes before the updated ETA, not the scheduled time. Delays can fluctuate — a train might recover time or lose more. Check trackmytrain.pk continuously until departure." },
+      { q: "Should I arrive at the station on time if my train is delayed?", a: "We recommend arriving 15–20 minutes before the updated ETA, not the scheduled time. Delays can fluctuate — a train might recover time or lose more. Check trackmytrain.com.pk continuously until departure." },
     ],
     content: `Every year, millions of Pakistanis depend on the railway network for inter-city travel. Yet one of the most common frustrations is uncertainty about whether a train is running on schedule. Standing for hours at a platform without knowing when — or if — your train will arrive is an experience many travelers know too well.
 
@@ -72,7 +72,7 @@ The most common delay causes include:
 
 ## Method 1: GPS Live Tracking on Track My Train
 
-The fastest and most accurate way to check delay status is to use a real-time GPS tracking platform. On trackmytrain.pk, you can:
+The fastest and most accurate way to check delay status is to use a real-time GPS tracking platform. On trackmytrain.com.pk, you can:
 
 1. **Search by train name or number** — Type "Tezgam," "Green Line," or the train number (e.g., "5UP") into the search bar.
 2. **View the live map position** — The train's real-time GPS location appears on an interactive map, along with its current speed and bearing.
@@ -103,11 +103,11 @@ The PR website (pakrail.gov.pk) occasionally posts delay notices, but updates ar
 
 Based on feedback from thousands of regular travelers, here are battle-tested strategies:
 
-- **Always check before leaving home.** A 10-second check on trackmytrain.pk can save you hours of waiting at the platform.
+- **Always check before leaving home.** A 10-second check on trackmytrain.com.pk can save you hours of waiting at the platform.
 - **Set a buffer of 30+ minutes.** Even "on time" trains may arrive a few minutes early or late. Giving yourself a buffer ensures you don't miss your train and aren't waiting unnecessarily.
 - **Monitor continuously.** Delays change as trains recover time or encounter new problems. Check every 15–20 minutes if your train is significantly late.
 - **Winter travel: expect delays.** If you're traveling through Punjab between November and February, build a minimum 2-hour buffer into your plans.
-- **Use the Find My Train feature.** If you're already at the station, our GPS auto-detection feature (trackmytrain.pk/find-my-train) can identify which train is approaching your location.
+- **Use the Find My Train feature.** If you're already at the station, our GPS auto-detection feature (trackmytrain.com.pk/find-my-train) can identify which train is approaching your location.
 - **Share the link.** Send the live tracking page to family members waiting to pick you up so they can monitor your train's progress in real-time.
 
 ## What to Do During a Long Delay
@@ -122,7 +122,7 @@ If you're stuck at a station with a multi-hour delay:
 
 ## Bottom Line
 
-Checking train delays in Pakistan has become significantly easier thanks to GPS-based live tracking platforms. Instead of relying on outdated word-of-mouth information or spending hours at a platform, you can now check your train's exact position and ETA from your phone in seconds. We recommend using trackmytrain.pk as your primary delay-checking tool and calling the 117 helpline as a backup when you don't have internet connectivity.`,
+Checking train delays in Pakistan has become significantly easier thanks to GPS-based live tracking platforms. Instead of relying on outdated word-of-mouth information or spending hours at a platform, you can now check your train's exact position and ETA from your phone in seconds. We recommend using trackmytrain.com.pk as your primary delay-checking tool and calling the 117 helpline as a backup when you don't have internet connectivity.`,
   },
   {
     slug: "pakistan-railways-ticket-refund-process-2026",
@@ -224,7 +224,7 @@ If your refund is delayed or disputed:
 - Visit the Station Master's office at any major station
 - File a written complaint at the divisional railway office
 
-Remember, you can always check your train's live status on trackmytrain.pk before deciding to cancel — if the delay isn't too long, it might be worth waiting rather than losing a portion of your fare.`,
+Remember, you can always check your train's live status on trackmytrain.com.pk before deciding to cancel — if the delay isn't too long, it might be worth waiting rather than losing a portion of your fare.`,
   },
   {
     slug: "best-trains-karachi-to-lahore-2026",
@@ -244,7 +244,7 @@ Remember, you can always check your train's live status on trackmytrain.pk befor
       { q: "What is the fastest train from Karachi to Lahore?", a: "The Green Line Express (5UP/6DN) is the fastest, completing the journey in approximately 18–19 hours. It offers AC Business class with complimentary meals, WiFi, and reclining seats. The Karakoram Express takes about 19–20 hours, while the Tezgam takes approximately 22–24 hours." },
       { q: "How much does a Karachi to Lahore train ticket cost in 2026?", a: "Fares range from approximately Rs. 1,200 for Economy class on the Tezgam to Rs. 8,500+ for AC Business class on the Green Line Express. AC Standard on most trains is Rs. 3,500–5,000. Prices vary by season and may be updated by Pakistan Railways." },
       { q: "Which train from Karachi to Lahore is best for families?", a: "The Green Line Express is ideal for families due to its comfortable AC coaches, complimentary meals, cleaner washrooms, and better security. For budget-conscious families, the Karakoram Express AC Standard class offers good comfort at a lower price." },
-      { q: "Can I track my Karachi–Lahore train in real-time?", a: "Yes! Visit trackmytrain.pk and search for your train by name or number. You'll see the live GPS position, current speed, delay status, and updated ETAs for all remaining stations including Lahore Junction." },
+      { q: "Can I track my Karachi–Lahore train in real-time?", a: "Yes! Visit trackmytrain.com.pk and search for your train by name or number. You'll see the live GPS position, current speed, delay status, and updated ETAs for all remaining stations including Lahore Junction." },
     ],
     content: `The Karachi–Lahore corridor is the busiest and most important railway route in Pakistan, stretching approximately 1,228 kilometers along the Main Line (ML-1). Millions of passengers travel this route annually for business, family visits, and tourism. With multiple train options available, choosing the right one can significantly impact your travel experience.
 
@@ -344,7 +344,7 @@ Stops at virtually every station, making it the slowest but most accessible opti
 2. **Eid season:** Book 2–3 weeks ahead. All trains run at full capacity and special trains may be added.
 3. **Window or aisle?** For scenic views through Sindh and Punjab, request a window seat.
 4. **Food:** Green Line includes meals; for other trains, pack snacks or buy from platform vendors at major stops (Sukkur, Multan, Sahiwal).
-5. **Track your train live** on trackmytrain.pk to know exactly when it will arrive at your boarding station.
+5. **Track your train live** on trackmytrain.com.pk to know exactly when it will arrive at your boarding station.
 
 ## Which Train Should You Choose?
 
@@ -353,7 +353,7 @@ Stops at virtually every station, making it the slowest but most accessible opti
 - **Tight budget → Tezgam Express.** Economy class is the cheapest way to cover the route.
 - **Intermediate stations → Pakistan Express.** It stops everywhere.
 
-Whatever train you choose, we recommend tracking it live on trackmytrain.pk before heading to the station. Real-time GPS tracking eliminates the guesswork and ensures you arrive at the platform just in time.`,
+Whatever train you choose, we recommend tracking it live on trackmytrain.com.pk before heading to the station. Real-time GPS tracking eliminates the guesswork and ensures you arrive at the platform just in time.`,
   },
   {
     slug: "best-scenic-train-journeys-pakistan",
@@ -444,7 +444,7 @@ The approach to Margalla station near Islamabad offers views of the Margalla Hil
 - **Book AC Standard or above** for the most comfortable viewing experience — you can open windows in Economy but AC coaches are climate-controlled
 - **Bring a camera with good zoom** — many scenic moments happen quickly
 - **Pack snacks and water** — some scenic sections have no vendors
-- **Check trackmytrain.pk** before departure to ensure your train is running on schedule
+- **Check trackmytrain.com.pk** before departure to ensure your train is running on schedule
 - **Tell the conductor** you're interested in scenery — experienced staff sometimes point out notable landmarks`,
   },
   {
@@ -531,7 +531,7 @@ The Green Line Express includes complimentary meals, but for all other trains:
 2. **Keep doors and windows secured** — Economy class windows can open fully
 3. **Store valuables in locked bags** during sleep
 4. **Note the coach number and seat numbers** in case family members separate
-5. **Keep a phone charged** and share your train's live tracking link (trackmytrain.pk) with family at home
+5. **Keep a phone charged** and share your train's live tracking link (trackmytrain.com.pk) with family at home
 6. **Teach older children** the coach attendant's location in case of emergency
 
 ## Handling Motion Sickness
@@ -573,7 +573,7 @@ Train travel creates memories that flights never can. With the right preparation
     faqs: [
       { q: "How do I buy a Pakistan Railways train ticket?", a: "You can buy tickets at any major station's booking counter (bring your CNIC), through the Pakistan Railways e-ticketing website, or through authorized travel agents. For express trains, booking 3–5 days in advance is recommended as popular trains sell out." },
       { q: "What should I bring on my first train journey?", a: "Essentials: valid ticket, CNIC, water, snacks, phone charger, light blanket (for AC coaches), and a lock for your luggage. For overnight journeys, add a small pillow, earplugs, and a change of clothes." },
-      { q: "How early should I arrive at the station?", a: "Arrive 30–45 minutes before scheduled departure for your first journey. This gives you time to find your platform, locate your coach, and settle in. Check trackmytrain.pk beforehand — if the train is delayed, adjust accordingly." },
+      { q: "How early should I arrive at the station?", a: "Arrive 30–45 minutes before scheduled departure for your first journey. This gives you time to find your platform, locate your coach, and settle in. Check trackmytrain.com.pk beforehand — if the train is delayed, adjust accordingly." },
       { q: "Is train travel in Pakistan safe?", a: "Yes, train travel in Pakistan is generally safe. AC classes have dedicated attendants and are well-monitored. Keep valuables close, lock your luggage, and don't leave belongings unattended. Travel during daylight hours if possible for your first journey." },
     ],
     content: `If you've never traveled by train in Pakistan, the experience can seem daunting. Railway stations are busy, the ticketing system has its quirks, and knowing where to go once you arrive takes a bit of insider knowledge. But train travel is one of the most rewarding ways to see Pakistan — and with this guide, your first journey will go smoothly.
@@ -687,7 +687,7 @@ Major stations like Lahore Junction, Karachi Cantt, and Rawalpindi are large, bu
 1. Keep your CNIC and ticket accessible at all times
 2. Lock luggage with a padlock
 3. Don't accept food from strangers (rare issue, but worth noting)
-4. Share your train tracking link (trackmytrain.pk) with family
+4. Share your train tracking link (trackmytrain.com.pk) with family
 5. Note the coach attendant's name and location
 6. Keep your phone charged — carry a power bank
 
@@ -711,7 +711,7 @@ Train travel in Pakistan is unlike anything else. The rhythm of the tracks, the 
     author: "Track My Train Editorial",
     faqs: [
       { q: "When should I book my Eid train ticket?", a: "Book at least 2–3 weeks before Eid for guaranteed seats. AC classes on popular trains (Green Line, Karakoram, Tezgam) sell out 10–15 days before Eid. Economy class fills up 5–7 days before. The earlier you book, the better your seat selection." },
-      { q: "Does Pakistan Railways run special trains during Eid?", a: "Yes, Pakistan Railways typically announces special Eid trains 1–2 weeks before Eid on major routes like Karachi–Lahore and Lahore–Peshawar. These are usually Economy class with limited AC coaches. Check PR announcements and trackmytrain.pk for updates." },
+      { q: "Does Pakistan Railways run special trains during Eid?", a: "Yes, Pakistan Railways typically announces special Eid trains 1–2 weeks before Eid on major routes like Karachi–Lahore and Lahore–Peshawar. These are usually Economy class with limited AC coaches. Check PR announcements and trackmytrain.com.pk for updates." },
       { q: "What if all trains are fully booked for Eid?", a: "Options include: waitlisting (cancellations do happen), checking for special trains announced closer to Eid, trying less popular departure times (late night/early morning), booking a different route with a connection, or traveling a day earlier or later than planned." },
     ],
     content: `Eid is the single busiest period for Pakistan Railways. Millions of Pakistanis travel home to celebrate with family, creating a surge in demand that tests the railway system to its limits. Trains sell out weeks in advance, stations become extremely crowded, and delays are common.
@@ -735,7 +735,7 @@ During the week before Eid-ul-Fitr and Eid-ul-Adha, Pakistan Railways carries ro
 This is the most important tip. The moment you know your Eid travel dates, book immediately. AC Business and AC Standard on premium trains (Green Line, Karakoram) sell out first, followed by AC Sleeper, then Economy.
 
 ### Check for Special Trains
-Pakistan Railways typically announces special Eid trains 1–2 weeks before Eid. These run on the busiest corridors (Karachi–Lahore, Lahore–Rawalpindi, Rawalpindi–Peshawar). Watch for announcements on the PR website and on trackmytrain.pk.
+Pakistan Railways typically announces special Eid trains 1–2 weeks before Eid. These run on the busiest corridors (Karachi–Lahore, Lahore–Rawalpindi, Rawalpindi–Peshawar). Watch for announcements on the PR website and on trackmytrain.com.pk.
 
 ### Flexible Travel Dates
 If possible, travel 1–2 days before the main rush begins. The day before Eid is the absolute busiest — traveling two days before is significantly easier and tickets may still be available.
@@ -757,7 +757,7 @@ If your direct route is sold out, consider indirect options. For example, if Kar
 - **Carry extra food and water** — the journey may take longer than scheduled due to delays
 - **Keep valuables secure** — crowding creates opportunities for petty theft
 - **Be patient** — everyone is trying to get home to their families
-- **Share your live tracking link** (trackmytrain.pk) so family knows your ETA
+- **Share your live tracking link** (trackmytrain.com.pk) so family knows your ETA
 
 ### If You Can't Get a Ticket
 - **Join the waitlist** — cancellations happen, especially 1–2 days before travel
@@ -771,7 +771,7 @@ The return journey (2–3 days after Eid) is equally busy. Book your return tick
 
 ## Track Your Eid Train
 
-During the Eid rush, delays are more common than usual. Use trackmytrain.pk to monitor your train's GPS position in real-time. This is especially important during Eid when platform information boards may not be updated quickly enough and station staff are overwhelmed with inquiries.
+During the Eid rush, delays are more common than usual. Use trackmytrain.com.pk to monitor your train's GPS position in real-time. This is especially important during Eid when platform information boards may not be updated quickly enough and station staff are overwhelmed with inquiries.
 
 ## Bottom Line
 
@@ -911,7 +911,7 @@ A cross-country epic that connects Balochistan to KP via Punjab. The long journe
 
 ## Track Any Express Train Live
 
-Whichever train you choose, track its live GPS position at trackmytrain.pk. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS updates, so you always know exactly where your train is.`,
+Whichever train you choose, track its live GPS position at trackmytrain.com.pk. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS updates, so you always know exactly where your train is.`,
   },
   {
     slug: "how-to-track-train-live-pakistan",
@@ -928,9 +928,9 @@ Whichever train you choose, track its live GPS position at trackmytrain.pk. Our 
     metaDescription: "Learn how to track any Pakistan Railways train in real-time using GPS. Step-by-step guide to using Track My Train for live positions, delays, speed, and accurate ETAs in 2026.",
     author: "Track My Train Editorial",
     faqs: [
-      { q: "How does live train tracking work in Pakistan?", a: "Pakistan Railways trains are equipped with GPS tracking devices that transmit their position data. Platforms like trackmytrain.pk receive this data and display it on an interactive map, showing the train's real-time location, speed, direction, and delay status — updated every 5 seconds." },
-      { q: "Is train tracking free on Track My Train?", a: "Yes, completely free. No account, no signup, no app download required. Simply visit trackmytrain.pk on any device with a web browser and search for your train." },
-      { q: "Can I track a train on my phone?", a: "Yes. trackmytrain.pk is fully mobile-optimized and works on any smartphone browser (Chrome, Safari, Firefox). You don't need to download an app — the website works like an app on mobile." },
+      { q: "How does live train tracking work in Pakistan?", a: "Pakistan Railways trains are equipped with GPS tracking devices that transmit their position data. Platforms like trackmytrain.com.pk receive this data and display it on an interactive map, showing the train's real-time location, speed, direction, and delay status — updated every 5 seconds." },
+      { q: "Is train tracking free on Track My Train?", a: "Yes, completely free. No account, no signup, no app download required. Simply visit trackmytrain.com.pk on any device with a web browser and search for your train." },
+      { q: "Can I track a train on my phone?", a: "Yes. trackmytrain.com.pk is fully mobile-optimized and works on any smartphone browser (Chrome, Safari, Firefox). You don't need to download an app — the website works like an app on mobile." },
       { q: "How accurate is the GPS tracking?", a: "GPS positions are typically accurate to within 50–100 meters. Data refreshes every 5 seconds. In remote areas with poor cell coverage, there may be brief gaps in updates, but the system recovers automatically when signal returns." },
     ],
     content: `Knowing exactly where your train is — in real-time — transforms the travel experience. Instead of guessing when to leave for the station, calling the helpline repeatedly, or standing on a platform for hours, you can check your train's live GPS position in seconds from your phone.
@@ -948,7 +948,7 @@ Our platform covers:
 ## Step-by-Step: How to Track Your Train
 
 ### Step 1: Open Track My Train
-Visit **trackmytrain.pk** on any device. No app download needed — the website is fully optimized for mobile and desktop browsers.
+Visit **trackmytrain.com.pk** on any device. No app download needed — the website is fully optimized for mobile and desktop browsers.
 
 ### Step 2: Search for Your Train
 Use the search bar on the homepage to find your train. You can search by:
@@ -988,13 +988,13 @@ The delay is calculated by comparing the train's actual GPS position against whe
 ## Advanced Features
 
 ### Find My Train (GPS Auto-Detection)
-If you're already on a train and want to know which one, visit trackmytrain.pk/find-my-train. With your phone's GPS, we'll automatically detect which train you're on and show you the live tracking page.
+If you're already on a train and want to know which one, visit trackmytrain.com.pk/find-my-train. With your phone's GPS, we'll automatically detect which train you're on and show you the live tracking page.
 
 ### Journey Planner
-Use trackmytrain.pk/planner to find all trains between any two stations. Compare journey times, classes, and schedules to pick the best option.
+Use trackmytrain.com.pk/planner to find all trains between any two stations. Compare journey times, classes, and schedules to pick the best option.
 
 ### Delay Monitor
-Visit trackmytrain.pk/check-delays to see all currently delayed trains across the network. Useful for checking overall system status before planning your journey.
+Visit trackmytrain.com.pk/check-delays to see all currently delayed trains across the network. Useful for checking overall system status before planning your journey.
 
 ## Why Use Track My Train vs. Other Methods?
 
@@ -1126,7 +1126,7 @@ Parlor class is the most exclusive offering, available on a handful of trains. I
 | Family with children | AC Standard or AC Business |
 | Student/budget | Economy or AC Standard |
 
-Track your train's live GPS position on trackmytrain.pk regardless of which class you travel — real-time tracking works for all coach classes and all trains.`,
+Track your train's live GPS position on trackmytrain.com.pk regardless of which class you travel — real-time tracking works for all coach classes and all trains.`,
   },
   {
     slug: "karachi-to-islamabad-train-ticket-price-2026",
@@ -1225,7 +1225,7 @@ Your decision should factor in budget, comfort needs, and journey timing:
 
 - **Book 15–30 days in advance** for Green Line Express, especially AC Business — seats sell out fast during peak season.
 - **Use the RABTA app** for the fastest booking experience with JazzCash or Easypaisa payment.
-- **Check live delays** on trackmytrain.pk before leaving for the station — winter fog can delay trains by 3–8 hours.
+- **Check live delays** on trackmytrain.com.pk before leaving for the station — winter fog can delay trains by 3–8 hours.
 - **Consider afternoon departures** during fog season (Nov–Feb) as morning trains face the worst delays.
 - **AC Standard is the sweet spot** — 80% of Business class comfort at 65% of the price.
 
@@ -1241,7 +1241,7 @@ Pakistan Railways offers discounts that apply to all Karachi–Islamabad trains:
 
 ## Track Your Karachi–Islamabad Train Live
 
-Once you've booked, track your train's exact GPS position on trackmytrain.pk. Our live tracker updates every 5 seconds and shows current speed, delay status, and recalculated ETAs for every upcoming station — from Hyderabad Junction to Sukkur, Multan, Lahore, and finally Rawalpindi/Margala.`,
+Once you've booked, track your train's exact GPS position on trackmytrain.com.pk. Our live tracker updates every 5 seconds and shows current speed, delay status, and recalculated ETAs for every upcoming station — from Hyderabad Junction to Sukkur, Multan, Lahore, and finally Rawalpindi/Margala.`,
   },
   {
     slug: "rawalpindi-to-lahore-train-timing-schedule-2026",
@@ -1294,9 +1294,9 @@ This comprehensive guide lists every train operating on this route in 2026, with
 | Hazara Express | 19:00 | 23:30 | 4h 30m | Rs. 1,100 |
 | Shalimar Express | 21:00 | 01:30+1 | 4h 30m | Rs. 1,100 |
 
-*Green Line timing is approximate as it's a through-train from Karachi. Check live position on trackmytrain.pk for exact arrival at Rawalpindi.
+*Green Line timing is approximate as it's a through-train from Karachi. Check live position on trackmytrain.com.pk for exact arrival at Rawalpindi.
 
-**Note:** Timings are scheduled and subject to change. During fog season (November–February), trains through Punjab frequently experience delays of 1–4 hours. Always check trackmytrain.pk for real-time status before heading to the station.
+**Note:** Timings are scheduled and subject to change. During fog season (November–February), trains through Punjab frequently experience delays of 1–4 hours. Always check trackmytrain.com.pk for real-time status before heading to the station.
 
 ## Fare Comparison — All Classes
 
@@ -1345,11 +1345,11 @@ Green Line fares are higher because it's a premium service with complimentary me
 
 Between November and February, dense fog in Punjab can delay trains by 1–6 hours, especially morning departures. The Subak Raftar (06:00) and Awam Express (07:30) are most affected. Afternoon trains (14:00+) are significantly more reliable during fog season.
 
-**Pro tip:** Check the fog situation on trackmytrain.pk before leaving home. If your morning train shows a 3-hour delay, consider switching to an afternoon departure.
+**Pro tip:** Check the fog situation on trackmytrain.com.pk before leaving home. If your morning train shows a 3-hour delay, consider switching to an afternoon departure.
 
 ## Track Your Train Live
 
-Don't waste time at the platform wondering where your train is. Visit trackmytrain.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.`,
+Don't waste time at the platform wondering where your train is. Visit trackmytrain.com.pk and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA for Lahore Junction. Share the tracking link with whoever is picking you up at the other end.`,
   },
   {
     slug: "lahore-to-islamabad-train-timing-schedule-2026",
@@ -1401,7 +1401,7 @@ Here is the full schedule of trains operating on the Lahore–Rawalpindi route a
 | Shalimar Express | 5UP | 18:00 | 22:30 | 4h 30m | Daily |
 | Rawal Express | 47UP | 21:00 | 01:30+1 | 4h 30m | Daily |
 
-**Note:** Times are based on the official Pakistan Railways schedule effective March 2026. Actual arrival times may vary due to operational factors. Always check live status on [trackmytrain.pk](/live-trains) before heading to the station.
+**Note:** Times are based on the official Pakistan Railways schedule effective March 2026. Actual arrival times may vary due to operational factors. Always check live status on [trackmytrain.com.pk](/live-trains) before heading to the station.
 
 ## Ticket Prices — Lahore to Rawalpindi (All Classes)
 
@@ -1510,7 +1510,7 @@ The train wins on cost and luggage allowance. Buses are slightly more predictabl
 
 ## Track Your Train Live
 
-Stop guessing when your train will arrive. Use [trackmytrain.pk](/live-trains) to track your Lahore–Islamabad train in real time. Our GPS tracker updates every 5 seconds, showing the exact position on the map, current speed, delay status, and recalculated ETAs for every upcoming station. Share the tracking link with whoever is picking you up in Rawalpindi so they can time their arrival perfectly.`,
+Stop guessing when your train will arrive. Use [trackmytrain.com.pk](/live-trains) to track your Lahore–Islamabad train in real time. Our GPS tracker updates every 5 seconds, showing the exact position on the map, current speed, delay status, and recalculated ETAs for every upcoming station. Share the tracking link with whoever is picking you up in Rawalpindi so they can time their arrival perfectly.`,
   },
   {
     slug: "multan-to-lahore-train-schedule-timing-2026",
@@ -1686,7 +1686,7 @@ Trains are significantly cheaper and offer more luggage capacity. Buses are slig
 
 ## Track Your Multan–Lahore Train Live
 
-Don't waste hours at Multan Cantt station guessing when your train will arrive. Many Lahore-bound trains originate from Karachi and may already be running late by the time they reach Multan. Visit [trackmytrain.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA. This is especially critical for connecting trains that are already en route from the south.`,
+Don't waste hours at Multan Cantt station guessing when your train will arrive. Many Lahore-bound trains originate from Karachi and may already be running late by the time they reach Multan. Visit [trackmytrain.com.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, speed, and recalculated ETA. This is especially critical for connecting trains that are already en route from the south.`,
   },
   {
     slug: "faisalabad-to-lahore-train-timing-fare-2026",
@@ -1810,7 +1810,7 @@ The direct Faisalabad–Lahore route via Sangla Hill passes through:
 
 ## Live Train Tracking
 
-Don't gamble with your time. Before heading to Faisalabad station, check whether your train is running on schedule at [trackmytrain.pk](/live-trains). Our GPS tracker shows real-time positions, speed, and recalculated arrival times for all Pakistan Railways services. This is especially useful during fog season when delays are unpredictable.`,
+Don't gamble with your time. Before heading to Faisalabad station, check whether your train is running on schedule at [trackmytrain.com.pk](/live-trains). Our GPS tracker shows real-time positions, speed, and recalculated arrival times for all Pakistan Railways services. This is especially useful during fog season when delays are unpredictable.`,
   },
   {
     slug: "pakistan-railways-online-ticket-booking-guide-2026",
@@ -2000,7 +2000,7 @@ The e-ticket contains a QR code that the ticket examiner (TTE) scans on the trai
 
 **Group bookings:** For groups of 10+ passengers, the app allows group booking with a single payment. For groups of 25+, contact the Divisional Superintendent's office for a 10% group discount.
 
-**Check your train's live status:** After booking, use [trackmytrain.pk](/live-trains) to monitor your train's live position on the day of travel. This helps you time your station arrival perfectly and avoid unnecessary waiting.
+**Check your train's live status:** After booking, use [trackmytrain.com.pk](/live-trains) to monitor your train's live position on the day of travel. This helps you time your station arrival perfectly and avoid unnecessary waiting.
 
 ## Counter Booking vs. Online Booking
 
@@ -2025,7 +2025,7 @@ The online system is superior in almost every way. The only scenario where count
 
 ## Track Your Booked Train
 
-Once you've booked your ticket, visit [trackmytrain.pk](/live-trains) on the day of travel to see your train's exact GPS position, current speed, and recalculated arrival time. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS refresh rates. This is the most reliable way to know exactly when to leave for the station.
+Once you've booked your ticket, visit [trackmytrain.com.pk](/live-trains) on the day of travel to see your train's exact GPS position, current speed, and recalculated arrival time. Our platform covers all 164+ Pakistan Railways trains with 5-second GPS refresh rates. This is the most reliable way to know exactly when to leave for the station.
 
 For train-specific schedules, check our detailed route guides: [Karachi to Lahore trains](/blog/best-trains-karachi-to-lahore-2026), [Rawalpindi to Lahore timing](/blog/rawalpindi-to-lahore-train-timing-schedule-2026), and [Karachi to Islamabad fares](/blog/karachi-to-islamabad-train-ticket-price-2026).`,
   },

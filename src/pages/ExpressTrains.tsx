@@ -86,7 +86,7 @@ export default function ExpressTrainsPage() {
           "@type": "ItemList",
           "name": "Pakistan Railways Express Trains",
           "description": "Complete list of all premium express and AC train services operated by Pakistan Railways",
-          "url": "https://trackmytrain.pk/express-trains",
+          "url": "https://trackmytrain.com.pk/express-trains",
           "numberOfItems": 20,
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Green Line Express (5UP/6DN) — Karachi to Islamabad" },

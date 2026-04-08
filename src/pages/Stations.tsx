@@ -88,7 +88,7 @@ export default function StationsPage() {
             "item": {
               "@type": "TrainStation",
               "name": s.name,
-              "url": `https://trackmytrain.pk/stations/${s.slug}`,
+              "url": `https://trackmytrain.com.pk/stations/${s.slug}`,
               "address": { "@type": "PostalAddress", "addressRegion": s.province, "addressCountry": "PK" }
             }
           }))

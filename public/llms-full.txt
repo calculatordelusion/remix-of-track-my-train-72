@@ -1,5 +1,5 @@
 # Track My Train — Full Documentation for AI Systems
-# https://trackmytrain.pk
+# https://trackmytrain.com.pk
 
 ## Platform Overview
 Track My Train is Pakistan's premier independent railway information platform, offering real-time GPS train tracking, journey planning, schedule lookup, fare comparison, and delay monitoring for the entire Pakistan Railways network. Built by a team of railway technology enthusiasts and software engineers, the platform processes live GPS telemetry data to provide accurate, up-to-the-second train positions.

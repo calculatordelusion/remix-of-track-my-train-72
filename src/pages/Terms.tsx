@@ -4,7 +4,7 @@ import { FileText, Shield, AlertTriangle, Scale, Globe, Ban, RefreshCw, Gavel } 
 import SEOHead from "@/components/SEOHead";
 
 const termsSections = [
-  { icon: FileText, title: "Acceptance of Terms", gradient: "gradient-card-emerald", content: "By accessing and using Track My Train (trackmytrain.pk), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use this website. We reserve the right to update these terms at any time, and your continued use of the site constitutes acceptance of any modifications." },
+  { icon: FileText, title: "Acceptance of Terms", gradient: "gradient-card-emerald", content: "By accessing and using Track My Train (trackmytrain.com.pk), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use this website. We reserve the right to update these terms at any time, and your continued use of the site constitutes acceptance of any modifications." },
   { icon: Globe, title: "Description of Service", gradient: "gradient-card-amber", content: "Track My Train provides real-time train tracking, schedule information, journey planning, and related railway information services for Pakistan Railways. Our service is provided on an 'as-is' and 'as-available' basis. We are an independent platform and are NOT affiliated with, endorsed by, or connected to Pakistan Railways or any government agency." },
   { icon: Shield, title: "User Responsibilities", gradient: "gradient-card-blue", content: "You agree to use our service only for lawful purposes. You must not attempt to disrupt, overload, or impair the site's functionality. You must not scrape, crawl, or use automated systems to extract data without permission. You must not attempt to reverse-engineer, copy, or redistribute any part of the platform." },
   { icon: AlertTriangle, title: "Disclaimer of Warranties", gradient: "gradient-card-purple", content: "All information provided on Track My Train, including train positions, schedules, delays, fares, and ETAs, is for informational purposes only. We make no guarantees about the accuracy, completeness, or reliability of any data. Train schedules and positions are sourced from publicly available data and may not reflect real-time conditions. Always verify critical travel information with Pakistan Railways helpline (117)." },
@@ -70,7 +70,7 @@ export default function TermsPage() {
             <CardContent className="p-6">
               <h2 className="text-lg font-bold text-foreground mb-2">Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have questions about these Terms, please <Link to="/contact" className="text-primary underline hover:no-underline">contact us</Link> or email us at legal@trackmytrain.pk.
+                If you have questions about these Terms, please <Link to="/contact" className="text-primary underline hover:no-underline">contact us</Link> or email us at legal@trackmytrain.com.pk.
               </p>
             </CardContent>
           </Card>

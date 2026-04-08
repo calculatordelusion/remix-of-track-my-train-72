@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Homepage -->
   <url>
-    <loc>https://trackmytrain.pk/</loc>
+    <loc>https://trackmytrain.com.pk/</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -12,55 +12,55 @@
 
   <!-- Core Features -->
   <url>
-    <loc>https://trackmytrain.pk/live-train</loc>
+    <loc>https://trackmytrain.com.pk/live-train</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>always</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/train-schedule</loc>
+    <loc>https://trackmytrain.com.pk/train-schedule</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/train-journey-planner</loc>
+    <loc>https://trackmytrain.com.pk/train-journey-planner</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/check-train-delays</loc>
+    <loc>https://trackmytrain.com.pk/check-train-delays</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>always</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/find-my-train</loc>
+    <loc>https://trackmytrain.com.pk/find-my-train</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/stations</loc>
+    <loc>https://trackmytrain.com.pk/stations</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/train-routes</loc>
+    <loc>https://trackmytrain.com.pk/train-routes</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/schedule-guide</loc>
+    <loc>https://trackmytrain.com.pk/schedule-guide</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/buy-train-tickets</loc>
+    <loc>https://trackmytrain.com.pk/buy-train-tickets</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -68,19 +68,19 @@
 
   <!-- Services -->
   <url>
-    <loc>https://trackmytrain.pk/express-trains</loc>
+    <loc>https://trackmytrain.com.pk/express-trains</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/green-line-express</loc>
+    <loc>https://trackmytrain.com.pk/green-line-express</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/ticket-pricing</loc>
+    <loc>https://trackmytrain.com.pk/ticket-pricing</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -88,61 +88,61 @@
 
   <!-- Information -->
   <url>
-    <loc>https://trackmytrain.pk/blog</loc>
+    <loc>https://trackmytrain.com.pk/blog</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/faq</loc>
+    <loc>https://trackmytrain.com.pk/faq</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/railway-helpline</loc>
+    <loc>https://trackmytrain.com.pk/railway-helpline</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/about</loc>
+    <loc>https://trackmytrain.com.pk/about</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/contact</loc>
+    <loc>https://trackmytrain.com.pk/contact</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/request-feature</loc>
+    <loc>https://trackmytrain.com.pk/request-feature</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/privacy</loc>
+    <loc>https://trackmytrain.com.pk/privacy</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/terms</loc>
+    <loc>https://trackmytrain.com.pk/terms</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/disclaimer</loc>
+    <loc>https://trackmytrain.com.pk/disclaimer</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://trackmytrain.pk/sitemap</loc>
+    <loc>https://trackmytrain.com.pk/sitemap</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

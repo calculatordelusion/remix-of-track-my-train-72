@@ -39,7 +39,7 @@ const policySections = [
     { label: "Right to Opt-Out", desc: "You may opt out of personalized advertising via the cookie consent banner or Google's Ads Settings page." },
     { label: "Right to Withdraw Consent", desc: "You can withdraw your cookie consent at any time by clicking the cookie settings link in our footer." },
     { label: "Data Portability", desc: "You may request your data in a portable, machine-readable format." },
-    { label: "Contact for Rights", desc: "For any data rights requests, please contact us at privacy@trackmytrain.pk or via our Contact page." },
+    { label: "Contact for Rights", desc: "For any data rights requests, please contact us at privacy@trackmytrain.com.pk or via our Contact page." },
   ]},
 ];
 
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Privacy Policy — Track My Train",
-          "url": "https://trackmytrain.pk/privacy",
+          "url": "https://trackmytrain.com.pk/privacy",
           "description": "How Track My Train handles user privacy and data protection",
           "lastReviewed": "2026-03-01"
         }]}
@@ -196,7 +196,7 @@ export default function PrivacyPage() {
                 </div>
                 <h2 className="text-lg font-bold">9. Changes to This Policy</h2>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">We may update this privacy policy from time to time. Significant changes will be communicated through a notice on our website. Your continued use after changes constitutes acceptance. For privacy inquiries, contact us at <a href="mailto:info@trackmytrain.pk" className="text-primary font-medium hover:underline">info@trackmytrain.pk</a>.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">We may update this privacy policy from time to time. Significant changes will be communicated through a notice on our website. Your continued use after changes constitutes acceptance. For privacy inquiries, contact us at <a href="mailto:info@trackmytrain.com.pk" className="text-primary font-medium hover:underline">info@trackmytrain.com.pk</a>.</p>
             </CardContent>
           </Card>
         </div>

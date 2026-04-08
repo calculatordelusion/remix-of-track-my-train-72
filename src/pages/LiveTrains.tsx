@@ -93,7 +93,7 @@ export default function LiveTrainsPage() {
             "item": {
               "@type": "Trip",
               "name": `${t.name} (${t.number})`,
-              "url": `https://trackmytrain.pk/train/${generateTrainSlug(t.name, t.number)}`,
+              "url": `https://trackmytrain.com.pk/train/${generateTrainSlug(t.name, t.number)}`,
               "description": `${t.name} — ${t.from} to ${t.to}`,
               "departureStation": { "@type": "TrainStation", "name": t.from },
               "arrivalStation": { "@type": "TrainStation", "name": t.to }

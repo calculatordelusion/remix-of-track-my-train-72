@@ -53,7 +53,7 @@ const routeCorridors = [
 ];
 
 const scheduleFaqs = [
-  { q: "What is the latest Pakistan Railways train schedule for 2026?", a: "Pakistan Railways operates 164+ trains across 342+ stations in 2026. The full timetable includes Express, AC Premium, and Passenger services. Major daily trains include Green Line (Karachi–Islamabad, 18h), Tezgam (Karachi–Rawalpindi, 22h 50m), Shalimar Express (Karachi–Lahore, 20h), and Pak Business (Karachi–Lahore, 19h). View the complete real-time schedule at trackmytrain.pk/schedule." },
+  { q: "What is the latest Pakistan Railways train schedule for 2026?", a: "Pakistan Railways operates 164+ trains across 342+ stations in 2026. The full timetable includes Express, AC Premium, and Passenger services. Major daily trains include Green Line (Karachi–Islamabad, 18h), Tezgam (Karachi–Rawalpindi, 22h 50m), Shalimar Express (Karachi–Lahore, 20h), and Pak Business (Karachi–Lahore, 19h). View the complete real-time schedule at trackmytrain.com.pk/schedule." },
   { q: "How many trains does Pakistan Railways run daily?", a: "Pakistan Railways runs approximately 80-90 trains daily across the country. This includes 40+ Express trains, 8-10 AC Premium trains (Green Line, Shalimar, Pak Business), and 30+ Passenger/Shuttle services. The exact number varies by day as some trains run only on specific days of the week." },
   { q: "What time does the Green Line Express depart from Karachi?", a: "Green Line Express 5UP departs from Karachi Cantt at 16:00 (4:00 PM) daily and arrives at Margala (Islamabad) at 10:00 (10:00 AM) the next morning. The return service 6DN departs Margala at 15:00 (3:00 PM) and arrives Karachi Cantt at 09:00 (9:00 AM). Journey duration is approximately 18 hours." },
   { q: "What is the Tezgam Express schedule?", a: "Tezgam 7UP departs Karachi Cantt at 07:00 (7:00 AM) daily and arrives Rawalpindi at 05:50 (5:50 AM) next day. Tezgam 8DN departs Rawalpindi at 21:00 (9:00 PM) and arrives Karachi Cantt at 19:50 (7:50 PM) next day. Duration is 22 hours 50 minutes with approximately 18 stops." },
@@ -68,7 +68,7 @@ const scheduleFaqs = [
   { q: "What are the cheapest trains from Karachi to Lahore?", a: "Awam Express (13UP) is the most affordable option with Economy-only seating at approximately Rs. 800-1,000 for the full journey, though it takes 34 hours to Peshawar (stops at Lahore). Fareed Express and Karakoram Express offer Economy class at Rs. 1,100-1,400 for Karachi–Lahore in 21 hours. Green Line Economy is around Rs. 1,500 for 18 hours." },
   { q: "Which Pakistan Railways trains have AC coaches?", a: "AC Premium trains include: Green Line Express (5UP/6DN), Shalimar Express (27UP/28DN), and Pak Business Express (33UP/34DN). Several Express trains also carry AC Sleeper coaches: Tezgam (7UP/8DN), Khyber Mail (1UP/2DN), Karakoram Express (41UP/42DN), and Allama Iqbal Express (9UP/10DN)." },
   { q: "What trains run from Multan to Rawalpindi?", a: "Two dedicated trains serve this route: Mehr Express (127UP, departs 20:30, 10h 30m journey) and Thall Express (129UP, departs 07:00, 10h journey). Additionally, many Karachi-bound long-distance trains pass through both cities. The journey covers approximately 550-700 km depending on the route taken." },
-  { q: "Can I check today's train running status live?", a: "Yes! Track My Train provides real-time GPS tracking for all running Pakistan Railways trains. Visit trackmytrain.pk/train to see live positions on an interactive map, current speed, delay status, last and next station, and estimated arrival times. No registration required." },
+  { q: "Can I check today's train running status live?", a: "Yes! Track My Train provides real-time GPS tracking for all running Pakistan Railways trains. Visit trackmytrain.com.pk/train to see live positions on an interactive map, current speed, delay status, last and next station, and estimated arrival times. No registration required." },
   { q: "What is the schedule of Rehman Baba Express?", a: "Rehman Baba Express 47UP departs Karachi Cantt at 10:00 and arrives Peshawar Cantt at 16:00 next day (30 hours). It runs 3 days a week: Monday, Wednesday, Friday. The return 48DN departs Peshawar on Tuesday, Thursday, Saturday at 14:00 arriving Karachi at 20:00 next day." },
   { q: "What is the Jaffar Express schedule?", a: "Jaffar Express 39UP runs from Jacobabad Jn to Peshawar Cantt, departing at 10:00 on Monday, Wednesday, Friday — a 24-hour journey. The return 40DN departs Peshawar on Tuesday, Thursday, Saturday at 20:00. It serves the northern Sindh to KPK route without passing through Karachi." },
   { q: "How early should I reach the station before departure?", a: "For Express and AC trains: arrive 30-45 minutes before departure to find your coach and seat. For Passenger trains: 15-20 minutes is sufficient. During peak seasons (Eid, summer holidays): arrive at least 60-90 minutes early. Major stations like Karachi Cantt, Lahore Jn, and Rawalpindi can be very crowded during holidays." },
@@ -79,7 +79,7 @@ const proTips = [
   { tip: "Green Line is fastest Karachi–Islamabad", detail: "At 18 hours, Green Line beats Tezgam (22h 50m) and Khyber Mail (30h 30m). It's also the most modern train with AC coaches." },
   { tip: "Subak Kharam is best for Lahore–Rawalpindi", detail: "Departing at 08:00 and arriving 12:30, it's the most convenient daytime option for this busy corridor. 4h 30m journey." },
   { tip: "Book Eid trains 30 days in advance", detail: "Trains sell out weeks before Eid-ul-Fitr and Eid-ul-Adha. Pakistan Railways opens bookings 30 days ahead — set a reminder." },
-  { tip: "Check live tracking before heading to station", detail: "Use trackmytrain.pk to check real-time delays. No point waiting 4 hours at the platform during fog season." },
+  { tip: "Check live tracking before heading to station", detail: "Use trackmytrain.com.pk to check real-time delays. No point waiting 4 hours at the platform during fog season." },
   { tip: "Fareed Express is best for late-night departure", detail: "Departing Karachi at 22:30, it arrives Lahore 19:30 next evening. Ideal if you prefer sleeping through the night leg of the journey." },
   { tip: "Jaffar Express for northern Sindh to KPK", detail: "If you're in Jacobabad/Sukkur area and heading to Peshawar, Jaffar Express is the direct 24h connection without backtracking to Karachi." },
   { tip: "AC Standard offers best value on Green Line", detail: "AC Standard gives 80% of AC Business comfort at roughly 50% of the price. The biggest comfort jump is from Economy to AC Standard." },
@@ -99,7 +99,7 @@ export default function ScheduleGuide() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Pakistan Railways Train Schedule & Timetable 2026 — Complete Guide",
-          "url": "https://trackmytrain.pk/schedule-guide",
+          "url": "https://trackmytrain.com.pk/schedule-guide",
           "description": "Comprehensive guide to Pakistan Railways train schedules, timetables, routes, and seasonal travel information for 2026.",
           "mainEntity": {
             "@type": "ItemList",
@@ -109,7 +109,7 @@ export default function ScheduleGuide() {
               "@type": "ListItem",
               "position": i + 1,
               "name": `${t.name} (${t.number})`,
-              "url": `https://trackmytrain.pk/schedule`,
+              "url": `https://trackmytrain.com.pk/schedule`,
               "item": {
                 "@type": "Trip",
                 "name": `${t.name} — ${t.from} to ${t.to}`,
@@ -124,9 +124,9 @@ export default function ScheduleGuide() {
           "@type": "Dataset",
           "name": "Pakistan Railways Train Timetable 2026",
           "description": "Complete dataset of 164+ Pakistan Railways trains with departure times, arrival times, durations, running days, and coach classes for the 2026 timetable year.",
-          "url": "https://trackmytrain.pk/schedule-guide",
+          "url": "https://trackmytrain.com.pk/schedule-guide",
           "keywords": ["Pakistan Railways", "Train Schedule", "Timetable 2026", "Railway Timings"],
-          "creator": { "@type": "Organization", "name": "Track My Train", "url": "https://trackmytrain.pk" },
+          "creator": { "@type": "Organization", "name": "Track My Train", "url": "https://trackmytrain.com.pk" },
           "temporalCoverage": "2026"
         }]}
       />

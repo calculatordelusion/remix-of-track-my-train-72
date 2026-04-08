@@ -18,7 +18,7 @@ const findMyTrainFaqs = [
   { q: "Can I share my live train location with family members?", a: "Yes! Once Find My Train detects your train, you can share the train's live tracking page URL with anyone. Simply copy the URL from your browser's address bar and send it via WhatsApp, SMS, or any messaging app. Your family members can then see the train's real-time position, speed, and estimated arrival time at their station — making it easy for them to plan when to come pick you up. This is one of the most popular features among our users, especially during long-distance journeys." },
   { q: "How accurate is the GPS detection for finding trains?", a: "The accuracy depends on multiple factors. In optimal conditions (clear sky, modern smartphone), GPS accuracy is typically within 5-15 meters, making train detection very reliable. In urban areas with tall buildings, accuracy may decrease to 30-100 meters due to signal reflection (multipath effect). Inside tunnels or covered stations, GPS accuracy drops significantly. Our detection radius of 500 meters is designed to accommodate these variations while still providing reliable results. For best results, ensure your phone's location services are set to 'High Accuracy' mode which combines GPS, Wi-Fi, and cellular data." },
   { q: "What happens after my train is detected?", a: "Once detected, you'll see a confirmation card showing your train's name, number, current speed, and delay status. You can then tap 'View Live Tracking' to see the full real-time tracking page with an interactive map, complete route with all stops, estimated arrival times at each station, and the train's current speed and delay information. The tracking page updates every 5 seconds, so you always have the latest information about your journey's progress." },
-  { q: "Do I need to install an app to use Find My Train?", a: "No! Find My Train works directly in your mobile browser — there's nothing to download or install. Simply visit trackmytrain.pk/find-my-train and tap the 'Find My Train' button. This is intentional: we believe essential travel tools should be instantly accessible without requiring app installations, account creation, or software updates. Our web-based approach also means the feature works on any device regardless of operating system, storage space, or app store availability." },
+  { q: "Do I need to install an app to use Find My Train?", a: "No! Find My Train works directly in your mobile browser — there's nothing to download or install. Simply visit trackmytrain.com.pk/find-my-train and tap the 'Find My Train' button. This is intentional: we believe essential travel tools should be instantly accessible without requiring app installations, account creation, or software updates. Our web-based approach also means the feature works on any device regardless of operating system, storage space, or app store availability." },
   { q: "Does Find My Train work in rural areas of Pakistan?", a: "Yes, Find My Train works in rural areas as long as your smartphone has GPS satellite reception. GPS works independently of mobile network coverage — it communicates directly with satellites orbiting Earth. However, the train position data requires some network connectivity (2G is sufficient) to fetch the latest positions from our servers. In areas with no network at all, the feature will show your last known results until connectivity is restored." },
   { q: "How often does the train position update after detection?", a: "After your train is detected and you open the live tracking page, position data refreshes every 5 seconds automatically. This near-real-time update frequency ensures you always see the most current information about your train's speed, location, and estimated arrival times. The refresh happens in the background without requiring you to reload the page, providing a seamless tracking experience throughout your journey." },
 ];
@@ -72,7 +72,7 @@ export default function FindMyTrainPage() {
         howToSchema={{
           name: "How to Use Find My Train GPS Detection",
           steps: [
-            { name: "Open Find My Train", text: "Visit trackmytrain.pk/find-my-train and tap the 'Find My Train' button." },
+            { name: "Open Find My Train", text: "Visit trackmytrain.com.pk/find-my-train and tap the 'Find My Train' button." },
             { name: "Allow Location Access", text: "Grant GPS permission when your browser asks. Your location is processed locally and never stored." },
             { name: "View Your Train", text: "If you're within 500m of a running train, we identify it instantly and show live tracking details." },
           ],
@@ -82,7 +82,7 @@ export default function FindMyTrainPage() {
           "@type": "WebApplication",
           "name": "Find My Train — GPS Auto-Detection",
           
-          "url": "https://trackmytrain.pk/find-my-train",
+          "url": "https://trackmytrain.com.pk/find-my-train",
           "applicationCategory": "TravelApplication",
           "operatingSystem": "Web",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },

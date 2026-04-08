@@ -65,7 +65,7 @@ export default function TicketPricingPage() {
           "@type": "WebPage",
           "name": "Pakistan Railways Ticket Prices & Fare Chart 2026",
           "description": "Complete fare comparison for all Pakistan Railways train classes and routes",
-          "url": "https://trackmytrain.pk/ticket-pricing",
+          "url": "https://trackmytrain.com.pk/ticket-pricing",
           "mainEntity": {
             "@type": "ItemList",
             "name": "Pakistan Railways Fare Chart",

@@ -1,4 +1,4 @@
-# https://trackmytrain.pk robots.txt
+# https://trackmytrain.com.pk robots.txt
 # Pakistan's #1 Independent Live Train Tracking Platform
 # Last updated: 2026-04-08
 
@@ -88,14 +88,14 @@ Disallow: /supabase/
 
 # AI-optimized content files
 # LLMs.txt — structured platform information for AI crawlers
-# See: https://trackmytrain.pk/llms.txt
-# Full docs: https://trackmytrain.pk/llms-full.txt
+# See: https://trackmytrain.com.pk/llms.txt
+# Full docs: https://trackmytrain.com.pk/llms-full.txt
 
 # Sitemap Index (contains 6 sub-sitemaps)
-Sitemap: https://trackmytrain.pk/sitemap-index.xml
+Sitemap: https://trackmytrain.com.pk/sitemap-index.xml
 
 # Legacy sitemap (kept for backward compatibility)
-Sitemap: https://trackmytrain.pk/sitemap.xml
+Sitemap: https://trackmytrain.com.pk/sitemap.xml
 
 # Host
-Host: https://trackmytrain.pk
+Host: https://trackmytrain.com.pk

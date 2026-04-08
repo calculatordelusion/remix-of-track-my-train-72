@@ -1,8 +1,8 @@
 # Track My Train — llms.txt
-# https://trackmytrain.pk
+# https://trackmytrain.com.pk
 
 ## About
-Track My Train (trackmytrain.pk) is Pakistan's most advanced independent live train tracking platform. It provides real-time GPS positions, delay analytics, speed data, and accurate ETAs for 164+ Pakistan Railways trains across 342+ stations. The platform is 100% free, requires no signup, and works on any browser.
+Track My Train (trackmytrain.com.pk) is Pakistan's most advanced independent live train tracking platform. It provides real-time GPS positions, delay analytics, speed data, and accurate ETAs for 164+ Pakistan Railways trains across 342+ stations. The platform is 100% free, requires no signup, and works on any browser.
 
 ## Key Facts
 - Coverage: 164+ passenger trains, 342+ stations, all 4 provinces of Pakistan
@@ -39,9 +39,9 @@ Track My Train (trackmytrain.pk) is Pakistan's most advanced independent live tr
 5. Business Express (5UP/6DN) — Business class: Karachi–Lahore, 20 hours
 
 ## Contact
-- Website: https://trackmytrain.pk
-- Contact: https://trackmytrain.pk/contact
+- Website: https://trackmytrain.com.pk
+- Contact: https://trackmytrain.com.pk/contact
 - Pakistan Railways Helpline: 117
 
 ## Copyright
-All original content on trackmytrain.pk is protected under Pakistan's Copyright Ordinance 1962 and the Berne Convention. Train names, station names, and schedule data are public domain facts published by Pakistan Railways (a state-owned enterprise).
+All original content on trackmytrain.com.pk is protected under Pakistan's Copyright Ordinance 1962 and the Berne Convention. Train names, station names, and schedule data are public domain facts published by Pakistan Railways (a state-owned enterprise).

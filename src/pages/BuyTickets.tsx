@@ -141,7 +141,7 @@ export default function BuyTickets() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Buy Train Tickets Online in Pakistan — 2026 Guide",
-          "url": "https://trackmytrain.pk/buy-tickets",
+          "url": "https://trackmytrain.com.pk/buy-tickets",
           "description": "Comprehensive guide covering all methods to purchase Pakistan Railways tickets — online app, website, counter, and phone.",
           "mainEntity": {
             "@type": "ItemList",

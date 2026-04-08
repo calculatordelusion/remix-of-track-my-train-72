@@ -219,7 +219,7 @@ export default function JourneyPlannerPage() {
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Pakistan Railways Journey Planner",
-          "url": "https://trackmytrain.pk/planner",
+          "url": "https://trackmytrain.com.pk/planner",
           "applicationCategory": "TravelApplication",
           "operatingSystem": "Web",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
