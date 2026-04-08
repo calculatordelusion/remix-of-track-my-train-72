@@ -2177,7 +2177,7 @@ If you're traveling only part of the route, here are approximate Economy fares f
 
 ## Track Your Train Live
 
-After booking, don't guess when your train will arrive. Visit [trackmytrain.com.pk](/live-trains) and search by train name or number. Our GPS tracker updates every 5 seconds with real-time position, speed, delay status, and recalculated ETAs for every station. Share the live tracking link with whoever is receiving you in Karachi.\`,
+After booking, don't guess when your train will arrive. Visit [trackmytrain.com.pk](/live-trains) and search by train name or number. Our GPS tracker updates every 5 seconds with real-time position, speed, delay status, and recalculated ETAs for every station. Share the live tracking link with whoever is receiving you in Karachi.`,
   },
   {
     slug: "peshawar-to-lahore-train-schedule-timing-2026",
@@ -2342,7 +2342,7 @@ This route offers some of the most dramatic scenery on Pakistan's rail network:
 
 ## Track Your Peshawar–Lahore Train
 
-Don't waste time at the platform. Visit [trackmytrain.com.pk](/live-trains) to check your train's real-time GPS position, current speed, and delay status. Our tracker covers all trains on this route with 5-second refresh intervals, so you know exactly when to head to the station.\`,
+Don't waste time at the platform. Visit [trackmytrain.com.pk](/live-trains) to check your train's real-time GPS position, current speed, and delay status. Our tracker covers all trains on this route with 5-second refresh intervals, so you know exactly when to head to the station.`,
   },
   {
     slug: "quetta-to-karachi-train-timing-schedule-2026",
@@ -2528,6 +2528,6 @@ If you have the time, the Quetta–Karachi train is one of those journeys that's
 
 ## Track Your Quetta–Karachi Train Live
 
-On a route this long with potential delays, live tracking is essential. Visit [trackmytrain.com.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, current speed, delay status, and recalculated ETAs for every upcoming station. This is especially critical on the Balochistan section where delays of 2–6 hours are not uncommon. Share the tracking link with family so they know when to expect you in Karachi.\`,
+On a route this long with potential delays, live tracking is essential. Visit [trackmytrain.com.pk](/live-trains) and search for your train by name or number. Our GPS tracker updates every 5 seconds, showing the exact position, current speed, delay status, and recalculated ETAs for every upcoming station. This is especially critical on the Balochistan section where delays of 2–6 hours are not uncommon. Share the tracking link with family so they know when to expect you in Karachi.`,
   },
 ];
