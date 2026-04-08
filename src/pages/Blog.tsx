@@ -59,7 +59,7 @@ export default function BlogPage() {
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
               In-depth travel guides, booking strategies, route reviews, and essential knowledge for every Pakistan Railways traveler. Written by experienced travelers who've logged thousands of kilometers on the network.
             </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے سفری رہنمائی اور مشورے</p>
+            
           </div>
         </div>
       </section>

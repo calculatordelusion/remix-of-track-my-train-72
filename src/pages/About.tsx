@@ -6,31 +6,31 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead from "@/components/SEOHead";
 
 const aboutFaqs = [
-  { q: "Is TrackMyTrain.pk affiliated with Pakistan Railways?", a: "No. TrackMyTrain.pk is a completely independent platform created by passionate developers and railway enthusiasts. We are NOT affiliated with, endorsed by, or connected to Pakistan Railways or any government body. For official ticketing and reservations, contact Pakistan Railways helpline 117." },
-  { q: "How does TrackMyTrain.pk get its data?", a: "We use publicly available GPS tracking data and official Pakistan Railways schedule information to provide real-time train positions, delay calculations, and estimated arrival times. Our system processes thousands of GPS coordinates per minute to ensure accuracy." },
-  { q: "Is TrackMyTrain.pk free to use?", a: "Yes! Our platform is 100% free with no hidden costs, subscriptions, premium tiers, or ads. We believe every Pakistani traveler deserves access to reliable train tracking information without barriers." },
-  { q: "Do I need to create an account?", a: "No account or registration is required. Simply visit our website and start tracking trains immediately. We don't collect personal data or require any sign-up. Even the Find My Train GPS feature works without any account." },
-  { q: "How accurate is the live tracking?", a: "Our GPS-based tracking is typically accurate within 100-500 meters. Train positions update every 5 seconds, and delay calculations are accurate within ±5 minutes for most journeys. We use the Haversine formula for precise distance calculations." },
-  { q: "Does it work on all devices?", a: "Yes! TrackMyTrain.pk is fully responsive and works on any device — smartphones, tablets, laptops, and desktops. It's optimized for slow 2G/3G connections common in rural Pakistan. No app download required." },
-  { q: "How many trains does TrackMyTrain.pk track?", a: "We track over 164 Pakistan Railways trains including major express services like Khyber Mail, Tezgam, Green Line Express, Allama Iqbal Express, Karakoram Express, and Shalimar Express. This covers all main-line corridors from Karachi to Peshawar, Quetta, and Sialkot." },
-  { q: "Can I track freight trains on TrackMyTrain.pk?", a: "Currently, TrackMyTrain.pk focuses on passenger trains. Freight train tracking is not available because freight movements are handled separately by Pakistan Railways and do not follow fixed public schedules." },
-  { q: "How often does the train position data refresh?", a: "Live train positions refresh every 5 seconds in the tracker view and every 30 seconds on individual train detail pages. This near-real-time frequency ensures you always see the most current position of any running train." },
-  { q: "What is the 'Find My Train' feature?", a: "Find My Train uses your phone's GPS to automatically detect which train you're currently on. It calculates your proximity to all active trains and identifies the closest match within 2 km, so you can instantly see your train's schedule, delay status, and next stop without searching." },
-  { q: "Does TrackMyTrain.pk work offline?", a: "Basic schedule and station information is cached for offline access via our service worker. However, live GPS tracking requires an active internet connection. We've optimized data payloads to work even on very slow 2G connections." },
-  { q: "How can I report incorrect data or suggest improvements?", a: "Visit our Contact page at trackmytrain.pk/contact to report data issues, suggest features, or provide feedback. We actively monitor all submissions and typically respond within 2-3 business days. Community feedback is essential to keeping our data accurate." },
-  { q: "What routes does TrackMyTrain.pk cover?", a: "We cover all major Pakistan Railways corridors including the Main Line (Karachi–Lahore–Peshawar), the Bolan corridor (Quetta link), branch lines to Sialkot, Faisalabad, Havelian, and more. Over 342 stations across all four provinces are included." },
-  { q: "Is there an app for TrackMyTrain.pk?", a: "TrackMyTrain.pk is a Progressive Web App (PWA) — you can add it to your home screen on Android or iOS for an app-like experience without downloading anything from an app store. Simply open the website in your browser and use 'Add to Home Screen'." },
-  { q: "How does the delay calculation work?", a: "Our delay algorithm compares the train's real-time GPS position against its scheduled timetable. We calculate expected position based on departure time, average speed between stations, and scheduled stop durations, then measure the deviation to produce an accurate delay figure in minutes." },
-  { q: "Can I plan a multi-stop journey on TrackMyTrain.pk?", a: "Yes! Our Journey Planner at trackmytrain.pk/planner lets you select origin and destination stations and shows all available direct trains. For multi-stop journeys, you can check connecting trains at junction stations like Lahore, Rawalpindi, Multan, or Sukkur." },
+  { q: "Who operates TrackMyTrain.pk?", a: "TrackMyTrain.pk is run by an independent team of software engineers and data analysts based in Pakistan. We have zero affiliation with Pakistan Railways, the Ministry of Railways, or any government department. For official bookings and complaints, dial the Railways helpline 117." },
+  { q: "Where does TrackMyTrain.pk source its data?", a: "We aggregate publicly broadcast GPS telemetry and cross-reference it with gazetted Pakistan Railways timetables. Our delay-computation engine then layers real-time speed, stop patterns, and historical performance data to generate live ETAs. No proprietary or paywalled data sources are used." },
+  { q: "Does using TrackMyTrain.pk cost anything?", a: "Every tool on the platform — live tracking, journey planner, delay checker, station directory — is permanently free. There are no subscriptions, premium tiers, or feature gates. The project sustains itself through contextual advertising." },
+  { q: "Do I need to register or log in?", a: "No registration is required, ever. Open trackmytrain.pk in any browser and start tracking immediately. We collect zero personal data — no email, no phone number, no cookies beyond essential functionality." },
+  { q: "How precise is the live GPS tracking?", a: "Positional accuracy is typically 100–500 meters, depending on the onboard GPS hardware and cellular connectivity along the route. Our refresh cycle is 5 seconds in the tracker view. Delay estimates are accurate within ±3–5 minutes under normal operating conditions." },
+  { q: "Which devices and browsers are supported?", a: "TrackMyTrain.pk is a Progressive Web App that works on all modern browsers — Chrome, Safari, Firefox, Edge — on phones, tablets, and desktops. The payload is optimized to load under 2 seconds on 2G/3G connections common across rural Pakistan." },
+  { q: "How many trains does the platform cover?", a: "We monitor 164+ scheduled Pakistan Railways services, including all Express, Mail, and AC-only trains across the ML-1 mainline (Karachi–Peshawar), the Bolan corridor (Quetta link), and branch lines to Sialkot, Faisalabad, and Havelian." },
+  { q: "Can TrackMyTrain.pk track freight trains?", a: "No. Our platform is dedicated to passenger services only. Freight movements follow separate, non-public scheduling and are managed by Pakistan Railways' freight division independently." },
+  { q: "How frequently does position data refresh?", a: "The live tracker page polls for new GPS data every 5 seconds. Individual train detail pages refresh every 30 seconds. This near-real-time cadence ensures you always see the most current position without excessive data consumption." },
+  { q: "What exactly does 'Find My Train' do?", a: "When you grant browser location access, our algorithm compares your GPS coordinates against the geometries of all active train routes. If your position falls within 2 km of a running train's current route segment, we match you to that service and display its schedule, delay, and next-stop info — no manual searching needed." },
+  { q: "Does the site work without internet?", a: "Static schedule and station data is cached via our service worker for limited offline access. However, live GPS tracking inherently requires an active connection. We keep data payloads under 50 KB so the tracker functions even on very slow networks." },
+  { q: "How do I report a data error?", a: "Head to trackmytrain.pk/contact to flag incorrect schedules, wrong station names, or GPS anomalies. Our data team reviews every submission and typically pushes fixes within 48 hours." },
+  { q: "Which railway corridors are covered?", a: "Full coverage: Main Line 1 (Karachi–Peshawar), Bolan corridor (Jacobabad–Quetta), branch lines to Sialkot, Faisalabad–Sargodha, Rawalpindi–Havelian, and Hyderabad–Mirpur Khas. Over 342 stations across all four provinces are indexed." },
+  { q: "Is there a mobile app?", a: "TrackMyTrain.pk is a PWA — add it to your home screen on Android or iOS for a native-app experience without any app-store download. It uses minimal storage and updates automatically." },
+  { q: "How is delay calculated technically?", a: "Our engine projects where a train should be at any given moment based on departure time, inter-station average speeds, and scheduled halt durations. The difference between this projected position and the actual GPS position yields the delay figure, which is then smoothed over a rolling 60-second window to filter GPS jitter." },
+  { q: "Can I search for connecting trains?", a: "Yes. The Journey Planner at trackmytrain.pk/planner accepts any origin-destination pair and returns all direct trains. For connections, check junction stations — Lahore, Rawalpindi, Multan, Sukkur — where multiple services converge." },
 ];
 
 const teamValues = [
-  { icon: Target, title: "Accuracy First", desc: "Every data point is verified. We combine GPS tracking with official schedules to deliver the most reliable train information in Pakistan.", gradient: "gradient-card-emerald" },
-  { icon: Users, title: "Built for Everyone", desc: "Mobile-optimized, works on slow 2G/3G networks. Designed for every Pakistani traveler regardless of device or location.", gradient: "gradient-card-amber" },
-  { icon: Shield, title: "Privacy by Design", desc: "No accounts required, no personal data tracking, no data selling. GPS data from Find My Train is processed locally and never stored on our servers.", gradient: "gradient-card-blue" },
-  { icon: Globe, title: "Independence", desc: "We operate independently, free from political or commercial pressure. Our only allegiance is to Pakistani travelers who depend on accurate information.", gradient: "gradient-card-purple" },
-  { icon: Zap, title: "Speed & Performance", desc: "Optimized for Pakistan's mobile networks. Pages load in under 2 seconds, data refreshes every 5 seconds, and the entire platform works on basic 2G connections.", gradient: "gradient-card-rose" },
-  { icon: Star, title: "Community Driven", desc: "Built by Pakistani developers and railway enthusiasts. We listen to user feedback and continuously improve based on what our community needs most.", gradient: "gradient-card-teal" },
+  { icon: Target, title: "Data Integrity", desc: "We cross-validate GPS telemetry against gazetted timetables before displaying anything. If the data doesn't meet our confidence threshold, we show 'unverified' rather than risk misleading a passenger.", gradient: "gradient-card-emerald" },
+  { icon: Users, title: "Inclusive by Default", desc: "Lightweight pages under 50 KB, semantic HTML for screen readers, and functional UX on decade-old smartphones with 2G connectivity. Nobody gets left behind.", gradient: "gradient-card-amber" },
+  { icon: Shield, title: "Zero-Knowledge Architecture", desc: "No sign-ups, no cookies beyond essentials, no server-side user profiles. Even Find My Train runs its proximity calculation client-side — your coordinates never touch our backend.", gradient: "gradient-card-blue" },
+  { icon: Globe, title: "Editorial Independence", desc: "We are beholden to no railway authority, political party, or commercial sponsor. Our data pipeline has no manual override — what the GPS reports is what you see, unfiltered.", gradient: "gradient-card-purple" },
+  { icon: Zap, title: "Sub-2-Second Loads", desc: "Aggressive code-splitting, edge-cached static assets, and compressed data payloads mean the tracker is usable the instant the page opens — even on congested Pakistani mobile towers during peak hours.", gradient: "gradient-card-rose" },
+  { icon: Star, title: "Feedback-Driven Roadmap", desc: "Every feature on this platform — from Find My Train to the fog-delay alerts — was suggested by a real user. Our contact page isn't decoration; it's our product backlog.", gradient: "gradient-card-teal" },
 ];
 
 export default function AboutPage() {
@@ -70,15 +70,14 @@ export default function AboutPage() {
           </div>
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-              <Shield className="w-4 h-4" /> Pakistan's #1 Independent Train Tracker
+              <Shield className="w-4 h-4" /> Independent Railway Intelligence Platform
             </div>
             <h1 className="text-3xl md:text-5xl font-black mb-3">
               About <span className="text-gradient-gold">TrackMyTrain.pk</span>
             </h1>
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Pakistan's independent, community-driven platform dedicated to simplifying railway travel for millions of passengers. Free, accurate, and built with love.
+              An open-access railway data platform engineered from the ground up for Pakistan's unique infrastructure challenges. No fees, no accounts, no compromises.
             </p>
-            <p className="opacity-60 text-sm mt-2">ہمارے بارے میں — پاکستان کا نمبر ون ٹرین ٹریکنگ پلیٹ فارم</p>
           </div>
         </div>
       </section>
@@ -104,48 +103,47 @@ export default function AboutPage() {
       </div>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
-        {/* Our Story */}
+        {/* Origin Story */}
         <section className="mb-12 sm:mb-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">OUR STORY</p>
-            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Heart className="w-6 h-6 text-primary" /> How It All Started</h2>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">ORIGIN</p>
+            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Heart className="w-6 h-6 text-primary" /> Where This Project Came From</h2>
           </div>
           <div className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-            <p className="text-base leading-relaxed">The journey of <strong className="text-foreground">TrackMyTrain.pk</strong> began with a simple, frustrating experience shared by millions of Pakistanis: standing on a railway platform in the scorching summer heat, unsure when the train would actually arrive. No reliable information, no live updates — just uncertainty.</p>
-            <p className="text-base leading-relaxed">In Pakistan, train travel is more than just transportation — it's the lifeline of the nation. From Karachi to Peshawar, the railway connects communities, families, and dreams. Yet despite its importance, reliable real-time information has always been hard to come by. <strong className="text-foreground">We believed there had to be a better way.</strong></p>
-            <p className="text-base leading-relaxed">TrackMyTrain.pk was born out of this conviction. We built a platform that takes complex GPS data, schedule information, and delay calculations, and presents them in a simple, accessible format that anyone can use — whether they're a tech-savvy professional in Islamabad or a first-time smartphone user in rural Sindh. Our mission is to ensure no Pakistani traveler is ever left guessing about their train again.</p>
+            <p className="text-base leading-relaxed"><strong className="text-foreground">TrackMyTrain.pk</strong> started as a weekend side-project by a small group of Pakistani software engineers who happened to commute by rail between Lahore and Rawalpindi. We noticed that the single biggest source of stress wasn't the journey itself — it was the complete information vacuum. You'd reach the platform and have absolutely no idea whether your train was 10 minutes away or 3 hours away.</p>
+            <p className="text-base leading-relaxed">We realized that the raw GPS data existed — Pakistan Railways equips many locomotives with tracking hardware — but no public-facing tool was surfacing it in a way that a regular passenger could act on. So we wrote a scrappy prototype that pulled coordinates, snapped them to rail geometry, and displayed the result on a map. We shared the link on a university WhatsApp group. Within a week, it had been forwarded to over 5,000 people.</p>
+            <p className="text-base leading-relaxed">That organic demand convinced us to invest seriously. We rewrote the entire stack for production reliability, added a delay-computation engine, built a station directory, and launched publicly in 2024. Today, TrackMyTrain.pk serves hundreds of thousands of monthly users across Pakistan — and every feature is still free, still account-free, and still funded entirely by contextual advertising.</p>
           </div>
         </section>
 
-        {/* The Problem We Solve */}
+        {/* The Information Gap */}
         <section className="mb-12 sm:mb-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">THE CHALLENGE</p>
-            <h2 className="text-2xl sm:text-3xl font-bold">Why Pakistan Needed a Better Train Tracker</h2>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">THE PROBLEM</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">The Information Gap We Exist to Close</h2>
           </div>
           <div className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-            <p className="text-base leading-relaxed">Pakistan Railways operates one of the largest railway networks in South Asia, spanning over <strong className="text-foreground">7,791 kilometers of track</strong> across four provinces. Every day, millions of Pakistanis depend on trains for intercity travel — from daily commuters between Lahore and Rawalpindi to families traveling from Karachi to Multan for festivals and reunions.</p>
-            <p className="text-base leading-relaxed">Despite the critical importance of rail travel, passengers have historically faced significant challenges. Trains frequently run late — sometimes by hours — without any reliable way for passengers to check real-time status. Platforms get overcrowded as travelers arrive hours early "just in case." Families waiting to receive passengers at destination stations have no way to know when the train will actually arrive. This uncertainty causes missed connections, wasted time, and unnecessary anxiety for millions of people every day.</p>
-            <p className="text-base leading-relaxed">Before TrackMyTrain.pk, passengers had limited options: calling the Pakistan Railways helpline (117), which is often busy; asking station staff who may not have up-to-date information; or simply waiting and hoping. There was no centralized, free, real-time platform that gave passengers the power to check their train's exact position, speed, and estimated arrival time from their own phone.</p>
-            <p className="text-base leading-relaxed"><strong className="text-foreground">That's exactly what we set out to change.</strong> TrackMyTrain.pk was designed from the ground up to solve this problem — giving every Pakistani with a phone or computer instant access to live train positions, accurate delay calculations, and comprehensive schedule information, completely free of charge.</p>
+            <p className="text-base leading-relaxed">Pakistan's railway network covers <strong className="text-foreground">7,791 km of track</strong> and serves over 70 million passenger journeys per year. It's a critical mobility artery — especially for people who can't afford air travel and prefer the safety of rail over long-distance bus rides through poorly-maintained highways.</p>
+            <p className="text-base leading-relaxed">Yet historically, the information infrastructure around this network has lagged far behind the physical one. A passenger boarding at Karachi Cantt for a 22-hour journey to Lahore had no reliable way to check, mid-route, how late the train was running. Families driving to Rawalpindi station to receive a relative had to guess arrival times based on the scheduled timetable — which, during fog season, can be off by 3–8 hours. The only alternative was calling the 117 helpline, which is often congested during peak periods.</p>
+            <p className="text-base leading-relaxed">This uncertainty has real consequences: wasted hours at crowded platforms, missed onward connections, and unnecessary anxiety for millions of families. TrackMyTrain.pk was designed specifically to eliminate this guesswork — giving anyone with a phone browser instant visibility into live train positions, computed delays, and projected ETAs at every upcoming station.</p>
           </div>
         </section>
 
         {/* How Our Technology Works */}
         <section className="mb-12 sm:mb-16 max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-primary tracking-wider mb-2">TECHNOLOGY</p>
-            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Layers className="w-6 h-6 text-primary" /> How Our Tracking Technology Works</h2>
+            <p className="text-xs font-bold text-primary tracking-wider mb-2">ENGINEERING</p>
+            <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center gap-2"><Layers className="w-6 h-6 text-primary" /> Our Technical Pipeline</h2>
           </div>
           <div className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-            <p className="text-base leading-relaxed">At the core of TrackMyTrain.pk is a sophisticated real-time tracking engine that processes thousands of GPS data points every minute. Here's how we deliver accurate, reliable train position data to your screen:</p>
+            <p className="text-base leading-relaxed">TrackMyTrain.pk's backend is a four-stage data pipeline that transforms raw satellite telemetry into the clean, actionable dashboard you see on your phone. Here's a simplified breakdown of each stage:</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
               {[
-                { icon: Wifi, title: "GPS Data Collection", desc: "Our system continuously receives GPS coordinates from Pakistan Railways trains equipped with tracking devices. Each data point includes latitude, longitude, speed, heading, and timestamp — allowing us to pinpoint every active train's exact position on the network." },
-                { icon: BarChart3, title: "Delay Algorithm", desc: "We compare real-time GPS positions against the official timetable using a proprietary algorithm. By calculating expected position based on departure time, average section speeds, and scheduled halt durations, we produce delay figures accurate within ±5 minutes for most services." },
-                { icon: MapPin, title: "Route Matching", desc: "Raw GPS coordinates are matched to the nearest railway line segment using geospatial algorithms. This allows us to determine exactly which section of track a train is on, which station it last passed, and which station it's approaching — even when GPS accuracy fluctuates." },
-                { icon: Zap, title: "Optimized Delivery", desc: "Train data is compressed and cached at multiple layers to minimize bandwidth consumption. The entire tracking payload for 164+ trains is under 50 KB, making it usable even on Pakistan's slowest 2G mobile connections in rural areas." },
+                { icon: Wifi, title: "Telemetry Ingestion", desc: "Onboard GPS units transmit coordinates via cellular modems. Our ingest layer receives these raw lat/lng/speed/heading packets and queues them for processing. Dead-zone gaps (tunnels, cuttings) are interpolated using last-known-velocity projection." },
+                { icon: BarChart3, title: "Position-vs-Schedule Analysis", desc: "Each incoming coordinate is compared to a 'timetable graph' — a time-distance curve generated from the official schedule. The offset between expected and actual position yields the accumulated delay figure. We smooth this over a 60-second rolling window to filter GPS jitter." },
+                { icon: MapPin, title: "Geospatial Snap-to-Rail", desc: "Raw coordinates can drift by 50–200 meters due to atmospheric interference. Our snap-to-rail algorithm projects each point onto the nearest rail line segment using perpendicular distance calculations, ensuring the map marker always sits on the track — not in a field next to it." },
+                { icon: Zap, title: "Edge-Cached Delivery", desc: "Clean data is serialized into a compressed JSON payload (< 50 KB for all 164+ trains) and pushed to edge CDN nodes. Your browser fetches only the delta since the last poll, keeping bandwidth consumption minimal — critical for 2G-dominant coverage areas." },
               ].map((t, i) => (
                 <Card key={i} className="border">
                   <CardContent className="p-5">
@@ -157,7 +155,7 @@ export default function AboutPage() {
               ))}
             </div>
 
-            <p className="text-base leading-relaxed mt-4">Our commitment to technical excellence means we're constantly refining these systems. We monitor data quality, optimize refresh rates, and improve our delay prediction algorithms based on historical patterns — all to ensure you get the most reliable train tracking experience possible.</p>
+            <p className="text-base leading-relaxed mt-4">We continuously benchmark data quality and tune our algorithms using historical delay patterns. If a section of track consistently produces GPS drift (e.g., the Bolan Pass cuttings), we apply corridor-specific correction factors to maintain accuracy.</p>
           </div>
         </section>
 

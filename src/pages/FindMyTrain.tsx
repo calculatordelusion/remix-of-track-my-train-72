@@ -80,7 +80,7 @@ export default function FindMyTrainPage() {
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Find My Train — GPS Auto-Detection",
-          "alternateName": "میری ٹرین تلاش کریں",
+          
           "url": "https://trackmytrain.pk/find-my-train",
           "applicationCategory": "TravelApplication",
           "operatingSystem": "Web",

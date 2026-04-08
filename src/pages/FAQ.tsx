@@ -100,7 +100,7 @@ export default function FAQPage() {
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
               Find answers to common questions about Pakistan Railways — booking, tickets, travel tips, live tracking, and everything for a smooth journey.
             </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے سے متعلق عام سوالات اور جوابات</p>
+            
           </div>
         </div>
       </section>
