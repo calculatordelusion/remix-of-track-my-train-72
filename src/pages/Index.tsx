@@ -1596,19 +1596,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Track Your Train?</h2>
-          <p className="text-base sm:text-lg opacity-80 max-w-xl mx-auto mb-8">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — all free, no signup required. Join thousands of travelers who never miss their train.</p>
+      {/* CTA — Premium */}
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-16 sm:py-24">
+        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.08)] blur-[100px] float-slow" />
+        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.06)] blur-[80px] float-medium" />
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 glass-hero rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6">
+            <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5 tracking-tight">Ready to Track Your Train?</h2>
+          <p className="text-base sm:text-lg opacity-75 max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Link to="/train">
-              <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
-                <Train className="w-4 h-4" /> Start Tracking Now
+              <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2 shadow-xl shadow-accent/25 px-8 h-13 shimmer">
+                <Train className="w-5 h-5" /> Start Tracking Now <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/planner">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] rounded-xl gap-2 font-semibold px-7 h-13">
                 <MapPin className="w-4 h-4" /> Plan a Journey
               </Button>
             </Link>
