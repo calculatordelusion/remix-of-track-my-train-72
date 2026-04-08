@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { popularRoutes } from "@/data/routes";
@@ -220,7 +221,7 @@ export default function SchedulePage() {
                         </span>
                       </td>
                       <td className="py-3 px-4">
-                        <Link to={`/train/${train.id}`} className="text-primary text-xs font-medium hover:underline">Track Live →</Link>
+                        <Link to={`/train/${generateTrainSlug(train.name, train.number)}`} className="text-primary text-xs font-medium hover:underline">Track Live →</Link>
                       </td>
                     </tr>
                   ))}

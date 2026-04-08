@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import { useStaggeredAnimation } from "@/hooks/useStaggeredAnimation";
 import SEOHead from "@/components/SEOHead";
@@ -266,7 +267,7 @@ export default function HomePage() {
                 {showResults && searchResults.length > 0 && (
                   <div id="search-results" role="listbox" aria-label="Search results" className="absolute top-full left-0 right-0 mt-2 bg-card border-2 border-primary/20 rounded-xl shadow-2xl z-50 max-h-80 overflow-auto">
                     {searchResults.map((train) => (
-                      <Link key={train.id} to={`/train/${train.id}`} role="option" className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors border-b border-border/50 last:border-0">
+                      <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`} role="option" className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors border-b border-border/50 last:border-0">
                         <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary ring-1 ring-primary/20">#{train.id}</div>
                         <div className="min-w-0 flex-1">
                           <div className="font-medium text-sm truncate">{train.name} {train.number}</div>
@@ -401,7 +402,7 @@ export default function HomePage() {
           </div>
           <div ref={liveTrainsAnim.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {activeTrains.map((train, i) => (
-              <Link key={train.id} to={`/train/${train.id}`} {...liveTrainsAnim.getAnimationProps(i)}>
+              <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`} {...liveTrainsAnim.getAnimationProps(i)}>
                 <Card className="hover:shadow-lg hover:border-primary/30 transition-all group h-full hover-lift">
                   <CardContent className="p-4">
                     <div className="flex items-center gap-2 mb-2">

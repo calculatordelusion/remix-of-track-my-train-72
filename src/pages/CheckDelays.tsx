@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import RelatedLinks from "@/components/RelatedLinks";
 import { Link } from "react-router-dom";
@@ -257,7 +258,7 @@ export default function CheckDelays() {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredTrains.map((train) => (
-                <Link key={train.id} to={`/train/${train.id}`}>
+                <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
                   <Card className="hover-lift group h-full hover:border-primary/30 transition-all">
                     <CardContent className="p-5">
                       <div className="flex items-center justify-between mb-2">

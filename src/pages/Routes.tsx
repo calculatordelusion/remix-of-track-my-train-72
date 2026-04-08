@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
@@ -240,7 +241,7 @@ export default function RoutesPage() {
                       {route.trains.slice(0, 4).map((t) => (
                         <Link
                           key={t.id}
-                          to={`/train/${t.id}`}
+                          to={`/train/${generateTrainSlug(t.name, t.number)}`}
                           className="text-xs bg-primary/10 text-primary px-2.5 py-1 rounded-full hover:bg-primary/20 transition-colors font-medium"
                         >
                           {t.name} {t.number}

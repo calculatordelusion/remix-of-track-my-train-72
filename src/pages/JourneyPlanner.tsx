@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useMemo, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
@@ -319,7 +320,7 @@ export default function JourneyPlannerPage() {
 
             <div className="space-y-4">
               {results.map((route, index) => (
-                <Link key={`${route.train.id}-${index}`} to={`/train/${route.train.id}`}>
+                <Link key={`${route.train.id}-${index}`} to={`/train/${generateTrainSlug(route.train.name, route.train.number)}`}>
                   <Card className="hover:shadow-lg hover:border-primary/30 transition-all mb-4 hover-lift">
                     <CardContent className="p-0">
                       <div className="flex items-center justify-between p-4 pb-2">

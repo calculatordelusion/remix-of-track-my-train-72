@@ -91,7 +91,7 @@ const App = () => {
                   <Route path="/trains" element={<Navigate to="/live-train" replace />} />
                   <Route path="/live" element={<Navigate to="/live-train" replace />} />
                   <Route path="/trains/:category" element={<LiveTrains />} />
-                  <Route path="/train/:id" element={<TrainDetail />} />
+                  <Route path="/train/:slug" element={<TrainDetail />} />
                   <Route path="/trains/passengers" element={<LiveTrains />} />
                   <Route path="/schedule" element={<Schedule />} />
                   <Route path="/stations" element={<Stations />} />

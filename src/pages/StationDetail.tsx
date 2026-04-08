@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useParams, Link } from "react-router-dom";
 import RelatedLinks from "@/components/RelatedLinks";
 import TopicCluster, { getStationCluster } from "@/components/TopicCluster";
@@ -136,7 +137,7 @@ export default function StationDetailPage() {
                   <h2 className="text-lg font-bold mb-4">All Trains at {station.name} ({stationTrains.length})</h2>
                   <div className="space-y-2">
                     {stationTrains.map((train) => (
-                      <Link key={train.id} to={`/train/${train.id}`} className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
+                      <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`} className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors">
                         <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">#{train.id}</div>
                         <div className="flex-1">
                           <div className="font-medium text-sm">{train.name} {train.number}</div>

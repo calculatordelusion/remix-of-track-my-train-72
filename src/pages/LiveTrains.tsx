@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Search, Train } from "lucide-react";
@@ -174,7 +175,7 @@ export default function LiveTrainsPage() {
             const direction = train.number.toLowerCase().includes('up') ? 'UP' : 'DN';
             
             return (
-              <Link key={train.id} to={`/train/${train.id}`}>
+              <Link key={train.id} to={`/train/${generateTrainSlug(train.name, train.number)}`}>
                 <Card className={`hover:shadow-lg hover:border-primary/30 transition-all group ${isLive ? 'border-primary/20' : 'opacity-75'}`}>
                   <CardContent className="p-4">
                     <div className="flex items-center gap-2 mb-2">
@@ -282,7 +283,7 @@ export default function LiveTrainsPage() {
               { label: "FAST", name: "Karakoram Express", route: "Karachi ↔ Lahore", id: 41, gradient: "gradient-card-blue", desc: "Comfortable overnight travel with AC sleeper berths and dining car." },
               { label: "HISTORIC", name: "Khyber Mail", route: "Peshawar ↔ Karachi", id: 1, gradient: "gradient-card-purple", desc: "The legendary cross-country service traversing the entire Main Line 1." },
             ].map((t) => (
-              <Link key={t.id} to={`/train/${t.id}`}>
+              <Link key={t.id} to={`/train/${generateTrainSlug(t.name, t.number)}`}>
                 <Card className={`${t.gradient} border hover-lift group h-full`}>
                   <CardContent className="p-5">
                     <span className="text-[10px] font-black tracking-widest text-primary/70">{t.label}</span>
