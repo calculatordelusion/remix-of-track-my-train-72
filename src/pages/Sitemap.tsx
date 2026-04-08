@@ -69,7 +69,7 @@ export default function SitemapPage() {
               <span className="text-gradient-gold">Sitemap</span>
             </h1>
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Complete directory of all pages on TrackMyTrain.pk — Pakistan's #1 live train tracking platform.
+              Complete directory of all pages on TrackMyTrain.com.pk — Pakistan's #1 live train tracking platform.
             </p>
           </div>
         </div>

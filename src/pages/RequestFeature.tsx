@@ -89,7 +89,7 @@ export default function RequestFeaturePage() {
             <h1 className="text-3xl md:text-5xl font-black mb-3">
               Request a Feature
             </h1>
-            <p className="text-base sm:text-lg opacity-80 max-w-xl mx-auto">Help us make TrackMyTrain.pk even better. Tell us what features you'd like to see, report bugs, or share your ideas for improvement.</p>
+            <p className="text-base sm:text-lg opacity-80 max-w-xl mx-auto">Help us make TrackMyTrain.com.pk even better. Tell us what features you'd like to see, report bugs, or share your ideas for improvement.</p>
             <p className="opacity-60 text-sm mt-2">اپنی تجاویز بھیجیں — ہمیں بہتر بنانے میں مدد کریں</p>
           </div>
         </div>

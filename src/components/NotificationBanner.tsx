@@ -36,7 +36,7 @@ export default function NotificationBanner() {
       await registerServiceWorker();
       sendLocalNotification(
         '🚂 Notifications Enabled!',
-        'You will now receive live train delay alerts and updates from TrackMyTrain.pk',
+        'You will now receive live train delay alerts and updates from TrackMyTrain.com.pk',
         { url: '/train' }
       );
       startTrainNotifications(async () => {

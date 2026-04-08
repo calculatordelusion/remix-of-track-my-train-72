@@ -1,4 +1,4 @@
-// Push Notification Manager for TrackMyTrain.pk
+// Push Notification Manager for TrackMyTrain.com.pk
 // Uses browser Notification API (no external push service needed for local notifications)
 
 export async function registerServiceWorker(): Promise<ServiceWorkerRegistration | null> {
