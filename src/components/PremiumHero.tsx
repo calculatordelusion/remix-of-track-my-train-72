@@ -27,14 +27,15 @@ export default function PremiumHero({
   centered = false,
 }: PremiumHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
+    <section className="relative overflow-hidden bg-hero-gradient py-12 sm:py-16 md:py-20">
       {/* Background layers */}
       <div className="absolute inset-0">
         <img
           src={heroTrainBg}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover opacity-[0.08] mix-blend-luminosity"
+          className="w-full h-full object-cover mix-blend-luminosity"
+          style={{ opacity: 'var(--hero-img-opacity)' }}
           width={1920}
           height={1080}
         />
@@ -42,16 +43,16 @@ export default function PremiumHero({
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-gradient-start)/0.7)] via-transparent to-transparent" />
       </div>
 
-      {/* Decorative orbs */}
-      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(165_55%_40%/0.06)] blur-[80px]" />
-      <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(38_92%_50%/0.04)] blur-[80px]" />
+      {/* Decorative orbs — theme-aware */}
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[80px]" />
+      <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[80px]" />
 
-      {/* Grid pattern */}
+      {/* Grid pattern — theme-aware */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "linear-gradient(hsl(0 0% 100% / 0.04) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.04) 1px, transparent 1px)",
+            "linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
