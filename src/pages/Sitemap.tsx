@@ -12,7 +12,7 @@ const sections = [
       { label: "Train Schedule", path: "/train-schedule", icon: Calendar },
       { label: "Journey Planner", path: "/train-journey-planner", icon: MapPin },
       { label: "Stations Directory", path: "/stations", icon: Navigation },
-      { label: "Route Maps", path: "/routes", icon: Map },
+      { label: "Route Maps", path: "/train-routes", icon: Map },
       { label: "Find My Train (GPS)", path: "/find-my-train", icon: Navigation },
       { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle },
     ],
