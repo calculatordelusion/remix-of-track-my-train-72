@@ -282,7 +282,7 @@ export default function LiveTrainsPage() {
               { label: "FAST", name: "Karakoram Express", route: "Karachi ↔ Lahore", id: 41, gradient: "gradient-card-blue", desc: "Comfortable overnight travel with AC sleeper berths and dining car." },
               { label: "HISTORIC", name: "Khyber Mail", route: "Peshawar ↔ Karachi", id: 1, gradient: "gradient-card-purple", desc: "The legendary cross-country service traversing the entire Main Line 1." },
             ].map((t) => (
-              <Link key={t.id} to={`/train/${t.id}`}>
+              <Link key={t.id} to={`/train/${generateTrainSlug(t.name, t.number)}`}>
                 <Card className={`${t.gradient} border hover-lift group h-full`}>
                   <CardContent className="p-5">
                     <span className="text-[10px] font-black tracking-widest text-primary/70">{t.label}</span>
