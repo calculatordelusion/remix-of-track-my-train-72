@@ -75,7 +75,7 @@ export default function PrivacyPage() {
             </div>
             <h1 className="text-3xl md:text-5xl font-black mb-3">
               Privacy Policy<br />
-              <span className="text-gradient-gold">TrackMyTrain.pk</span>
+              <span className="text-gradient-gold">TrackMyTrain.com.pk</span>
             </h1>
             <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
               How we handle your data and protect your privacy. We believe in transparency and minimal data collection.
@@ -184,7 +184,7 @@ export default function PrivacyPage() {
                 </div>
                 <h2 className="text-lg font-bold">8. Children's Privacy</h2>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">TrackMyTrain.pk does not knowingly collect personal information from children under 13. Our service is designed for general audiences and does not require age verification since no personal data collection occurs during normal use.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">TrackMyTrain.com.pk does not knowingly collect personal information from children under 13. Our service is designed for general audiences and does not require age verification since no personal data collection occurs during normal use.</p>
             </CardContent>
           </Card>
 

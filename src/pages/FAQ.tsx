@@ -203,7 +203,7 @@ export default function FAQPage() {
                 <div className="space-y-2 text-xs opacity-90">
                   <p>Helpline: <strong>117</strong> (24/7)</p>
                   <p>Website: <strong>pak-railways.gov.pk</strong></p>
-                  <p className="opacity-70 mt-2">TrackMyTrain.pk is an independent service — not affiliated with Pakistan Railways. For official ticketing and reservations, contact PR directly.</p>
+                  <p className="opacity-70 mt-2">TrackMyTrain.com.pk is an independent service — not affiliated with Pakistan Railways. For official ticketing and reservations, contact PR directly.</p>
                 </div>
               </CardContent>
             </Card>
