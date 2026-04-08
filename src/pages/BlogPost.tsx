@@ -201,7 +201,7 @@ export default function BlogPostPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {post.slug.includes("delay") || post.slug.includes("track") ? (
                 <>
-                  <Link to="/check-delays" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/check-train-delays" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0"><AlertTriangle className="w-5 h-5 text-destructive" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Check Delays</div><div className="text-xs text-muted-foreground">Live delay monitor for all trains</div></div>
                   </Link>
@@ -220,18 +220,18 @@ export default function BlogPostPage() {
                     <div className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center shrink-0"><CreditCard className="w-5 h-5 text-secondary-foreground" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Ticket Prices</div><div className="text-xs text-muted-foreground">Compare fares across classes</div></div>
                   </Link>
-                  <Link to="/schedule" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/train-schedule" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Calendar className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Train Schedule</div><div className="text-xs text-muted-foreground">Full timetable for all trains</div></div>
                   </Link>
                 </>
               ) : post.slug.includes("karachi") || post.slug.includes("lahore") || post.slug.includes("route") || post.slug.includes("scenic") ? (
                 <>
-                  <Link to="/planner" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/train-journey-planner" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center shrink-0"><Navigation className="w-5 h-5 text-accent-foreground" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Journey Planner</div><div className="text-xs text-muted-foreground">Find trains between any stations</div></div>
                   </Link>
-                  <Link to="/routes" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/train-routes" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Route className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Route Maps</div><div className="text-xs text-muted-foreground">All railway corridors & distances</div></div>
                   </Link>
@@ -261,15 +261,15 @@ export default function BlogPostPage() {
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Train className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Live Trains</div><div className="text-xs text-muted-foreground">Track any train in real-time</div></div>
                   </Link>
-                  <Link to="/planner" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/train-journey-planner" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center shrink-0"><Navigation className="w-5 h-5 text-accent-foreground" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Journey Planner</div><div className="text-xs text-muted-foreground">Plan your next trip</div></div>
                   </Link>
-                  <Link to="/schedule" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/train-schedule" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><Calendar className="w-5 h-5 text-primary" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Train Schedule</div><div className="text-xs text-muted-foreground">Complete timetables</div></div>
                   </Link>
-                  <Link to="/check-delays" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
+                  <Link to="/check-train-delays" className="flex items-center gap-3 p-3 rounded-xl border bg-background hover:border-primary transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0"><AlertTriangle className="w-5 h-5 text-destructive" /></div>
                     <div><div className="text-sm font-semibold group-hover:text-primary transition-colors">Check Delays</div><div className="text-xs text-muted-foreground">Live delay status</div></div>
                   </Link>
@@ -307,7 +307,7 @@ export default function BlogPostPage() {
                 <Link to="/live-train">
                   <Button className="rounded-full gap-2 w-full sm:w-auto">Open Live Tracker <ArrowRight className="w-4 h-4" /></Button>
                 </Link>
-                <Link to="/planner">
+                <Link to="/train-journey-planner">
                   <Button variant="outline" className="rounded-full gap-2 w-full sm:w-auto">Plan a Journey</Button>
                 </Link>
               </div>

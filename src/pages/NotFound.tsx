@@ -50,7 +50,7 @@ const NotFound = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {[
             { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time.", link: "/live-train" },
-            { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Plan routes between stations.", link: "/planner" },
+            { icon: MapPin, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Plan routes between stations.", link: "/train-journey-planner" },
             { icon: Navigation, gradient: "gradient-card-blue", title: "Find My Train", desc: "GPS auto-detection.", link: "/find-my-train" },
           ].map((item, i) => (
             <Link key={i} to={item.link}>

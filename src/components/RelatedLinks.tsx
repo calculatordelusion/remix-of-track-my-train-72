@@ -11,9 +11,9 @@ interface RelatedLinksProps {
 
 const allLinks = [
   { label: "Track Trains Live", icon: Radio, path: "/live-train", gradient: "gradient-card-emerald", contexts: ["station", "route", "schedule", "general"] },
-  { label: "Journey Planner", icon: Navigation, path: "/planner", gradient: "gradient-card-blue", contexts: ["train", "station", "route", "general"] },
-  { label: "Check Train Delays", icon: AlertTriangle, path: "/check-delays", gradient: "gradient-card-amber", contexts: ["train", "station", "route", "schedule"] },
-  { label: "Train Schedule", icon: Calendar, path: "/schedule", gradient: "gradient-card-purple", contexts: ["train", "station", "route", "general"] },
+  { label: "Journey Planner", icon: Navigation, path: "/train-journey-planner", gradient: "gradient-card-blue", contexts: ["train", "station", "route", "general"] },
+  { label: "Check Train Delays", icon: AlertTriangle, path: "/check-train-delays", gradient: "gradient-card-amber", contexts: ["train", "station", "route", "schedule"] },
+  { label: "Train Schedule", icon: Calendar, path: "/train-schedule", gradient: "gradient-card-purple", contexts: ["train", "station", "route", "general"] },
   { label: "All Stations", icon: Landmark, path: "/stations", gradient: "gradient-card-teal", contexts: ["train", "route", "schedule", "general"] },
   { label: "All Routes", icon: Route, path: "/routes", gradient: "gradient-card-emerald", contexts: ["train", "station", "schedule", "general"] },
   { label: "Ticket Prices", icon: CreditCard, path: "/ticket-pricing", gradient: "gradient-card-amber", contexts: ["train", "station", "route", "general"] },

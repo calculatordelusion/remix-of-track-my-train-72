@@ -1,4 +1,4 @@
-import { generateTrainSlug } from "@/data/trains";
+import { generateTrainSlug, trainIdToSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Search, Train } from "lucide-react";
@@ -110,7 +110,7 @@ export default function LiveTrainsPage() {
         <div className="flex flex-wrap items-center gap-2 mt-6">
           <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>
           <Link to="/trains/passenger" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Passenger Trains</Link>
-          <Link to="/schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
+          <Link to="/train-schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
           <Link to="/stations" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Stations</Link>
         </div>
       </PremiumHero>
@@ -283,7 +283,7 @@ export default function LiveTrainsPage() {
               { label: "FAST", name: "Karakoram Express", route: "Karachi ↔ Lahore", id: 41, gradient: "gradient-card-blue", desc: "Comfortable overnight travel with AC sleeper berths and dining car." },
               { label: "HISTORIC", name: "Khyber Mail", route: "Peshawar ↔ Karachi", id: 1, gradient: "gradient-card-purple", desc: "The legendary cross-country service traversing the entire Main Line 1." },
             ].map((t) => (
-              <Link key={t.id} to={`/train/${generateTrainSlug(t.name, t.number)}`}>
+              <Link key={t.id} to={`/train/${trainIdToSlug.get(t.id) ?? t.id}`}>
                 <Card className={`${t.gradient} border hover-lift group h-full`}>
                   <CardContent className="p-5">
                     <span className="text-[10px] font-black tracking-widest text-primary/70">{t.label}</span>

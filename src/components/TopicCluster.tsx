@@ -85,20 +85,20 @@ export const greenLineCluster: TopicLink[] = [
   { label: "Multan Cantt Station", path: "/stations/multan-cantt", icon: Landmark, relation: "Key junction stop" },
   { label: "Ticket Prices & Fares", path: "/ticket-pricing", icon: CreditCard, relation: "Compare Green Line fares" },
   { label: "Karachi → Lahore Route", path: "/routes/karachi-to-lahore", icon: Route, relation: "Full route details" },
-  { label: "Check Green Line Delays", path: "/check-delays", icon: AlertTriangle, relation: "Real-time delay status" },
-  { label: "Journey Planner", path: "/planner", icon: Navigation, relation: "Plan your Green Line trip" },
+  { label: "Check Green Line Delays", path: "/check-train-delays", icon: AlertTriangle, relation: "Real-time delay status" },
+  { label: "Journey Planner", path: "/train-journey-planner", icon: Navigation, relation: "Plan your Green Line trip" },
   { label: "All Express Trains", path: "/express-trains", icon: Zap, relation: "Compare with other express" },
 ];
 
 export const expressTrainsCluster: TopicLink[] = [
   { label: "Green Line Express", path: "/green-line-express", icon: Leaf, relation: "Pakistan's premium train" },
   { label: "Ticket Prices & Fares", path: "/ticket-pricing", icon: CreditCard, relation: "Compare all train fares" },
-  { label: "Train Schedule 2026", path: "/schedule", icon: Calendar, relation: "Full timetable" },
+  { label: "Train Schedule 2026", path: "/train-schedule", icon: Calendar, relation: "Full timetable" },
   { label: "Karachi Cantt Station", path: "/stations/karachi-cantt", icon: Landmark, relation: "Major departure hub" },
   { label: "Lahore Junction Station", path: "/stations/lahore-junction", icon: Landmark, relation: "Busiest station" },
   { label: "Karachi → Lahore Route", path: "/routes/karachi-to-lahore", icon: Route, relation: "Most popular corridor" },
-  { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Live delay monitor" },
-  { label: "Journey Planner", path: "/planner", icon: Navigation, relation: "Find your train" },
+  { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle, relation: "Live delay monitor" },
+  { label: "Journey Planner", path: "/train-journey-planner", icon: Navigation, relation: "Find your train" },
   { label: "Blog & Travel Guides", path: "/blog", icon: BookOpen, relation: "Travel tips & guides" },
 ];
 
@@ -107,18 +107,18 @@ export function getTrainCluster(trainName: string, fromSlug: string, fromName: s
     { label: `${fromName} Station`, path: `/stations/${fromSlug}`, icon: Landmark, relation: "Departure station" },
     { label: `${toName} Station`, path: `/stations/${toSlug}`, icon: Landmark, relation: "Arrival station" },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard, relation: `${trainName} fare details` },
-    { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Live delay status" },
-    { label: "Journey Planner", path: "/planner", icon: Navigation, relation: "Plan connecting journeys" },
-    { label: "Train Schedule", path: "/schedule", icon: Calendar, relation: "Full timetable" },
+    { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle, relation: "Live delay status" },
+    { label: "Journey Planner", path: "/train-journey-planner", icon: Navigation, relation: "Plan connecting journeys" },
+    { label: "Train Schedule", path: "/train-schedule", icon: Calendar, relation: "Full timetable" },
   ];
 }
 
 export function getStationCluster(stationName: string, province: string): TopicLink[] {
   return [
     { label: "Live Train Tracker", path: "/live-train", icon: Train, relation: `Track trains at ${stationName}` },
-    { label: "Journey Planner", path: "/planner", icon: Navigation, relation: `Plan trips from ${stationName}` },
+    { label: "Journey Planner", path: "/train-journey-planner", icon: Navigation, relation: `Plan trips from ${stationName}` },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard, relation: "Compare fares" },
-    { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Real-time delay info" },
+    { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle, relation: "Real-time delay info" },
     { label: "All Stations Directory", path: "/stations", icon: Landmark, relation: `More ${province} stations` },
     { label: "Route Maps", path: "/routes", icon: Route, relation: "Explore railway corridors" },
     { label: "Express Trains", path: "/express-trains", icon: Zap, relation: "Fast services" },
@@ -130,9 +130,9 @@ export function getRouteCluster(fromName: string, toName: string): TopicLink[] {
   return [
     { label: "Live Train Tracker", path: "/live-train", icon: Train, relation: `Track ${fromName}–${toName} trains` },
     { label: "Ticket Prices", path: "/ticket-pricing", icon: CreditCard, relation: "Fare comparison" },
-    { label: "Check Delays", path: "/check-delays", icon: AlertTriangle, relation: "Delay status" },
-    { label: "Journey Planner", path: "/planner", icon: Navigation, relation: "Find best connections" },
-    { label: "Train Schedule", path: "/schedule", icon: Calendar, relation: "Full timetable" },
+    { label: "Check Delays", path: "/check-train-delays", icon: AlertTriangle, relation: "Delay status" },
+    { label: "Journey Planner", path: "/train-journey-planner", icon: Navigation, relation: "Find best connections" },
+    { label: "Train Schedule", path: "/train-schedule", icon: Calendar, relation: "Full timetable" },
     { label: "All Routes", path: "/routes", icon: Route, relation: "Explore more corridors" },
   ];
 }

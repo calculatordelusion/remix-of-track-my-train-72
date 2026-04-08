@@ -105,9 +105,9 @@ export default function CheckDelays() {
       <SEOHead
         title="Train Delay Checker — Is My Train Late? 2026"
         description="Check Pakistan Railways train delays in real time. See late minutes, revised ETAs, and delay status for all running trains. Essential for fog season."
-        canonical="/check-delays"
+        canonical="/check-train-delays"
         keywords="train delay checker, is my train late, train delay status pakistan, check train delay, train late today pakistan, train running late, fog delay trains, tezgam delay today, green line delay, train cancelled today, pakistan railway delay report, train delay minutes"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-delays" }]}
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-train-delays" }]}
         faqSchema={delayFaqs}
         additionalSchemas={[{
           "@context": "https://schema.org",
@@ -370,7 +370,7 @@ export default function CheckDelays() {
             {[
               { icon: Navigation, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train's real-time position on an interactive map.", link: "/live-train" },
               { icon: TrendingUp, gradient: "gradient-card-amber", title: "Express Trains", desc: "Browse all express trains with schedules and live tracking.", link: "/express-trains" },
-              { icon: Clock, gradient: "gradient-card-blue", title: "Full Schedule", desc: "Complete timetable for all Pakistan Railways trains.", link: "/schedule" },
+              { icon: Clock, gradient: "gradient-card-blue", title: "Full Schedule", desc: "Complete timetable for all Pakistan Railways trains.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>
@@ -397,7 +397,7 @@ export default function CheckDelays() {
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>
             </Link>
-            <Link to="/planner">
+            <Link to="/train-journey-planner">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> Plan Your Journey
               </Button>

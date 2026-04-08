@@ -194,7 +194,7 @@ export default function TrainDetailPage() {
                   <p><strong className="text-foreground">{train.name}</strong> is a {train.type === "ac" ? "premium air-conditioned" : train.type === "express" ? "popular express" : train.type} train service operated by Pakistan Railways on the {train.from} to {train.to} route. With a journey time of {train.duration}, it is one of the key rail services connecting these important cities.</p>
                   <p>The train departs from {train.from} at {train.departureTime} and arrives at {train.to} at {train.arrivalTime}. It operates on {train.days.length === 7 ? "all days of the week (daily service)" : `selected days: ${train.days.join(", ")}`}, making it a {train.days.length === 7 ? "reliable daily" : "scheduled"} option for passengers traveling this route.</p>
                   <p>{train.type === "ac" ? `As an AC (air-conditioned) service, ${train.name} offers premium comfort with climate-controlled coaches, making it especially popular during Pakistan's hot summer months. AC trains typically feature padded seating, cleaner interiors, and a more comfortable travel experience compared to standard services.` : train.type === "express" ? `As an express service, ${train.name} makes fewer stops than passenger trains, resulting in shorter overall journey times. Express trains are the most popular category among intercity travelers in Pakistan, offering a good balance of speed, comfort, and affordability.` : `${train.name} provides essential connectivity for passengers along its route, serving both major stations and smaller intermediate stops.`}</p>
-                  <p>You can track {train.name} in real-time on this page whenever it's running. Our GPS-based tracking shows the train's exact position, current speed, and delay status with updates every 30 seconds. For ticket pricing information, visit our <Link to="/ticket-pricing" className="text-primary hover:underline">ticket pricing page</Link>. To check all available trains on this corridor, use the <Link to="/planner" className="text-primary hover:underline">journey planner</Link>.</p>
+                  <p>You can track {train.name} in real-time on this page whenever it's running. Our GPS-based tracking shows the train's exact position, current speed, and delay status with updates every 30 seconds. For ticket pricing information, visit our <Link to="/ticket-pricing" className="text-primary hover:underline">ticket pricing page</Link>. To check all available trains on this corridor, use the <Link to="/train-journey-planner" className="text-primary hover:underline">journey planner</Link>.</p>
                 </div>
               </CardContent>
             </Card>
@@ -299,15 +299,15 @@ export default function TrainDetailPage() {
               <CardContent className="p-6">
                 <h3 className="font-bold mb-3">Explore More</h3>
                 <div className="space-y-2">
-                  <Link to="/schedule" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/train-schedule" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center"><Calendar className="w-4 h-4 text-primary" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Full Schedule</div><div className="text-[10px] text-muted-foreground">All train timetables</div></div>
                   </Link>
-                  <Link to="/check-delays" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/check-train-delays" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-destructive/10 flex items-center justify-center"><AlertTriangle className="w-4 h-4 text-destructive" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Check Delays</div><div className="text-[10px] text-muted-foreground">Live delay monitor</div></div>
                   </Link>
-                  <Link to="/planner" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
+                  <Link to="/train-journey-planner" className="flex items-center gap-2.5 p-2.5 rounded-lg hover:bg-muted transition-colors group">
                     <div className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center"><Route className="w-4 h-4 text-accent-foreground" /></div>
                     <div><div className="text-sm font-medium group-hover:text-primary transition-colors">Journey Planner</div><div className="text-[10px] text-muted-foreground">Plan your trip</div></div>
                   </Link>

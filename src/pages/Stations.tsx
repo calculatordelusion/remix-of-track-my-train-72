@@ -358,8 +358,8 @@ export default function StationsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
               { icon: Train, gradient: "gradient-card-emerald", title: "Live Train Tracker", desc: "Track any train in real-time with GPS positioning and live speed data.", link: "/live-train" },
-              { icon: Navigation, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations across Pakistan.", link: "/planner" },
-              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with timings.", link: "/schedule" },
+              { icon: Navigation, gradient: "gradient-card-amber", title: "Journey Planner", desc: "Find the best routes between any two stations across Pakistan.", link: "/train-journey-planner" },
+              { icon: Clock, gradient: "gradient-card-blue", title: "Train Schedule", desc: "Complete timetables for all Pakistan Railway trains with timings.", link: "/train-schedule" },
             ].map((tool, i) => (
               <Link key={i} to={tool.link}>
                 <Card className={`${tool.gradient} border hover-lift group h-full`}>
@@ -389,7 +389,7 @@ export default function StationsPage() {
                 <Train className="w-4 h-4" /> Track Trains Live
               </Button>
             </Link>
-            <Link to="/schedule">
+            <Link to="/train-schedule">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-xl gap-2">
                 <Clock className="w-4 h-4" /> View Train Schedule
               </Button>
