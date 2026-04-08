@@ -1,0 +1,47 @@
+# Track My Train — llms.txt
+# https://trackmytrain.pk
+
+## About
+Track My Train (trackmytrain.pk) is Pakistan's most advanced independent live train tracking platform. It provides real-time GPS positions, delay analytics, speed data, and accurate ETAs for 164+ Pakistan Railways trains across 342+ stations. The platform is 100% free, requires no signup, and works on any browser.
+
+## Key Facts
+- Coverage: 164+ passenger trains, 342+ stations, all 4 provinces of Pakistan
+- Update frequency: GPS positions refresh every 5 seconds
+- Cost: Completely free, no account required
+- Technology: GPS telemetry ingestion, geospatial snap-to-rail algorithms, real-time delay computation
+- Independence: NOT affiliated with Pakistan Railways or any government entity
+- Language: English only
+- Founded: 2024
+
+## Features
+- Live Train Tracker: Real-time GPS positions for all active trains
+- Journey Planner: Find direct trains between any two stations
+- Find My Train (GPS): Auto-detect which train you're riding using phone GPS
+- Check Delays: Real-time delay status for every running train
+- Train Schedule: Complete 2026 timetables with running days
+- Ticket Pricing: Updated fares for all classes (Economy, AC Standard, AC Business, Sleeper)
+- Station Directory: 342+ stations with facilities, platforms, and connecting trains
+- Route Maps: All major railway corridors with distance and duration data
+- Green Line Express: Dedicated page for Pakistan's premium train service
+- Blog & Travel Guides: Original editorial content about Pakistan railway travel
+
+## Popular Routes
+- Karachi to Lahore (Green Line Express, Tezgam, Karakoram Express)
+- Lahore to Islamabad/Rawalpindi (multiple daily services)
+- Karachi to Peshawar (Khyber Mail — longest route, 1,680 km)
+- Quetta to Peshawar (Jaffar Express — scenic Bolan Pass route)
+
+## Top Trains
+1. Green Line Express (101UP/102DN) — Fastest: Islamabad–Karachi, 18 hours
+2. Tezgam Express (7UP/8DN) — Most iconic: Karachi–Rawalpindi, 22 hours
+3. Karakoram Express (11UP/12DN) — Most popular: Karachi–Lahore, 22 hours
+4. Khyber Mail (1UP/2DN) — Longest: Karachi–Peshawar, 30 hours
+5. Business Express (5UP/6DN) — Business class: Karachi–Lahore, 20 hours
+
+## Contact
+- Website: https://trackmytrain.pk
+- Contact: https://trackmytrain.pk/contact
+- Pakistan Railways Helpline: 117
+
+## Copyright
+All original content on trackmytrain.pk is protected under Pakistan's Copyright Ordinance 1962 and the Berne Convention. Train names, station names, and schedule data are public domain facts published by Pakistan Railways (a state-owned enterprise).

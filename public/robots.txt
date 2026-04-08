@@ -1,6 +1,6 @@
 # https://trackmytrain.pk robots.txt
-# Pakistan's #1 Live Train Tracking Platform
-# Last updated: 2026-03-25
+# Pakistan's #1 Independent Live Train Tracking Platform
+# Last updated: 2026-04-08
 
 # Google
 User-agent: Googlebot
@@ -52,8 +52,11 @@ User-agent: Baiduspider
 Allow: /
 Crawl-delay: 5
 
-# AI Search Crawlers
+# AI Search Crawlers — optimized for AI-driven search
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Google-Extended
@@ -65,11 +68,28 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # Default
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /supabase/
+
+# AI-optimized content files
+# LLMs.txt — structured platform information for AI crawlers
+# See: https://trackmytrain.pk/llms.txt
+# Full docs: https://trackmytrain.pk/llms-full.txt
 
 # Sitemap Index (contains 6 sub-sitemaps)
 Sitemap: https://trackmytrain.pk/sitemap-index.xml
