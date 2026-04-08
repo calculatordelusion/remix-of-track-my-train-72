@@ -150,7 +150,7 @@ export default function HomePage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
                 </span>
-                <span className="font-semibold tracking-[0.15em] text-primary text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
+                <span className="font-semibold tracking-[0.15em] text-white dark:text-primary text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight text-[hsl(var(--hero-text))]">
