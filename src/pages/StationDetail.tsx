@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useParams, Link } from "react-router-dom";
 import RelatedLinks from "@/components/RelatedLinks";
 import TopicCluster, { getStationCluster } from "@/components/TopicCluster";

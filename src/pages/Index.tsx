@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useEffect, useMemo } from "react";
 import { useStaggeredAnimation } from "@/hooks/useStaggeredAnimation";
 import SEOHead from "@/components/SEOHead";

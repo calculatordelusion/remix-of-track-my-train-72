@@ -1,3 +1,4 @@
+import { generateTrainSlug } from "@/data/trains";
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { popularRoutes } from "@/data/routes";
