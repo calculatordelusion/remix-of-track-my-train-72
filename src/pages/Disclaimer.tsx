@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertTriangle, Info, Shield, Train, CreditCard, Globe, ExternalLink, Copyright, Scale, FileText } from "lucide-react";
+import { AlertTriangle, Info, Shield, Train, CreditCard, Globe, ExternalLink, Copyright, Scale, FileText, Gavel, BookOpen } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const disclaimerSections = [
@@ -16,24 +16,26 @@ export default function DisclaimerPage() {
   return (
     <div>
       <SEOHead
-        title="Disclaimer — Track My Train | Important Notice"
-        description="Track My Train disclaimer. Understand limitations of our tracking data, our independence from Pakistan Railways, and third-party content policies."
+        title="Disclaimer & DMCA Policy — Track My Train | Legal Notice"
+        description="Track My Train legal disclaimer, DMCA policy, copyright notice, and fair use statement. All content is original and protected under Pakistan Copyright Ordinance 1962."
         canonical="/disclaimer"
-        keywords="track my train disclaimer, train tracker disclaimer, pakistan railways tracker disclaimer"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Disclaimer", url: "/disclaimer" }]}
+        keywords="track my train disclaimer, DMCA policy, copyright notice, fair use pakistan railways data, train tracker legal"
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Disclaimer & DMCA Policy", url: "/disclaimer" }]}
+        primaryEntity="Copyright Law"
+        contentCategory="informational"
       />
 
       <section className="py-12 sm:py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-destructive/10 text-destructive text-sm font-medium mb-4">
-              <AlertTriangle className="w-4 h-4" /> Important Notice
+              <AlertTriangle className="w-4 h-4" /> Important Legal Notice
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4">
-              Disclaimer
+              Disclaimer & DMCA Policy
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Last updated: April 8, 2026. Please read this disclaimer carefully before using Track My Train.
+              Last updated: April 8, 2026. This page outlines our legal position, copyright protections, DMCA policy, and fair use rights.
             </p>
           </div>
 
@@ -54,7 +56,7 @@ export default function DisclaimerPage() {
               </Card>
             ))}
 
-            {/* DMCA & Copyright Protection Section */}
+            {/* DMCA & Copyright Protection Section — STRENGTHENED */}
             <Card className="border-2 border-primary/30 shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -64,16 +66,21 @@ export default function DisclaimerPage() {
                   <div>
                     <h2 className="text-lg font-bold text-foreground mb-3">Original Content & Copyright Notice</h2>
                     <div className="space-y-3 text-muted-foreground leading-relaxed">
-                      <p>All textual content, editorial articles, travel guides, user interface designs, CSS styling, page layouts, and code on trackmytrain.pk are <strong className="text-foreground">original works created independently by the Track My Train development team</strong>. This content is protected under Pakistan's Copyright Ordinance, 1962 (as amended) and international copyright conventions including the Berne Convention.</p>
-                      <p>Our content covers <strong className="text-foreground">publicly available factual information</strong> about Pakistan Railways — including train names, station names, schedule data, fare ranges, route descriptions, and operational facts. These are <strong className="text-foreground">public domain facts</strong> that cannot be owned or copyrighted by any single entity. The specific expression, analysis, editorial commentary, and presentation of these facts on trackmytrain.pk is our original creative work.</p>
-                      <p>Any similarities between our content and content on other railway information websites are coincidental and arise from the fact that <strong className="text-foreground">all Pakistan Railways information platforms necessarily describe the same publicly available facts</strong> — the same train names, the same station names, the same routes, and the same fare structures published by Pakistan Railways. Factual information about public transportation services is not copyrightable under any jurisdiction.</p>
+                      <p>All textual content, editorial articles, travel guides, user interface designs, CSS styling, page layouts, source code, and software on trackmytrain.pk are <strong className="text-foreground">original works independently created by the Track My Train development team</strong>. These works are protected under:</p>
+                      <ul className="list-disc ml-6 space-y-1">
+                        <li><strong className="text-foreground">Pakistan's Copyright Ordinance, 1962</strong> (as amended 2000) — Sections 3, 56, and 66</li>
+                        <li><strong className="text-foreground">The Berne Convention</strong> for the Protection of Literary and Artistic Works (1886)</li>
+                        <li><strong className="text-foreground">TRIPS Agreement</strong> (WTO Agreement on Trade-Related Aspects of Intellectual Property Rights)</li>
+                        <li><strong className="text-foreground">U.S. Copyright Act, Title 17 U.S.C.</strong> — applicable for DMCA claims filed with U.S.-based hosting providers</li>
+                      </ul>
+                      <p>© 2024–2026 Track My Train. All rights reserved. Unauthorized reproduction, distribution, or derivative use of our original content is strictly prohibited and will be prosecuted to the fullest extent of applicable law.</p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Fair Use & Public Data */}
+            {/* Public Domain Data — Legal Defense */}
             <Card className="border border-border/50 shadow-sm">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -81,18 +88,74 @@ export default function DisclaimerPage() {
                     <Scale className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-foreground mb-3">Public Data & Fair Use Statement</h2>
+                    <h2 className="text-lg font-bold text-foreground mb-3">Public Domain Data & Fair Use Statement</h2>
                     <div className="space-y-3 text-muted-foreground leading-relaxed">
-                      <p>Track My Train uses <strong className="text-foreground">publicly broadcast GPS telemetry data</strong> and <strong className="text-foreground">officially gazetted Pakistan Railways timetable information</strong> to provide its tracking and schedule services. This data is transmitted over public frequencies and published in official government gazettes, making it part of the public domain.</p>
-                      <p>The use of Pakistan Railways train names (e.g., Tezgam, Green Line Express, Khyber Mail), station names (e.g., Lahore Junction, Karachi Cantt), and route information constitutes <strong className="text-foreground">fair use of factual public transportation data</strong> for informational purposes. These terms are official designations of a state-owned enterprise and are not trademarkable by third-party websites.</p>
-                      <p>Our editorial content — including travel guides, comparison tables, safety tips, and booking advice — represents <strong className="text-foreground">independent journalistic and editorial work</strong> based on first-hand travel experience and publicly available information. It is not derived from, copied from, or based on the content of any other website.</p>
+                      <p>Track My Train processes <strong className="text-foreground">publicly broadcast GPS telemetry data</strong> and <strong className="text-foreground">officially gazetted Pakistan Railways timetable information</strong>. This data is published by Pakistan Railways — a <strong className="text-foreground">state-owned enterprise under the Ministry of Railways, Government of Pakistan</strong> — and constitutes public domain information.</p>
+                      <p>Under established copyright law principles (see <em>Feist Publications, Inc. v. Rural Telephone Service Co.</em>, 499 U.S. 340 (1991)), <strong className="text-foreground">facts are not copyrightable</strong>. The following are uncopyrightable facts that any website or person is free to publish:</p>
+                      <ul className="list-disc ml-6 space-y-1">
+                        <li>Train names (Tezgam, Green Line Express, Khyber Mail, etc.) — official designations by Pakistan Railways</li>
+                        <li>Station names (Lahore Junction, Karachi Cantt, etc.) — geographic proper nouns</li>
+                        <li>Route information (Karachi to Lahore, etc.) — geographic facts</li>
+                        <li>Schedule data — officially gazetted timetables published by a government entity</li>
+                        <li>Fare information — publicly posted pricing by a state-owned enterprise</li>
+                        <li>GPS telemetry data — publicly broadcast radio signals</li>
+                      </ul>
+                      <p><strong className="text-foreground">No third-party website, individual, or entity can claim exclusive copyright over these public domain facts.</strong> Any attempt to restrict others from publishing factual information about public transportation services has no legal basis under Pakistani, U.S., or international copyright law.</p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* DMCA Counter-Notice */}
+            {/* DMCA Counter-Notice & Anti-Abuse — STRONG LANGUAGE */}
+            <Card className="border-2 border-destructive/20 shadow-md">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-destructive/10 shrink-0">
+                    <Gavel className="w-5 h-5 text-destructive" />
+                  </div>
+                  <div>
+                    <h2 className="text-lg font-bold text-foreground mb-3">DMCA Policy, Counter-Notice & Anti-Abuse Warning</h2>
+                    <div className="space-y-3 text-muted-foreground leading-relaxed">
+                      <p>Track My Train respects legitimate intellectual property rights. We will promptly investigate any properly filed DMCA takedown notice that identifies <strong className="text-foreground">specific copyrighted expression</strong> (not facts, not ideas, not topics) that has been copied verbatim.</p>
+                      
+                      <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-4 my-4">
+                        <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
+                          <AlertTriangle className="w-4 h-4 text-destructive" /> Warning Against False DMCA Claims
+                        </h3>
+                        <p className="text-sm">Under <strong className="text-foreground">17 U.S.C. § 512(f)</strong>, any person who <strong className="text-foreground">knowingly materially misrepresents</strong> that material is infringing may be subject to liability for damages, including costs and attorneys' fees incurred by the alleged infringer. See <em>Lenz v. Universal Music Corp.</em>, 815 F.3d 1145 (9th Cir. 2016).</p>
+                      </div>
+
+                      <p><strong className="text-foreground">The following CANNOT be the basis of a valid DMCA claim:</strong></p>
+                      <ul className="list-disc ml-6 space-y-1">
+                        <li>Publishing the same <strong>factual information</strong> about Pakistan Railways (train names, schedules, fares, routes)</li>
+                        <li>Operating a website that covers the <strong>same topic</strong> (Pakistan railway tracking)</li>
+                        <li>Using <strong>similar page types</strong> (train pages, station pages, route pages) — these are functional categories, not copyrightable expression</li>
+                        <li>Displaying <strong>publicly available data</strong> from Pakistan Railways in a different format or layout</li>
+                        <li>Writing <strong>about the same subjects</strong> — copyright protects expression, not ideas or topics</li>
+                      </ul>
+
+                      <p>If we receive a DMCA takedown notice, we will:</p>
+                      <ol className="list-decimal ml-6 space-y-1">
+                        <li>Evaluate whether the claim identifies specific copyrighted <strong>expression</strong> (not facts or topics)</li>
+                        <li>If the claim targets public domain facts or original content, <strong>file a counter-notice under 17 U.S.C. § 512(g)</strong></li>
+                        <li>If the claim is determined to be false or abusive, <strong>pursue damages under 17 U.S.C. § 512(f)</strong> and report the abuse to the relevant hosting provider</li>
+                        <li>Document all false claims for potential <strong>tortious interference, defamation, and abuse of process</strong> proceedings under Pakistani law (Pakistan Penal Code, Sections 499–502)</li>
+                      </ol>
+
+                      <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 mt-4">
+                        <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
+                          <BookOpen className="w-4 h-4 text-primary" /> Our Counter-Notice Commitment
+                        </h3>
+                        <p className="text-sm">We will <strong className="text-foreground">vigorously defend</strong> our right to publish original content about public transportation services. Every DMCA takedown targeting our original content will be met with a sworn counter-notice, and we reserve the right to pursue legal action against parties who file false or bad-faith claims.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Legitimate DMCA Procedure */}
             <Card className="border border-border/50 shadow-sm">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -100,12 +163,18 @@ export default function DisclaimerPage() {
                     <FileText className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-foreground mb-3">DMCA Policy & Counter-Notice Rights</h2>
+                    <h2 className="text-lg font-bold text-foreground mb-3">Filing a Legitimate DMCA Notice</h2>
                     <div className="space-y-3 text-muted-foreground leading-relaxed">
-                      <p>Track My Train respects intellectual property rights and will respond promptly to legitimate DMCA takedown notices. However, we also <strong className="text-foreground">vigorously defend our right to publish original content about public transportation services</strong>.</p>
-                      <p><strong className="text-foreground">Important:</strong> Under 17 U.S.C. § 512(f), any person who knowingly materially misrepresents that material is infringing may be liable for damages. Filing a false DMCA claim against original content or public-domain factual information may result in legal liability for the claimant.</p>
-                      <p>Factual information about Pakistan Railways — including train names, station names, schedules, fares, and route data — is <strong className="text-foreground">public domain information published by a state-owned enterprise</strong>. No third-party website can claim copyright over these facts, nor can they claim exclusive right to write about them.</p>
-                      <p>If you believe specific content on our site infringes your copyright, please contact us at our <Link to="/contact" className="text-primary underline hover:no-underline">Contact page</Link> with: (1) identification of the copyrighted work, (2) the specific URL on our site, (3) your contact information, and (4) a statement of good faith belief. We will respond within 10 business days.</p>
+                      <p>If you believe specific <strong className="text-foreground">original creative expression</strong> (not facts) on our site infringes your copyright, you must provide:</p>
+                      <ol className="list-decimal ml-6 space-y-1">
+                        <li>Identification of the specific copyrighted work (with proof of ownership or registration)</li>
+                        <li>The exact URL(s) on trackmytrain.pk containing the allegedly infringing material</li>
+                        <li>A <strong>side-by-side comparison</strong> showing the specific expression that was copied (not general topics or facts)</li>
+                        <li>Your full legal name, address, phone number, and email</li>
+                        <li>A statement under penalty of perjury that you have a good faith belief the use is not authorized</li>
+                        <li>Your physical or electronic signature</li>
+                      </ol>
+                      <p>Send to our <Link to="/contact" className="text-primary underline hover:no-underline">Contact page</Link>. We will respond within 10 business days. <strong className="text-foreground">Notices that do not meet all six requirements above will be rejected.</strong></p>
                     </div>
                   </div>
                 </div>
@@ -116,12 +185,15 @@ export default function DisclaimerPage() {
           <Card className="mt-8 border border-primary/20 bg-primary/5 shadow-sm">
             <CardContent className="p-6 text-center">
               <p className="text-muted-foreground mb-4">
-                By using Track My Train, you acknowledge that you have read and understood this disclaimer. 
+                By using Track My Train, you acknowledge that you have read and understood this disclaimer and DMCA policy. 
                 For questions or concerns, please visit our{" "}
                 <Link to="/contact" className="text-primary underline hover:no-underline">Contact page</Link>.
               </p>
               <p className="text-sm text-muted-foreground">
                 See also: <Link to="/privacy" className="text-primary underline hover:no-underline">Privacy Policy</Link> · <Link to="/terms" className="text-primary underline hover:no-underline">Terms of Service</Link>
+              </p>
+              <p className="text-xs text-muted-foreground/60 mt-3">
+                © 2024–2026 Track My Train. All original content protected under Pakistan Copyright Ordinance 1962, Berne Convention, and 17 U.S.C. § 101 et seq.
               </p>
             </CardContent>
           </Card>
