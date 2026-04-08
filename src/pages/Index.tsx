@@ -125,26 +125,26 @@ export default function HomePage() {
         primaryEntity="Pakistan Railways"
         contentCategory="navigational"
       />
-      {/* Hero Section — Premium Design */}
-      <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient text-primary-foreground">
+      {/* Hero Section — Theme-Aware Premium Design */}
+      <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient">
         {/* Multi-layer background */}
         <div className="absolute inset-0">
-          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-[0.15] mix-blend-luminosity" width={1920} height={1080} />
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-[var(--hero-img-opacity,0.15)] mix-blend-luminosity dark:mix-blend-luminosity" style={{ opacity: 'var(--hero-img-opacity)' }} width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--hero-gradient-start)/0.3)] via-transparent to-[hsl(var(--hero-gradient-end)/0.95)]" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-gradient-start)/0.8)] via-transparent to-transparent" />
         </div>
         {/* Animated decorative orbs */}
-        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[hsl(165_55%_40%/0.08)] blur-[100px] float-slow" />
-        <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[hsl(38_92%_50%/0.06)] blur-[80px] float-medium" />
-        <div className="absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(200_80%_50%/0.04)] blur-[100px] float-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[100px] float-slow" />
+        <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[80px] float-medium" />
+        <div className="absolute -bottom-20 right-1/3 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-3))] blur-[100px] float-slow" style={{ animationDelay: '2s' }} />
         {/* Refined grid pattern */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.05) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.05) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+        <div className="absolute inset-0" style={{ opacity: 0.04, backgroundImage: 'linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
 
         <div className="relative container mx-auto px-4 py-16 sm:py-24 md:py-32 lg:py-36">
           <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-center">
             <div className="max-w-3xl">
               {/* Live badge with shimmer */}
-              <div className="inline-flex items-center gap-2.5 glass-hero rounded-full px-5 py-2.5 text-sm mb-8 shimmer">
+              <div className="inline-flex items-center gap-2.5 bg-[hsl(var(--hero-badge-bg))] backdrop-blur-xl border border-[hsl(var(--hero-glass-border))] rounded-full px-5 py-2.5 text-sm mb-8 shimmer">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
@@ -152,13 +152,13 @@ export default function HomePage() {
                 <span className="font-semibold tracking-[0.15em] text-primary text-xs uppercase">Live Satellite Tracking • Every 5 Seconds</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight text-[hsl(var(--hero-text))]">
                 <span className="block">Track My Train</span>
                 <span className="block mt-1 text-gradient-gold">Live GPS Tracker</span>
               </h1>
 
-              <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-2xl leading-relaxed font-light">
-                See exactly where your Pakistan Railways train is right now. Live GPS positions, real-time delays, and accurate ETAs for <strong className="font-semibold opacity-100">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold opacity-100">{netStats.totalStations || "342"}+ stations</strong> — completely free.
+              <p className="text-base sm:text-lg md:text-xl text-[hsl(var(--hero-text-muted))] mb-10 max-w-2xl leading-relaxed font-light">
+                See exactly where your Pakistan Railways train is right now. Live GPS positions, real-time delays, and accurate ETAs for <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalStations || "342"}+ stations</strong> — completely free.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
@@ -168,18 +168,18 @@ export default function HomePage() {
                   </Button>
                 </Link>
                 <Link to="/find-my-train">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.08)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.2)] hover:bg-[hsl(0_0%_100%/0.15)] hover:border-[hsl(0_0%_100%/0.35)] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-xl border-2 border-[hsl(var(--hero-glass-border))] hover:bg-[hsl(var(--hero-glass))] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-[hsl(var(--hero-text))]">
                     <Navigation className="w-5 h-5" /> Find My Train (GPS)
                   </Button>
                 </Link>
                 <Link to="/schedule">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(0_0%_100%/0.08)] backdrop-blur-xl border-2 border-[hsl(0_0%_100%/0.2)] hover:bg-[hsl(0_0%_100%/0.15)] hover:border-[hsl(0_0%_100%/0.35)] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-primary-foreground">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-xl border-2 border-[hsl(var(--hero-glass-border))] hover:bg-[hsl(var(--hero-glass))] gap-2.5 rounded-xl font-bold px-8 text-[15px] h-[52px] transition-all hover:scale-[1.03] active:scale-[0.98] text-[hsl(var(--hero-text))]">
                     <Clock className="w-5 h-5" /> View Schedules
                   </Button>
                 </Link>
               </div>
 
-              <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs sm:text-sm opacity-70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs sm:text-sm text-[hsl(var(--hero-text-muted))]">
                 {["Zero Cost, Always", "Instant Access — No Login", "Optimized for Slow Networks", "English-Only Experience"].map((item) => (
                   <span key={item} className="flex items-center gap-2">
                     <span className="w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center">
@@ -194,18 +194,18 @@ export default function HomePage() {
             {/* Stats - Desktop glassmorphism panel */}
             <div className="hidden lg:flex flex-col gap-3 float-slow">
               {[
-                { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "from-emerald-500/15 to-emerald-600/5", border: "border-emerald-400/25", glow: "shadow-emerald-500/15" },
-                { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "from-amber-500/15 to-amber-600/5", border: "border-amber-400/25", glow: "shadow-amber-500/15" },
-                { icon: Zap, value: stats.total, label: "Total Tracked", color: "text-blue-400", bg: "from-blue-500/15 to-blue-600/5", border: "border-blue-400/25", glow: "shadow-blue-500/15" },
+                { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-500 dark:text-emerald-400", bg: "from-emerald-500/15 to-emerald-600/5", border: "border-emerald-500/25 dark:border-emerald-400/25", glow: "shadow-emerald-500/15" },
+                { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-600 dark:text-amber-400", bg: "from-amber-500/15 to-amber-600/5", border: "border-amber-500/25 dark:border-amber-400/25", glow: "shadow-amber-500/15" },
+                { icon: Zap, value: stats.total, label: "Total Tracked", color: "text-blue-600 dark:text-blue-400", bg: "from-blue-500/15 to-blue-600/5", border: "border-blue-500/25 dark:border-blue-400/25", glow: "shadow-blue-500/15" },
               ].map((stat, i) => (
                 <div key={i} className={`relative overflow-hidden bg-gradient-to-br ${stat.bg} backdrop-blur-2xl rounded-xl px-5 py-3.5 flex items-center gap-4 shadow-lg ${stat.glow} border ${stat.border} hover-lift cursor-default min-w-[190px] transition-all duration-300`}>
-                  <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.03)]" />
-                  <div className={`relative w-11 h-11 rounded-xl bg-[hsl(0_0%_100%/0.07)] flex items-center justify-center border ${stat.border}`}>
+                  <div className="absolute inset-0 bg-[hsl(var(--hero-stat-glass))]" />
+                  <div className={`relative w-11 h-11 rounded-xl bg-[hsl(var(--hero-stat-glass))] flex items-center justify-center border ${stat.border}`}>
                     <stat.icon className={`w-5 h-5 ${stat.color}`} />
                   </div>
                   <div className="relative">
                     <div className={`text-3xl font-black stat-counter ${stat.color} tracking-tight leading-none drop-shadow-sm`}>{stat.value}</div>
-                    <div className="text-xs text-primary-foreground/60 font-semibold mt-1 tracking-wide">{stat.label}</div>
+                    <div className="text-xs text-[hsl(var(--hero-text-muted))] font-semibold mt-1 tracking-wide">{stat.label}</div>
                   </div>
                 </div>
               ))}
@@ -215,15 +215,15 @@ export default function HomePage() {
           {/* Stats - Mobile inline with glassmorphism */}
           <div className="grid grid-cols-3 gap-2.5 mt-10 lg:hidden">
             {[
-              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400", border: "border-emerald-400/25", bg: "from-emerald-500/15 to-emerald-600/5", icon: Wifi },
-              { value: stats.atStation, label: "At Station", color: "text-amber-400", border: "border-amber-400/25", bg: "from-amber-500/15 to-amber-600/5", icon: Train },
-              { value: stats.total, label: "Total", color: "text-blue-400", border: "border-blue-400/25", bg: "from-blue-500/15 to-blue-600/5", icon: Zap },
+              { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-500 dark:text-emerald-400", border: "border-emerald-500/25 dark:border-emerald-400/25", bg: "from-emerald-500/15 to-emerald-600/5", icon: Wifi },
+              { value: stats.atStation, label: "At Station", color: "text-amber-600 dark:text-amber-400", border: "border-amber-500/25 dark:border-amber-400/25", bg: "from-amber-500/15 to-amber-600/5", icon: Train },
+              { value: stats.total, label: "Total", color: "text-blue-600 dark:text-blue-400", border: "border-blue-500/25 dark:border-blue-400/25", bg: "from-blue-500/15 to-blue-600/5", icon: Zap },
             ].map((stat, i) => (
               <div key={i} className={`relative overflow-hidden bg-gradient-to-b ${stat.bg} backdrop-blur-xl rounded-xl p-3 text-center border ${stat.border} shadow-md`}>
-                <div className="absolute inset-0 bg-[hsl(0_0%_100%/0.02)]" />
+                <div className="absolute inset-0 bg-[hsl(var(--hero-stat-glass))]" />
                 <stat.icon className={`w-4 h-4 ${stat.color} mx-auto mb-1.5 relative`} />
                 <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight relative`}>{stat.value}</div>
-                <div className="text-[10px] text-primary-foreground/55 font-semibold mt-0.5 uppercase tracking-wider relative">{stat.label}</div>
+                <div className="text-[10px] text-[hsl(var(--hero-text-muted))] font-semibold mt-0.5 uppercase tracking-wider relative">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -1600,17 +1600,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA — Premium */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-16 sm:py-24">
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(165_55%_40%/0.08)] blur-[100px] float-slow" />
-        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(38_92%_50%/0.06)] blur-[80px] float-medium" />
+      {/* CTA — Theme-Aware Premium */}
+      <section className="relative overflow-hidden bg-hero-gradient py-16 sm:py-24">
+        <div className="absolute inset-0" style={{ opacity: 0.04, backgroundImage: 'linear-gradient(hsl(var(--hero-grid-line)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-grid-line)) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full bg-[hsl(var(--hero-orb-1))] blur-[100px] float-slow" />
+        <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[hsl(var(--hero-orb-2))] blur-[80px] float-medium" />
         <div className="relative container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 glass-hero rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6">
+          <div className="inline-flex items-center gap-2 bg-[hsl(var(--hero-badge-bg))] backdrop-blur-xl border border-[hsl(var(--hero-glass-border))] rounded-full px-4 py-2 text-xs font-semibold tracking-wider mb-6 text-[hsl(var(--hero-text))]">
             <Train className="w-3.5 h-3.5" /> FREE FOREVER • NO SIGNUP
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5 tracking-tight">Ready to Track Your Train?</h2>
-          <p className="text-base sm:text-lg opacity-75 max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-5 tracking-tight text-[hsl(var(--hero-text))]">Ready to Track Your Train?</h2>
+          <p className="text-base sm:text-lg text-[hsl(var(--hero-text-muted))] max-w-xl mx-auto mb-10 leading-relaxed font-light">Open the live tracker, search your train, and get instant GPS positions, delay info, and ETAs — join thousands of travelers who never miss their train.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Link to="/train">
               <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl font-bold gap-2.5 shadow-xl shadow-accent/25 px-8 h-[52px] text-[15px] shimmer transition-all hover:scale-[1.03]">
@@ -1618,7 +1618,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link to="/planner">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto glass-hero hover:bg-[hsl(0_0%_100%/0.15)] rounded-xl gap-2.5 font-bold px-8 h-[52px] text-[15px] transition-all hover:scale-[1.03]">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-[hsl(var(--hero-glass))] backdrop-blur-xl border-2 border-[hsl(var(--hero-glass-border))] rounded-xl gap-2.5 font-bold px-8 h-[52px] text-[15px] transition-all hover:scale-[1.03] text-[hsl(var(--hero-text))]">
                 <MapPin className="w-5 h-5" /> Plan a Journey
               </Button>
             </Link>
