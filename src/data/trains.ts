@@ -148,3 +148,17 @@ export const searchTrains = (q: string) => {
     t.nameUrdu.includes(q)
   );
 };
+
+// Slug lookup maps
+export const trainSlugToId = new Map<string, number>(
+  trains.map(t => [generateTrainSlug(t.name, t.number), t.id])
+);
+
+export const trainIdToSlug = new Map<number, string>(
+  trains.map(t => [t.id, generateTrainSlug(t.name, t.number)])
+);
+
+export function getTrainBySlug(slug: string): Train | undefined {
+  const id = trainSlugToId.get(slug);
+  return id !== undefined ? trains.find(t => t.id === id) : undefined;
+}
