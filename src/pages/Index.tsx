@@ -483,8 +483,8 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-12 sm:py-16">
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-bold text-primary tracking-wider mb-2">WHY CHOOSE US</p>
-          <h2 className="text-2xl sm:text-3xl font-bold">What Makes Track My Train Different</h2>
-          <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">We built Track My Train from scratch for Pakistani travelers — every feature is designed to answer the one question you always have: "Where is my train right now?"</p>
+          <h2 className="text-2xl sm:text-3xl font-bold">Why Track My Train for Live Train Tracking</h2>
+          <p className="text-sm text-muted-foreground mt-2 max-w-2xl mx-auto">We built the most accurate live train tracking platform from scratch for Pakistani travelers — every feature answers the one question: "Where is my train right now?"</p>
         </div>
         <div ref={whyChooseAnim.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {[
@@ -1585,8 +1585,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-primary tracking-wider mb-2">GOT QUESTIONS?</p>
-            <h2 className="text-xl sm:text-2xl font-bold">Frequently Asked Questions About Train Tracking in Pakistan</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">Everything you need to know about tracking trains in Pakistan. Click on a question to expand the answer.</p>
+            <h2 className="text-xl sm:text-2xl font-bold">Frequently Asked Questions About Live Train Tracking in Pakistan</h2>
+            <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">Everything you need to know about tracking live trains, checking delays, and planning journeys on Pakistan Railways.</p>
           </div>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible>
@@ -1615,8 +1615,8 @@ export default function HomePage() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 tracking-tight leading-[1.1] text-foreground">
-              Ready to{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Track Your Train</span>?
+              Start{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Live Train Tracking</span> Now
             </h2>
 
             <p className="text-sm sm:text-base text-muted-foreground max-w-lg mx-auto mb-8 leading-relaxed">
