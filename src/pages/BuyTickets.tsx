@@ -115,6 +115,10 @@ export default function BuyTickets() {
         keywords="buy train ticket online pakistan, pakistan railways online booking, book train ticket, railway booking, RABTA app booking, e ticket pakistan railway, how to buy train ticket, train ticket booking, JazzCash train ticket, easypaisa train ticket, online railway booking, pakistan railway reservation, train seat booking"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Buy Tickets Online", url: "/buy-train-tickets" }]}
         faqSchema={bookingFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="transactional"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         howToSchema={{
           name: "How to Book Pakistan Railways Train Tickets Online",
           steps: stepByStep.map(s => ({ name: s.title, text: s.desc })),

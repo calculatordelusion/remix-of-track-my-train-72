@@ -69,6 +69,10 @@ export default function FindMyTrainPage() {
         keywords="find my train, which train am i on, GPS train detector, detect my train, locate my train, identify train by location, what train is this, train near me, nearest train, auto detect train, train finder by GPS, am i on the right train"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Find My Train", url: "/find-my-train" }]}
         faqSchema={findMyTrainFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="navigational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         howToSchema={{
           name: "How to Use Find My Train GPS Detection",
           steps: [

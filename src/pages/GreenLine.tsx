@@ -76,6 +76,10 @@ export default function GreenLinePage() {
         keywords="green line express, green line train, green line train ticket, karachi to islamabad train, green line schedule, green line ticket price, green line fare, 5UP 6DN, green line express booking, green line stops, green line timing, green line express today, green line express speed"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }, { name: "Green Line Express", url: "/green-line-express" }]}
         faqSchema={greenLineFaqs}
+        primaryEntity="Green Line Express"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "Trip",

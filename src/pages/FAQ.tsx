@@ -71,6 +71,10 @@ export default function FAQPage() {
         keywords="pakistan railways FAQ, train travel questions, railway rules pakistan, luggage limit train, ladies compartment, wheelchair access railway, platform ticket price, train complaint number, first time train travel tips, train food allowed, children ticket age, senior citizen discount railway"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "FAQ", url: "/faq" }]}
         faqSchema={allFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "WebPage",

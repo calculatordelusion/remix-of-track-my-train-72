@@ -82,6 +82,10 @@ export default function SchedulePage() {
         keywords="pakistan railway schedule, train schedule pakistan, pakistan train timetable 2026, railway time table today, train timing, train departure time, train arrival time, pakistan railways timetable, railway schedule today, all trains timing, express train timing, train time table pakistan railways"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Schedule", url: "/train-schedule" }]}
         faqSchema={scheduleFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",
