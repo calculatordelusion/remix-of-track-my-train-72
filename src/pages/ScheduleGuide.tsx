@@ -95,6 +95,10 @@ export default function ScheduleGuide() {
         keywords="how to read train timetable, train schedule guide, railway timing explained, seasonal schedule changes, fog season trains, eid special trains, best time to travel by train, train timetable tips, peak travel season railway, summer train schedule, winter delays guide"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Schedule Guide", url: "/schedule-guide" }]}
         faqSchema={scheduleFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "WebPage",

@@ -88,14 +88,24 @@ export default function SEOHead({
       "@type": "ReadAction",
       "target": fullCanonical
     },
-    // Entity-based optimization
+    // Entity-based optimization with sameAs links
     ...(primaryEntity && {
       "about": {
-        "@type": "Thing",
+        "@type": primaryEntity === "Pakistan Railways" ? "Organization" : "Thing",
         "name": primaryEntity,
-        "sameAs": primaryEntity === "Pakistan Railways" ? "https://en.wikipedia.org/wiki/Pakistan_Railways" : undefined
+        "sameAs": primaryEntity === "Pakistan Railways" 
+          ? ["https://en.wikipedia.org/wiki/Pakistan_Railways", "https://www.wikidata.org/wiki/Q847898"]
+          : primaryEntity === "Green Line Express"
+          ? "https://en.wikipedia.org/wiki/Green_Line_(Pakistan)"
+          : undefined
       }
     }),
+    // Audience targeting
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Pakistan Railways passengers, commuters, and travelers",
+      "geographicArea": { "@type": "Country", "name": "Pakistan" }
+    },
     // Copyright protection signal
     "copyrightHolder": {
       "@type": "Organization",

@@ -60,6 +60,10 @@ export default function TicketPricingPage() {
         keywords="pakistan railway ticket price, train fare chart, train ticket price, economy class fare, business class fare, AC sleeper price, parlor class fare, karachi lahore ticket price, train fare list, railway fare chart 2026, cheapest train ticket, AC standard fare"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Ticket Pricing", url: "/ticket-pricing" }]}
         faqSchema={ticketFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="commercial"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-03-09"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "WebPage",

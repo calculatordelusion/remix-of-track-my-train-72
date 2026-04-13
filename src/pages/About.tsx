@@ -43,6 +43,10 @@ export default function AboutPage() {
         keywords="about trackmytrain, track my train team, who made trackmytrain, pakistan train tracker, trackmytrain mission, independent railway tracker, free train tracking pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "About Us", url: "/about" }]}
         faqSchema={aboutFaqs}
+        primaryEntity="Track My Train"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "AboutPage",

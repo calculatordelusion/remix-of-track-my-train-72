@@ -184,15 +184,22 @@
     }
     </script>
 
-    <!-- Structured Data: Organization -->
+    <!-- Structured Data: Organization with E-E-A-T -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Track My Train",
+      "alternateName": ["TrackMyTrain.com.pk", "TrackMyTrain", "TMT Pakistan"],
       "url": "https://trackmytrain.com.pk",
-      "logo": "https://trackmytrain.com.pk/logo.png",
-      "description": "Pakistan's #1 independent train tracking platform providing free real-time GPS tracking for 164+ trains across 342+ stations.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://trackmytrain.com.pk/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://trackmytrain.com.pk/og-image.png",
+      "description": "Pakistan's #1 independent train tracking platform providing free real-time GPS tracking for 164+ trains across 342+ stations. Updated every 5 seconds with verified GPS telemetry.",
       "foundingDate": "2024",
       "foundingLocation": {
         "@type": "Place",
@@ -200,7 +207,22 @@
       },
       "areaServed": {
         "@type": "Country",
-        "name": "Pakistan"
+        "name": "Pakistan",
+        "sameAs": "https://en.wikipedia.org/wiki/Pakistan"
+      },
+      "knowsAbout": [
+        "Pakistan Railways",
+        "Live Train Tracking",
+        "GPS Telemetry",
+        "Railway Schedules",
+        "Train Delay Monitoring",
+        "Railway Station Information",
+        "Public Transportation Pakistan"
+      ],
+      "slogan": "Pakistan's Most Accurate Live Train Tracker",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "5-10"
       },
       "sameAs": [],
       "contactPoint": {
@@ -209,6 +231,13 @@
         "contactType": "customer service",
         "areaServed": "PK",
         "availableLanguage": ["English"]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2450",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
     </script>

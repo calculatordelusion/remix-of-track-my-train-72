@@ -81,6 +81,10 @@ export default function LiveTrainsPage() {
         canonical="/live-train"
         keywords="live train GPS map pakistan, train tracker live map pakistan, pak rail live, pak rail live tracking, train location on map, real time train position, running trains map pakistan, current train location, train movement live, active trains pakistan railways, see all trains on map, train GPS tracker, where is train right now, pakistan railway map live, train position tracker"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train GPS Map", url: "/live-train" }]}
+        primaryEntity="Pakistan Railways"
+        contentCategory="navigational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",

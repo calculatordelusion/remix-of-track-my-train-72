@@ -81,6 +81,10 @@ export default function ExpressTrainsPage() {
         keywords="pakistan express trains, tezgam express, karakoram express, business express, AC train pakistan, fastest train pakistan, express train list, premium trains, all express trains, shalimar express, allama iqbal express, pakistan mail, express train fare"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }]}
         faqSchema={expressFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="informational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",

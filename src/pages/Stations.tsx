@@ -76,6 +76,10 @@ export default function StationsPage() {
         keywords="pakistan railway stations, railway station list pakistan, all train stations, lahore junction station, karachi cantt station, rawalpindi railway station, station near me, railway station facilities, station code search, islamabad train station, faisalabad station, multan railway station"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Railway Stations", url: "/stations" }]}
         faqSchema={stationFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="navigational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",

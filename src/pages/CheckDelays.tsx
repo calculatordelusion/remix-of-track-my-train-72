@@ -109,6 +109,10 @@ export default function CheckDelays() {
         keywords="train delay checker, is my train late, train delay status pakistan, check train delay, train late today pakistan, train running late, fog delay trains, tezgam delay today, green line delay, train cancelled today, pakistan railway delay report, train delay minutes"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-train-delays" }]}
         faqSchema={delayFaqs}
+        primaryEntity="Pakistan Railways"
+        contentCategory="navigational"
+        publishedTime="2024-06-01"
+        modifiedTime="2026-04-13"
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "WebApplication",
