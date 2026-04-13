@@ -117,10 +117,10 @@ export default function HomePage() {
   return (
     <main>
       <SEOHead
-        title="Track My Train — Train Tracking Live Pakistan 2026"
-        description="Pakistan's #1 live train tracker. See real-time GPS positions, delays, ETAs, and running status for 164+ Pakistan Railways trains. Free, no signup."
+        title="Live Train Tracking Pakistan — Track My Train | Real-Time GPS 2026"
+        description="Track any Pakistan Railways train live. Real-time GPS positions, speed, delays & ETAs for 164+ trains across 342+ stations. Free live train tracking — no app, no signup."
         canonical="/"
-        keywords="train tracking live, track my train, train tracking live pakistan, pakistan railway live tracking, train tracker pakistan, live train status pakistan, train running status today, real time train tracking, train locator pakistan, where is my train, pakistan railways live, train tracking app pakistan, check train status online"
+        keywords="live train tracking, train tracking, track my train, live train tracking pakistan, train tracking live, tracking live train, real time train tracking, pakistan railway live tracking, train tracker pakistan, live train status pakistan, where is my train, train running status today, pakistan railways live, train tracking app pakistan, check train status online"
         ogImage="https://trackmytrain.com.pk/og-image.png"
         faqSchema={faqs}
         primaryEntity="Pakistan Railways"
@@ -154,12 +154,12 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-[1.05] tracking-tight text-[hsl(var(--hero-text))]">
-                <span className="block">Track My Train —</span>
-                <span className="block mt-1"><span className="text-gradient-gold">Live Railway</span> GPS Tracker</span>
+                <span className="block">Live Train Tracking</span>
+                <span className="block mt-1"><span className="text-gradient-gold">Pakistan Railways</span> GPS Tracker</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-[hsl(var(--hero-text-muted))] mb-10 max-w-2xl leading-relaxed font-light">
-                See exactly where your Pakistan Railways train is right now. Live GPS positions, real-time delays, and accurate ETAs for <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalStations || "342"}+ stations</strong> — completely free.
+                Track My Train — see exactly where your train is right now. Live train tracking with real-time GPS positions, speed, delays, and accurate ETAs for <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalTrains || "164"}+ trains</strong> across <strong className="font-semibold text-[hsl(var(--hero-text))]">{netStats.totalStations || "342"}+ stations</strong> — completely free, no app needed.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
