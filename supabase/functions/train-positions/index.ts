@@ -955,9 +955,11 @@ Deno.serve(async (req) => {
       }
 
       const positions = upstreamData?.positions?.length ? upstreamData.positions : fallback.positions;
-      const movingNow = (positions as any[]).filter((p: any) => p.status === 'moving').length;
-      const atStation = (positions as any[]).filter((p: any) => p.status === 'at-station').length;
-      const liveCount = (positions as any[]).length;
+      const upstreamStats = upstreamData?.stats;
+      const movingNow = upstreamStats?.moving ?? (positions as any[]).filter((p: any) => p.status === 'moving').length;
+      const atStation = upstreamStats?.atStation ?? (positions as any[]).filter((p: any) => p.status === 'at-station').length;
+      const liveCount = upstreamStats?.liveCount ?? movingNow;
+      const totalTrainsLive = upstreamStats?.total ?? trainSchedules.length;
 
       // Count unique routes
       const routeKeys = new Set<string>();
@@ -969,7 +971,7 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({
         success: true,
         data: {
-          totalTrains: trainSchedules.length,
+          totalTrains: totalTrainsLive,
           totalStations: allStationNames.size,
           totalRoutes: routeKeys.size,
           expressTrains: expressCount,
@@ -978,8 +980,9 @@ Deno.serve(async (req) => {
           movingNow,
           atStation,
           liveCount,
-          offline: trainSchedules.length - liveCount,
+          offline: Math.max(0, totalTrainsLive - liveCount),
         },
+
         timestamp: pktNow.toISOString(),
       }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
