@@ -669,19 +669,13 @@ async function fetchUpstreamGPS(fallbackPositions: any[]) {
 
   const fallbackMap = new Map<number, any>(fallbackPositions.map((p) => [Number(p.id), p]));
 
-  const passengerIds = new Set(
-    trainSchedules
-      .filter((t) => t.type !== 'freight')
-      .map((t) => t.id),
-  );
-
-  const sourcePassengerList = list.filter((item: any) => {
-    const id = Number(item?.TrainId);
-    return Number.isFinite(id) && passengerIds.has(id);
-  });
+  // Use the upstream list directly as the source of truth for total counts
+  // (matches source homepage: Moving + At Station = Total)
+  const sourcePassengerList = list.filter((item: any) => Number.isFinite(Number(item?.TrainId)));
 
   // Count moving using IsLive flag directly (matches source homepage logic)
   const liveCount = sourcePassengerList.filter((item: any) => Boolean(item?.IsLive)).length;
+
 
   const normalizedPositions = sourcePassengerList
     .map((item: any) => {
@@ -729,8 +723,9 @@ async function fetchUpstreamGPS(fallbackPositions: any[]) {
     })
     .filter(Boolean);
 
-  const total = passengerIds.size;
+  const total = sourcePassengerList.length;
   const atStation = Math.max(0, total - liveCount);
+
 
   // Collect ALL train IDs that are LIVE according to the source API
   const liveTrainIds = sourcePassengerList
@@ -770,7 +765,8 @@ async function fetchHomepageStats() {
         if (apiData?.IsSuccess && list.length > 0) {
           const liveTrains = list.filter((t: any) => Boolean(t?.IsLive));
           const moving = liveTrains.length;
-          const total = 103;
+          const total = list.length;
+
           const atStation = total - moving;
           console.log(`[Stats] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
           return {
@@ -838,7 +834,7 @@ async function fetchHomepageStats() {
         const moving = Number(movingMatch[1]);
         const atStation = Number(atStationMatch[1]);
         if (moving > 0 && moving < 200 && atStation >= 0) {
-          const total = 103;
+          const total = moving + atStation;
           console.log(`[Stats from script] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
           return {
             moving,
@@ -959,9 +955,11 @@ Deno.serve(async (req) => {
       }
 
       const positions = upstreamData?.positions?.length ? upstreamData.positions : fallback.positions;
-      const movingNow = (positions as any[]).filter((p: any) => p.status === 'moving').length;
-      const atStation = (positions as any[]).filter((p: any) => p.status === 'at-station').length;
-      const liveCount = (positions as any[]).length;
+      const upstreamStats = upstreamData?.stats;
+      const movingNow = upstreamStats?.moving ?? (positions as any[]).filter((p: any) => p.status === 'moving').length;
+      const atStation = upstreamStats?.atStation ?? (positions as any[]).filter((p: any) => p.status === 'at-station').length;
+      const liveCount = upstreamStats?.liveCount ?? movingNow;
+      const totalTrainsLive = upstreamStats?.total ?? trainSchedules.length;
 
       // Count unique routes
       const routeKeys = new Set<string>();
@@ -973,7 +971,7 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({
         success: true,
         data: {
-          totalTrains: trainSchedules.length,
+          totalTrains: totalTrainsLive,
           totalStations: allStationNames.size,
           totalRoutes: routeKeys.size,
           expressTrains: expressCount,
@@ -982,8 +980,9 @@ Deno.serve(async (req) => {
           movingNow,
           atStation,
           liveCount,
-          offline: trainSchedules.length - liveCount,
+          offline: Math.max(0, totalTrainsLive - liveCount),
         },
+
         timestamp: pktNow.toISOString(),
       }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
