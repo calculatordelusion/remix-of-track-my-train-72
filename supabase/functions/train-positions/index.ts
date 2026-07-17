@@ -723,8 +723,9 @@ async function fetchUpstreamGPS(fallbackPositions: any[]) {
     })
     .filter(Boolean);
 
-  const total = passengerIds.size;
+  const total = sourcePassengerList.length;
   const atStation = Math.max(0, total - liveCount);
+
 
   // Collect ALL train IDs that are LIVE according to the source API
   const liveTrainIds = sourcePassengerList
