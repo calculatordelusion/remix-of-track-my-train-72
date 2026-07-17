@@ -669,19 +669,13 @@ async function fetchUpstreamGPS(fallbackPositions: any[]) {
 
   const fallbackMap = new Map<number, any>(fallbackPositions.map((p) => [Number(p.id), p]));
 
-  const passengerIds = new Set(
-    trainSchedules
-      .filter((t) => t.type !== 'freight')
-      .map((t) => t.id),
-  );
-
-  const sourcePassengerList = list.filter((item: any) => {
-    const id = Number(item?.TrainId);
-    return Number.isFinite(id) && passengerIds.has(id);
-  });
+  // Use the upstream list directly as the source of truth for total counts
+  // (matches source homepage: Moving + At Station = Total)
+  const sourcePassengerList = list.filter((item: any) => Number.isFinite(Number(item?.TrainId)));
 
   // Count moving using IsLive flag directly (matches source homepage logic)
   const liveCount = sourcePassengerList.filter((item: any) => Boolean(item?.IsLive)).length;
+
 
   const normalizedPositions = sourcePassengerList
     .map((item: any) => {
