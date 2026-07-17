@@ -834,7 +834,7 @@ async function fetchHomepageStats() {
         const moving = Number(movingMatch[1]);
         const atStation = Number(atStationMatch[1]);
         if (moving > 0 && moving < 200 && atStation >= 0) {
-          const total = 103;
+          const total = moving + atStation;
           console.log(`[Stats from script] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
           return {
             moving,
