@@ -765,7 +765,8 @@ async function fetchHomepageStats() {
         if (apiData?.IsSuccess && list.length > 0) {
           const liveTrains = list.filter((t: any) => Boolean(t?.IsLive));
           const moving = liveTrains.length;
-          const total = 103;
+          const total = list.length;
+
           const atStation = total - moving;
           console.log(`[Stats] Moving: ${moving}, At Station: ${atStation}, Total: ${total}`);
           return {
